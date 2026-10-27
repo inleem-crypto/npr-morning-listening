@@ -1,10 +1,10 @@
 {
   "title": "4am ET, October 27 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
-  "generator_version": 3,
+  "generator_version": 4,
   "verified": false,
   "sourceNote": "NPR 음원을 자동 전사해 만든 문제입니다. 전사와 정답은 검증되지 않았습니다.",
-  "generated_at": "2026-10-27T08:41:57.545441+00:00",
+  "generated_at": "2026-10-27T08:45:24.574481+00:00",
   "episode": {
     "id": "3b1dcad7-c18e-4a83-9566-bde1f179732d",
     "title": "4am ET, October 27 | The latest headlines from NPR",
@@ -15,44 +15,44 @@
   },
   "items": [
     {
-      "sentence": "Polls show an extremely tight race that ____ Israeli Prime Minister Benjamin Netanyahu's hold on power.",
-      "answer": "threatens",
-      "hint": "첫 글자 T · 9글자",
+      "sentence": "Today polls began opening a few hours ago in Israel's first ____ vote since the October 7th attacks and the war in Gaza.",
+      "answer": "national",
+      "hint": "첫 글자 N · 8글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 43.44,
-      "end": 50.16
+      "start": 27.0,
+      "end": 35.64
     },
     {
-      "sentence": "— Secretary of State Marco Rubio says he only once personally ____ Nobel Peace Prize winner Maria Carina Machado not to return to Venezuela.",
+      "sentence": "It's a civil responsibility, it's a ____ responsibility at this stage.",
+      "answer": "humanistic",
+      "hint": "첫 글자 H · 10글자",
+      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
+      "start": 45.4,
+      "end": 52.36
+    },
+    {
+      "sentence": "Secretary of State Marco Rubio says it will take time to get to ____ elections in Venezuela.",
+      "answer": "legitimate",
+      "hint": "첫 글자 L · 10글자",
+      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
+      "start": 64.36,
+      "end": 71.36
+    },
+    {
+      "sentence": "Secretary of State Marco Rubio says he only once personally ____ Nobel Peace Prize winner Maria Karina Machado not to return to Venezuela.",
       "answer": "encouraged",
       "hint": "첫 글자 E · 10글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 64.2,
-      "end": 73.48
+      "start": 78.36,
+      "end": 87.8
     },
     {
-      "sentence": "exceptionally high tide. Joe Weklogo, member ____ LAist, reports from Newport Beach.",
-      "answer": "station",
-      "hint": "첫 글자 S · 7글자",
+      "sentence": "country she's from, she should be allowed to ____, she should be allowed to return unperturbed.",
+      "answer": "return",
+      "hint": "첫 글자 R · 6글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 135.24,
-      "end": 141.88
-    },
-    {
-      "sentence": "It mostly worked, except for streets like this one, where one ____ refused to place sandbags along her seawall.",
-      "answer": "homeowner",
-      "hint": "첫 글자 H · 9글자",
-      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 152.96,
-      "end": 159.72
-    },
-    {
-      "sentence": "Newport Beach could start finding residents who ____ take precautions against flooding.",
-      "answer": "don't",
-      "hint": "첫 글자 D · 5글자",
-      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 171.36,
-      "end": 176.08
+      "start": 103.24,
+      "end": 107.6
     }
   ]
 }
