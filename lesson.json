@@ -1,0 +1,57 @@
+{
+  "title": "4am ET, October 27 | The latest headlines from NPR · 자동 딕테이션",
+  "kind": "auto_transcribed",
+  "verified": false,
+  "sourceNote": "NPR 음원을 자동 전사해 만든 문제입니다. 전사와 정답은 검증되지 않았습니다.",
+  "generated_at": "2026-10-27T08:35:47.026633+00:00",
+  "episode": {
+    "id": "3b1dcad7-c18e-4a83-9566-bde1f179732d",
+    "title": "4am ET, October 27 | The latest headlines from NPR",
+    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/e1aa23b1-69d5-42df-8db9-02782bd62f07/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=e1aa23b1-69d5-42df-8db9-02782bd62f07&feed=O9WlY7a5&t=podcast&e=nx-s1-20261027-0400-long&p=500005&d=280&size=4586729",
+    "date": "2026-10-27T08:10:15+00:00",
+    "link": "https://www.npr.org/podcasts/500005/npr-news-now",
+    "via": "NPR 공식 RSS"
+  },
+  "items": [
+    {
+      "sentence": "Israelis are voting today. Polls began ____ a few hours ago, and Israel's first national",
+      "answer": "opening",
+      "hint": "첫 글자 O · 7글자",
+      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
+      "start": 37.0,
+      "end": 42.52
+    },
+    {
+      "sentence": "We really just have to advise we ____ have anywhere to go back to.",
+      "answer": "won't",
+      "hint": "첫 글자 W · 5글자",
+      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
+      "start": 63.2,
+      "end": 68.2
+    },
+    {
+      "sentence": "NPR's Michelle Kellerman reports on his ____ a day after a leading opposition figure returned",
+      "answer": "comments",
+      "hint": "첫 글자 C · 8글자",
+      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
+      "start": 82.2,
+      "end": 87.96
+    },
+    {
+      "sentence": "But he says he did call on the interim ____ to make sure she could return.",
+      "answer": "authorities",
+      "hint": "첫 글자 A · 11글자",
+      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
+      "start": 102.2,
+      "end": 106.8
+    },
+    {
+      "sentence": "so that Venezuela can ____, in his words,",
+      "answer": "become",
+      "hint": "첫 글자 B · 6글자",
+      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
+      "start": 123.36,
+      "end": 126.08
+    }
+  ]
+}
