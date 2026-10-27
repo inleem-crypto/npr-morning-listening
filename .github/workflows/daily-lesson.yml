@@ -1,0 +1,38 @@
+name: Prepare daily dictation lesson
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - index.html
+      - scripts/generate_lesson.py
+      - .github/workflows/daily-lesson.yml
+  schedule:
+    # UTC 20:15 and 20:35 = Korea 05:15 and 05:35 the following day.
+    - cron: '15,35 20 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: daily-dictation
+  cancel-in-progress: false
+jobs:
+  create-lesson:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: python -m pip install -r requirements.txt
+      - run: python scripts/generate_lesson.py
+      - name: Commit lesson
+        run: |
+          git add lesson.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update daily dictation lesson"
+          git push
