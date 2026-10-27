@@ -1,10 +1,10 @@
 {
   "title": "4am ET, October 27 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
-  "generator_version": 4,
+  "generator_version": 5,
   "verified": false,
   "sourceNote": "NPR 음원을 자동 전사해 만든 문제입니다. 전사와 정답은 검증되지 않았습니다.",
-  "generated_at": "2026-10-27T08:45:24.574481+00:00",
+  "generated_at": "2026-10-27T08:48:10.194942+00:00",
   "episode": {
     "id": "3b1dcad7-c18e-4a83-9566-bde1f179732d",
     "title": "4am ET, October 27 | The latest headlines from NPR",
@@ -15,44 +15,44 @@
   },
   "items": [
     {
-      "sentence": "Today polls began opening a few hours ago in Israel's first ____ vote since the October 7th attacks and the war in Gaza.",
-      "answer": "national",
-      "hint": "첫 글자 N · 8글자",
+      "sentence": "We really just have to, otherwise we ____ have anywhere to go back to.",
+      "answer": "won't",
+      "hint": "첫 글자 W · 5글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 27.0,
-      "end": 35.64
+      "start": 38.0,
+      "end": 43.44
     },
     {
-      "sentence": "It's a civil responsibility, it's a ____ responsibility at this stage.",
-      "answer": "humanistic",
-      "hint": "첫 글자 H · 10글자",
+      "sentence": "And Piers Michelle Kellerman reports on his comments a day after a ____ opposition figure returned to Venezuela to a hero's welcome.",
+      "answer": "leading",
+      "hint": "첫 글자 L · 7글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 45.4,
-      "end": 52.36
+      "start": 56.48,
+      "end": 64.24
     },
     {
-      "sentence": "Secretary of State Marco Rubio says it will take time to get to ____ elections in Venezuela.",
-      "answer": "legitimate",
-      "hint": "첫 글자 L · 10글자",
+      "sentence": "That was in the ____ of back-to-back deadly earthquakes.",
+      "answer": "aftermath",
+      "hint": "첫 글자 A · 9글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 64.36,
-      "end": 71.36
+      "start": 73.46,
+      "end": 76.6
     },
     {
-      "sentence": "Secretary of State Marco Rubio says he only once personally ____ Nobel Peace Prize winner Maria Karina Machado not to return to Venezuela.",
-      "answer": "encouraged",
-      "hint": "첫 글자 E · 10글자",
+      "sentence": "The Balboa Peninsula is a thin strip of land between the ____ and Newport Harbor, filled with homes and businesses.",
+      "answer": "ocean",
+      "hint": "첫 글자 O · 5글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 78.36,
-      "end": 87.8
+      "start": 141.9,
+      "end": 148.3
     },
     {
-      "sentence": "country she's from, she should be allowed to ____, she should be allowed to return unperturbed.",
-      "answer": "return",
-      "hint": "첫 글자 R · 6글자",
+      "sentence": "Neighbor Diane Teichide was trying to keep cars from ____ the water into people's garages.",
+      "answer": "sloshing",
+      "hint": "첫 글자 S · 8글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 103.24,
-      "end": 107.6
+      "start": 159.74,
+      "end": 164.9
     }
   ]
 }
