@@ -1,58 +1,50 @@
 {
-  "title": "4am ET, October 27 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "4pm ET, October 27 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
   "generator_version": 5,
   "verified": false,
   "sourceNote": "NPR 음원을 자동 전사해 만든 문제입니다. 전사와 정답은 검증되지 않았습니다.",
-  "generated_at": "2026-10-27T08:48:10.194942+00:00",
+  "generated_at": "2026-10-27T20:42:15.730698+00:00",
   "episode": {
-    "id": "3b1dcad7-c18e-4a83-9566-bde1f179732d",
-    "title": "4am ET, October 27 | The latest headlines from NPR",
-    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/e1aa23b1-69d5-42df-8db9-02782bd62f07/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=e1aa23b1-69d5-42df-8db9-02782bd62f07&feed=O9WlY7a5&t=podcast&e=nx-s1-20261027-0400-long&p=500005&d=280&size=4586729",
-    "date": "2026-10-27T08:10:15+00:00",
+    "id": "f55fe566-3dd0-470f-8aaf-ac100e56675a",
+    "title": "4pm ET, October 27 | The latest headlines from NPR",
+    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/64f644c9-08ff-4a53-8cc5-cf71efc45d1f/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=64f644c9-08ff-4a53-8cc5-cf71efc45d1f&feed=O9WlY7a5&t=podcast&e=nx-s1-20261027-1600-long&p=500005&d=280&size=4586729",
+    "date": "2026-10-27T20:10:31+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "NPR 공식 RSS"
   },
   "items": [
     {
-      "sentence": "We really just have to, otherwise we ____ have anywhere to go back to.",
-      "answer": "won't",
-      "hint": "첫 글자 W · 5글자",
+      "sentence": "It was the highest voter ____ in Israel in decades.",
+      "answer": "turnout",
+      "hint": "첫 글자 T · 7글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 38.0,
-      "end": 43.44
+      "start": 93.66,
+      "end": 96.98
     },
     {
-      "sentence": "And Piers Michelle Kellerman reports on his comments a day after a ____ opposition figure returned to Venezuela to a hero's welcome.",
-      "answer": "leading",
-      "hint": "첫 글자 L · 7글자",
+      "sentence": "His main challenger is center-right Gotti Eizencoat, a ____ Israeli military chief of staff.",
+      "answer": "former",
+      "hint": "첫 글자 F · 6글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 56.48,
-      "end": 64.24
+      "start": 116.22,
+      "end": 121.38
     },
     {
-      "sentence": "That was in the ____ of back-to-back deadly earthquakes.",
-      "answer": "aftermath",
-      "hint": "첫 글자 A · 9글자",
+      "sentence": "The nation's organ donation system is making a controversial ____ to a role that was designed to protect the safety of potential donors.",
+      "answer": "change",
+      "hint": "첫 글자 C · 6글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 73.46,
-      "end": 76.6
+      "start": 139.18,
+      "end": 147.78
     },
     {
-      "sentence": "The Balboa Peninsula is a thin strip of land between the ____ and Newport Harbor, filled with homes and businesses.",
-      "answer": "ocean",
-      "hint": "첫 글자 O · 5글자",
+      "sentence": "Come February, Jay-Z will take center ____, and Piers Isabella Gomez-Admiento reports.",
+      "answer": "stage",
+      "hint": "첫 글자 S · 5글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 141.9,
-      "end": 148.3
-    },
-    {
-      "sentence": "Neighbor Diane Teichide was trying to keep cars from ____ the water into people's garages.",
-      "answer": "sloshing",
-      "hint": "첫 글자 S · 8글자",
-      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 159.74,
-      "end": 164.9
+      "start": 230.54,
+      "end": 238.3
     }
   ]
 }
