@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "lesson.json"
 FEED = "https://feeds.npr.org/500005/podcast.xml"
 USER_AGENT = "NPR-Morning-Listening/4.0 (+https://github.com/inleem-crypto/npr-morning-listening)"
+GENERATOR_VERSION = 2
 STOPWORDS = {
     "about", "after", "again", "against", "along", "among", "because", "before",
     "being", "could", "every", "first", "going", "great", "other", "people",
@@ -64,20 +65,37 @@ def latest_episode() -> dict:
 
 
 def make_items(segments: list) -> list[dict]:
-    """Choose short speech segments with one answerable word per segment."""
+    """Choose complete, short utterances with one answerable word each."""
     items = []
     last_start = -100.0
     seen = set()
+    pending = []
+    pending_start = 0.0
     for segment in segments:
         start = float(segment.start)
         end = float(segment.end)
-        if start < 25 or end - start < 2 or start - last_start < 18:
+        if start < 25 or end - start < 1:
             continue
         if getattr(segment, "no_speech_prob", 0) > 0.6 or getattr(segment, "avg_logprob", 0) < -1:
+            pending.clear()
             continue
-        sentence = " ".join(str(segment.text).strip().split())
+        part = " ".join(str(segment.text).strip().split())
+        if not part:
+            continue
+        if not pending:
+            pending_start = start
+        pending.append(part)
+        sentence = " ".join(pending)
+        if len(sentence) > 210 or len(WORD.findall(sentence)) > 30:
+            pending.clear()
+            continue
+        if not re.search(r"[.!?][\"']?$", part):
+            continue
+        pending.clear()
+        if pending_start - last_start < 14:
+            continue
         words = list(WORD.finditer(sentence))
-        if len(words) < 8 or len(words) > 25 or len(sentence) > 200:
+        if len(words) < 9 or len(words) > 28 or end - pending_start < 2:
             continue
         key = sentence.casefold()
         if key in seen:
@@ -99,11 +117,11 @@ def make_items(segments: list) -> list[dict]:
             "answer": answer,
             "hint": f"첫 글자 {answer[0].upper()} · {len(answer)}글자",
             "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-            "start": round(start, 2),
+            "start": round(pending_start, 2),
             "end": round(end, 2),
         })
         seen.add(key)
-        last_start = start
+        last_start = pending_start
         if len(items) == 5:
             break
     if len(items) < 3:
@@ -116,7 +134,7 @@ def main() -> None:
     if OUTPUT.exists():
         try:
             previous = json.loads(OUTPUT.read_text(encoding="utf-8"))
-            if previous.get("episode", {}).get("id") == episode["id"]:
+            if previous.get("episode", {}).get("id") == episode["id"] and previous.get("generator_version") == GENERATOR_VERSION:
                 print("Latest episode already has a lesson")
                 return
         except (OSError, ValueError):
@@ -135,6 +153,7 @@ def main() -> None:
     lesson = {
         "title": f"{episode['title']} · 자동 딕테이션",
         "kind": "auto_transcribed",
+        "generator_version": GENERATOR_VERSION,
         "verified": False,
         "sourceNote": "NPR 음원을 자동 전사해 만든 문제입니다. 전사와 정답은 검증되지 않았습니다.",
         "generated_at": datetime.now(timezone.utc).isoformat(),
