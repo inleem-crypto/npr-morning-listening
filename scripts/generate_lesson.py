@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "lesson.json"
 FEED = "https://feeds.npr.org/500005/podcast.xml"
 USER_AGENT = "NPR-Morning-Listening/4.0 (+https://github.com/inleem-crypto/npr-morning-listening)"
-GENERATOR_VERSION = 2
+GENERATOR_VERSION = 3
 STOPWORDS = {
     "about", "after", "again", "against", "along", "among", "because", "before",
     "being", "could", "every", "first", "going", "great", "other", "people",
@@ -95,7 +95,9 @@ def make_items(segments: list) -> list[dict]:
         if pending_start - last_start < 14:
             continue
         words = list(WORD.finditer(sentence))
-        if len(words) < 9 or len(words) > 28 or end - pending_start < 2:
+        if len(words) < 9 or len(words) > 24 or end - pending_start < 2:
+            continue
+        if re.search(r"\b(?:NPR|PR news)\b", sentence, re.IGNORECASE):
             continue
         key = sentence.casefold()
         if key in seen:
@@ -146,7 +148,7 @@ def main() -> None:
     with tempfile.TemporaryDirectory() as directory:
         audio_path = Path(directory) / "news.mp3"
         audio_path.write_bytes(audio)
-        model = WhisperModel("base.en", device="cpu", compute_type="int8")
+        model = WhisperModel("small.en", device="cpu", compute_type="int8")
         segments, _ = model.transcribe(str(audio_path), language="en", beam_size=5, condition_on_previous_text=False)
         items = make_items(list(segments))
 
