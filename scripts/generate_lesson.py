@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "lesson.json"
 FEED = "https://feeds.npr.org/500005/podcast.xml"
 USER_AGENT = "NPR-Morning-Listening/4.0 (+https://github.com/inleem-crypto/npr-morning-listening)"
-GENERATOR_VERSION = 3
+GENERATOR_VERSION = 4
 STOPWORDS = {
     "about", "after", "again", "against", "along", "among", "because", "before",
     "being", "could", "every", "first", "going", "great", "other", "people",
@@ -94,6 +94,11 @@ def make_items(segments: list) -> list[dict]:
         pending.clear()
         if pending_start - last_start < 14:
             continue
+        sentences = re.split(r"(?<=[.!?])\s+", sentence)
+        complete = [part.strip(" —") for part in sentences if 9 <= len(WORD.findall(part)) <= 24]
+        if not complete:
+            continue
+        sentence = max(complete, key=lambda part: len(WORD.findall(part)))
         words = list(WORD.finditer(sentence))
         if len(words) < 9 or len(words) > 24 or end - pending_start < 2:
             continue

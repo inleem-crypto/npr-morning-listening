@@ -9,8 +9,8 @@ on:
       - requirements.txt
       - .github/workflows/daily-lesson.yml
   schedule:
-    # UTC 20:15 and 20:35 = Korea 05:15 and 05:35 the following day.
-    - cron: '15,35 20 * * *'
+    # UTC 20:15 and 20:25 = Korea 05:15 and 05:25 the following day.
+    - cron: '15,25 20 * * *'
 permissions:
   contents: write
 concurrency:

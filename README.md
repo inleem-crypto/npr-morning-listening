@@ -7,7 +7,7 @@ NPR Morning Listening Lab v4
 저장소에 MP3를 보관하지 않습니다.
 
 딕테이션 문제는 GitHub Actions의 "Prepare daily dictation lesson" 작업이 한국 시각
-매일 05:15와 05:35에 최신 회차를 자동 전사해 lesson.json으로 만듭니다. 전사 결과와
+매일 05:15와 05:25에 최신 회차를 자동 전사해 lesson.json으로 만듭니다. 전사 결과와
 정답은 사람이 검증한 대본이 아니므로 틀릴 수 있습니다. GitHub Actions 일정은
 지연될 수 있으며 음원이나 전사 모델을 다운로드하지 못하면 기존 파일을 유지합니다.
 
