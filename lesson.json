@@ -1,9 +1,10 @@
 {
   "title": "4am ET, October 27 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
+  "generator_version": 2,
   "verified": false,
   "sourceNote": "NPR 음원을 자동 전사해 만든 문제입니다. 전사와 정답은 검증되지 않았습니다.",
-  "generated_at": "2026-10-27T08:35:47.026633+00:00",
+  "generated_at": "2026-10-27T08:38:39.628336+00:00",
   "episode": {
     "id": "3b1dcad7-c18e-4a83-9566-bde1f179732d",
     "title": "4am ET, October 27 | The latest headlines from NPR",
@@ -14,44 +15,44 @@
   },
   "items": [
     {
-      "sentence": "Israelis are voting today. Polls began ____ a few hours ago, and Israel's first national",
-      "answer": "opening",
-      "hint": "첫 글자 O · 7글자",
+      "sentence": "She was among those who flew into Israel's Ben-Gurion ____ from Greece.",
+      "answer": "airport",
+      "hint": "첫 글자 A · 7글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 37.0,
-      "end": 42.52
+      "start": 26.0,
+      "end": 30.72
     },
     {
-      "sentence": "We really just have to advise we ____ have anywhere to go back to.",
-      "answer": "won't",
-      "hint": "첫 글자 W · 5글자",
+      "sentence": "We'll show an extremely tight race that ____ Israeli Prime Minister Benjamin Netanyahu's hold on power.",
+      "answer": "threatens",
+      "hint": "첫 글자 T · 9글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 63.2,
-      "end": 68.2
+      "start": 43.2,
+      "end": 50.08
     },
     {
-      "sentence": "NPR's Michelle Kellerman reports on his ____ a day after a leading opposition figure returned",
-      "answer": "comments",
-      "hint": "첫 글자 C · 8글자",
+      "sentence": "Secretary of State Marco Rubio says he only once personally ____ Nobel Peace Prize winner Maria Carina Machado not to return to Venezuela.",
+      "answer": "encouraged",
+      "hint": "첫 글자 E · 10글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 82.2,
-      "end": 87.96
+      "start": 64.56,
+      "end": 73.48
     },
     {
-      "sentence": "But he says he did call on the interim ____ to make sure she could return.",
+      "sentence": "And I mean weeks and weeks ago, we spoke to the interim ____ and just said, look, our expectation is that she's a Venezuelan.",
       "answer": "authorities",
       "hint": "첫 글자 A · 11글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 102.2,
-      "end": 106.8
+      "start": 80.64,
+      "end": 87.52
     },
     {
-      "sentence": "so that Venezuela can ____, in his words,",
-      "answer": "become",
-      "hint": "첫 글자 B · 6글자",
+      "sentence": "Michelle Kellerman and PR news, the State Department Russia and Ukraine say they have ____ to localize ceasefire in the Russian occupied town of Oleshki in southern Ukraine.",
+      "answer": "begun",
+      "hint": "첫 글자 B · 5글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 123.36,
-      "end": 126.08
+      "start": 104.64,
+      "end": 115.24
     }
   ]
 }
