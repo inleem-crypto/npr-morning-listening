@@ -1,5 +1,5 @@
 {
-  "title": "4pm ET, October 27 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "7pm ET, October 27 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
   "generator_version": 6,
   "verified": false,
@@ -10,23 +10,39 @@
     "human_verified": false
   },
   "sourceNote": "NPR 음원을 자동 전사해 만든 문제입니다. 전사와 정답은 검증되지 않았습니다.",
-  "generated_at": "2026-10-27T23:40:32.576000+00:00",
+  "generated_at": "2026-10-27T23:46:23.698101+00:00",
   "episode": {
-    "id": "f55fe566-3dd0-470f-8aaf-ac100e56675a",
-    "title": "4pm ET, October 27 | The latest headlines from NPR",
-    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/64f644c9-08ff-4a53-8cc5-cf71efc45d1f/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=64f644c9-08ff-4a53-8cc5-cf71efc45d1f&feed=O9WlY7a5&t=podcast&e=nx-s1-20261027-1600-long&p=500005&d=280&size=4586729",
-    "date": "2026-10-27T20:10:31+00:00",
+    "id": "b8875068-4415-45ba-bbaa-d1063819b989",
+    "title": "7pm ET, October 27 | The latest headlines from NPR",
+    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/8f8667f9-aca2-4f06-82f2-193761e9c438/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=8f8667f9-aca2-4f06-82f2-193761e9c438&feed=O9WlY7a5&t=podcast&e=nx-s1-20261027-1900-long&p=500005&d=280&size=4586728",
+    "date": "2026-10-27T23:10:18+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "NPR 공식 RSS"
   },
   "items": [
     {
-      "sentence": "It drove the 2024 presidential ____, and it's the main factor in these midterms.",
-      "answer": "election",
-      "hint": "첫 글자 E · 8글자",
+      "sentence": "That trajectory makes this current ____ the fastest spreading ever.",
+      "answer": "outbreak",
+      "hint": "첫 글자 O · 8글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 47.2,
-      "end": 51.82
+      "start": 252.2,
+      "end": 255.88
+    },
+    {
+      "sentence": "Just answer a few questions, make a deposit, and you're set with a ____ strategy that's designed to help you build wealth over time.",
+      "answer": "diversified",
+      "hint": "첫 글자 D · 11글자",
+      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
+      "start": 317.7,
+      "end": 324.42
+    },
+    {
+      "sentence": "Investing involves risk, including the ____ loss of principal.",
+      "answer": "possible",
+      "hint": "첫 글자 P · 8글자",
+      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
+      "start": 333.42,
+      "end": 336.0
     }
   ]
 }
