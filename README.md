@@ -20,3 +20,25 @@ scripts/generate_lesson.py, .github/workflows/daily-lesson.yml을 저장소 main
 같은 상대 경로로 올리세요. GitHub Pages는 main / (root)로 둡니다. 첫 실행은
 저장소 Actions 탭에서 Prepare daily dictation lesson을 선택하고 Run workflow를
 누를 수 있습니다. 작업이 실패하면 해당 실행 기록에서 원인을 확인하세요.
+
+전사 품질 관리 (생성기 v6)
+
+- CPU int8 `small.en`으로 단어별 시각과 신뢰도를 함께 전사합니다.
+- 낮은 단어 신뢰도, 무음, 반복, 불완전한 문장과 고유명사 위험 문장을 제외합니다.
+  대문자와 기자 소개를 이용한 보수적인 검사이며 모든 인명을 식별하지는 못합니다.
+- 최대 12개 후보의 원본 음성 구간을 `medium.en`으로 다시 전사합니다. 두 결과의
+  단어와 숫자가 일치하고 두 번째 전사도 품질 검사를 통과해야 출제합니다.
+- 인명 사전 치환이나 결과 자동 덮어쓰기는 하지 않습니다. 문제가 1~5개만 나올 수
+  있으며, 통과 문장이 없거나 다운로드/전사에 실패하면 기존 문제를 유지합니다.
+- 모델 간 일치는 사람의 청취 검증을 대신하지 않습니다. `verified: false`와 기존
+  안내를 유지합니다. 품질 기준과 모델 이름은 scripts/generate_lesson.py에 있습니다.
+
+검증: `python -m unittest discover -s tests -v`
+
+원본 회차 재현 비교: `python scripts/audit_audio.py` 후
+`python scripts/check_audit_candidates.py`를 실행합니다. 중단 후 재개할 때는
+`python scripts/audit_audio.py --resume`을 사용합니다. 다른 회차는 별도의 작업
+디렉터리에서 비교하세요. 내려받은 음원과 전체 전사 결과는 `.audit/`에만 저장하며
+GitHub에 올리지 않습니다. 최초 모델 다운로드 시간은 실제 전사 시간과 구분합니다.
+
+조사 근거와 대안 비교는 [전사 품질 조사](docs/transcription-quality.md)에 기록합니다.

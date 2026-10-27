@@ -1,10 +1,16 @@
 {
   "title": "4pm ET, October 27 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
-  "generator_version": 5,
+  "generator_version": 6,
   "verified": false,
+  "transcription": {
+    "model": "small.en",
+    "check_model": "medium.en",
+    "policy": "word-confidence-name-exclusion-model-agreement-v1",
+    "human_verified": false
+  },
   "sourceNote": "NPR 음원을 자동 전사해 만든 문제입니다. 전사와 정답은 검증되지 않았습니다.",
-  "generated_at": "2026-10-27T20:42:15.730698+00:00",
+  "generated_at": "2026-10-27T23:40:32.576000+00:00",
   "episode": {
     "id": "f55fe566-3dd0-470f-8aaf-ac100e56675a",
     "title": "4pm ET, October 27 | The latest headlines from NPR",
@@ -15,36 +21,12 @@
   },
   "items": [
     {
-      "sentence": "It was the highest voter ____ in Israel in decades.",
-      "answer": "turnout",
-      "hint": "첫 글자 T · 7글자",
+      "sentence": "It drove the 2024 presidential ____, and it's the main factor in these midterms.",
+      "answer": "election",
+      "hint": "첫 글자 E · 8글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 93.66,
-      "end": 96.98
-    },
-    {
-      "sentence": "His main challenger is center-right Gotti Eizencoat, a ____ Israeli military chief of staff.",
-      "answer": "former",
-      "hint": "첫 글자 F · 6글자",
-      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 116.22,
-      "end": 121.38
-    },
-    {
-      "sentence": "The nation's organ donation system is making a controversial ____ to a role that was designed to protect the safety of potential donors.",
-      "answer": "change",
-      "hint": "첫 글자 C · 6글자",
-      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 139.18,
-      "end": 147.78
-    },
-    {
-      "sentence": "Come February, Jay-Z will take center ____, and Piers Isabella Gomez-Admiento reports.",
-      "answer": "stage",
-      "hint": "첫 글자 S · 5글자",
-      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 230.54,
-      "end": 238.3
+      "start": 47.2,
+      "end": 51.82
     }
   ]
 }

@@ -6,6 +6,7 @@ on:
     paths:
       - index.html
       - scripts/generate_lesson.py
+      - tests/**
       - requirements.txt
       - .github/workflows/daily-lesson.yml
   schedule:
@@ -30,8 +31,9 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: ~/.cache/huggingface/hub
-          key: whisper-small-en-v1
+          key: whisper-small-medium-en-v2
       - run: python -m pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -v
       - run: python scripts/generate_lesson.py
       - name: Commit lesson
         run: |
