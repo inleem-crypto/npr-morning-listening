@@ -1,5 +1,5 @@
 {
-  "title": "4pm ET, October 28 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "4pm ET, October 29 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
   "generator_version": 6,
   "verified": false,
@@ -10,31 +10,39 @@
     "human_verified": false
   },
   "sourceNote": "NPR 음원을 자동 전사해 만든 문제입니다. 전사와 정답은 검증되지 않았습니다.",
-  "generated_at": "2026-10-28T20:49:01.332786+00:00",
+  "generated_at": "2026-10-29T20:50:32.870740+00:00",
   "episode": {
-    "id": "b93c965e-1625-478b-b9f3-078d7733adc6",
-    "title": "4pm ET, October 28 | The latest headlines from NPR",
-    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/b2e6d066-7828-44b1-8c96-0e447794a32f/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=b2e6d066-7828-44b1-8c96-0e447794a32f&feed=O9WlY7a5&t=podcast&e=nx-s1-20261028-1600-long&p=500005&d=280&size=4586728",
-    "date": "2026-10-28T20:10:16+00:00",
+    "id": "4b42e116-d099-42e4-bd98-70eb61103002",
+    "title": "4pm ET, October 29 | The latest headlines from NPR",
+    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/f019b061-3648-4a85-95aa-d2aaeca9d012/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=f019b061-3648-4a85-95aa-d2aaeca9d012&feed=O9WlY7a5&t=podcast&e=nx-s1-20261029-1600-long&p=500005&d=280&size=4586728",
+    "date": "2026-10-29T20:16:10+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "NPR 공식 RSS"
   },
   "items": [
     {
-      "sentence": "Many of them have suffered so much trauma in their ____, so many aggressions in their lives.",
-      "answer": "lives",
-      "hint": "첫 글자 L · 5글자",
+      "sentence": "Local authorities say the ____ toll has climbed to at least 69.",
+      "answer": "death",
+      "hint": "첫 글자 D · 5글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 87.96,
-      "end": 92.98
+      "start": 178.9,
+      "end": 182.14
     },
     {
-      "sentence": "While uncertainty remains, owing in part to geopolitical ____, domestic spending has been resilient.",
-      "answer": "developments",
-      "hint": "첫 글자 D · 12글자",
+      "sentence": "A new study finds that some ____ experience jet lag.",
+      "answer": "birds",
+      "hint": "첫 글자 B · 5글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 206.56,
-      "end": 213.3
+      "start": 234.12,
+      "end": 238.5
+    },
+    {
+      "sentence": "In other words, your ____ clock must be synced.",
+      "answer": "internal",
+      "hint": "첫 글자 I · 8글자",
+      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
+      "start": 263.7,
+      "end": 266.5
     }
   ]
 }
