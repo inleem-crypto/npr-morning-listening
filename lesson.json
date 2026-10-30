@@ -1,5 +1,5 @@
 {
-  "title": "4pm ET, October 29 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "4pm ET, October 30 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
   "generator_version": 6,
   "verified": false,
@@ -10,39 +10,31 @@
     "human_verified": false
   },
   "sourceNote": "NPR 음원을 자동 전사해 만든 문제입니다. 전사와 정답은 검증되지 않았습니다.",
-  "generated_at": "2026-10-29T20:50:32.870740+00:00",
+  "generated_at": "2026-10-30T20:47:56.118124+00:00",
   "episode": {
-    "id": "4b42e116-d099-42e4-bd98-70eb61103002",
-    "title": "4pm ET, October 29 | The latest headlines from NPR",
-    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/f019b061-3648-4a85-95aa-d2aaeca9d012/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=f019b061-3648-4a85-95aa-d2aaeca9d012&feed=O9WlY7a5&t=podcast&e=nx-s1-20261029-1600-long&p=500005&d=280&size=4586728",
-    "date": "2026-10-29T20:16:10+00:00",
+    "id": "2d19c10c-da71-48c7-8df4-ebb5ec3a32f3",
+    "title": "4pm ET, October 30 | The latest headlines from NPR",
+    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/a6c6a86b-3d18-47f0-8978-0d93b195dded/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=a6c6a86b-3d18-47f0-8978-0d93b195dded&feed=O9WlY7a5&t=podcast&e=nx-s1-20261030-1600-long&p=500005&d=280&size=4586729",
+    "date": "2026-10-30T20:10:23+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "NPR 공식 RSS"
   },
   "items": [
     {
-      "sentence": "Local authorities say the ____ toll has climbed to at least 69.",
-      "answer": "death",
-      "hint": "첫 글자 D · 5글자",
+      "sentence": "Binance has promised to cover all ____ suffered by customers.",
+      "answer": "losses",
+      "hint": "첫 글자 L · 6글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 178.9,
-      "end": 182.14
+      "start": 151.52,
+      "end": 155.16
     },
     {
-      "sentence": "A new study finds that some ____ experience jet lag.",
-      "answer": "birds",
-      "hint": "첫 글자 B · 5글자",
+      "sentence": "Brewers fans at the parade cheered their ____ on as the players went by on platforms atop buses.",
+      "answer": "heroes",
+      "hint": "첫 글자 H · 6글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 234.12,
-      "end": 238.5
-    },
-    {
-      "sentence": "In other words, your ____ clock must be synced.",
-      "answer": "internal",
-      "hint": "첫 글자 I · 8글자",
-      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 263.7,
-      "end": 266.5
+      "start": 170.36,
+      "end": 176.7
     }
   ]
 }
