@@ -12,7 +12,8 @@ NPR Morning Listening Lab v4
 지연될 수 있으며 음원이나 전사 모델을 다운로드하지 못하면 기존 파일을 유지합니다.
 
 웹앱은 lesson.json을 자동으로 읽고 해당 문제의 방송을 선택합니다. 문제 파일이
-없거나 오래되었으면 준비 중이라는 메시지를 표시합니다. 수동 JSON 입력은 평소에
+없으면 준비 중이라는 메시지를 표시합니다. 오래되었거나 최신 생성에 실패했으면 기존
+문제를 보존하고 방송 시각과 이전 자료 안내를 표시합니다. 수동 JSON 입력은 평소에
 필요하지 않습니다.
 
 배포 시 index.html, manifest.webmanifest, icon.svg, sw.js, requirements.txt,
@@ -21,19 +22,28 @@ scripts/generate_lesson.py, .github/workflows/daily-lesson.yml을 저장소 main
 저장소 Actions 탭에서 Prepare daily dictation lesson을 선택하고 Run workflow를
 누를 수 있습니다. 작업이 실패하면 해당 실행 기록에서 원인을 확인하세요.
 
-전사 품질 관리 (생성기 v6)
+전사 품질 관리 (생성기 v7)
 
 - CPU int8 `small.en`으로 단어별 시각과 신뢰도를 함께 전사합니다.
 - 낮은 단어 신뢰도, 무음, 반복, 불완전한 문장과 고유명사 위험 문장을 제외합니다.
   대문자와 기자 소개를 이용한 보수적인 검사이며 모든 인명을 식별하지는 못합니다.
 - 최대 12개 후보의 원본 음성 구간을 `medium.en`으로 다시 전사합니다. 두 결과의
-  단어와 숫자가 일치하고 두 번째 전사도 품질 검사를 통과해야 출제합니다.
+  단어와 숫자가 연속해서 정확히 일치하고 두 번째 전사도 품질 검사를 통과해야 출제합니다.
+  두 모델의 단어 시각 차이는 양쪽 경계 각각 0.75초까지 허용하되 온전한 문장 경계를
+  요구합니다. 표현을 수정하거나 낮은 점수를 통과시키지는 않습니다.
 - 인명 사전 치환이나 결과 자동 덮어쓰기는 하지 않습니다. 문제가 1~5개만 나올 수
   있으며, 통과 문장이 없거나 다운로드/전사에 실패하면 기존 문제를 유지합니다.
 - 모델 간 일치는 사람의 청취 검증을 대신하지 않습니다. `verified: false`와 기존
   안내를 유지합니다. 품질 기준과 모델 이름은 scripts/generate_lesson.py에 있습니다.
 
 검증: `python -m unittest discover -s tests -v`
+
+표시 상태 검증: `node --test tests/test_lesson_status.js`
+
+생성 성공/실패 상태는 `generation-status.json`, 상세 전사 진단은 Actions의
+`transcription-diagnostics-*` 아티팩트에 30일 보존합니다. 실패해도 상태 파일을
+커밋하지만 `lesson.json`은 보존하며 Actions에는 실패로 표시합니다.
+[11월 2일 실패 조사 및 경계 처리 개선](docs/2026-11-02-generation-failure.md) 참고.
 
 원본 회차 재현 비교: `python scripts/audit_audio.py` 후
 `python scripts/check_audit_candidates.py`를 실행합니다. 중단 후 재개할 때는

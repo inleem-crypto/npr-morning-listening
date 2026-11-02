@@ -7,6 +7,7 @@ previous lesson if the feed, audio, or transcription is unavailable.
 from __future__ import annotations
 
 import json
+import hashlib
 import math
 import re
 import tempfile
@@ -18,9 +19,11 @@ from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "lesson.json"
+STATUS = ROOT / "generation-status.json"
+REPORT = ROOT / "generation-report.json"
 FEED = "https://feeds.npr.org/500005/podcast.xml"
 USER_AGENT = "NPR-Morning-Listening/4.0 (+https://github.com/inleem-crypto/npr-morning-listening)"
-GENERATOR_VERSION = 6
+GENERATOR_VERSION = 7
 PRIMARY_MODEL = "small.en"
 CHECK_MODEL = "medium.en"
 MAX_CANDIDATES = 12
@@ -147,11 +150,13 @@ def make_items(segments: list) -> list[dict]:
     return items
 
 
-def check_items(items: list[dict], audio, model) -> list[dict]:
+def check_items(items: list[dict], audio, model, diagnostics=None) -> list[dict]:
     """Require unprompted model agreement; never replace text with its guess."""
     accepted = []
     for item in items:
         if accepted and item["start"] - accepted[-1]["start"] < 14:
+            if diagnostics is not None:
+                diagnostics.append({"start": item["start"], "reason": "spacing"})
             continue
         # Context avoids creating an artificial utterance onset at the first word.
         start = max(0, int((item["start"] - 2) * 16000))
@@ -160,21 +165,73 @@ def check_items(items: list[dict], audio, model) -> list[dict]:
                                       temperature=0, word_timestamps=True,
                                       condition_on_previous_text=False)
         segments = list(segments)
-        target_words = []
-        good = True
+        target_words, evidence = [], []
         for segment in segments:
+            evidence.extend((w, segment) for w in (segment.words or []))
             words = [w for w in (segment.words or [])
                      if item["start"] - 0.1 <= start / 16000 + (w.start + w.end) / 2
                      <= item["end"] + 0.1]
             if words:
                 target_words.extend(words)
-                good = good and reliable_segment(segment, words)
         actual = "".join(w.word for w in target_words).strip()
         expected = item["sentence"].replace("____", item["answer"])
-        if (target_words and good
-                and not name_risk(actual)
-                and normalized_words(actual) == normalized_words(expected)):
+        # Match the complete, contiguous sentence in the contextual transcript.
+        # Never edit/substitute/drop tokens to improve agreement. Word clocks from
+        # separate decodes can drift; bound both edges and require sentence edges.
+        tokens = [(token, w, s) for w, s in evidence for token in normalized_words(w.word)]
+        wanted = normalized_words(expected)
+        matches = []
+        text_matches = 0
+        for index in range(len(tokens) - len(wanted) + 1):
+            chunk = tokens[index:index + len(wanted)]
+            if [t[0] for t in chunk] != wanted:
+                continue
+            text_matches += 1
+            first, last = chunk[0][1], chunk[-1][1]
+            if (abs(start / 16000 + first.start - item["start"]) > .75
+                    or abs(start / 16000 + last.end - item["end"]) > .75):
+                continue
+            # Do not select a substring inside a word or a longer sentence.
+            if (index and (tokens[index-1][1] is first or not re.search(r'[.!?]["”’\x27]?$', tokens[index-1][1].word.strip()))):
+                continue
+            if index + len(wanted) < len(tokens) and tokens[index + len(wanted)][1] is last:
+                continue
+            if not re.search(r'[.!?]["”’\x27]?$', last.word.strip()):
+                continue
+            matches.append(chunk)
+        reason = "boundary_mismatch" if text_matches else "text_mismatch"
+        selected = matches[0] if len(matches) == 1 else []
+        if len(matches) > 1:
+            reason = "ambiguous_alignment"
+        if selected:
+            selected_text = "".join(w.word for w, s in evidence if any(w is t[1] for t in selected)).strip()
+            left = next(i for i, s in enumerate(segments) if s is selected[0][2])
+            right = next(i for i, s in enumerate(segments) if s is selected[-1][2])
+            clocks = all(math.isfinite(w.start) and math.isfinite(w.end)
+                         and 0 <= w.start <= w.end for _, w, _ in selected)
+            clocks = clocks and all(a[1].start <= b[1].start and b[1].start - a[1].end <= 1.5
+                                    for a, b in zip(selected, selected[1:]))
+            good = (clocks and all(s.words for s in segments[left:right+1])
+                    and all(reliable_segment(s, [w]) for _, w, s in selected))
+            if not good:
+                reason = "low_confidence"
+            elif name_risk(selected_text):
+                reason = "name_risk"
+            else:
+                reason = "accepted" if normalized_words(actual) == wanted else "accepted_boundary_recovery"
+        if reason.startswith("accepted"):
             accepted.append(item)
+        entry = {"start": item["start"], "end": item["end"], "expected": expected,
+                 "legacy_window_text": actual, "context_text": "".join(w.word for w, s in evidence).strip(),
+                 "exact_match_count": len(matches), "reason": reason,
+                 "context_text_match_count": text_matches,
+                 "words": [{"word": w.word, "start": start / 16000 + w.start,
+                            "end": start / 16000 + w.end, "probability": w.probability,
+                            "avg_logprob": s.avg_logprob, "no_speech_prob": s.no_speech_prob,
+                            "compression_ratio": s.compression_ratio} for w, s in evidence]}
+        if diagnostics is not None:
+            diagnostics.append(entry)
+        print(json.dumps({k: v for k, v in entry.items() if k != "words"}, ensure_ascii=True), flush=True)
         if len(accepted) == 5:
             break
     if not accepted:
@@ -182,18 +239,26 @@ def check_items(items: list[dict], audio, model) -> list[dict]:
     return accepted
 
 
-def main() -> None:
+def atomic_json(path, value):
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    temporary.replace(path)
+
+
+def generate(report) -> dict:
     episode = latest_episode()
+    report["episode"] = episode
     if OUTPUT.exists():
         try:
             previous = json.loads(OUTPUT.read_text(encoding="utf-8"))
             if previous.get("episode", {}).get("id") == episode["id"] and previous.get("generator_version") == GENERATOR_VERSION:
                 print("Latest episode already has a lesson")
-                return
+                return previous
         except (OSError, ValueError):
             pass
 
     audio = fetch_bytes(episode["audioURL"], 30_000_000)
+    report["audio_sha256"] = hashlib.sha256(audio).hexdigest()
     from faster_whisper import WhisperModel
     from faster_whisper.audio import decode_audio
 
@@ -205,12 +270,13 @@ def main() -> None:
         segments, _ = model.transcribe(decoded, language="en", beam_size=5, temperature=0,
                                        word_timestamps=True, condition_on_previous_text=False)
         candidates = make_items(list(segments))
+        report["candidates"] = candidates
         print(f"{len(candidates)} candidates passed word confidence and name checks", flush=True)
         if not candidates:
             raise RuntimeError("No reliable practice candidates; previous lesson retained")
         del model
         checker = WhisperModel(CHECK_MODEL, device="cpu", compute_type="int8", cpu_threads=4)
-        items = check_items(candidates, decoded, checker)
+        items = check_items(candidates, decoded, checker, report["checks"])
         print(f"{len(items)} candidates agreed with {CHECK_MODEL}", flush=True)
 
     lesson = {
@@ -219,17 +285,34 @@ def main() -> None:
         "generator_version": GENERATOR_VERSION,
         "verified": False,
         "transcription": {"model": PRIMARY_MODEL, "check_model": CHECK_MODEL,
-                          "policy": "word-confidence-name-exclusion-model-agreement-v1",
+                          "policy": "word-confidence-name-exclusion-exact-alignment-v2",
                           "human_verified": False},
         "sourceNote": "NPR 음원을 자동 전사해 만든 문제입니다. 전사와 정답은 검증되지 않았습니다.",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "episode": episode,
         "items": items,
     }
-    temporary = OUTPUT.with_suffix(".json.tmp")
-    temporary.write_text(json.dumps(lesson, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    temporary.replace(OUTPUT)
+    atomic_json(OUTPUT, lesson)
     print(f"Saved {len(items)} questions for {episode['title']}")
+    return lesson
+
+
+def main() -> None:
+    report = {"attempted_at": datetime.now(timezone.utc).isoformat(),
+              "generator_version": GENERATOR_VERSION, "checks": []}
+    try:
+        lesson = generate(report)
+    except Exception as error:
+        report.update(status="failed", error=str(error))
+        raise
+    else:
+        report.update(status="success", lesson_episode_id=lesson["episode"]["id"],
+                      lesson_generated_at=lesson["generated_at"])
+    finally:
+        # Separate health metadata: a failed attempt must never mutate lesson.json.
+        atomic_json(REPORT, report)
+        atomic_json(STATUS, {k: v for k, v in report.items()
+                            if k not in {"checks", "candidates", "audio_sha256"}})
 
 
 if __name__ == "__main__":

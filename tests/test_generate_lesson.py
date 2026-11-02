@@ -1,4 +1,5 @@
 import copy
+import json
 import sys
 import tempfile
 import unittest
@@ -21,6 +22,11 @@ def segment(text=TEXT, start=30, probability=.99, **scores):
 
 
 class QualityTests(unittest.TestCase):
+    def setUp(self):
+        directory = self.enterContext(tempfile.TemporaryDirectory())
+        self.enterContext(patch.object(g, 'STATUS', Path(directory) / 'status.json'))
+        self.enterContext(patch.object(g, 'REPORT', Path(directory) / 'report.json'))
+
     def test_good_sentence_uses_word_times_and_warning(self):
         items = g.make_items([segment()])
         self.assertEqual(len(items), 1)
@@ -102,6 +108,59 @@ class QualityTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             g.check_items(items, [0]*600000, model)
 
+    def test_boundary_drift_recovers_complete_sentence_without_changing_text(self):
+        items = g.make_items([segment()])
+        for drift in [-.6, .6]:
+            with self.subTest(drift=drift):
+                diagnostics = []
+                model = NS(transcribe=lambda *a, **k: (iter([segment(start=2+drift)]), None))
+                self.assertEqual(g.check_items(items, [0]*600000, model, diagnostics), items)
+                self.assertEqual(diagnostics[0]['reason'], 'accepted_boundary_recovery')
+                self.assertNotEqual(g.normalized_words(diagnostics[0]['legacy_window_text']),
+                                    g.normalized_words(TEXT))
+
+    def test_alignment_rejects_distant_match_and_extra_words(self):
+        items = g.make_items([segment()])
+        for s, reason in [(segment(start=3), 'boundary_mismatch'),
+                          (segment(TEXT.replace('proposal', 'new proposal'), start=2), 'text_mismatch'),
+                          (segment('Actually ' + TEXT, start=1.6), 'boundary_mismatch'),
+                          (segment(TEXT.replace('decision.', 'decision tomorrow.'), start=2), 'boundary_mismatch')]:
+            diagnostics = []
+            model = NS(transcribe=lambda *a, **k: (iter([s]), None))
+            with self.assertRaises(RuntimeError):
+                g.check_items(items, [0]*600000, model, diagnostics)
+            self.assertEqual(diagnostics[0]['reason'], reason)
+
+    def test_boundary_recovery_still_rejects_low_confidence_and_name_risk(self):
+        items = g.make_items([segment()])
+        for s, reason in [(segment(start=2.6, probability=.64), 'low_confidence'),
+                          (segment(TEXT.replace('local', 'Local'), start=2.6), 'name_risk')]:
+            diagnostics = []
+            model = NS(transcribe=lambda *a, **k: (iter([s]), None))
+            with self.assertRaises(RuntimeError):
+                g.check_items(items, [0]*600000, model, diagnostics)
+            self.assertEqual(diagnostics[0]['reason'], reason)
+
+    def test_numbers_must_agree_in_checker(self):
+        text = TEXT.replace('local authorities', '30 local authorities')
+        items = g.make_items([segment(text)])
+        self.assertTrue(items)
+        model = NS(transcribe=lambda *a, **k: (iter([segment(text.replace('30', '40'), start=2)]), None))
+        with self.assertRaises(RuntimeError):
+            g.check_items(items, [0]*600000, model)
+
+    def test_checker_rejects_missing_evidence_and_invalid_clocks(self):
+        items = g.make_items([segment()])
+        first, last = segment('The local authorities are', start=2), segment(
+            'carefully reviewing the proposal before the final decision.', start=3.6)
+        missing = NS(words=None)
+        broken = segment(start=2)
+        broken.words[4].start = float('nan')
+        for segments in [[first, missing, last], [broken]]:
+            model = NS(transcribe=lambda *a, **k: (iter(segments), None))
+            with self.assertRaises(RuntimeError):
+                g.check_items(items, [0]*600000, model)
+
     def test_failure_preserves_previous_lesson(self):
         with patch.object(g, 'latest_episode', side_effect=RuntimeError('offline')):
             before = g.OUTPUT.read_bytes()
@@ -123,6 +182,59 @@ class QualityTests(unittest.TestCase):
                     with self.assertRaises(RuntimeError):
                         g.main()
             self.assertEqual(output.read_text(encoding='utf-8'), '{"generator_version": 5}')
+
+
+class GenerationTests(unittest.TestCase):
+    def setUp(self):
+        self.directory = Path(self.enterContext(tempfile.TemporaryDirectory()))
+        for name, file in [('OUTPUT', 'lesson.json'), ('STATUS', 'status.json'), ('REPORT', 'report.json')]:
+            self.enterContext(patch.object(g, name, self.directory / file))
+        g.OUTPUT.write_bytes(b'{"previous":"unchanged"}\n')
+        self.before = g.OUTPUT.read_bytes()
+        self.episode = {'id': 'new', 'audioURL': 'https://example.org/audio', 'title': 'News',
+                        'date': '2026-11-02T20:00:00+00:00'}
+        self.enterContext(patch.object(g, 'latest_episode', return_value=self.episode))
+        self.enterContext(patch.object(g, 'fetch_bytes', return_value=b'audio'))
+
+    def models(self, checker_text=TEXT, primary=None):
+        primary = primary or segment()
+        def model(name, **kwargs):
+            s = primary if name == g.PRIMARY_MODEL else segment(checker_text, start=2.6)
+            return NS(transcribe=lambda *a, **k: (iter([s]), None))
+        self.enterContext(patch.dict(sys.modules, {
+            'faster_whisper': NS(WhisperModel=model),
+            'faster_whisper.audio': NS(decode_audio=lambda *a: [0]*600000)}))
+
+    def test_success_publishes_only_agreed_items_and_success_status(self):
+        self.models()
+        g.main()
+        lesson = json.loads(g.OUTPUT.read_text(encoding='utf-8'))
+        self.assertEqual(lesson['episode']['id'], 'new')
+        self.assertFalse(lesson['verified'])
+        self.assertEqual(lesson['items'][0]['sentence'].replace('____', lesson['items'][0]['answer']), TEXT)
+        self.assertEqual(json.loads(g.STATUS.read_text(encoding='utf-8'))['status'], 'success')
+        self.assertEqual(json.loads(g.REPORT.read_text(encoding='utf-8'))['checks'][0]['reason'], 'accepted_boundary_recovery')
+        before = g.OUTPUT.read_bytes()
+        g.main()
+        self.assertEqual(g.OUTPUT.read_bytes(), before)
+
+    def test_second_check_failure_preserves_bytes_and_records_differences(self):
+        self.models(checker_text=TEXT.replace('proposal', 'project'))
+        with self.assertRaisesRegex(RuntimeError, 'both transcription'):
+            g.main()
+        self.assertEqual(g.OUTPUT.read_bytes(), self.before)
+        self.assertEqual(json.loads(g.STATUS.read_text(encoding='utf-8'))['status'], 'failed')
+        report = json.loads(g.REPORT.read_text(encoding='utf-8'))
+        self.assertEqual(report['checks'][0]['reason'], 'text_mismatch')
+        self.assertIn('project', report['checks'][0]['context_text'])
+        self.assertIn('audio_sha256', report)
+
+    def test_no_primary_candidates_preserves_lesson_and_reports_failure(self):
+        self.models(primary=segment(avg_logprob=-2))
+        with self.assertRaisesRegex(RuntimeError, 'No reliable practice'):
+            g.main()
+        self.assertEqual(g.OUTPUT.read_bytes(), self.before)
+        self.assertEqual(json.loads(g.STATUS.read_text(encoding='utf-8'))['status'], 'failed')
 
 
 if __name__ == '__main__':

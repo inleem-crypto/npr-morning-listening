@@ -48,12 +48,14 @@
 <div class="sectionLabel">첫 번째 기사</div><textarea id="note1" class="textarea" placeholder="예: 무슨 사건인지, 들린 표현, 궁금한 단어"></textarea>
 <div class="sectionLabel">두 번째 기사 (선택)</div><textarea id="note2" class="textarea" placeholder="예: 첫 번째 기사 다음에 이어지는 뉴스 내용"></textarea><div class="buttons"><button id="saveNotes" class="button" type="button">메모 저장</button><button id="exportNotes" class="button" type="button">메모 복사</button></div><div id="noteStatus" class="sub">이 브라우저에만 보관됩니다.</div></section>
  <section class="panel"><h2>딕테이션 연습</h2><p class="sub">매일 아침 방송을 자동 전사해 만든 문제가 여기에 표시됩니다. 자동 전사에는 오류가 있을 수 있으니 들리는 음성으로 확인해 주세요.</p>
+ <div id="lessonFreshness" class="status warn" role="status" aria-live="polite">학습자료의 방송 시각을 확인하는 중입니다…</div>
  <div id="lessonHeader" class="cardNote" style="margin-top:14px">오늘의 문제를 확인하는 중입니다…</div><div id="questionList"></div><div class="buttons" id="gradeButtons" style="display:none"><button class="button primaryBtn" id="gradeAll" type="button">전체 채점</button><button class="button" id="showAnswers" type="button">정답 보기</button></div><div id="gradeResult" class="sub"></div>
  <details style="margin-top:18px"><summary>예제 또는 학습자료 직접 입력</summary><textarea class="textarea" id="lessonJson" placeholder='{"title":"...", "verified":false, "items":[{"sentence":"... ____ ...","answer":"..."}]}' style="margin-top:8px;font:12px/1.45 ui-monospace,monospace"></textarea><div class="buttons"><button class="button" id="loadLesson" type="button">입력한 문제 불러오기</button><button class="button" id="loadSample" type="button">연습 예제</button></div><div class="sub" id="lessonMessage">평소에는 직접 입력할 필요가 없습니다.</div></details></section>
 <section class="panel"><h2>연결이 안 될 경우</h2><div class="cardNote">이 앱은 NPR의 음원을 복사하거나 보관하지 않고 공식 팟캐스트에 연결합니다. 회사·학교 네트워크, 아이폰 파일 미리보기, 음원 서비스의 일시적 제한에 따라 재생이 막힐 수 있습니다. 그때는 상단 <strong>NPR 공식 재생 페이지</strong>를 이용할 수 있습니다.</div><div class="buttons"><button id="fallbackSource" class="button" type="button">NPR 직접 스트림 시도</button><button id="manualURL" class="button" type="button">오디오 주소 직접 입력</button></div><div id="manualArea" class="hidden"><input class="input" id="manualInput" type="url" placeholder="https://...mp3" aria-label="오디오 주소"><div class="buttons"><button class="button primaryBtn" id="applyManual" type="button">연결하기</button></div></div><p class="sub">외부 피드 조회가 안 되면 표시를 숨기지 않고 오류를 알려 줍니다. 공식 페이지 링크는 항상 열 수 있습니다.</p></section>
 </div>
 </div><div class="foot">NPR News Now의 음원과 콘텐츠 권리는 NPR에 있습니다. 개인 학습용 비공식 재생 도구이며 NPR이 개발하거나 보증하지 않습니다.<br>별도 설치 없이 웹브라우저에서 실행 가능하며, 홈 화면에 추가하려면 HTTPS 웹사이트에 배포해야 합니다.</div>
 </div>
+<script src="./lesson-status.js"></script>
 <script>
 (()=>{
 'use strict';
@@ -73,7 +75,7 @@ function parseRSS(xmlText){const doc=new DOMParser().parseFromString(xmlText,'ap
 async function fetchTimed(url,ms=9000){const c=new AbortController();const t=setTimeout(()=>c.abort(),ms);try{const res=await fetch(url,{cache:'no-store',signal:c.signal});if(!res.ok)throw Error('HTTP '+res.status);return await res.text()}finally{clearTimeout(t)}}
 async function rssFeed(){let errs=[];for(const url of [FEED,'https://proxy.cors.dev/'+FEED]){try{const rows=parseRSS(await fetchTimed(url,7600));if(rows.length)return rows;errs.push('회차 없음')}catch(e){errs.push(String(e.message||e))}}throw Error('RSS 피드 요청 실패: '+errs.join(' / '))}
 function appleJSONP(){return new Promise((resolve,reject)=>{let done=false;const fn='npr_itunes_'+Math.random().toString(36).slice(2),script=document.createElement('script');const clear=()=>{if(done)return;done=true;clearTimeout(timer);delete window[fn];script.remove()};const timer=setTimeout(()=>{clear();reject(Error('Apple 팟캐스트 조회 시간 초과'))},9600);window[fn]=data=>{clear();try{const rows=(data.results||[]).filter(x=>x.wrapperType==='podcastEpisode'||x.kind==='podcast-episode').map(x=>normalized({title:x.trackName||x.collectionName||'NPR News Now',audioURL:x.episodeUrl,date:x.releaseDate,link:x.trackViewUrl,id:x.episodeGuid||x.trackId,via:'Apple Podcasts / NPR'})).filter(valid);if(!rows.length)throw Error('회차 링크 없음');resolve(rows)}catch(e){reject(e)}};script.onerror=()=>{clear();reject(Error('Apple 팟캐스트 연결 실패'))};script.src=APPLE+'&callback='+encodeURIComponent(fn)+'&_='+Date.now();document.head.appendChild(script)})}
- function merge(rows){let combined=[...episodes,...rows].filter(valid);combined.sort((a,b)=>new Date(b.date)-new Date(a.date));const ids=new Set();episodes=combined.filter(x=>{const k=x.id||x.audioURL;if(ids.has(k))return false;ids.add(k);return true}).slice(0,8);renderEpisodes();if(!selected)choose(episodes[0],false);else if(!deck?.episode?.id&&audio.paused&&episodes[0]&&new Date(episodes[0].date)>new Date(selected.date))choose(episodes[0],false)}
+ function merge(rows){let combined=[...episodes,...rows].filter(valid);combined.sort((a,b)=>new Date(b.date)-new Date(a.date));const ids=new Set();episodes=combined.filter(x=>{const k=x.id||x.audioURL;if(ids.has(k))return false;ids.add(k);return true}).slice(0,8);renderEpisodes();updateLessonFreshness();if(!selected)choose(episodes[0],false);else if(!deck?.episode?.id&&audio.paused&&episodes[0]&&new Date(episodes[0].date)>new Date(selected.date))choose(episodes[0],false)}
 function enable(v){controls.forEach(id=>$(id).disabled=!v);$('sourceBadge').textContent=v?'실제 뉴스 음원 연결됨':'연결 확인 중';$('sourceBadge').className='badge '+(v?'live':'')}
 function choose(ep,shouldPlay){if(!ep)return;const changed=!selected||selected.audioURL!==ep.audioURL;selected=ep;if(changed){audio.pause();audio.src=ep.audioURL;audio.load();markA=markB=null;looping=false;loopState()}audio.playbackRate=Number($('speed').value)||.75;enable(true);$('nowTitle').textContent=ep.title;$('nowMeta').textContent='방송 등록: '+datefmt(ep.date)+' · '+(ep.via||'NPR 음원')+' · 지역·서비스에 따라 실제 공개 시간 차이 가능';$('episodeLink').href=ep.link;renderEpisodes();message('실제 NPR 뉴스 음원 주소를 연결했습니다. ▶ 재생 버튼을 누르면 청취할 수 있습니다.','ok');if(shouldPlay)audio.play().catch(()=>{$('playingStatus').textContent='아이폰 등 일부 브라우저에서는 플레이어의 ▶ 버튼을 직접 눌러야 합니다.'})}
 function renderEpisodes(){const list=$('episodeList');list.replaceChildren();if(!episodes.length){list.textContent='최근 뉴스 목록을 확인하지 못했습니다.';return}episodes.forEach(ep=>{const b=document.createElement('button');b.type='button';b.className='episode '+(selected?.audioURL===ep.audioURL?'active':'');const s=document.createElement('span');s.textContent=ep.title;const t=document.createElement('small');t.textContent=datefmt(ep.date)+' · '+ep.via;b.append(s,t);b.addEventListener('click',()=>choose(ep,true));list.appendChild(b)})}
@@ -84,7 +86,10 @@ function loopState(){$('loopState').textContent='A: '+(markA==null?'미설정':f
 $('fallbackSource').addEventListener('click',()=>{const stream='https://pd.npr.org/anon.npr-mp3/npr/news/newscast.mp3?ts='+Date.now();choose({title:'NPR Newscast · 공식 직접 스트림 (회차 정보 미확인)',audioURL:stream,date:'',link:OFFICIAL,id:stream,via:'NPR 직접 주소 · 회차 미확인'},true);message('NPR 직접 주소로 재생을 시도합니다. 이 주소의 제공 여부·최신 시각은 확인되지 않았습니다.','warn')});$('manualURL').addEventListener('click',()=>$('manualArea').classList.toggle('hidden'));$('applyManual').addEventListener('click',()=>{const url=cleanURL($('manualInput').value);if(!url){message('http(s) 형식의 실제 오디오 주소를 입력해 주세요.','warn');return}choose({title:'직접 입력한 뉴스 음원',audioURL:url,date:'',link:OFFICIAL,id:url,via:'사용자 지정 URL'},true)});
 ['note1','note2'].forEach(key=>{$(key).value=safeGet('npr-'+key,'');$(key).addEventListener('input',()=>safeSet('npr-'+key,$(key).value))});$('saveNotes').addEventListener('click',()=>{$('noteStatus').textContent='메모를 이 기기에 저장했습니다.'});$('exportNotes').addEventListener('click',async()=>{const txt='NPR News Now · '+(selected?.title||'')+'\n\n기사 1\n'+$('note1').value+'\n\n기사 2\n'+$('note2').value;try{await navigator.clipboard.writeText(txt);$('noteStatus').textContent='메모를 복사했습니다.'}catch{$('noteStatus').textContent='브라우저가 복사를 허용하지 않습니다. 메모 입력란에서 직접 선택해 주세요.'}});
 const sample={title:'듣기 연습 예제 (NPR 실제 발언 아님)',verified:false,sourceNote:'이 문장들은 연습용 창작 문장입니다.',items:[{sentence:'The talks are ____ to continue tomorrow.',answer:'expected',hint:'~할 것으로 예상되다',explanation:'be expected to는 예상·전망 뉴스에 자주 쓰입니다.'},{sentence:'Authorities are looking ____ the incident.',answer:'into',hint:'조사하다: look ____',explanation:'look into는 사건·원인을 조사한다는 뜻입니다.'}]};
- let deck=null,autoGeneratedAt='';
+ let deck=null,autoGeneratedAt='',generationStatus=null;
+ function updateLessonFreshness(){
+  $('lessonFreshness').textContent=deck?.episode?lessonFreshness(deck,generationStatus,episodes)+' 문제 방송: '+datefmt(deck.episode.date)+(generationStatus?.attempted_at?' · 마지막 생성 시도: '+datefmt(generationStatus.attempted_at):' · 생성 작업 상태는 확인되지 않았습니다.'):'실제 방송 학습자료가 선택되지 않았습니다.';
+ }
 function normalizeAnswer(s){return String(s||'').trim().toLowerCase().replace(/[.!?,;:'"\s]+$/g,'')}
  function showDeck(data){
   if(!data||!Array.isArray(data.items)||!data.items.length||data.items.length>30)throw Error('문제 목록 형식을 확인해 주세요.');
@@ -93,7 +98,8 @@ function normalizeAnswer(s){return String(s||'').trim().toLowerCase().replace(/[
    return {sentence:i.sentence,answer:String(i.answer),hint:String(i.hint||''),explanation:String(i.explanation||''),start:Number(i.start),end:Number(i.end)};
   });
   const episode=data.episode&&valid(data.episode)?normalized(data.episode):null;
-  deck={title:String(data.title||'딕테이션 문제'),verified:data.verified===true,kind:String(data.kind||''),sourceNote:String(data.sourceNote||''),episode,items:parsed};
+  deck={title:String(data.title||'딕테이션 문제'),verified:data.verified===true,kind:String(data.kind||''),sourceNote:String(data.sourceNote||''),generated_at:data.generated_at,episode,items:parsed};
+  updateLessonFreshness();
   const type=deck.kind==='auto_transcribed'?'실제 방송 자동 전사 · 검증 전':deck.verified?'방송 원문 검증됨(제공자 표시)':'방송 원문 확인되지 않음 · 예습용';
   $('lessonHeader').textContent=deck.title+' · '+type+'\n'+deck.sourceNote;
   const list=$('questionList');list.replaceChildren();
@@ -111,14 +117,14 @@ function normalizeAnswer(s){return String(s||'').trim().toLowerCase().replace(/[
   $('gradeButtons').style.display='flex';$('gradeResult').textContent='';
  }
  async function loadAutoLesson(){
+  try{generationStatus=JSON.parse(await fetchTimed('https://raw.githubusercontent.com/inleem-crypto/npr-morning-listening/main/generation-status.json?t='+Date.now()))}catch{generationStatus=null}
+  updateLessonFreshness();
   try{
    const base='https://raw.githubusercontent.com/inleem-crypto/npr-morning-listening/main/lesson.json';
    let data;
    try{const response=await fetch(base+'?t='+Date.now(),{cache:'no-store'});if(!response.ok)throw Error('문제 파일 없음');data=await response.json()}
    catch{const response=await fetch('https://api.github.com/repos/inleem-crypto/npr-morning-listening/contents/lesson.json?ref=main',{cache:'no-store'});if(!response.ok)throw Error('문제 파일이 아직 없습니다.');const file=await response.json();const bytes=Uint8Array.from(atob(file.content.replace(/\s/g,'')),c=>c.charCodeAt(0));data=JSON.parse(new TextDecoder().decode(bytes))}
    if(data.generated_at===autoGeneratedAt)return;
-   const age=Date.now()-new Date(data.generated_at).getTime();
-   if(!Number.isFinite(age)||age<0||age>18*60*60*1000)throw Error('오늘 방송의 문제를 준비 중입니다.');
    showDeck(data);
    autoGeneratedAt=data.generated_at;
    if(deck.episode){episodes=[deck.episode,...episodes.filter(ep=>ep.id!==deck.episode.id)].slice(0,8);choose(deck.episode,false)}
