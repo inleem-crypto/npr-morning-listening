@@ -10,4 +10,8 @@ function lessonFreshness(data, status, episodes, now = Date.now()) {
   if (newer || old) return '이전 방송의 학습자료입니다. 최신 회차의 딕테이션 문제는 아직 준비되지 않았습니다.';
   return '표시된 방송의 학습자료입니다. NPR은 수시로 새 회차를 공개하므로 방송 시각을 확인해 주세요.';
 }
-if (typeof module !== 'undefined') module.exports = {lessonFreshness};
+function lessonNeedsRefresh(data, status) {
+  return status?.status === 'success' &&
+    Date.parse(data.generated_at) < Date.parse(status.lesson_generated_at);
+}
+if (typeof module !== 'undefined') module.exports = {lessonFreshness, lessonNeedsRefresh};

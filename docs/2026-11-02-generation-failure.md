@@ -78,3 +78,8 @@ JavaScript 5개 테스트가 모두 통과했다. 11월 2일 18시 ET 방송의 
 [상세 진단 아티팩트](https://github.com/inleem-crypto/npr-morning-listening/actions/runs/41543997363/artifacts/13188041684)도
 정상 업로드됐으며, [화면 배포](https://github.com/inleem-crypto/npr-morning-listening/actions/runs/41543997267)가
 성공했다. 배포 화면에서 이전 방송 안내, KST 시각, 0.75배속과 기존 문제 표시를 확인했다.
+
+배포 화면 확인 중 성공 상태 파일은 최신인데 raw 문제 파일은 이전 캐시인 경우도
+관찰했다. 상태 파일의 성공 생성 시각보다 문제 파일의 생성 시각이 오래되면
+GitHub Contents API로 다시 가져오도록 보완했다. 이 조건의 테스트를 추가해
+JavaScript 테스트는 6개가 됐다.
