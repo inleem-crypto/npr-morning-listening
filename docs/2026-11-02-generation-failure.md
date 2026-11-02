@@ -61,3 +61,20 @@ JavaScript 테스트는 최신 자료의 표시, 더 새로운 회차, 오래된
 실패 후 동일 파일, 복구 후 이전 실패 무시를 확인한다.
 
 실행: `python -m unittest discover -s tests -v`, `node --test tests/test_lesson_status.js`.
+
+## 수정 후 실제 실행
+
+수정 커밋 `8b14eae`의 push로 시작된
+[실행 41543997363](https://github.com/inleem-crypto/npr-morning-listening/actions/runs/41543997363)은
+11월 3일 08:15:28~08:17:43 KST에 성공했다. GitHub Actions에서도 Python 23개,
+JavaScript 5개 테스트가 모두 통과했다. 11월 2일 18시 ET 방송의 후보 5개 중
+4개가 통과했고 `7b7db7d`에 새 문제와 성공 상태가 저장됐다.
+
+탈락한 83.72~86.26초 후보는 small.en의 `I've actually kept...`와 medium.en의
+`I actually kept...`가 달라 `text_mismatch`로 제외됐다. 이번 회차의 나머지
+4개는 기존 시간 창과 새 문장 정렬 모두 단어가 일치했다. 이번 성공을 경계 복구의
+실제 사례로 주장하지 않는다. 경계 복구는 위의 통제된 테스트에서 검증됐다.
+
+[상세 진단 아티팩트](https://github.com/inleem-crypto/npr-morning-listening/actions/runs/41543997363/artifacts/13188041684)도
+정상 업로드됐으며, [화면 배포](https://github.com/inleem-crypto/npr-morning-listening/actions/runs/41543997267)가
+성공했다. 배포 화면에서 이전 방송 안내, KST 시각, 0.75배속과 기존 문제 표시를 확인했다.
