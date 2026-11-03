@@ -1,5 +1,5 @@
 {
-  "title": "6pm ET, November 02 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "3pm ET, November 03 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
   "generator_version": 7,
   "verified": false,
@@ -10,47 +10,23 @@
     "human_verified": false
   },
   "sourceNote": "NPR 음원을 자동 전사해 만든 문제입니다. 전사와 정답은 검증되지 않았습니다.",
-  "generated_at": "2026-11-02T23:17:36.060585+00:00",
+  "generated_at": "2026-11-03T20:54:32.384379+00:00",
   "episode": {
-    "id": "3be8f63e-c7dc-4b61-83c2-e1362e1e8825",
-    "title": "6pm ET, November 02 | The latest headlines from NPR",
-    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/b4272c26-83cf-4237-8014-e4ddd3e9787f/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=b4272c26-83cf-4237-8014-e4ddd3e9787f&feed=O9WlY7a5&t=podcast&e=nx-s1-20261102-1800-long&p=500005&d=280&size=4586728",
-    "date": "2026-11-02T23:09:47+00:00",
+    "id": "2f171868-e6f1-4cfa-ba6c-b13bd9ff6785",
+    "title": "3pm ET, November 03 | The latest headlines from NPR",
+    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/9ca31f52-6409-4a28-b4d3-31ed6af338d1/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=9ca31f52-6409-4a28-b4d3-31ed6af338d1&feed=O9WlY7a5&t=podcast&e=nx-s1-20261103-1500-long&p=500005&d=280&size=4585474",
+    "date": "2026-11-03T20:10:39+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "NPR 공식 RSS"
   },
   "items": [
     {
-      "sentence": "She has a word of advice for local ____ in competitive districts this year.",
-      "answer": "officials",
-      "hint": "첫 글자 O · 9글자",
+      "sentence": "It's a really cool and ____ thing to be a part of.",
+      "answer": "exciting",
+      "hint": "첫 글자 E · 8글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 128.02,
-      "end": 131.1
-    },
-    {
-      "sentence": "His attorney has said he did not ____ a crime.",
-      "answer": "commit",
-      "hint": "첫 글자 C · 6글자",
-      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 235.46,
-      "end": 237.78
-    },
-    {
-      "sentence": "The case is part of a series of lawsuits against social media companies ____ them of being defective products that have caused harm.",
-      "answer": "accusing",
-      "hint": "첫 글자 A · 8글자",
-      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 266.6,
-      "end": 272.64
-    },
-    {
-      "sentence": "It's an opportunity to make a living on the ____ for some of the top players in the world.",
-      "answer": "field",
-      "hint": "첫 글자 F · 5글자",
-      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 302.36,
-      "end": 306.4
+      "start": 114.18,
+      "end": 116.6
     }
   ]
 }
