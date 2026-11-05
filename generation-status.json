@@ -1,15 +1,15 @@
 {
-  "attempted_at": "2026-11-04T20:57:31.379413+00:00",
+  "attempted_at": "2026-11-05T20:55:09.065596+00:00",
   "generator_version": 7,
   "episode": {
-    "id": "8972d031-dab7-4b31-a056-5717cfb579bf",
-    "title": "3pm ET, November 04 | The latest headlines from NPR",
-    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/67791ef0-e880-411e-ad88-08d7021d2c47/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=67791ef0-e880-411e-ad88-08d7021d2c47&feed=O9WlY7a5&t=podcast&e=nx-s1-20261104-1500-long&p=500005&d=280&size=4585475",
-    "date": "2026-11-04T20:09:58+00:00",
+    "id": "8ab463d2-c797-4ce1-adb9-b057867a9932",
+    "title": "3pm ET, November 05 | The latest headlines from NPR",
+    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/a885e6a6-6612-4372-b3b8-41e710b835b3/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=a885e6a6-6612-4372-b3b8-41e710b835b3&feed=O9WlY7a5&t=podcast&e=nx-s1-20261105-1500-long&p=500005&d=280&size=4586728",
+    "date": "2026-11-05T20:09:34+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "NPR 공식 RSS"
   },
   "status": "success",
-  "lesson_episode_id": "8972d031-dab7-4b31-a056-5717cfb579bf",
-  "lesson_generated_at": "2026-11-04T20:58:23.050267+00:00"
+  "lesson_episode_id": "8ab463d2-c797-4ce1-adb9-b057867a9932",
+  "lesson_generated_at": "2026-11-05T20:56:51.449063+00:00"
 }
