@@ -1,7 +1,7 @@
 {
-  "title": "3pm ET, November 05 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "6pm ET, November 05 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
-  "generator_version": 7,
+  "generator_version": 8,
   "verified": false,
   "transcription": {
     "model": "small.en",
@@ -10,31 +10,47 @@
     "human_verified": false
   },
   "sourceNote": "NPR 음원을 자동 전사해 만든 문제입니다. 전사와 정답은 검증되지 않았습니다.",
-  "generated_at": "2026-11-05T20:56:51.449063+00:00",
+  "generated_at": "2026-11-05T23:34:21.030778+00:00",
   "episode": {
-    "id": "8ab463d2-c797-4ce1-adb9-b057867a9932",
-    "title": "3pm ET, November 05 | The latest headlines from NPR",
-    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/a885e6a6-6612-4372-b3b8-41e710b835b3/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=a885e6a6-6612-4372-b3b8-41e710b835b3&feed=O9WlY7a5&t=podcast&e=nx-s1-20261105-1500-long&p=500005&d=280&size=4586728",
-    "date": "2026-11-05T20:09:34+00:00",
+    "id": "4ddb0f7a-4455-48bc-bf60-c5d17f36c43f",
+    "title": "6pm ET, November 05 | The latest headlines from NPR",
+    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/c9cb969d-f3cc-49bf-ae3f-92bacaabba10/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=c9cb969d-f3cc-49bf-ae3f-92bacaabba10&feed=O9WlY7a5&t=podcast&e=nx-s1-20261105-1800-long&p=500005&d=280&size=4586728",
+    "date": "2026-11-05T23:09:43+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "NPR 공식 RSS"
   },
   "items": [
     {
-      "sentence": "At last check, there were ____ 35 races yet to be called.",
-      "answer": "still",
-      "hint": "첫 글자 S · 5글자",
+      "sentence": "That erased all the gains from earlier in the week when ____ rallied to mark a decisive end to the midterms.",
+      "answer": "stocks",
+      "hint": "첫 글자 S · 6글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 30.76,
-      "end": 34.38
+      "start": 70.76,
+      "end": 76.32
     },
     {
-      "sentence": "Congress has limited powers to ____ that, but they can make escalation more costly.",
-      "answer": "change",
-      "hint": "첫 글자 C · 6글자",
+      "sentence": "Twice, the administration halted construction, ____ the project posed threats to national security.",
+      "answer": "saying",
+      "hint": "첫 글자 S · 6글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 56.22,
-      "end": 61.04
+      "start": 154.54,
+      "end": 159.46
+    },
+    {
+      "sentence": "Offshore wind is beneficial for residents ____ the region in so many ways.",
+      "answer": "across",
+      "hint": "첫 글자 A · 6글자",
+      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
+      "start": 177.2,
+      "end": 180.48
+    },
+    {
+      "sentence": "The slide is praised for helping children ____ motor skills to be inducted.",
+      "answer": "develop",
+      "hint": "첫 글자 D · 7글자",
+      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
+      "start": 291.5,
+      "end": 295.3
     }
   ]
 }
