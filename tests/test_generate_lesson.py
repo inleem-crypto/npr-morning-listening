@@ -108,6 +108,15 @@ class QualityTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             g.check_items(items, [0]*600000, model)
 
+    def test_checker_caps_at_seven_without_padding(self):
+        template = g.make_items([segment()])[0]
+        items = [{**template, 'start': 30 + i*20, 'end': 34.8 + i*20}
+                 for i in range(9)]
+        model = NS(transcribe=lambda *a, **k: (iter([segment(start=2)]), None))
+        accepted = g.check_items(items, [0]*4000000, model)
+        self.assertEqual(len(accepted), 7)
+        self.assertEqual(accepted, items[:7])
+
     def test_boundary_drift_recovers_complete_sentence_without_changing_text(self):
         items = g.make_items([segment()])
         for drift in [-.6, .6]:

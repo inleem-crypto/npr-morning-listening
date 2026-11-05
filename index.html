@@ -44,10 +44,10 @@
 <section class="panel"><h2>최근 방송 선택</h2><p class="sub">최신 회차가 열리지 않을 때 이전 방송을 선택할 수 있습니다. 방송 시각은 해당 서비스의 등록 정보입니다.</p><div id="episodeList" aria-live="polite"><div class="cardNote">피드를 확인하는 중입니다…</div></div></section>
 </div>
 <div>
-<section class="panel"><h2>오늘의 듣기 메모</h2><p class="sub">방송을 들으면서 첫 번째 또는 두 번째 기사에서 알아들은 내용을 적어 보세요. 자동 저장됩니다.</p>
-<div class="sectionLabel">첫 번째 기사</div><textarea id="note1" class="textarea" placeholder="예: 무슨 사건인지, 들린 표현, 궁금한 단어"></textarea>
-<div class="sectionLabel">두 번째 기사 (선택)</div><textarea id="note2" class="textarea" placeholder="예: 첫 번째 기사 다음에 이어지는 뉴스 내용"></textarea><div class="buttons"><button id="saveNotes" class="button" type="button">메모 저장</button><button id="exportNotes" class="button" type="button">메모 복사</button></div><div id="noteStatus" class="sub">이 브라우저에만 보관됩니다.</div></section>
- <section class="panel"><h2>딕테이션 연습</h2><p class="sub">매일 아침 방송을 자동 전사해 만든 문제가 여기에 표시됩니다. 자동 전사에는 오류가 있을 수 있으니 들리는 음성으로 확인해 주세요.</p>
+<section class="panel"><h2>첫 기사 요약 메모</h2><p class="sub">첫 번째 기사를 듣고 핵심 내용을 2~3문장으로 적어 보세요. 입력 내용은 자동 저장됩니다.</p>
+<label class="sectionLabel" for="note1">첫 번째 기사 요약</label><textarea id="note1" class="textarea" placeholder="누가 무엇을 했는지, 왜 중요한지 2~3문장으로 적어 보세요."></textarea>
+<div class="buttons"><button id="saveNotes" class="button primaryBtn" type="button">작성 완료 · 자기점검 보기</button><button id="exportNotes" class="button" type="button">메모 복사</button></div><div id="noteStatus" class="sub" role="status">이 브라우저에만 보관됩니다.</div><div id="noteCriteria" class="cardNote hidden" style="margin-top:12px"><strong>자기점검 기준</strong><br>① 첫 기사의 핵심 사건이나 발표를 정확히 적었나요?<br>② 관련 인물·기관과 주요 숫자·장소를 음원에서 다시 확인했나요?<br>③ 추측한 내용은 사실과 구분하고, 2~3문장으로 간결하게 썼나요?</div></section>
+ <section class="panel"><h2>딕테이션 연습</h2><p class="sub">매일 아침 방송을 자동 전사해 만든 문제를 최대 7개 표시합니다. 두 모델의 교차검증을 통과한 문장이 적으면 문제 수도 적습니다. 자동 전사에는 오류가 있을 수 있으니 들리는 음성으로 확인해 주세요. 답안은 이 브라우저에 자동 저장됩니다.</p>
  <div id="lessonFreshness" class="status warn" role="status" aria-live="polite">학습자료의 방송 시각을 확인하는 중입니다…</div>
  <div id="lessonHeader" class="cardNote" style="margin-top:14px">오늘의 문제를 확인하는 중입니다…</div><div id="questionList"></div><div class="buttons" id="gradeButtons" style="display:none"><button class="button primaryBtn" id="gradeAll" type="button">전체 채점</button><button class="button" id="showAnswers" type="button">정답 보기</button></div><div id="gradeResult" class="sub"></div>
  <details style="margin-top:18px"><summary>예제 또는 학습자료 직접 입력</summary><textarea class="textarea" id="lessonJson" placeholder='{"title":"...", "verified":false, "items":[{"sentence":"... ____ ...","answer":"..."}]}' style="margin-top:8px;font:12px/1.45 ui-monospace,monospace"></textarea><div class="buttons"><button class="button" id="loadLesson" type="button">입력한 문제 불러오기</button><button class="button" id="loadSample" type="button">연습 예제</button></div><div class="sub" id="lessonMessage">평소에는 직접 입력할 필요가 없습니다.</div></details></section>
@@ -84,7 +84,13 @@ function startAt(sec){if(!audio.src){message('먼저 음원 연결이 필요합�
 function loopState(){$('loopState').textContent='A: '+(markA==null?'미설정':format(markA))+' / B: '+(markB==null?'미설정':format(markB))+' · '+(markB!=null&&markA!=null?(looping?'반복 재생 켜짐':'반복 재생 꺼짐'):'A와 B를 지정하면 반복 청취할 수 있습니다.');$('toggleLoop').textContent=looping?'반복 끄기':'반복 켜기'}
  $('playSkip').addEventListener('click',()=>startAt(Number($('skip').value)||0));$('back3').addEventListener('click',()=>{audio.currentTime=Math.max(0,audio.currentTime-3)});$('back10').addEventListener('click',()=>{audio.currentTime=Math.max(0,audio.currentTime-10)});$('markA').addEventListener('click',()=>{markA=audio.currentTime;markB=null;looping=false;loopState()});$('markB').addEventListener('click',()=>{if(markA==null){$('loopState').textContent='먼저 A 시작 위치를 눌러 주세요.';return}if(audio.currentTime<=markA){$('loopState').textContent='B는 A보다 뒤에 있어야 합니다.';return}markB=audio.currentTime;looping=true;loopState()});$('toggleLoop').addEventListener('click',()=>{if(markA==null||markB==null){$('loopState').textContent='A와 B를 먼저 지정해 주세요.';return}looping=!looping;loopState()});$('clearLoop').addEventListener('click',()=>{markA=markB=null;looping=false;loopState()});audio.addEventListener('timeupdate',()=>{if(looping&&markB!=null&&markA!=null&&audio.currentTime>=markB){audio.currentTime=markA;if(audio.paused)audio.play().catch(()=>{})}});audio.addEventListener('loadedmetadata',()=>{audio.playbackRate=Number($('speed').value)||.75;$('playingStatus').textContent='음원 준비 완료 · 전체 '+format(audio.duration)+' · '+audio.playbackRate+'배속'});audio.addEventListener('error',()=>{if(audio.currentSrc) {$('playingStatus').textContent='오디오 서버에서 재생되지 않습니다. 다른 회차나 NPR 공식 페이지를 이용해 주세요.';message('음원 재생 오류가 발생했습니다. NPR 공식 페이지에서도 시도할 수 있습니다.','warn')}});audio.addEventListener('playing',()=>{$('playingStatus').textContent='재생 중 · '+audio.playbackRate+'배속'});$('speed').addEventListener('change',()=>{audio.playbackRate=Number($('speed').value)||.75;safeSet('npr-speed',$('speed').value)});audio.addEventListener('ratechange',()=>{const value=String(audio.playbackRate);if([...$('speed').options].some(o=>o.value===value)){$('speed').value=value;safeSet('npr-speed',value)}});$('skip').addEventListener('change',()=>safeSet('npr-skip',$('skip').value));
 $('fallbackSource').addEventListener('click',()=>{const stream='https://pd.npr.org/anon.npr-mp3/npr/news/newscast.mp3?ts='+Date.now();choose({title:'NPR Newscast · 공식 직접 스트림 (회차 정보 미확인)',audioURL:stream,date:'',link:OFFICIAL,id:stream,via:'NPR 직접 주소 · 회차 미확인'},true);message('NPR 직접 주소로 재생을 시도합니다. 이 주소의 제공 여부·최신 시각은 확인되지 않았습니다.','warn')});$('manualURL').addEventListener('click',()=>$('manualArea').classList.toggle('hidden'));$('applyManual').addEventListener('click',()=>{const url=cleanURL($('manualInput').value);if(!url){message('http(s) 형식의 실제 오디오 주소를 입력해 주세요.','warn');return}choose({title:'직접 입력한 뉴스 음원',audioURL:url,date:'',link:OFFICIAL,id:url,via:'사용자 지정 URL'},true)});
-['note1','note2'].forEach(key=>{$(key).value=safeGet('npr-'+key,'');$(key).addEventListener('input',()=>safeSet('npr-'+key,$(key).value))});$('saveNotes').addEventListener('click',()=>{$('noteStatus').textContent='메모를 이 기기에 저장했습니다.'});$('exportNotes').addEventListener('click',async()=>{const txt='NPR News Now · '+(selected?.title||'')+'\n\n기사 1\n'+$('note1').value+'\n\n기사 2\n'+$('note2').value;try{await navigator.clipboard.writeText(txt);$('noteStatus').textContent='메모를 복사했습니다.'}catch{$('noteStatus').textContent='브라우저가 복사를 허용하지 않습니다. 메모 입력란에서 직접 선택해 주세요.'}});
+ const note=$('note1'),criteria=$('noteCriteria');
+ note.value=safeGet('npr-note1','');
+ function updateNoteCriteria(){criteria.classList.toggle('hidden',!note.value.trim()||safeGet('npr-note1-complete','')!==note.value.trim())}
+ updateNoteCriteria();
+ note.addEventListener('input',()=>{safeSet('npr-note1',note.value);updateNoteCriteria();$('noteStatus').textContent='자동 저장되었습니다. 작성 완료를 누르면 자기점검 기준이 보입니다.'});
+ $('saveNotes').addEventListener('click',()=>{const sentences=note.value.split(/[.!?。！？\n]+/).map(s=>s.trim()).filter(Boolean);if(sentences.length<2||sentences.length>3){$('noteStatus').textContent='요약을 2~3문장으로 적어 주세요. 문장 끝에는 마침표를 넣거나 줄을 바꿔 주세요.';criteria.classList.add('hidden');return}safeSet('npr-note1-complete',note.value.trim());updateNoteCriteria();$('noteStatus').textContent='작성 완료. 아래 기준으로 직접 확인해 보세요.'});
+ $('exportNotes').addEventListener('click',async()=>{const txt='NPR News Now · '+(selected?.title||'')+'\n\n첫 기사 요약\n'+note.value;try{await navigator.clipboard.writeText(txt);$('noteStatus').textContent='메모를 복사했습니다.'}catch{$('noteStatus').textContent='브라우저가 복사를 허용하지 않습니다. 메모 입력란에서 직접 선택해 주세요.'}});
 const sample={title:'듣기 연습 예제 (NPR 실제 발언 아님)',verified:false,sourceNote:'이 문장들은 연습용 창작 문장입니다.',items:[{sentence:'The talks are ____ to continue tomorrow.',answer:'expected',hint:'~할 것으로 예상되다',explanation:'be expected to는 예상·전망 뉴스에 자주 쓰입니다.'},{sentence:'Authorities are looking ____ the incident.',answer:'into',hint:'조사하다: look ____',explanation:'look into는 사건·원인을 조사한다는 뜻입니다.'}]};
  let deck=null,autoGeneratedAt='',generationStatus=null;
  function updateLessonFreshness(){
@@ -93,12 +99,15 @@ const sample={title:'듣기 연습 예제 (NPR 실제 발언 아님)',verified:f
 function normalizeAnswer(s){return String(s||'').trim().toLowerCase().replace(/[.!?,;:'"\s]+$/g,'')}
  function showDeck(data){
   if(!data||!Array.isArray(data.items)||!data.items.length||data.items.length>30)throw Error('문제 목록 형식을 확인해 주세요.');
-  const parsed=data.items.map((i,index)=>{
+  const parsed=data.items.slice(0,data.kind==='auto_transcribed'?7:30).map((i,index)=>{
    if(typeof i.sentence!=='string'||i.sentence.split('____').length!==2||!String(i.answer||'').trim())throw Error((index+1)+'번 문장의 빈칸 또는 정답 형식이 잘못되었습니다.');
    return {sentence:i.sentence,answer:String(i.answer),hint:String(i.hint||''),explanation:String(i.explanation||''),start:Number(i.start),end:Number(i.end)};
   });
   const episode=data.episode&&valid(data.episode)?normalized(data.episode):null;
   deck={title:String(data.title||'딕테이션 문제'),verified:data.verified===true,kind:String(data.kind||''),sourceNote:String(data.sourceNote||''),generated_at:data.generated_at,episode,items:parsed};
+  const answerKey='npr-answers-'+(episode?.id||deck.title)+'-'+(deck.generated_at||'manual');
+  let savedAnswers={};try{savedAnswers=JSON.parse(safeGet(answerKey,'{}'))||{}}catch{}
+  const saveAnswers=()=>{const answers={};[...$('questionList').children].forEach((root,i)=>{answers[i]=root._input.value});safeSet(answerKey,JSON.stringify(answers))};
   updateLessonFreshness();
   const type=deck.kind==='auto_transcribed'?'실제 방송 자동 전사 · 검증 전':deck.verified?'방송 원문 검증됨(제공자 표시)':'방송 원문 확인되지 않음 · 예습용';
   $('lessonHeader').textContent=deck.title+' · '+type+'\n'+deck.sourceNote;
@@ -107,7 +116,7 @@ function normalizeAnswer(s){return String(s||'').trim().toLowerCase().replace(/[
    const root=document.createElement('div');root.className='quizItem';
    const lab=document.createElement('label');lab.textContent='문제 '+(i+1);
    const text=document.createElement('div');text.className='question';text.textContent=q.sentence;
-   const input=document.createElement('input');input.className='input';input.placeholder='빈칸에 들어갈 영어 표현';input.setAttribute('aria-label','문제 '+(i+1)+' 답');
+   const input=document.createElement('input');input.className='input';input.placeholder='빈칸에 들어갈 영어 표현';input.setAttribute('aria-label','문제 '+(i+1)+' 답');input.value=String(savedAnswers[i]||'');input.addEventListener('input',saveAnswers);
    const feedback=document.createElement('div');feedback.className='grade';
    root.append(lab,text,input,feedback);
    if(episode&&Number.isFinite(q.start)&&q.start>=0){const listen=document.createElement('button');listen.type='button';listen.className='button';listen.style.marginTop='8px';listen.textContent='▶ '+format(q.start)+'부터 듣기';listen.addEventListener('click',()=>{if(selected?.id!==episode.id)choose(episode,false);startAt(Math.max(0,q.start-2))});root.append(listen)}

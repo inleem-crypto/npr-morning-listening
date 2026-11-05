@@ -23,10 +23,11 @@ STATUS = ROOT / "generation-status.json"
 REPORT = ROOT / "generation-report.json"
 FEED = "https://feeds.npr.org/500005/podcast.xml"
 USER_AGENT = "NPR-Morning-Listening/4.0 (+https://github.com/inleem-crypto/npr-morning-listening)"
-GENERATOR_VERSION = 7
+GENERATOR_VERSION = 8
 PRIMARY_MODEL = "small.en"
 CHECK_MODEL = "medium.en"
-MAX_CANDIDATES = 12
+MAX_CANDIDATES = 16
+TARGET_ITEMS = 7
 STOPWORDS = {
     "about", "after", "again", "against", "along", "among", "because", "before",
     "being", "could", "every", "first", "going", "great", "other", "people",
@@ -232,7 +233,7 @@ def check_items(items: list[dict], audio, model, diagnostics=None) -> list[dict]
         if diagnostics is not None:
             diagnostics.append(entry)
         print(json.dumps({k: v for k, v in entry.items() if k != "words"}, ensure_ascii=True), flush=True)
-        if len(accepted) == 5:
+        if len(accepted) == TARGET_ITEMS:
             break
     if not accepted:
         raise RuntimeError("No questions passed both transcription quality checks")
