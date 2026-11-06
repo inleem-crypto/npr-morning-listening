@@ -1,5 +1,5 @@
 {
-  "title": "6pm ET, November 05 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "3pm ET, November 06 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
   "generator_version": 8,
   "verified": false,
@@ -10,47 +10,31 @@
     "human_verified": false
   },
   "sourceNote": "NPR 음원을 자동 전사해 만든 문제입니다. 전사와 정답은 검증되지 않았습니다.",
-  "generated_at": "2026-11-05T23:34:21.030778+00:00",
+  "generated_at": "2026-11-06T20:53:28.457192+00:00",
   "episode": {
-    "id": "4ddb0f7a-4455-48bc-bf60-c5d17f36c43f",
-    "title": "6pm ET, November 05 | The latest headlines from NPR",
-    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/c9cb969d-f3cc-49bf-ae3f-92bacaabba10/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=c9cb969d-f3cc-49bf-ae3f-92bacaabba10&feed=O9WlY7a5&t=podcast&e=nx-s1-20261105-1800-long&p=500005&d=280&size=4586728",
-    "date": "2026-11-05T23:09:43+00:00",
+    "id": "1daaad3b-6c4d-416f-8003-6d1a7c7d29d2",
+    "title": "3pm ET, November 06 | The latest headlines from NPR",
+    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/6afeaea7-c65f-43de-a9bc-f9cef9825e60/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=6afeaea7-c65f-43de-a9bc-f9cef9825e60&feed=O9WlY7a5&t=podcast&e=nx-s1-20261106-1500-long&p=500005&d=280&size=4586729",
+    "date": "2026-11-06T20:09:40+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "NPR 공식 RSS"
   },
   "items": [
     {
-      "sentence": "That erased all the gains from earlier in the week when ____ rallied to mark a decisive end to the midterms.",
-      "answer": "stocks",
-      "hint": "첫 글자 S · 6글자",
+      "sentence": "He is known in particular for being an ____ of the president's anti-immigration policies.",
+      "answer": "architect",
+      "hint": "첫 글자 A · 9글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 70.76,
-      "end": 76.32
+      "start": 75.48,
+      "end": 79.44
     },
     {
-      "sentence": "Twice, the administration halted construction, ____ the project posed threats to national security.",
-      "answer": "saying",
-      "hint": "첫 글자 S · 6글자",
+      "sentence": "The messages come after more than two dozen flights this week were ____ by what have transpired to be hoax bomb threats.",
+      "answer": "targeted",
+      "hint": "첫 글자 T · 8글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 154.54,
-      "end": 159.46
-    },
-    {
-      "sentence": "Offshore wind is beneficial for residents ____ the region in so many ways.",
-      "answer": "across",
-      "hint": "첫 글자 A · 6글자",
-      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 177.2,
-      "end": 180.48
-    },
-    {
-      "sentence": "The slide is praised for helping children ____ motor skills to be inducted.",
-      "answer": "develop",
-      "hint": "첫 글자 D · 7글자",
-      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 291.5,
-      "end": 295.3
+      "start": 254.78,
+      "end": 261.32
     }
   ]
 }
