@@ -1,5 +1,5 @@
 {
-  "title": "3pm ET, November 07 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "3pm ET, November 08 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
   "generator_version": 8,
   "verified": false,
@@ -10,23 +10,23 @@
     "human_verified": false
   },
   "sourceNote": "NPR 음원을 자동 전사해 만든 문제입니다. 전사와 정답은 검증되지 않았습니다.",
-  "generated_at": "2026-11-07T20:44:11.614116+00:00",
+  "generated_at": "2026-11-08T20:45:13.934355+00:00",
   "episode": {
-    "id": "2f5c041d-00a7-4eb4-8e00-605d6d21cc3f",
-    "title": "3pm ET, November 07 | The latest headlines from NPR",
-    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/5d7e2ebe-5e6e-4b30-8a2c-aa4647015fa7/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=5d7e2ebe-5e6e-4b30-8a2c-aa4647015fa7&feed=O9WlY7a5&t=podcast&e=nx-s1-20261107-1500-long&p=500005&d=280&size=4586728",
-    "date": "2026-11-07T20:09:48+00:00",
+    "id": "51ce03f2-2b73-4869-a267-58b5b9e358f5",
+    "title": "3pm ET, November 08 | The latest headlines from NPR",
+    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/9ba13323-3e05-4589-b091-9a25e28cfd3e/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=9ba13323-3e05-4589-b091-9a25e28cfd3e&feed=O9WlY7a5&t=podcast&e=nx-s1-20261108-1500-long&p=500005&d=280&size=4585474",
+    "date": "2026-11-08T20:09:37+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "NPR 공식 RSS"
   },
   "items": [
     {
-      "sentence": "This is the first call for new ____ in two years.",
-      "answer": "astronauts",
-      "hint": "첫 글자 A · 10글자",
+      "sentence": "However, he did say that lowering tariffs and restoring free ____ between the two neighbors would lower costs for both nations.",
+      "answer": "trade",
+      "hint": "첫 글자 T · 5글자",
       "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 258.98,
-      "end": 261.56
+      "start": 220.26,
+      "end": 227.96
     }
   ]
 }
