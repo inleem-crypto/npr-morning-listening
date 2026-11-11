@@ -23,11 +23,12 @@ STATUS = ROOT / "generation-status.json"
 REPORT = ROOT / "generation-report.json"
 FEED = "https://feeds.npr.org/500005/podcast.xml"
 USER_AGENT = "NPR-Morning-Listening/4.0 (+https://github.com/inleem-crypto/npr-morning-listening)"
-GENERATOR_VERSION = 8
+GENERATOR_VERSION = 9
 PRIMARY_MODEL = "small.en"
 CHECK_MODEL = "medium.en"
 MAX_CANDIDATES = 16
 TARGET_ITEMS = 7
+SHORT_CANDIDATES = 32
 STOPWORDS = {
     "about", "after", "again", "against", "along", "among", "because", "before",
     "being", "could", "every", "first", "going", "great", "other", "people",
@@ -240,6 +241,142 @@ def check_items(items: list[dict], audio, model, diagnostics=None) -> list[dict]
     return accepted
 
 
+
+# A two-word, audio-grounded alternative to long-sentence dictation.
+# Seven answers quote at most 14 English words from the selected episode.
+NEWS_HINTS = {
+    "president": "대통령", "congress": "의회", "senate": "상원", "house": "하원",
+    "government": "정부", "officials": "당국자들", "election": "선거", "voters": "유권자",
+    "vote": "투표", "voting": "투표", "policy": "정책", "policies": "정책",
+    "bill": "법안", "law": "법률", "court": "법원", "judge": "판사",
+    "federal": "연방정부의", "state": "주의", "states": "주들", "national": "국가의",
+    "economy": "경제", "economic": "경제의", "market": "시장", "markets": "시장들",
+    "prices": "가격", "price": "가격", "inflation": "물가상승", "rates": "금리",
+    "jobs": "일자리", "workers": "근로자", "business": "기업", "companies": "기업들",
+    "trade": "무역", "tariffs": "관세", "taxes": "세금", "budget": "예산",
+    "health": "건강", "medical": "의료의", "hospital": "병원", "patients": "환자들",
+    "education": "교육", "school": "학교", "schools": "학교들",
+    "war": "전쟁", "peace": "평화", "military": "군의", "security": "안보",
+    "troops": "군인들", "attack": "공격", "attacks": "공격들", "conflict": "갈등",
+    "foreign": "외국의", "international": "국제적인", "leaders": "지도자들",
+    "climate": "기후", "energy": "에너지", "weather": "날씨",
+    "technology": "기술", "artificial": "인공의", "intelligence": "지능",
+    "data": "데이터", "research": "연구", "scientists": "과학자들",
+    "investigation": "조사", "police": "경찰", "charges": "혐의",
+    "report": "보도", "reported": "보도했다", "announced": "발표했다",
+    "expected": "예상되는", "continued": "계속됐다", "concerns": "우려",
+    "support": "지지", "decision": "결정", "changes": "변화", "increase": "증가",
+    "decrease": "감소", "major": "주요한", "latest": "최근의",
+}
+PHRASE_EXCLUDED = {
+    "npr", "news", "now", "morning", "evening", "reporter", "reporting",
+    "says", "said", "according", "today", "yesterday", "tomorrow",
+}
+
+
+def _phrase_token(word):
+    """Reject digits, punctuation-only tokens and capitalized proper-name risks."""
+    raw = str(word).strip().strip(".,!?;:()[]{}\"'“”‘’")
+    if not re.fullmatch(r"[A-Za-z]{3,14}", raw):
+        return ""
+    if raw[0].isupper() or raw.casefold() in PHRASE_EXCLUDED:
+        return ""
+    return raw.casefold()
+
+
+def make_short_items(segments):
+    """Make 2-word prompts from contiguous high-confidence audio, not invented text."""
+    result, seen = [], set()
+    last = -100.0
+    for segment in segments:
+        words = getattr(segment, "words", None) or []
+        for i in range(len(words) - 1):
+            first, second = words[i:i + 2]
+            start, end = first.start, second.end
+            if (not math.isfinite(start) or not math.isfinite(end)
+                    or start < 25 or end <= start or end - start > 2.5
+                    or start - last < 7):
+                continue
+            if (not all(reliable_segment(segment, [w])
+                        and w.probability >= .80 and math.isfinite(w.start)
+                        and math.isfinite(w.end) and w.end >= w.start
+                        for w in (first, second))
+                    or second.start - first.end > .65):
+                continue
+            a, b = _phrase_token(first.word), _phrase_token(second.word)
+            if (not a or not b or a == b
+                    or (a in STOPWORDS and b in STOPWORDS)):
+                continue
+            answer = a + " " + b
+            if answer in seen:
+                continue
+            meaning = NEWS_HINTS.get(a) or NEWS_HINTS.get(b)
+            hint = ((meaning + " 관련 표현 · ") if meaning else "해당 음성 구간의 표현 · ")
+            hint += f"{a[0].upper()}… {b[0].upper()}… (2단어)"
+            result.append({
+                "sentence": "____",
+                "answer": answer,
+                "hint": hint,
+                "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+                "start": round(start, 2),
+                "end": round(end, 2),
+            })
+            seen.add(answer)
+            last = start
+            if len(result) >= SHORT_CANDIDATES:
+                return result
+    return result
+
+
+def check_short_items(items, audio, model, diagnostics=None):
+    """Confirm the same two words, in order, at the same audio location."""
+    accepted = []
+    for item in items:
+        if accepted and item["start"] - accepted[-1]["start"] < 18:
+            continue
+        clip_start = max(0.0, item["start"] - 2)
+        clip_end = min(len(audio) / 16000, item["end"] + 2)
+        sample = audio[int(clip_start * 16000):int(clip_end * 16000)]
+        segments, _ = model.transcribe(
+            sample, language="en", beam_size=5, temperature=0,
+            word_timestamps=True, condition_on_previous_text=False)
+        segments = list(segments)
+        words = [(word, seg) for seg in segments for word in (seg.words or [])]
+        expected = normalized_words(item["answer"])
+        matched = False
+        for i in range(len(words) - len(expected) + 1):
+            group = words[i:i + len(expected)]
+            observed = [t for w, _ in group for t in normalized_words(w.word)]
+            if observed != expected:
+                continue
+            a, b = group[0][0], group[-1][0]
+            if not (math.isfinite(a.start) and math.isfinite(b.end)
+                    and abs(clip_start + a.start - item["start"]) <= 1.05
+                    and abs(clip_start + b.end - item["end"]) <= 1.05
+                    and all(reliable_segment(seg, [w]) and w.probability >= .68
+                            for w, seg in group)):
+                continue
+            if len(group) == 2 and group[1][0].start - group[0][0].end > .9:
+                continue
+            matched = True
+            break
+        reason = "accepted_short_phrase" if matched else "phrase_or_time_mismatch"
+        if diagnostics is not None:
+            diagnostics.append({
+                "start": item["start"], "end": item["end"],
+                "expected": item["answer"], "reason": reason,
+                "context_text": "".join(w.word for w, _ in words).strip(),
+            })
+        if matched:
+            accepted.append(item)
+            if len(accepted) >= TARGET_ITEMS:
+                break
+    if not accepted:
+        raise RuntimeError("No short expressions passed both transcription quality checks")
+    return accepted
+
+
+
 def atomic_json(path, value):
     temporary = path.with_suffix(path.suffix + ".tmp")
     temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -270,15 +407,15 @@ def generate(report) -> dict:
         model = WhisperModel(PRIMARY_MODEL, device="cpu", compute_type="int8", cpu_threads=4)
         segments, _ = model.transcribe(decoded, language="en", beam_size=5, temperature=0,
                                        word_timestamps=True, condition_on_previous_text=False)
-        candidates = make_items(list(segments))
+        candidates = make_short_items(list(segments))
         report["candidates"] = candidates
-        print(f"{len(candidates)} candidates passed word confidence and name checks", flush=True)
+        print(f"{len(candidates)} short-expression candidates passed primary audio checks", flush=True)
         if not candidates:
             raise RuntimeError("No reliable practice candidates; previous lesson retained")
         del model
         checker = WhisperModel(CHECK_MODEL, device="cpu", compute_type="int8", cpu_threads=4)
-        items = check_items(candidates, decoded, checker, report["checks"])
-        print(f"{len(items)} candidates agreed with {CHECK_MODEL}", flush=True)
+        items = check_short_items(candidates, decoded, checker, report["checks"])
+        print(f"{len(items)} short expressions agreed with {CHECK_MODEL}", flush=True)
 
     lesson = {
         "title": f"{episode['title']} · 자동 딕테이션",
@@ -286,9 +423,9 @@ def generate(report) -> dict:
         "generator_version": GENERATOR_VERSION,
         "verified": False,
         "transcription": {"model": PRIMARY_MODEL, "check_model": CHECK_MODEL,
-                          "policy": "word-confidence-name-exclusion-exact-alignment-v2",
+                          "policy": "short-phrase-word-confidence-time-alignment-v3",
                           "human_verified": False},
-        "sourceNote": "NPR 음원을 자동 전사해 만든 문제입니다. 전사와 정답은 검증되지 않았습니다.",
+        "sourceNote": "동일 음원의 짧은 2단어 표현을 두 음성인식 모델이 교차 확인했습니다. 사람 검수 대본은 아니며 단어 오류 가능성이 있습니다. 7개 정답의 총 영어 원문은 최대 14단어입니다.",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "episode": episode,
         "items": items,

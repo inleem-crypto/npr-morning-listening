@@ -214,28 +214,65 @@ class GenerationTests(unittest.TestCase):
             'faster_whisper': NS(WhisperModel=model),
             'faster_whisper.audio': NS(decode_audio=lambda *a: [0]*600000)}))
 
+    def test_short_expression_candidate_has_conservative_shape(self):
+        candidates = g.make_short_items([segment()])
+        self.assertGreaterEqual(len(candidates), 1)
+        item = candidates[0]
+        self.assertEqual(item["sentence"], "____")
+        self.assertEqual(len(item["answer"].split()), 2)
+        self.assertGreaterEqual(item["start"], 25)
+        self.assertLess(item["start"], item["end"])
+
+    def test_short_expression_checker_confirms_exact_two_words(self):
+        candidates = g.make_short_items([segment()])
+        self.assertTrue(candidates)
+        first = candidates[0]
+        words = TEXT.split()
+        pair = first["answer"]
+        match_at = next((i for i in range(len(words)-1)
+                         if " ".join(words[i:i+2]).casefold() == pair), None)
+        self.assertIsNotNone(match_at)
+        # The primary timestamps start at 30s. The cropped audio begins at
+        # first.start - 2s, so the checker offsets its words by the same amount.
+        cropped_start = max(0, first["start"] - 2)
+        checker = segment(start=30 - cropped_start)
+        model = NS(transcribe=lambda *a, **k: (iter([checker]), None))
+        accepted = g.check_short_items([first], [0]*600000, model)
+        self.assertEqual(accepted, [first])
+
+    def test_short_expression_mismatch_does_not_invent_an_answer(self):
+        candidates = g.make_short_items([segment()])
+        self.assertTrue(candidates)
+        model = NS(transcribe=lambda *a, **k: (
+            iter([segment(TEXT.replace("local", "regional").replace("authorities", "officials"), start=2)]),
+            None))
+        with self.assertRaisesRegex(RuntimeError, "No short expressions"):
+            g.check_short_items([candidates[0]], [0]*600000, model)
+
     def test_success_publishes_only_agreed_items_and_success_status(self):
         self.models()
         g.main()
         lesson = json.loads(g.OUTPUT.read_text(encoding='utf-8'))
         self.assertEqual(lesson['episode']['id'], 'new')
         self.assertFalse(lesson['verified'])
-        self.assertEqual(lesson['items'][0]['sentence'].replace('____', lesson['items'][0]['answer']), TEXT)
+        self.assertEqual(lesson['items'][0]['sentence'], '____')
+        self.assertEqual(len(lesson['items'][0]['answer'].split()), 2)
+        self.assertLessEqual(len(lesson['items']), 7)
         self.assertEqual(json.loads(g.STATUS.read_text(encoding='utf-8'))['status'], 'success')
-        self.assertEqual(json.loads(g.REPORT.read_text(encoding='utf-8'))['checks'][0]['reason'], 'accepted_boundary_recovery')
+        self.assertEqual(json.loads(g.REPORT.read_text(encoding='utf-8'))['checks'][0]['reason'], 'accepted_short_phrase')
         before = g.OUTPUT.read_bytes()
         g.main()
         self.assertEqual(g.OUTPUT.read_bytes(), before)
 
     def test_second_check_failure_preserves_bytes_and_records_differences(self):
-        self.models(checker_text=TEXT.replace('proposal', 'project'))
-        with self.assertRaisesRegex(RuntimeError, 'both transcription'):
+        self.models(checker_text=TEXT.replace('local authorities', 'regional officials'))
+        with self.assertRaisesRegex(RuntimeError, 'No short expressions'):
             g.main()
         self.assertEqual(g.OUTPUT.read_bytes(), self.before)
         self.assertEqual(json.loads(g.STATUS.read_text(encoding='utf-8'))['status'], 'failed')
         report = json.loads(g.REPORT.read_text(encoding='utf-8'))
-        self.assertEqual(report['checks'][0]['reason'], 'text_mismatch')
-        self.assertIn('project', report['checks'][0]['context_text'])
+        self.assertEqual(report['checks'][0]['reason'], 'phrase_or_time_mismatch')
+        self.assertIn('officials', report['checks'][0]['context_text'])
         self.assertIn('audio_sha256', report)
 
     def test_no_primary_candidates_preserves_lesson_and_reports_failure(self):
