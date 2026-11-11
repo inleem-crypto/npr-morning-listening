@@ -1,40 +1,80 @@
 {
-  "title": "3pm ET, November 09 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "12am ET, November 11 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
-  "generator_version": 8,
+  "generator_version": 9,
   "verified": false,
   "transcription": {
     "model": "small.en",
     "check_model": "medium.en",
-    "policy": "word-confidence-name-exclusion-exact-alignment-v2",
+    "policy": "short-phrase-word-confidence-time-alignment-v3",
     "human_verified": false
   },
-  "sourceNote": "NPR 음원을 자동 전사해 만든 문제입니다. 전사와 정답은 검증되지 않았습니다.",
-  "generated_at": "2026-11-09T20:58:38.706060+00:00",
+  "sourceNote": "동일 음원의 짧은 2단어 표현을 두 음성인식 모델이 교차 확인했습니다. 사람 검수 대본은 아니며 단어 오류 가능성이 있습니다. 7개 정답의 총 영어 원문은 최대 14단어입니다.",
+  "generated_at": "2026-11-11T06:08:22.027127+00:00",
   "episode": {
-    "id": "d3b94bb4-6993-4fa4-a54e-bef1ad03cb40",
-    "title": "3pm ET, November 09 | The latest headlines from NPR",
-    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/21b2b0f3-7b5b-4509-a6c1-fb11f5d0ccd8/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=21b2b0f3-7b5b-4509-a6c1-fb11f5d0ccd8&feed=O9WlY7a5&t=podcast&e=nx-s1-20261109-1500-long&p=500005&d=280&size=4586729",
-    "date": "2026-11-09T20:09:54+00:00",
+    "id": "f043b823-2028-4fb4-810c-2ab84f43f5c8",
+    "title": "12am ET, November 11 | The latest headlines from NPR",
+    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/1c7581fd-af0e-4e95-90af-74e463b51fe7/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=1c7581fd-af0e-4e95-90af-74e463b51fe7&feed=O9WlY7a5&t=podcast&e=nx-s1-20261111-0000-long&p=500005&d=280&size=4585474",
+    "date": "2026-11-11T05:09:54+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "NPR 공식 RSS"
   },
   "items": [
     {
-      "sentence": "Georgia has the largest presence of any ____, with more than 500 in the city.",
-      "answer": "state",
-      "hint": "첫 글자 S · 5글자",
-      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 110.9,
-      "end": 114.56
+      "sentence": "____",
+      "answer": "first press",
+      "hint": "해당 음성 구간의 표현 · F… P… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 25.0,
+      "end": 25.5
     },
     {
-      "sentence": "You know that feeling when you find shoes you love at a great ____ and want to tell everyone about it?",
-      "answer": "price",
-      "hint": "첫 글자 P · 5글자",
-      "explanation": "자동 음성 전사 결과입니다. 실제 음성을 다시 들어 확인해 주세요.",
-      "start": 307.5,
-      "end": 312.62
+      "sentence": "____",
+      "answer": "they want",
+      "hint": "해당 음성 구간의 표현 · T… W… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 48.24,
+      "end": 48.64
+    },
+    {
+      "sentence": "____",
+      "answer": "have elected",
+      "hint": "해당 음성 구간의 표현 · H… E… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 72.0,
+      "end": 73.0
+    },
+    {
+      "sentence": "____",
+      "answer": "shared some",
+      "hint": "해당 음성 구간의 표현 · S… S… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 90.72,
+      "end": 91.36
+    },
+    {
+      "sentence": "____",
+      "answer": "leadership role",
+      "hint": "해당 음성 구간의 표현 · L… R… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 112.22,
+      "end": 113.12
+    },
+    {
+      "sentence": "____",
+      "answer": "comes amid",
+      "hint": "해당 음성 구간의 표현 · C… A… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 134.92,
+      "end": 135.68
+    },
+    {
+      "sentence": "____",
+      "answer": "say their",
+      "hint": "해당 음성 구간의 표현 · S… T… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 169.7,
+      "end": 170.22
     }
   ]
 }
