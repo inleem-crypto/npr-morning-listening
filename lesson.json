@@ -1,5 +1,5 @@
 {
-  "title": "4pm ET, November 11 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "3pm ET, November 12 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
   "generator_version": 9,
   "verified": false,
@@ -10,71 +10,71 @@
     "human_verified": false
   },
   "sourceNote": "동일 음원의 짧은 2단어 표현을 두 음성인식 모델이 교차 확인했습니다. 사람 검수 대본은 아니며 단어 오류 가능성이 있습니다. 7개 정답의 총 영어 원문은 최대 14단어입니다.",
-  "generated_at": "2026-11-11T21:43:18.426287+00:00",
+  "generated_at": "2026-11-12T20:56:42.360779+00:00",
   "episode": {
-    "id": "aea20a95-b33f-4522-bc78-4704ddd9441b",
-    "title": "4pm ET, November 11 | The latest headlines from NPR",
-    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/75fdbf42-8692-49d5-8d4a-03f5ed712647/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=75fdbf42-8692-49d5-8d4a-03f5ed712647&feed=O9WlY7a5&t=podcast&e=nx-s1-20261111-1600-long&p=500005&d=280&size=4586728",
-    "date": "2026-11-11T21:09:33+00:00",
+    "id": "34e8991a-2781-42be-a3b2-a2eba768c1d8",
+    "title": "3pm ET, November 12 | The latest headlines from NPR",
+    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/3eda8d45-5211-48d6-8e7e-c8d3da9c19c4/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=3eda8d45-5211-48d6-8e7e-c8d3da9c19c4&feed=O9WlY7a5&t=podcast&e=nx-s1-20261112-1500-long&p=500005&d=280&size=4586729",
+    "date": "2026-11-12T20:09:37+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "NPR 공식 RSS"
   },
   "items": [
     {
       "sentence": "____",
-      "answer": "recounted stories",
-      "hint": "해당 음성 구간의 표현 · R… S… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 25.46,
-      "end": 26.38
-    },
-    {
-      "sentence": "____",
-      "answer": "has been",
+      "answer": "had been",
       "hint": "해당 음성 구간의 표현 · H… B… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 57.48,
-      "end": 58.08
+      "start": 25.1,
+      "end": 25.54
     },
     {
       "sentence": "____",
-      "answer": "not going",
-      "hint": "해당 음성 구간의 표현 · N… G… (2단어)",
+      "answer": "the biggest",
+      "hint": "해당 음성 구간의 표현 · T… B… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 89.82,
-      "end": 90.14
+      "start": 50.68,
+      "end": 51.04
     },
     {
       "sentence": "____",
-      "answer": "has the",
-      "hint": "해당 음성 구간의 표현 · H… T… (2단어)",
+      "answer": "will head",
+      "hint": "해당 음성 구간의 표현 · W… H… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 113.12,
-      "end": 113.8
+      "start": 75.0,
+      "end": 75.46
     },
     {
       "sentence": "____",
-      "answer": "other related",
-      "hint": "해당 음성 구간의 표현 · O… R… (2단어)",
+      "answer": "were down",
+      "hint": "해당 음성 구간의 표현 · W… D… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 140.98,
-      "end": 141.6
+      "start": 138.28,
+      "end": 138.78
     },
     {
       "sentence": "____",
-      "answer": "with the",
-      "hint": "해당 음성 구간의 표현 · W… T… (2단어)",
+      "answer": "bit but",
+      "hint": "해당 음성 구간의 표현 · B… B… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 165.38,
-      "end": 166.0
+      "start": 161.44,
+      "end": 162.04
     },
     {
       "sentence": "____",
-      "answer": "for the",
-      "hint": "해당 음성 구간의 표현 · F… T… (2단어)",
+      "answer": "two people",
+      "hint": "해당 음성 구간의 표현 · T… P… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 189.5,
-      "end": 190.1
+      "start": 187.64,
+      "end": 188.16
+    },
+    {
+      "sentence": "____",
+      "answer": "anyone who",
+      "hint": "해당 음성 구간의 표현 · A… W… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 210.76,
+      "end": 211.5
     }
   ]
 }
