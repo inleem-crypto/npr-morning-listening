@@ -1,5 +1,5 @@
 {
-  "title": "3pm ET, November 12 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "3pm ET, November 13 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
   "generator_version": 9,
   "verified": false,
@@ -10,71 +10,71 @@
     "human_verified": false
   },
   "sourceNote": "동일 음원의 짧은 2단어 표현을 두 음성인식 모델이 교차 확인했습니다. 사람 검수 대본은 아니며 단어 오류 가능성이 있습니다. 7개 정답의 총 영어 원문은 최대 14단어입니다.",
-  "generated_at": "2026-11-12T20:56:42.360779+00:00",
+  "generated_at": "2026-11-13T20:58:26.674370+00:00",
   "episode": {
-    "id": "34e8991a-2781-42be-a3b2-a2eba768c1d8",
-    "title": "3pm ET, November 12 | The latest headlines from NPR",
-    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/3eda8d45-5211-48d6-8e7e-c8d3da9c19c4/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=3eda8d45-5211-48d6-8e7e-c8d3da9c19c4&feed=O9WlY7a5&t=podcast&e=nx-s1-20261112-1500-long&p=500005&d=280&size=4586729",
-    "date": "2026-11-12T20:09:37+00:00",
+    "id": "8840fc5d-aa10-4fad-bc3b-0fccfc5ae108",
+    "title": "3pm ET, November 13 | The latest headlines from NPR",
+    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/da23c387-b970-4182-80dc-1a8f8743c8c3/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=da23c387-b970-4182-80dc-1a8f8743c8c3&feed=O9WlY7a5&t=podcast&e=nx-s1-20261113-1500-long&p=500005&d=280&size=4586729",
+    "date": "2026-11-13T20:09:27+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "NPR 공식 RSS"
   },
   "items": [
     {
       "sentence": "____",
-      "answer": "had been",
-      "hint": "해당 음성 구간의 표현 · H… B… (2단어)",
+      "answer": "the man",
+      "hint": "해당 음성 구간의 표현 · T… M… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 25.1,
-      "end": 25.54
+      "start": 32.74,
+      "end": 33.2
     },
     {
       "sentence": "____",
-      "answer": "the biggest",
-      "hint": "해당 음성 구간의 표현 · T… B… (2단어)",
+      "answer": "and booked",
+      "hint": "해당 음성 구간의 표현 · A… B… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 50.68,
-      "end": 51.04
+      "start": 58.24,
+      "end": 58.76
     },
     {
       "sentence": "____",
-      "answer": "will head",
-      "hint": "해당 음성 구간의 표현 · W… H… (2단어)",
+      "answer": "seeing encouraging",
+      "hint": "해당 음성 구간의 표현 · S… E… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 75.0,
-      "end": 75.46
+      "start": 76.44,
+      "end": 77.46
     },
     {
       "sentence": "____",
-      "answer": "were down",
-      "hint": "해당 음성 구간의 표현 · W… D… (2단어)",
+      "answer": "brain implicated",
+      "hint": "해당 음성 구간의 표현 · B… I… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 138.28,
-      "end": 138.78
+      "start": 129.6,
+      "end": 130.4
     },
     {
       "sentence": "____",
-      "answer": "bit but",
-      "hint": "해당 음성 구간의 표현 · B… B… (2단어)",
+      "answer": "cellular atlas",
+      "hint": "해당 음성 구간의 표현 · C… A… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 161.44,
-      "end": 162.04
+      "start": 169.96,
+      "end": 170.74
     },
     {
       "sentence": "____",
-      "answer": "two people",
-      "hint": "해당 음성 구간의 표현 · T… P… (2단어)",
+      "answer": "has taken",
+      "hint": "해당 음성 구간의 표현 · H… T… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 187.64,
-      "end": 188.16
+      "start": 196.64,
+      "end": 197.16
     },
     {
       "sentence": "____",
-      "answer": "anyone who",
-      "hint": "해당 음성 구간의 표현 · A… W… (2단어)",
+      "answer": "lead some",
+      "hint": "해당 음성 구간의 표현 · L… S… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 210.76,
-      "end": 211.5
+      "start": 218.38,
+      "end": 218.66
     }
   ]
 }
