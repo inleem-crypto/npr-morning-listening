@@ -240,6 +240,31 @@ class GenerationTests(unittest.TestCase):
         self.assertTrue(any(k['label'].startswith('resigned') for k in result['keywords']))
         self.assertTrue(all(k['terms'] for k in result['keywords']))
 
+    def test_interpretation_context_is_wider_than_playback_and_crosses_segments(self):
+        segments = [segment('Earlier context about military negotiations.', 12),
+                    segment('They are discussing a new arms -control deal with the government.', 30),
+                    segment('Later context explains the nuclear agreement.', 42)]
+        context = g.meaning_context(segments, 32, 33)
+        self.assertIn('Earlier context', context['text'])
+        self.assertIn('Later context', context['text'])
+        self.assertLess(context['start'], 30)
+        self.assertGreater(context['end'], 40)
+        self.assertIn('군비 통제', g.korean_study_clue('new arms', context['text']))
+
+    def test_compound_and_function_word_fragments_are_not_questions(self):
+        pairs = g.make_short_items([segment('There is a new arms -control deal and the plan has the support.', 30)])
+        answers = {item['answer'] for item in pairs}
+        self.assertNotIn('new arms', answers)
+        self.assertNotIn('and the', answers)
+        self.assertNotIn('has the', answers)
+
+    def test_contextual_meanings_do_not_guess_polysemous_fragments(self):
+        self.assertIn('장기적', g.korean_study_clue('money over', 'made people money over the long term'))
+        self.assertNotIn('장기적', g.korean_study_clue('money over', 'money over here'))
+        self.assertIn('소개 표현', g.korean_study_clue('has the', 'NPR reporter has the story.'))
+        self.assertIn('대피', g.korean_study_clue('were safely', 'All people were safely evacuated.'))
+        self.assertIn('비밀 투표', g.korean_study_clue('secret ballot'))
+
     def test_short_expression_candidate_has_conservative_shape(self):
         candidates = g.make_short_items([segment()])
         self.assertGreaterEqual(len(candidates), 1)

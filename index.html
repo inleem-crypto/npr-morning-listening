@@ -153,7 +153,7 @@ function normalizeAnswer(s){return String(s||'').trim().toLowerCase().replace(/[
   if(!data||!Array.isArray(data.items)||!data.items.length||data.items.length>30)throw Error('문제 목록 형식을 확인해 주세요.');
   const parsed=data.items.slice(0,data.kind==='auto_transcribed'?7:30).map((i,index)=>{
    if(typeof i.sentence!=='string'||i.sentence.split('____').length!==2||!String(i.answer||'').trim())throw Error((index+1)+'번 문장의 빈칸 또는 정답 형식이 잘못되었습니다.');
-   return {sentence:i.sentence,answer:String(i.answer),meaning:String(i.meaning||''),hint:String(i.hint||''),explanation:String(i.explanation||''),start:Number(i.start),end:Number(i.end),context_start:Number.isFinite(i.context_start)?i.context_start:undefined,context_end:Number.isFinite(i.context_end)?i.context_end:undefined};
+   return {sentence:i.sentence,answer:String(i.answer),meaning:String(i.meaning||''),meaning_context:i.meaning_context&&typeof i.meaning_context.text==='string'?i.meaning_context:null,hint:String(i.hint||''),explanation:String(i.explanation||''),start:Number(i.start),end:Number(i.end),context_start:Number.isFinite(i.context_start)?i.context_start:undefined,context_end:Number.isFinite(i.context_end)?i.context_end:undefined};
   });
   const episode=data.episode&&valid(data.episode)?normalized(data.episode):null;
   deck={title:String(data.title||'딕테이션 문제'),verified:data.verified===true,kind:String(data.kind||''),sourceNote:String(data.sourceNote||''),generated_at:data.generated_at,episode,items:parsed};
@@ -175,6 +175,7 @@ function normalizeAnswer(s){return String(s||'').trim().toLowerCase().replace(/[
    root.append(lab,text);if(clue.textContent)root.append(clue);root.append(input,feedback);
    if(episode&&Number.isFinite(q.start)&&Number.isFinite(q.end)&&q.end>q.start){const listen=document.createElement('button');listen.type='button';listen.className='button';listen.style.marginTop='8px';listen.textContent='▶ 지문 구간 듣기 ('+format(Math.max(0,(q.context_start??q.start)-1))+'~'+format((q.context_end??q.end)+1)+')';listen.title='빈칸 앞뒤 문맥을 포함해 문제 생성에 사용한 음원을 재생합니다';listen.addEventListener('click',()=>playQuizClip(episode,q));root.append(listen)}
    if(q.hint){const hint=document.createElement('button');hint.type='button';hint.className='button';hint.style.margin='8px 0 0 8px';hint.textContent='첫 글자 힌트';hint.addEventListener('click',()=>{feedback.textContent='힌트: '+q.hint});root.append(hint)}
+   if(q.meaning_context?.text){const context=document.createElement('details'),heading=document.createElement('summary'),body=document.createElement('p');heading.textContent='뜻을 확인할 앞뒤 문맥 (정답 포함)';body.textContent=q.meaning_context.text;context.append(heading,body);root.append(context)}
    root._input=input;root._feedback=feedback;list.append(root);
   });
   $('gradeButtons').style.display='flex';$('gradeResult').textContent='';

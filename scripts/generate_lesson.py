@@ -313,6 +313,7 @@ PHRASE_GLOSSES = {
     "flight delays": "항공편 지연",
     "government shutdown": "정부 업무 중단",
     "court ruling": "법원 판결",
+    "secret ballot": "무기명·비밀 투표",
     "allegedly had": "~을 가지고 있었다고 주장되거나 전해졌다",
     "financial officer": "재무 담당 임원",
     "the confidence": "그 신뢰·믿음",
@@ -353,9 +354,22 @@ WORD_GLOSSES = {
     "months": "개월", "weeks": "주", "years": "년", "days": "일",
 }
 
-def korean_study_clue(answer: str) -> str:
+def korean_study_clue(answer: str, context: str = "") -> str:
     """Offer an exact curated Korean gloss, or honestly label a partial clue."""
     answer = answer.casefold().strip()
+    normalized_context = " ".join(context.casefold().split())
+    if answer == "new arms" and re.search(r"arms\s*[- ]\s*control", normalized_context):
+        return "‘새로운 군비 통제 협정’이라는 구절의 앞부분 (뒤의 -control과 연결)"
+    if answer == "money over" and "long term" in normalized_context:
+        return "‘장기적으로 돈을 벌어 주다’라는 구절의 일부 (돈을, ~에 걸쳐)"
+    if answer == "has the" and "has the story" in normalized_context:
+        return "해당 기자가 그 소식을 전한다는 소개 표현의 일부"
+    if answer == "were safely" and "evacuated" in normalized_context:
+        return "안전하게 대피했다는 수동태 표현의 앞부분"
+    if answer == "has recently":
+        return "최근에 …했다·해왔다 (현재완료 표현의 앞부분)"
+    if answer == "and the":
+        return "그리고 그·해당 … (앞 문장과 뒤의 명사구를 잇는 표현)"
     if answer in PHRASE_GLOSSES:
         return PHRASE_GLOSSES[answer]
     words = answer.split()
@@ -375,6 +389,21 @@ def _phrase_token(word):
     if raw[0].isupper() or raw.casefold() in PHRASE_EXCLUDED:
         return ""
     return raw.casefold()
+
+
+FUNCTION_WORDS = {"and", "the", "has", "had", "have", "was", "were", "are", "for", "with", "from", "that", "this", "but", "not", "who", "will", "can", "could", "would", "should"}
+
+
+def meaning_context(segments, start, end, seconds=20):
+    """Keep interpretation context separate from the short listening clip."""
+    selected = [w for segment in segments for w in (getattr(segment, "words", None) or [])
+                if math.isfinite(w.start) and math.isfinite(w.end)
+                and w.end >= max(0, start-seconds) and w.start <= end+seconds]
+    if not selected:
+        return None
+    return {"start": round(selected[0].start, 2), "end": round(selected[-1].end, 2),
+            "text": "".join(w.word for w in selected).strip(), "requested_padding_seconds": seconds,
+            "source": "automatic_transcription"}
 
 
 def make_short_items(segments):
@@ -401,6 +430,12 @@ def make_short_items(segments):
                     or (a in STOPWORDS and b in STOPWORDS)):
                 continue
             answer = a + " " + b
+            # Function-word fragments make poor standalone meaning questions.
+            # Do not split compounds such as "arms-control" at the blank edge.
+            if ((a in FUNCTION_WORDS and b in FUNCTION_WORDS and answer not in PHRASE_GLOSSES)
+                    or (i + 2 < len(words) and words[i+2].word.strip().startswith('-'))
+                    or (i and words[i-1].word.strip().endswith('-'))):
+                continue
             if answer in seen:
                 continue
             # Preserve audible context instead of replacing the entire prompt
@@ -413,12 +448,14 @@ def make_short_items(segments):
             meaning = NEWS_HINTS.get(a) or NEWS_HINTS.get(b)
             hint = ((meaning + " 관련 표현 · ") if meaning else "해당 음성 구간의 표현 · ")
             hint += f"{a[0].upper()}… {b[0].upper()}… (2단어)"
+            interpretation = meaning_context(segments, start, end)
             result.append({
                 "sentence": sentence,
+                "meaning_context": interpretation,
                 "context_start": round(context[0].start, 2),
                 "context_end": round(context[-1].end, 2),
                 "answer": answer,
-                "meaning": korean_study_clue(answer),
+                "meaning": korean_study_clue(answer, interpretation["text"] if interpretation else sentence.replace("____", answer)),
                 "hint": hint,
                 "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
                 "start": round(start, 2),

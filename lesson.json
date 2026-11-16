@@ -10,7 +10,7 @@
     "human_verified": false
   },
   "sourceNote": "문제를 만들 때 사용한 고정 음원을 재생합니다. 빈칸 앞뒤 영어 지문과 2단어 정답을 두 음성인식 모델이 비교했습니다. 자동 전사이므로 오류가 있을 수 있습니다.",
-  "generated_at": "2026-11-16T10:48:20.456176+00:00",
+  "generated_at": "2026-11-16T10:56:10.676Z",
   "episode": {
     "id": "d909bb17-7f4d-43b4-8d0f-69f901b6512b",
     "title": "5am ET, November 16 | The latest headlines from NPR",
@@ -27,77 +27,147 @@
       "context_start": 37.48,
       "context_end": 40.32,
       "answer": "new arms",
-      "meaning": "부분 단서: new=새로운 (나머지는 듣고 완성)",
+      "meaning": "‘새로운 군비 통제 협정’이라는 구절의 앞부분 (뒤의 -control과 연결)",
       "hint": "해당 음성 구간의 표현 · N… A… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
       "start": 38.6,
-      "end": 39.08
+      "end": 39.08,
+      "meaning_context": {
+        "start": 12.04,
+        "end": 65.82,
+        "text": "President Trump leaves today for a summit in Asia. NPR's Anthony Kuhn reports this summit will include an unprecedented three-way meeting Thursday with the leaders of Russia and China. Trump's first stop is Manila, the Philippines, where he will attend a summit of the Association of Southeast Asian Nations, or ASEAN. From there, it's on to the southern Chinese city of Shenzhen for an Asia-Pacific Economic Cooperation Organization summit. Trump has said he wants to negotiate a new arms-control deal with Russia and China, but China, which has the smallest nuclear arsenal of the three, is not likely to be interested. Trump will also try to extend a truce in the U.S.'s trade war with China. Trump's critics are concerned that Trump could side with Russia's Vladimir Putin and China's Xi Jinping in deciding the fate of smaller actors, such as Ukraine and Taiwan, without their participation or consent. Anthony Kuhn in PR News, Seoul.",
+        "source": "automatic_article_transcription"
+      },
+      "meaning_review": {
+        "method": "assistant_context_review",
+        "reviewed_at": "2026-11-16T10:56:10.675Z"
+      }
     },
     {
       "sentence": "former head of NVIDIA ____ gained support for his",
       "context_start": 66.86,
       "context_end": 70.1,
       "answer": "has recently",
-      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "meaning": "최근에 …했다·해왔다 (현재완료 표현의 앞부분)",
       "hint": "해당 음성 구간의 표현 · H… R… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
       "start": 68.14,
-      "end": 69.06
+      "end": 69.06,
+      "meaning_context": {
+        "start": 66.6,
+        "end": 105.85,
+        "text": "The now former head of NVIDIA has recently gained support for his return to the company after resigning just last week, and PR's Rick Mulvey explains. There's a petition for Jensen to return. It has over 120,000 signatures, including support from Elon Musk and, according to the petition's website, about 6,000 current NVIDIA employees. Don't forget, Jensen Wong made a lot of people a lot of money over the long term. Jensen Wong, who was the CEO of the computer chip company, resigned amid revelations over multiple affairs. One of those affairs allegedly involved a woman whom U.S. intelligence officials claimed to be spying for China.",
+        "source": "automatic_article_transcription"
+      },
+      "meaning_review": {
+        "method": "assistant_context_review",
+        "reviewed_at": "2026-11-16T10:56:10.676Z"
+      }
     },
     {
       "sentence": "people a lot of ____ the long term.",
       "context_start": 90.31,
       "context_end": 92.51,
       "answer": "money over",
-      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "meaning": "‘장기적으로 돈을 벌어 주다’라는 구절의 일부 (돈을, ~에 걸쳐)",
       "hint": "해당 음성 구간의 표현 · M… O… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
       "start": 91.39,
-      "end": 91.89
+      "end": 91.89,
+      "meaning_context": {
+        "start": 66.6,
+        "end": 105.85,
+        "text": "The now former head of NVIDIA has recently gained support for his return to the company after resigning just last week, and PR's Rick Mulvey explains. There's a petition for Jensen to return. It has over 120,000 signatures, including support from Elon Musk and, according to the petition's website, about 6,000 current NVIDIA employees. Don't forget, Jensen Wong made a lot of people a lot of money over the long term. Jensen Wong, who was the CEO of the computer chip company, resigned amid revelations over multiple affairs. One of those affairs allegedly involved a woman whom U.S. intelligence officials claimed to be spying for China.",
+        "source": "automatic_article_transcription"
+      },
+      "meaning_review": {
+        "method": "assistant_context_review",
+        "reviewed_at": "2026-11-16T10:56:10.676Z"
+      }
     },
     {
       "sentence": "NPR's Eric McDaniel ____ story.",
       "context_start": 116.55,
       "context_end": 118.53,
       "answer": "has the",
-      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "meaning": "해당 기자가 그 소식을 전한다는 소개 표현의 일부",
       "hint": "해당 음성 구간의 표현 · H… T… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
       "start": 117.63,
-      "end": 118.11
+      "end": 118.11,
+      "meaning_context": {
+        "start": 116.55,
+        "end": 118.53,
+        "text": "NPR's Eric McDaniel has the story.",
+        "source": "question_context"
+      },
+      "meaning_review": {
+        "method": "assistant_context_review",
+        "reviewed_at": "2026-11-16T10:56:10.676Z"
+      }
     },
     {
       "sentence": "30 Democrats in a ____ vote to",
       "context_start": 139.77,
       "context_end": 142.05,
       "answer": "secret ballot",
-      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "meaning": "무기명·비밀 투표",
       "hint": "해당 음성 구간의 표현 · S… B… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
       "start": 141.03,
-      "end": 141.55
+      "end": 141.55,
+      "meaning_context": {
+        "start": 139.77,
+        "end": 142.05,
+        "text": "30 Democrats in a secret ballot vote to",
+        "source": "question_context"
+      },
+      "meaning_review": {
+        "method": "assistant_context_review",
+        "reviewed_at": "2026-11-16T10:56:10.676Z"
+      }
     },
     {
       "sentence": "All 100 people aboard ____ evacuated. This is NPR.",
       "context_start": 181.01,
       "context_end": 185.85,
       "answer": "were safely",
-      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "meaning": "안전하게 대피했다는 수동태 표현의 앞부분",
       "hint": "해당 음성 구간의 표현 · W… S… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
       "start": 182.79,
-      "end": 183.99
+      "end": 183.99,
+      "meaning_context": {
+        "start": 181.01,
+        "end": 185.85,
+        "text": "All 100 people aboard were safely evacuated. This is NPR.",
+        "source": "question_context"
+      },
+      "meaning_review": {
+        "method": "assistant_context_review",
+        "reviewed_at": "2026-11-16T10:56:10.676Z"
+      }
     },
     {
       "sentence": "50th anniversary this year, ____ win was the schmear",
       "context_start": 232.71,
       "context_end": 237.09,
       "answer": "and the",
-      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "meaning": "그리고 그·해당 … (뒤의 ‘승리’라는 명사구와 연결)",
       "hint": "해당 음성 구간의 표현 · A… T… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
       "start": 235.13,
-      "end": 235.47
+      "end": 235.47,
+      "meaning_context": {
+        "start": 232.71,
+        "end": 237.09,
+        "text": "50th anniversary this year, and the win was the schmear",
+        "source": "question_context"
+      },
+      "meaning_review": {
+        "method": "assistant_context_review",
+        "reviewed_at": "2026-11-16T10:56:10.676Z"
+      }
     }
   ],
   "summaryReview": {
