@@ -1,7 +1,7 @@
 {
-  "title": "3pm ET, November 15 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "4am ET, November 16 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
-  "generator_version": 9,
+  "generator_version": 10,
   "verified": false,
   "transcription": {
     "model": "small.en",
@@ -9,79 +9,79 @@
     "policy": "short-phrase-word-confidence-time-alignment-v3",
     "human_verified": false
   },
-  "sourceNote": "같은 회차의 짧은 2단어 표현을 두 ASR 모델이 교차 확인한 자동 전사 자료입니다. 각 문항에 한국어 뜻과 목표 시각을 표시합니다. 원문은 사람 검수가 아니므로 정답 오류 가능성이 있습니다. 영어 발췌 합계 14단어.",
-  "generated_at": "2026-11-15T20:47:50.447319+00:00",
+  "sourceNote": "같은 음원의 2단어 표현을 두 음성인식 모델이 비교 확인했습니다. 한국어 단서는 사람이 작성한 제한된 용어 사전에 기반하며 부분 단서는 정답의 전체 번역이 아닙니다. 실제 음성을 확인하세요. 인용한 영어 정답은 최대 14단어입니다.",
+  "generated_at": "2026-11-16T09:26:46.323121+00:00",
   "episode": {
-    "id": "7cb748f2-b78d-4305-91d1-d3d0cfabbd20",
-    "title": "3pm ET, November 15 | The latest headlines from NPR",
-    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/7635b61e-63e7-40c3-bf2e-cdbeaf9a1e17/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=7635b61e-63e7-40c3-bf2e-cdbeaf9a1e17&feed=O9WlY7a5&t=podcast&e=nx-s1-20261115-1500-long&p=500005&d=280&size=4586729",
-    "date": "2026-11-15T20:09:23+00:00",
+    "id": "d3f5ca00-5a91-470e-95ef-bd9737acbfcb",
+    "title": "4am ET, November 16 | The latest headlines from NPR",
+    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/59b4fb7b-9d9e-4442-b3a0-6b27b4f553c5/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=59b4fb7b-9d9e-4442-b3a0-6b27b4f553c5&feed=O9WlY7a5&t=podcast&e=nx-s1-20261116-0400-long&p=500005&d=280&size=4586728",
+    "date": "2026-11-16T09:09:35+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "NPR 공식 RSS"
   },
   "items": [
     {
       "sentence": "____",
-      "answer": "ground stop",
-      "hint": "항공기 이륙을 일시적으로 중단하는 조치 · G… S… (2단어)",
+      "answer": "allegedly had",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · A… H… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 30.4,
-      "end": 30.92,
-      "meaning": "항공기 이륙을 일시적으로 중단하는 조치"
+      "start": 33.58,
+      "end": 34.4
     },
     {
       "sentence": "____",
-      "answer": "those conversions",
-      "hint": "그러한 전환·변환 (구체적 의미는 문맥 확인) · T… C… (2단어)",
+      "answer": "financial officer",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · F… O… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 55.3,
-      "end": 56.06,
-      "meaning": "그러한 전환·변환 (구체적 의미는 문맥 확인)"
+      "start": 53.96,
+      "end": 54.9
     },
     {
       "sentence": "____",
-      "answer": "quarterly earnings",
-      "hint": "기업의 분기 실적 · Q… E… (2단어)",
+      "answer": "had expected",
+      "meaning": "부분 단서: expected=예상되는 (나머지는 듣고 완성)",
+      "hint": "예상되는 관련 표현 · H… E… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 90.42,
-      "end": 91.36,
-      "meaning": "기업의 분기 실적"
+      "start": 86.36,
+      "end": 86.94
     },
     {
       "sentence": "____",
-      "answer": "like leaving",
-      "hint": "떠나는 것처럼 / 떠나는 것과 같은 (문맥 확인) · L… L… (2단어)",
+      "answer": "public statement",
+      "meaning": "핵심 단어 뜻: public=공공의, statement=성명 (전체 뜻은 문맥 확인)",
+      "hint": "해당 음성 구간의 표현 · P… S… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 121.92,
-      "end": 122.48,
-      "meaning": "떠나는 것처럼 / 떠나는 것과 같은 (문맥 확인)"
+      "start": 104.54,
+      "end": 105.3
     },
     {
       "sentence": "____",
-      "answer": "there was",
-      "hint": "~이 있었다 · T… W… (2단어)",
+      "answer": "touts the",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · T… T… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 144.16,
-      "end": 144.38,
-      "meaning": "~이 있었다"
+      "start": 123.44,
+      "end": 124.14
     },
     {
       "sentence": "____",
-      "answer": "various types",
-      "hint": "여러 종류 · V… T… (2단어)",
+      "answer": "voyage data",
+      "meaning": "부분 단서: data=데이터 (나머지는 듣고 완성)",
+      "hint": "데이터 관련 표현 · V… D… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 175.64,
-      "end": 176.38,
-      "meaning": "여러 종류"
+      "start": 173.66,
+      "end": 174.36
     },
     {
       "sentence": "____",
-      "answer": "restrictions remain",
-      "hint": "제한 조치가 계속 유지되다 · R… R… (2단어)",
+      "answer": "golfers who",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · G… W… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 198.46,
-      "end": 199.46,
-      "meaning": "제한 조치가 계속 유지되다"
+      "start": 221.9,
+      "end": 222.64
     }
   ]
 }
