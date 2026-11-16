@@ -129,10 +129,10 @@ function normalizeAnswer(s){return String(s||'').trim().toLowerCase().replace(/[
   $('gradeButtons').style.display='flex';$('gradeResult').textContent='';
  }
  async function loadAutoLesson(){
-  try{generationStatus=JSON.parse(await fetchTimed('https://raw.githubusercontent.com/inleem-crypto/npr-morning-listening/main/generation-status.json?t='+Date.now()))}catch{generationStatus=null}
+  try{generationStatus=JSON.parse(await fetchTimed(new URL('./generation-status.json',location.href).href+'?t='+Date.now()))}catch{generationStatus=null}
   updateLessonFreshness();
   try{
-   const base='https://raw.githubusercontent.com/inleem-crypto/npr-morning-listening/main/lesson.json';
+   const base=new URL('./lesson.json',location.href).href;
    let data;
    try{const response=await fetch(base+'?t='+Date.now(),{cache:'no-store'});if(!response.ok)throw Error('문제 파일 없음');data=await response.json();if(lessonNeedsRefresh(data,generationStatus))throw Error('이전 문제 파일 캐시')}
    catch{const response=await fetch('https://api.github.com/repos/inleem-crypto/npr-morning-listening/contents/lesson.json?ref=main',{cache:'no-store'});if(!response.ok)throw Error('문제 파일이 아직 없습니다.');const file=await response.json();const bytes=Uint8Array.from(atob(file.content.replace(/\s/g,'')),c=>c.charCodeAt(0));data=JSON.parse(new TextDecoder().decode(bytes))}
@@ -147,7 +147,7 @@ $('loadLesson').addEventListener('click',()=>{try{showDeck(JSON.parse($('lessonJ
 // The page refreshes while open and whenever it resumes from a backgrounded phone app.
  setInterval(()=>{if(!document.hidden && Date.now()-lastGood>10*60*1000)refresh()},10*60*1000);setInterval(()=>{if(!document.hidden)loadAutoLesson()},5*60*1000);document.addEventListener('visibilitychange',()=>{if(!document.hidden){if(Date.now()-lastGood>10*60*1000)refresh();loadAutoLesson()}});window.addEventListener('online',()=>{if(Date.now()-lastGood>3*60*1000)refresh();loadAutoLesson()});
 if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('./sw.js').catch(()=>{});
- refresh().then(loadAutoLesson);
+ loadAutoLesson();refresh();
 })();
 </script>
 </body>
