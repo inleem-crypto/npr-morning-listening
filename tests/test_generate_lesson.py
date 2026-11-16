@@ -215,6 +215,23 @@ class GenerationTests(unittest.TestCase):
             'faster_whisper': NS(WhisperModel=model),
             'faster_whisper.audio': NS(decode_audio=lambda *a: [0]*600000)}))
 
+    def test_first_two_articles_are_separate_and_use_correct_keywords(self):
+        first = "President Trump visits Asia. NPR's Pat Smith reports from China. " + ("The president will negotiate a nuclear agreement with Russia and China. " * 4)
+        second = "The former head of Nvidia resigned last week. NPR's Robin Jones explains. " + ("A petition supports his return to the company after the relationship became public. " * 4)
+        third = "A federal court has approved a police investigation. NPR's Sam Lee has the story."
+        reviews = g.make_summary_reviews([segment(first + second + third, start=30)])
+        self.assertEqual(len(reviews), 2)
+        self.assertIn("President Trump", reviews[0]['transcript'])
+        self.assertNotIn("Nvidia", reviews[0]['transcript'])
+        self.assertIn("Nvidia", reviews[1]['transcript'])
+        self.assertNotIn("federal court", reviews[1]['transcript'])
+        self.assertLessEqual(reviews[0]['end'], reviews[1]['start'])
+        self.assertTrue(any(k['label'].startswith('nvidia') for k in reviews[1]['keywords']))
+
+    def test_unknown_second_article_is_not_invented(self):
+        reviews = g.make_summary_reviews([segment("The president and the government announced a new agreement for the company.")])
+        self.assertEqual(len(reviews), 1)
+
     def test_summary_reference_skips_intro_and_stops_at_signoff(self):
         text = "Live from NPR News, I'm Pat Smith. An officer resigned following a relationship with another executive. Pat Smith, NPR News. The president announced tariffs."
         result = g.make_summary_review([segment(text, start=0)])

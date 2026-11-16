@@ -23,7 +23,7 @@ STATUS = ROOT / "generation-status.json"
 REPORT = ROOT / "generation-report.json"
 FEED = "https://feeds.npr.org/500005/podcast.xml"
 USER_AGENT = "NPR-Morning-Listening/4.0 (+https://github.com/inleem-crypto/npr-morning-listening)"
-GENERATOR_VERSION = 12
+GENERATOR_VERSION = 13
 PRIMARY_MODEL = "small.en"
 CHECK_MODEL = "medium.en"
 MAX_CANDIDATES = 16
@@ -505,6 +505,10 @@ SUMMARY_TERMS = {
     "ukraine": ["ukraine", "우크라이나"],
     "taiwan": ["taiwan", "대만"],
 
+    "nvidia": ["nvidia", "엔비디아"],
+    "petition": ["petition", "signatures", "청원", "서명"],
+    "return": ["return", "returning", "복귀", "돌아"],
+    "support": ["support", "지지", "지원"],
     "resigned": ["resign", "resigned", "resignation", "사임", "사퇴"],
     "relationship": ["relationship", "affair", "관계", "불륜"],
     "financial": ["financial", "finance", "재무", "금융"],
@@ -531,52 +535,98 @@ SUMMARY_TERMS = {
     "shutdown": ["shutdown", "셧다운", "업무중단", "업무 중단"],
 }
 
-def make_summary_review(segments):
-    """Extract an explicitly approximate first-story window and auditably scoreable terms."""
+def summary_keywords(transcript):
+    tokens = normalized_words(transcript)
+    result = []
+    for label, aliases in SUMMARY_TERMS.items():
+        if any(t in tokens for t in aliases if re.fullmatch('[a-z]+', t)):
+            korean = next((a for a in aliases if re.search('[가-힣]', a)), '')
+            result.append({"label": label + (" · " + korean if korean else ''), "terms": aliases})
+    return result[:6]
+
+
+def make_summary_reviews(segments):
+    """Separate stories at reporter handoffs, preserving contiguous timed words.
+
+    Unknown story boundaries are left unavailable rather than labeling an
+    arbitrary second time window as the second article.
+    """
     words = [w for s in segments for w in (getattr(s, "words", None) or [])
              if math.isfinite(w.start) and math.isfinite(w.end) and w.end > w.start]
     if not words:
-        return None
-    # Find and skip the host introduction, including any preceding dynamic ads.
-    start_index = 0
+        return []
     opening_words = [w for w in words if w.start < 70]
     opening = "".join(w.word for w in opening_words)
     intro = re.search(r"(?:Live\s+)?from NPR News.*?(?:I'm|I am) [^.!?]{1,65}[.!?]", opening, re.I)
+    start_index = 0
     if intro:
         position = 0
         for i, w in enumerate(opening_words):
             position += len(w.word)
             if position >= intro.end():
-                start_index = i+1
+                start_index = i + 1
                 break
-    remaining = words[start_index:]
-    if not remaining:
-        return None
-    selected = []
-    for w in remaining:
-        if w.end - remaining[0].start > 45:
+    words = words[start_index:]
+    sentences, pending = [], []
+    for w in words:
+        pending.append(w)
+        token = w.word.strip().rstrip('"”’')
+        abbreviation = bool(re.fullmatch(r"(?:[A-Z]\.){1,4}|(?:Mr|Mrs|Ms|Dr|St)\.", token))
+        if re.search(r'[.!?]$', token) and not abbreviation:
+            sentences.append(pending)
+            pending = []
+    if pending:
+        sentences.append(pending)
+    if not sentences:
+        return []
+    text = lambda group: "".join(w.word for w in group).strip()
+    reporter = re.compile(r"\b(?:NPR|[A-Za-z]+ [VP]R)['’]?s?\s+[A-Z][A-Za-z.' -]{2,75}?\b(?:reports|explains|has (?:this|the) story)\b", re.I)
+    starts = [0]
+    for i, sentence in enumerate(sentences):
+        content = text(sentence)
+        match = reporter.search(content)
+        if not match:
+            continue
+        # A stand-alone reporter credit belongs to the preceding headline.
+        before = normalized_words(content[:match.start()])
+        candidate = i - 1 if i and len(before) <= 2 else i
+        if candidate and re.search(r'NPR News[.!?]?$', text(sentences[candidate]), re.I):
+            candidate = i
+        if (candidate > starts[-1] and
+                sentences[candidate][0].start - sentences[starts[-1]][0].start >= 18):
+            starts.append(candidate)
+    # A reporter sign-off can establish a next-story boundary without another
+    # explicit handoff, e.g. a short anchor-read second story.
+    for i, sentence in enumerate(sentences[:-1]):
+        if re.search(r'NPR News[.!?]?$', text(sentence), re.I):
+            next_index = i + 1
+            if all(abs(sentences[next_index][0].start - sentences[j][0].start) >= 12 for j in starts):
+                starts.append(next_index)
+    starts.sort()
+    reviews = []
+    for ordinal, begin in enumerate(starts[:2]):
+        stop = starts[ordinal+1] if ordinal+1 < len(starts) else len(sentences)
+        selected = []
+        for sentence in sentences[begin:stop]:
+            if sentence[-1].end - sentences[begin][0].start > 100:
+                break
+            selected.extend(sentence)
+            if (selected[-1].end - selected[0].start > 15 and
+                    re.search(r'NPR News[.!?]?$', text(sentence), re.I)):
+                break
+        transcript = text(selected)
+        if len(normalized_words(transcript)) < 12:
             break
-        selected.append(w)
-        # Reporter sign-off is a strong story boundary when present.
-        tail = "".join(x.word for x in selected[-8:])
-        if w.end - remaining[0].start > 15 and re.search(r"NPR News[.!?]?$", tail.strip()):
-            break
-    transcript = "".join(w.word for w in selected).strip()
-    tokens = normalized_words(transcript)
-    if len(tokens) < 12:
-        return None
-    keywords = []
-    for label, aliases in SUMMARY_TERMS.items():
-        if any(t in tokens for t in aliases if re.fullmatch('[a-z]+', t)):
-            korean = next((a for a in aliases if re.search('[가-힣]', a)), '')
-            keywords.append({"label": label + (" · " + korean if korean else ''), "terms": aliases})
-    # Require bilingual content anchors; a generic structure score alone is not
-    # advertised as article-content feedback.
-    if len(keywords) < 2:
-        return None
-    return {"kind": "keyword_rubric", "start": round(selected[0].start, 2),
-            "end": round(selected[-1].end, 2), "transcript": transcript,
-            "keywords": keywords[:6], "boundary": "automatically_estimated"}
+        reviews.append({"kind": "keyword_rubric", "article": ordinal+1,
+                        "start": round(selected[0].start, 2), "end": round(selected[-1].end, 2),
+                        "transcript": transcript, "keywords": summary_keywords(transcript),
+                        "boundary": "reporter_handoff_estimate"})
+    return reviews
+
+
+def make_summary_review(segments):
+    reviews = make_summary_reviews(segments)
+    return reviews[0] if reviews else None
 
 
 def atomic_json(path, value):
@@ -610,7 +660,8 @@ def generate(report) -> dict:
         segments, _ = model.transcribe(decoded, language="en", beam_size=5, temperature=0,
                                        word_timestamps=True, condition_on_previous_text=False)
         primary_segments = list(segments)
-        summary_review = make_summary_review(primary_segments)
+        summary_reviews = make_summary_reviews(primary_segments)
+        summary_review = summary_reviews[0] if summary_reviews else None
         candidates = make_short_items(primary_segments)
         report["candidates"] = candidates
         print(f"{len(candidates)} short-expression candidates passed primary audio checks", flush=True)
@@ -645,6 +696,7 @@ def generate(report) -> dict:
         "episode": episode,
         "items": items,
         "summaryReview": summary_review,
+        "summaryReviews": summary_reviews,
     }
     atomic_json(OUTPUT, lesson)
     for old in media.glob("*.mp3"):

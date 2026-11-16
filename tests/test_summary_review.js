@@ -25,3 +25,11 @@ test('substring English matches do not count',()=>{
  const r=reviewSummary('A relationshipless story about unresigned officers.',ref);
  assert.equal(r.coverage,0);
 });
+
+test('two article notes persist independently and both clear for a new broadcast',()=>{
+ const first={episodeId:'same',text:'First article summary'};
+ const second={episodeId:'same',text:'Second article summary'};
+ assert.equal(summaryNoteState(first,'same').text,'First article summary');
+ assert.equal(summaryNoteState(second,'same').text,'Second article summary');
+ for(const note of [first,second])assert.equal(summaryNoteState(note,'new').text,'');
+});
