@@ -66,6 +66,7 @@ let episodes=[],selected=null,loading=false,markA=null,markB=null,looping=false,
 const safeGet=(key,defaultValue)=>{try{return localStorage.getItem(key)||defaultValue}catch{return defaultValue}};
 const safeSet=(key,value)=>{try{localStorage.setItem(key,value)}catch{}};
 const format=(n)=>Number.isFinite(n)?Math.floor(n/60)+':'+String(Math.floor(n%60)).padStart(2,'0'):'--:--';
+const formatTenths=(n)=>Number.isFinite(n)?Math.floor(n/60)+':'+String(Math.floor(n%60)).padStart(2,'0')+'.'+Math.floor((n%1)*10):'--:--';
 const datefmt=v=>{if(!v)return '시간 미확인';const d=new Date(v);if(!Number.isFinite(d.getTime()))return '시간 미확인';return new Intl.DateTimeFormat('ko-KR',{timeZone:'Asia/Seoul',year:'numeric',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit',hour12:false}).format(d)+' KST';};
 function message(t,type=''){ $status.textContent=t; $status.className='status '+type; }
 function cleanURL(v){try{const u=new URL(v);if(!['https:','http:'].includes(u.protocol))return '';return u.href}catch{return ''}}
@@ -116,8 +117,8 @@ function normalizeAnswer(s){return String(s||'').trim().toLowerCase().replace(/[
   parsed.forEach((q,i)=>{
    const root=document.createElement('div');root.className='quizItem';
    const lab=document.createElement('label');lab.textContent='문제 '+(i+1);
-   const text=document.createElement('div');text.className='question';const short=q.sentence.trim()==='____';const words=q.answer.trim().split(/\s+/).length;text.textContent=short?`🎧 ${format(q.start)}~${format(q.end)}에 들리는 ${words}단어를 적으세요.`:q.sentence;
-   const clue=document.createElement('div');clue.className='koClue';clue.textContent=q.meaning?'한국어 뜻: '+q.meaning:(short?'한국어 의미 단서가 없는 문제입니다. 표시된 구간을 듣고 정확히 들리는 표현을 적으세요.':'');
+   const text=document.createElement('div');text.className='question';const short=q.sentence.trim()==='____';const words=q.answer.trim().split(/\s+/).length;text.textContent=short?`🎧 ${formatTenths(q.start)}~${formatTenths(q.end)}에 들리는 ${words}단어를 적으세요.`:q.sentence;
+   const clue=document.createElement('div');clue.className='koClue';clue.textContent=q.meaning?'한국어 단서: '+q.meaning:(short?'한국어 의미 단서가 없는 문제입니다. 표시된 구간을 듣고 정확히 들리는 표현을 적으세요.':'');
    const input=document.createElement('input');input.className='input';input.placeholder='빈칸에 들어갈 영어 표현';input.setAttribute('aria-label','문제 '+(i+1)+' 답');input.value=String(savedAnswers[i]||'');input.addEventListener('input',saveAnswers);
    const feedback=document.createElement('div');feedback.className='grade';
    root.append(lab,text);if(clue.textContent)root.append(clue);root.append(input,feedback);
