@@ -1,87 +1,103 @@
 {
   "title": "4am ET, November 16 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
-  "generator_version": 10,
+  "generator_version": 11,
   "verified": false,
   "transcription": {
     "model": "small.en",
     "check_model": "medium.en",
-    "policy": "short-phrase-word-confidence-time-alignment-v3",
+    "policy": "frozen-audio-context-agreement-v4",
     "human_verified": false
   },
-  "sourceNote": "같은 음원의 2단어 표현을 두 음성인식 모델이 비교 확인했습니다. 한국어 단서는 사람이 작성한 제한된 용어 사전에 기반하며 부분 단서는 정답의 전체 번역이 아닙니다. 실제 음성을 확인하세요. 인용한 영어 정답은 최대 14단어입니다.",
-  "generated_at": "2026-11-16T09:26:46.323121+00:00",
+  "sourceNote": "문제를 만들 때 사용한 고정 음원을 재생합니다. 빈칸 앞뒤 영어 지문과 2단어 정답을 두 음성인식 모델이 비교했습니다. 자동 전사이므로 오류가 있을 수 있습니다.",
+  "generated_at": "2026-11-16T09:53:15.442072+00:00",
   "episode": {
     "id": "d3f5ca00-5a91-470e-95ef-bd9737acbfcb",
     "title": "4am ET, November 16 | The latest headlines from NPR",
-    "audioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/59b4fb7b-9d9e-4442-b3a0-6b27b4f553c5/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=59b4fb7b-9d9e-4442-b3a0-6b27b4f553c5&feed=O9WlY7a5&t=podcast&e=nx-s1-20261116-0400-long&p=500005&d=280&size=4586728",
+    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/3d6cab8f23cff3aaaf3f61d9c7ef38e223a0f6606b5162d0879d3d086aa45e33.mp3",
     "date": "2026-11-16T09:09:35+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
-    "via": "NPR 공식 RSS"
+    "via": "문제 생성에 사용한 고정 음원",
+    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/59b4fb7b-9d9e-4442-b3a0-6b27b4f553c5/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=59b4fb7b-9d9e-4442-b3a0-6b27b4f553c5&feed=O9WlY7a5&t=podcast&e=nx-s1-20261116-0400-long&p=500005&d=280&size=4586728",
+    "audio_sha256": "3d6cab8f23cff3aaaf3f61d9c7ef38e223a0f6606b5162d0879d3d086aa45e33"
   },
   "items": [
     {
-      "sentence": "____",
+      "sentence": "Wong resigned after he ____ a relationship",
+      "context_start": 35.18,
+      "context_end": 38.8,
       "answer": "allegedly had",
-      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "meaning": "~을 가지고 있었다고 주장되거나 전해졌다",
       "hint": "해당 음성 구간의 표현 · A… H… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 33.58,
-      "end": 34.4
+      "start": 37.34,
+      "end": 38.16
     },
     {
-      "sentence": "____",
-      "answer": "financial officer",
+      "sentence": "What happens to ____ in those deals now",
+      "context_start": 72.82,
+      "context_end": 75.12,
+      "answer": "the confidence",
       "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
-      "hint": "해당 음성 구간의 표현 · F… O… (2단어)",
+      "hint": "해당 음성 구간의 표현 · T… C… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 53.96,
-      "end": 54.9
+      "start": 73.74,
+      "end": 74.26
     },
     {
-      "sentence": "____",
-      "answer": "had expected",
-      "meaning": "부분 단서: expected=예상되는 (나머지는 듣고 완성)",
-      "hint": "예상되는 관련 표현 · H… E… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 86.36,
-      "end": 86.94
-    },
-    {
-      "sentence": "____",
+      "sentence": "L3 Harris. In a ____ the company said",
+      "context_start": 107.02,
+      "context_end": 109.86,
       "answer": "public statement",
-      "meaning": "핵심 단어 뜻: public=공공의, statement=성명 (전체 뜻은 문맥 확인)",
+      "meaning": "공개 성명",
       "hint": "해당 음성 구간의 표현 · P… S… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 104.54,
-      "end": 105.3
+      "start": 108.3,
+      "end": 109.06
     },
     {
-      "sentence": "____",
+      "sentence": "the company's website, L3Harris ____ work the company is",
+      "context_start": 124.98,
+      "context_end": 128.88,
       "answer": "touts the",
       "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
       "hint": "해당 음성 구간의 표현 · T… T… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 123.44,
-      "end": 124.14
+      "start": 127.2,
+      "end": 127.9
     },
     {
-      "sentence": "____",
-      "answer": "voyage data",
-      "meaning": "부분 단서: data=데이터 (나머지는 듣고 완성)",
-      "hint": "데이터 관련 표현 · V… D… (2단어)",
+      "sentence": "company. A ____ approved the port official's",
+      "context_start": 167.46,
+      "context_end": 170.96,
+      "answer": "federal judge",
+      "meaning": "핵심 단어 뜻: federal=연방정부의, judge=판사 (전체 뜻은 문맥 확인)",
+      "hint": "연방정부의 관련 표현 · F… J… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 173.66,
-      "end": 174.36
+      "start": 168.8,
+      "end": 169.52
     },
     {
-      "sentence": "____",
-      "answer": "golfers who",
+      "sentence": "The Coast Guard is ____",
+      "context_start": 192.4,
+      "context_end": 194.14,
+      "answer": "assisting with",
       "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
-      "hint": "해당 음성 구간의 표현 · G… W… (2단어)",
+      "hint": "해당 음성 구간의 표현 · A… W… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 221.9,
-      "end": 222.64
+      "start": 193.36,
+      "end": 194.14
+    },
+    {
+      "sentence": "and parties will be ____ over the next two",
+      "context_start": 231.52,
+      "context_end": 234.32,
+      "answer": "taking place",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · T… P… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 232.54,
+      "end": 233.26
     }
   ]
 }

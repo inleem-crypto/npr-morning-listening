@@ -1,6 +1,6 @@
 {
-  "attempted_at": "2026-11-16T09:24:11.574568+00:00",
-  "generator_version": 10,
+  "attempted_at": "2026-11-16T09:50:27.458883+00:00",
+  "generator_version": 11,
   "episode": {
     "id": "d3f5ca00-5a91-470e-95ef-bd9737acbfcb",
     "title": "4am ET, November 16 | The latest headlines from NPR",
@@ -11,5 +11,5 @@
   },
   "status": "success",
   "lesson_episode_id": "d3f5ca00-5a91-470e-95ef-bd9737acbfcb",
-  "lesson_generated_at": "2026-11-16T09:26:46.323121+00:00"
+  "lesson_generated_at": "2026-11-16T09:53:15.442072+00:00"
 }
