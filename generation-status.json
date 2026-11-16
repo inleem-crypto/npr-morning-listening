@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-11-16T10:47:07.457295+00:00",
+  "attempted_at": "2026-11-16T10:58:11.689199+00:00",
   "generator_version": 13,
   "episode": {
     "id": "d909bb17-7f4d-43b4-8d0f-69f901b6512b",
@@ -11,5 +11,5 @@
   },
   "status": "success",
   "lesson_episode_id": "d909bb17-7f4d-43b4-8d0f-69f901b6512b",
-  "lesson_generated_at": "2026-11-16T10:48:20.456176+00:00"
+  "lesson_generated_at": "2026-11-16T10:56:10.676Z"
 }
