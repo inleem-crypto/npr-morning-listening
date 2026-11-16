@@ -1,5 +1,5 @@
 {
-  "title": "6am ET, November 16 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "3pm ET, November 16 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
   "generator_version": 13,
   "verified": false,
@@ -10,256 +10,196 @@
     "human_verified": false
   },
   "sourceNote": "문제를 만들 때 사용한 고정 음원을 재생합니다. 빈칸 앞뒤 영어 지문과 2단어 정답을 두 음성인식 모델이 비교했습니다. 자동 전사이므로 오류가 있을 수 있습니다.",
-  "generated_at": "2026-11-16T12:50:29.942080+00:00",
+  "generated_at": "2026-11-16T20:57:20.639306+00:00",
   "episode": {
-    "id": "7358f913-ab74-4db3-9159-5adc7678ef72",
-    "title": "6am ET, November 16 | The latest headlines from NPR",
-    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/5be376767d806f98db02a4ceececd7025fa12839dda999b855943c42ec9dadb2.mp3",
-    "date": "2026-11-16T11:09:38+00:00",
+    "id": "785d8a80-230a-442b-a8c1-7eac3c2d4c1a",
+    "title": "3pm ET, November 16 | The latest headlines from NPR",
+    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/407beb671525fdd46cd96d00b36770f5d81cd716519cb9159c561e35000ff4b5.mp3",
+    "date": "2026-11-16T20:09:35+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "문제 생성에 사용한 고정 음원",
-    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/f1124198-4437-4b77-a75b-7ac3b542b8df/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=f1124198-4437-4b77-a75b-7ac3b542b8df&feed=O9WlY7a5&t=podcast&e=nx-s1-20261116-0600-long&p=500005&d=280&size=4586729",
-    "audio_sha256": "5be376767d806f98db02a4ceececd7025fa12839dda999b855943c42ec9dadb2"
+    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/b61b8e8e-cf48-4e0b-bfc0-d203c9daa915/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=b61b8e8e-cf48-4e0b-bfc0-d203c9daa915&feed=O9WlY7a5&t=podcast&e=nx-s1-20261116-1500-long&p=500005&d=280&size=4586729",
+    "audio_sha256": "407beb671525fdd46cd96d00b36770f5d81cd716519cb9159c561e35000ff4b5"
   },
   "items": [
     {
-      "sentence": "to replace older copper ____ new fiber optic cable",
+      "sentence": "caused by an undetected ____",
       "meaning_context": {
-        "start": 13.58,
-        "end": 54.5,
-        "text": "delayed into out of or within the U.S. today. The airline industry is recovering from Friday's national ground stop. NPR's Joel Rose says the government reports a contractor called L-3 Harris Technologies was doing some work. The FAA says the company was replacing a router in El Dorado, Arkansas, as part of work to replace older copper wire with new fiber optic cable when something went very wrong, whether that was the router itself or operator error is still under investigation. That's one of two sites investigators are looking at, including another in Amarillo, Texas, that apparently disrupted FAA communication and radar equipment across a big part of the country, forcing the FAA to issue a rare nationwide",
+        "start": 5.36,
+        "end": 46.74,
+        "text": "every hour. Live from NPR News, I'm Lakshmi Singh. Microsoft is apologizing for last week's outlook outage. Charles Lamanna, the company's executive vice president of copilot agents and platform, said in a social media statement this morning that Thursday's incident was caused by an undetected software bug that overwhelmed servers when traffic surged. Recovery took longer than usual because restarting the servers triggered more failures. Senator Chris Van Hollen knows he is the underdog in the fight to unseat Chuck Schumer as Senate Majority Leader, but the Maryland Democrat tells NPR he can muster the support",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 32.08,
-      "context_end": 35.4,
-      "answer": "wire with",
-      "meaning": "오래된 구리선을 새 광섬유 케이블로 교체하다",
-      "hint": "해당 음성 구간의 표현 · W… W… (2단어)",
+      "context_start": 23.86,
+      "context_end": 26.66,
+      "answer": "software bug",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · S… B… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 33.74,
-      "end": 34.24,
-      "meaning_review": {
-        "method": "openai_context_review",
-        "model": "gpt-5.6-terra",
-        "policy": "context-meaning-v1",
-        "reviewed_at": "2026-11-16T12:50:29.942080+00:00",
-        "note": "교체 대상과 새로 바꾸는 대상을 연결하는 자연스러운 표현입니다.",
-        "evidence": "replace older copper wire with new fiber optic cable"
-      }
+      "start": 25.52,
+      "end": 26.66
     },
     {
-      "sentence": "An ____ to bring Jensen Huang",
+      "sentence": "he ____ the support he needs",
       "meaning_context": {
-        "start": 45.56,
-        "end": 86.7,
-        "text": "Amarillo, Texas, that apparently disrupted FAA communication and radar equipment across a big part of the country, forcing the FAA to issue a rare nationwide ground stop on Friday. FAA officials say this was supposed to be routine maintenance work, why it basically broke the national airspace is still under investigation. And Pierre's Joel Rose reporting. An online petition to bring Jensen Huang back as CEO of NVIDIA has more than 160,000 names on it. He resigned from the company last week following reports he'd had multiple affairs, that includes with a woman suspected of being recruited by China as a spy. And Pierre's John Ruich reports. The petition calls for Huang to be reinstated",
+        "start": 25.52,
+        "end": 66.3,
+        "text": "software bug that overwhelmed servers when traffic surged. Recovery took longer than usual because restarting the servers triggered more failures. Senator Chris Van Hollen knows he is the underdog in the fight to unseat Chuck Schumer as Senate Majority Leader, but the Maryland Democrat tells NPR he can muster the support he needs to win. Here's NPR's Eric McDaniel. By some measures, Chuck Schumer is the most unpopular politician in America. Many voters don't like his party either. Only some 40% hold a favorable view of Democrats, but they did just give the Senate minority leader and his party huge governing majorities. And Senator Van Hollen actually tells NPR that's part of",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 65.44,
-      "context_end": 67.54,
-      "answer": "online petition",
-      "meaning": "젠슨 황을 다시 데려오기 위한 온라인 청원",
-      "hint": "해당 음성 구간의 표현 · O… P… (2단어)",
+      "context_start": 45.5,
+      "context_end": 47.1,
+      "answer": "can muster",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · C… M… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 65.58,
-      "end": 66.24,
-      "meaning_review": {
-        "method": "openai_context_review",
-        "model": "gpt-5.6-terra",
-        "policy": "context-meaning-v1",
-        "reviewed_at": "2026-11-16T12:50:29.942080+00:00",
-        "note": "명사구로서 CEO 복귀를 요구하는 청원을 가리킵니다.",
-        "evidence": "An online petition to bring Jensen Huang back as CEO of NVIDIA"
-      }
+      "start": 45.8,
+      "end": 46.26
     },
     {
-      "sentence": "of the inquiry's scope, ____ timeline, and asks for",
+      "sentence": "senators into Van Hollen's ____ picking the Senate",
       "meaning_context": {
-        "start": 71.64,
-        "end": 112.9,
-        "text": "names on it. He resigned from the company last week following reports he'd had multiple affairs, that includes with a woman suspected of being recruited by China as a spy. And Pierre's John Ruich reports. The petition calls for Huang to be reinstated while the company conducts an independent investigation. It calls for details of the inquiry's scope, independence, and timeline, and asks for Huang to be given an opportunity to respond before a final decision. It says Huang deserves fairness. According to statistics on the website where the Stand With Jensen petition is posted, nearly 8,000 current NVIDIA employees have added their names to the letter. That's out of more than 42,000 in total. Tens of thousands",
+        "start": 55.32,
+        "end": 96.72,
+        "text": "Only some 40% hold a favorable view of Democrats, but they did just give the Senate minority leader and his party huge governing majorities. And Senator Van Hollen actually tells NPR that's part of a larger plea for something new. People around the country are looking for change, and my colleagues are listening to people around the country. Public pressure could move senators into Van Hollen's column, but picking the Senate majority leader is a closed-door, closed-ballot election, and it's not until December 1st. Anything could happen. Eric McDaniel, NPR News Washington. At least six people were injured after Ukraine launched a large-scale drone attack on targets in Russia and the occupied territories overnight. NPR's Charles Mains has more",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 90.58,
-      "context_end": 94.34,
-      "answer": "independence and",
-      "meaning": "조사의 독립성과 일정",
-      "hint": "해당 음성 구간의 표현 · I… A… (2단어)",
+      "context_start": 74.86,
+      "context_end": 77.22,
+      "answer": "column but",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · C… B… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 91.98,
-      "end": 92.72,
-      "meaning_review": {
-        "method": "openai_context_review",
-        "model": "gpt-5.6-terra",
-        "policy": "context-meaning-v1",
-        "reviewed_at": "2026-11-16T12:50:29.942080+00:00",
-        "note": "조사의 범위와 함께 요구되는 두 항목을 나열합니다.",
-        "evidence": "the inquiry's scope, independence, and timeline"
-      }
+      "start": 76.02,
+      "end": 76.62
     },
     {
-      "sentence": "Among the names ____ well-known figures, including",
+      "sentence": "full-scale invasion nearly ____ ago, Russia said its",
       "meaning_context": {
-        "start": 95.7,
-        "end": 136.52,
-        "text": "to respond before a final decision. It says Huang deserves fairness. According to statistics on the website where the Stand With Jensen petition is posted, nearly 8,000 current NVIDIA employees have added their names to the letter. That's out of more than 42,000 in total. Tens of thousands of shareholders have also signed on. Among the names are some well-known figures, including SpaceX and Tesla boss Elon Musk, Epic Games CEO Tim Sweeney and Zhang Yiming, the co-founder of TikTok's parent company ByteDance. John Ruich, NPR News. New data out today show U.S. colleges are seeing a 3 percent drop in overall international student enrollment. From member station",
+        "start": 82.72,
+        "end": 124.48,
+        "text": "Eric McDaniel, NPR News Washington. At least six people were injured after Ukraine launched a large-scale drone attack on targets in Russia and the occupied territories overnight. NPR's Charles Mains has more from Moscow. What appeared to mark the largest combined drone counterattack by Kiev since Russia launched its full-scale invasion nearly five years ago, Russia said its air defenses successfully intercepted the Ukrainian barrage, a claim that stood at odds with reports of damage at several large Russian oil and industrial facilities, also hit the lone bridge linking occupied Crimea to mainland Russia, a project seen as a physical symbol of Russia's hold over the peninsula. It illegally annexed from Ukraine back in 2014.",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 115.36,
-      "context_end": 117.82,
-      "answer": "are some",
-      "meaning": "그 이름들 가운데에는 몇몇 유명 인사들이 있다",
-      "hint": "해당 음성 구간의 표현 · A… S… (2단어)",
+      "context_start": 102.12,
+      "context_end": 105.48,
+      "answer": "five years",
+      "meaning": "부분 단서: years=년 (나머지는 듣고 완성)",
+      "hint": "해당 음성 구간의 표현 · F… Y… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 115.9,
-      "end": 116.4,
-      "meaning_review": {
-        "method": "openai_context_review",
-        "model": "gpt-5.6-terra",
-        "policy": "context-meaning-v1",
-        "reviewed_at": "2026-11-16T12:50:29.942080+00:00",
-        "note": "장소를 앞에 둔 도치 구문에서 주어 역할을 하는 표현입니다.",
-        "evidence": "Among the names are some well-known figures"
-      }
+      "start": 103.34,
+      "end": 103.98
     },
     {
-      "sentence": "Geraldo Blanco ____ education at Boston College.",
+      "sentence": "____ a halt to traffic",
       "meaning_context": {
-        "start": 141.72,
-        "end": 182.7,
-        "text": "International Education, the total number of international undergraduates barely budged last academic year, compared to the previous year. But graduate enrollment fell 13 percent, researchers blamed stricter visa restrictions, a nationwide crackdown on campus activism, and growing competition from universities abroad. Geraldo Blanco studies international education at Boston College. The majority of people who are working as postdoctoral researchers in different labs are born outside of the United States. Blanco says fewer international students put the U.S. at a disadvantage as it competes with China on AI and in other fields. For NPR News,",
+        "start": 106.12,
+        "end": 147.24,
+        "text": "successfully intercepted the Ukrainian barrage, a claim that stood at odds with reports of damage at several large Russian oil and industrial facilities, also hit the lone bridge linking occupied Crimea to mainland Russia, a project seen as a physical symbol of Russia's hold over the peninsula. It illegally annexed from Ukraine back in 2014. The local Moscow-backed authorities reported a halt to traffic along the bridge. The Kremlin later dismissed the damage as minor. Charles Maines, NPR News, Moscow. Lindsay Clancy will face another trial for the deaths of her three children in 2023. Massachusetts prosecutors asked the judge today to set a date for a jury trial. Deborah Becker of Member Station WBUR was at the hearing",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 161.22,
-      "context_end": 164.72,
-      "answer": "studies international",
-      "meaning": "보스턴칼리지에서 국제 교육을 연구하다",
-      "hint": "국제적인 관련 표현 · S… I… (2단어)",
+      "context_start": 126.22,
+      "context_end": 127.98,
+      "answer": "authorities reported",
+      "meaning": "핵심 단어 뜻: authorities=당국자들, reported=보도했다 (전체 뜻은 문맥 확인)",
+      "hint": "보도했다 관련 표현 · A… R… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 161.82,
-      "end": 162.88,
-      "meaning_review": {
-        "method": "openai_context_review",
-        "model": "gpt-5.6-terra",
-        "policy": "context-meaning-v1",
-        "reviewed_at": "2026-11-16T12:50:29.942080+00:00",
-        "note": "인물의 연구 분야를 설명하는 동사구입니다.",
-        "evidence": "Geraldo Blanco studies international education at Boston College"
-      }
+      "start": 126.22,
+      "end": 127.06
     },
     {
-      "sentence": "on AI and in ____",
+      "sentence": "a date for a ____ but",
       "meaning_context": {
-        "start": 161.22,
-        "end": 201.94,
-        "text": "Geraldo Blanco studies international education at Boston College. The majority of people who are working as postdoctoral researchers in different labs are born outside of the United States. Blanco says fewer international students put the U.S. at a disadvantage as it competes with China on AI and in other fields. For NPR News, I'm Kirk Carapaza in Boston. This is NPR. The Canadian military says a fifth soldier has died from injuries suffered in a sudden and grass fire last month. The private was caught in the fire in Alberta in October during a training exercise. To maintain",
+        "start": 131.86,
+        "end": 171.92,
+        "text": "Charles Maines, NPR News, Moscow. Lindsay Clancy will face another trial for the deaths of her three children in 2023. Massachusetts prosecutors asked the judge today to set a date for a jury trial. Deborah Becker of Member Station WBUR was at the hearing in Plymouth. During the brief hearing, prosecutors requested a date for a jury trial but did not directly commit to once again pursuing first-degree murder charges. Clancy's attorney, Kevin Reddington, expects the district attorney will not seek lesser charges where a jury could be waived. When they say that the case is going to require a jury, that it's an indirect comment from the DA that they",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 179.56,
-      "context_end": 181.6,
-      "answer": "other fields",
-      "meaning": "AI와 그 밖의 분야에서",
-      "hint": "해당 음성 구간의 표현 · O… F… (2단어)",
+      "context_start": 150.18,
+      "context_end": 152.0,
+      "answer": "jury trial",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · J… T… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 181.08,
-      "end": 181.6,
-      "meaning_review": {
-        "method": "openai_context_review",
-        "model": "gpt-5.6-terra",
-        "policy": "context-meaning-v1",
-        "reviewed_at": "2026-11-16T12:50:29.942080+00:00",
-        "note": "AI 외에 경쟁이 이루어지는 추가 분야들을 뜻합니다.",
-        "evidence": "competes with China on AI and in other fields"
-      }
+      "start": 151.1,
+      "end": 151.78
     },
     {
-      "sentence": "to ____ they eat and get",
+      "sentence": "case ended in a ____ months ago.",
       "meaning_context": {
-        "start": 184.64,
-        "end": 225.54,
-        "text": "This is NPR. The Canadian military says a fifth soldier has died from injuries suffered in a sudden and grass fire last month. The private was caught in the fire in Alberta in October during a training exercise. To maintain a healthy weight, Americans are advised to watch what they eat and get some exercise. But as NPR's Maria Godoy reports, how much we sleep can also have a powerful influence on weight. Adults are supposed to sleep seven to nine hours a night. Many of us don't hit that mark. Research has shown insufficient sleep can lead to weight gain, primarily by driving us",
+        "start": 156.46,
+        "end": 197.54,
+        "text": "charges. Clancy's attorney, Kevin Reddington, expects the district attorney will not seek lesser charges where a jury could be waived. When they say that the case is going to require a jury, that it's an indirect comment from the DA that they intend to proceed on first-degree murder indictments. Clancy's case ended in a mistrial two months ago. The next trial is set to begin March 29. For NPR News, I'm Debra Becker in Boston. It's NPR. Customers with some major banks are reporting problems accessing their online accounts today. The website downdetector.com lists Bank of America,",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 204.42,
-      "context_end": 206.26,
-      "answer": "watch what",
-      "meaning": "자신이 무엇을 먹는지 살피다",
-      "hint": "해당 음성 구간의 표현 · W… W… (2단어)",
+      "context_start": 175.9,
+      "context_end": 178.22,
+      "answer": "mistrial two",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · M… T… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 204.76,
-      "end": 205.4,
-      "meaning_review": {
-        "method": "openai_context_review",
-        "model": "gpt-5.6-terra",
-        "policy": "context-meaning-v1",
-        "reviewed_at": "2026-11-16T12:50:29.942080+00:00",
-        "note": "뒤의 eat와 연결되어 먹는 내용을 주의 깊게 보라는 뜻의 절을 이룹니다.",
-        "evidence": "watch what they eat and get some exercise"
-      }
+      "start": 176.88,
+      "end": 177.66
     }
   ],
   "summaryReview": {
     "kind": "keyword_rubric",
     "article": 1,
-    "start": 10.42,
-    "end": 109.24,
-    "transcript": "The tracking slight flight aware says hundreds of flights are delayed into out of or within the U.S. today. The airline industry is recovering from Friday's national ground stop. NPR's Joel Rose says the government reports a contractor called L-3 Harris Technologies was doing some work. The FAA says the company was replacing a router in El Dorado, Arkansas, as part of work to replace older copper wire with new fiber optic cable when something went very wrong, whether that was the router itself or operator error is still under investigation. That's one of two sites investigators are looking at, including another in Amarillo, Texas, that apparently disrupted FAA communication and radar equipment across a big part of the country, forcing the FAA to issue a rare nationwide ground stop on Friday. FAA officials say this was supposed to be routine maintenance work, why it basically broke the national airspace is still under investigation. Pierre's Joel Rose reporting. An online petition to bring Jensen Huang back as CEO of NVIDIA has more than 160,000 names on it. He resigned from the company last week following reports he'd had multiple affairs, that includes with a woman suspected of being recruited by China as a spy. And Pierre's John Ruich reports. The petition calls for Huang to be reinstated while the company conducts an independent investigation. It calls for details of the inquiry's scope, independence, and timeline, and asks for Huang to be given an opportunity to respond before a final decision. It says Huang deserves fairness. According to statistics on the website where the Stand With Jensen petition is posted, nearly 8,000 current NVIDIA employees have added their names to the letter.",
+    "start": 11.52,
+    "end": 97.38,
+    "transcript": "Microsoft is apologizing for last week's outlook outage. Charles Lamanna, the company's executive vice president of copilot agents and platform, said in a social media statement this morning that Thursday's incident was caused by an undetected software bug that overwhelmed servers when traffic surged. took longer than usual because restarting the servers triggered more failures. Chris Van Hollen knows he is the underdog in the fight to unseat Chuck Schumer as Senate Majority Leader, but the Maryland Democrat tells NPR he can muster the support he needs to win. Here's NPR's Eric McDaniel. By some measures, Chuck Schumer is the most unpopular politician in America. Many voters don't like his party either. Only some 40% hold a favorable view of Democrats, but they did just give the Senate minority leader and his party huge governing majorities. And Senator Van Hollen actually tells NPR that's part of a larger plea for something new. People around the country are looking for change, and my colleagues are listening to people around the country. Public pressure could move senators into Van Hollen's column, but picking the Senate majority leader is a closed-door, closed-ballot election, and it's not until December 1st. Anything could happen. Eric McDaniel, NPR News Washington. At least six people were injured after Ukraine launched a large-scale drone attack on targets in Russia and the occupied territories overnight. NPR's Charles Mains has more from Moscow.",
     "keywords": [
       {
-        "label": "china · 중국",
+        "label": "russia · 러시아",
         "terms": [
-          "china",
-          "chinese",
-          "중국"
+          "russia",
+          "russian",
+          "러시아"
         ]
       },
       {
-        "label": "nvidia · 엔비디아",
+        "label": "ukraine · 우크라이나",
         "terms": [
-          "nvidia",
-          "엔비디아"
+          "ukraine",
+          "우크라이나"
         ]
       },
       {
-        "label": "petition · 청원",
+        "label": "support · 지지",
         "terms": [
-          "petition",
-          "signatures",
-          "청원",
-          "서명"
+          "support",
+          "지지",
+          "지원"
         ]
       },
       {
-        "label": "resigned · 사임",
+        "label": "officer · 임원",
         "terms": [
-          "resign",
-          "resigned",
-          "resignation",
-          "사임",
-          "사퇴"
+          "officer",
+          "executive",
+          "임원",
+          "책임자"
         ]
       },
       {
-        "label": "government · 정부",
+        "label": "president · 대통령",
         "terms": [
-          "government",
-          "정부"
+          "president",
+          "대통령"
         ]
       },
       {
-        "label": "company · 기업",
+        "label": "election · 선거",
         "terms": [
-          "company",
-          "companies",
-          "기업",
-          "회사"
+          "election",
+          "선거"
         ]
       }
     ],
@@ -269,98 +209,58 @@
     {
       "kind": "keyword_rubric",
       "article": 1,
-      "start": 10.42,
-      "end": 109.24,
-      "transcript": "The tracking slight flight aware says hundreds of flights are delayed into out of or within the U.S. today. The airline industry is recovering from Friday's national ground stop. NPR's Joel Rose says the government reports a contractor called L-3 Harris Technologies was doing some work. The FAA says the company was replacing a router in El Dorado, Arkansas, as part of work to replace older copper wire with new fiber optic cable when something went very wrong, whether that was the router itself or operator error is still under investigation. That's one of two sites investigators are looking at, including another in Amarillo, Texas, that apparently disrupted FAA communication and radar equipment across a big part of the country, forcing the FAA to issue a rare nationwide ground stop on Friday. FAA officials say this was supposed to be routine maintenance work, why it basically broke the national airspace is still under investigation. Pierre's Joel Rose reporting. An online petition to bring Jensen Huang back as CEO of NVIDIA has more than 160,000 names on it. He resigned from the company last week following reports he'd had multiple affairs, that includes with a woman suspected of being recruited by China as a spy. And Pierre's John Ruich reports. The petition calls for Huang to be reinstated while the company conducts an independent investigation. It calls for details of the inquiry's scope, independence, and timeline, and asks for Huang to be given an opportunity to respond before a final decision. It says Huang deserves fairness. According to statistics on the website where the Stand With Jensen petition is posted, nearly 8,000 current NVIDIA employees have added their names to the letter.",
+      "start": 11.52,
+      "end": 97.38,
+      "transcript": "Microsoft is apologizing for last week's outlook outage. Charles Lamanna, the company's executive vice president of copilot agents and platform, said in a social media statement this morning that Thursday's incident was caused by an undetected software bug that overwhelmed servers when traffic surged. took longer than usual because restarting the servers triggered more failures. Chris Van Hollen knows he is the underdog in the fight to unseat Chuck Schumer as Senate Majority Leader, but the Maryland Democrat tells NPR he can muster the support he needs to win. Here's NPR's Eric McDaniel. By some measures, Chuck Schumer is the most unpopular politician in America. Many voters don't like his party either. Only some 40% hold a favorable view of Democrats, but they did just give the Senate minority leader and his party huge governing majorities. And Senator Van Hollen actually tells NPR that's part of a larger plea for something new. People around the country are looking for change, and my colleagues are listening to people around the country. Public pressure could move senators into Van Hollen's column, but picking the Senate majority leader is a closed-door, closed-ballot election, and it's not until December 1st. Anything could happen. Eric McDaniel, NPR News Washington. At least six people were injured after Ukraine launched a large-scale drone attack on targets in Russia and the occupied territories overnight. NPR's Charles Mains has more from Moscow.",
       "keywords": [
         {
-          "label": "china · 중국",
+          "label": "russia · 러시아",
           "terms": [
-            "china",
-            "chinese",
-            "중국"
+            "russia",
+            "russian",
+            "러시아"
           ]
         },
         {
-          "label": "nvidia · 엔비디아",
+          "label": "ukraine · 우크라이나",
           "terms": [
-            "nvidia",
-            "엔비디아"
+            "ukraine",
+            "우크라이나"
           ]
         },
         {
-          "label": "petition · 청원",
+          "label": "support · 지지",
           "terms": [
-            "petition",
-            "signatures",
-            "청원",
-            "서명"
+            "support",
+            "지지",
+            "지원"
           ]
         },
         {
-          "label": "resigned · 사임",
+          "label": "officer · 임원",
           "terms": [
-            "resign",
-            "resigned",
-            "resignation",
-            "사임",
-            "사퇴"
+            "officer",
+            "executive",
+            "임원",
+            "책임자"
           ]
         },
         {
-          "label": "government · 정부",
+          "label": "president · 대통령",
           "terms": [
-            "government",
-            "정부"
+            "president",
+            "대통령"
           ]
         },
         {
-          "label": "company · 기업",
+          "label": "election · 선거",
           "terms": [
-            "company",
-            "companies",
-            "기업",
-            "회사"
-          ]
-        }
-      ],
-      "boundary": "reporter_handoff_estimate"
-    },
-    {
-      "kind": "keyword_rubric",
-      "article": 2,
-      "start": 127.66,
-      "end": 200.44,
-      "transcript": "New data out today show U.S. colleges are seeing a 3 percent drop in overall international student enrollment. From member station GBH in Boston, Kirk Carapessa reports. According to the Institute of International Education, total number of international undergraduates barely budged last academic year, compared to the previous year. But graduate enrollment fell 13 percent, researchers blamed stricter visa restrictions, a nationwide crackdown on campus activism, and growing competition from universities abroad. Geraldo Blanco studies international education at Boston College. The majority of people who are working as postdoctoral researchers in different labs are born outside of the United States. Blanco says fewer international students put the U.S. at a disadvantage as it competes with China on AI and in other fields. For NPR News, I'm Kirk Carapaza in Boston. This is NPR. The Canadian military says a fifth soldier has died from injuries suffered in a sudden and grass fire last month. The private was caught in the fire in Alberta in October during a training exercise.",
-      "keywords": [
-        {
-          "label": "china · 중국",
-          "terms": [
-            "china",
-            "chinese",
-            "중국"
-          ]
-        },
-        {
-          "label": "military · 군사",
-          "terms": [
-            "military",
-            "troops",
-            "군사",
-            "군대",
-            "군인"
+            "election",
+            "선거"
           ]
         }
       ],
       "boundary": "reporter_handoff_estimate"
     }
-  ],
-  "ai_review": {
-    "policy": "context-meaning-v1",
-    "model": "gpt-5.6-terra",
-    "reviewed_at": "2026-11-16T12:50:29.942080+00:00",
-    "input_signature": "fc600707fbfc0f27be3fe0a0abdc6a3185d7a42c7a912e51403743a2ec7a5323",
-    "rejected_count": 0,
-    "output_signature": "fc600707fbfc0f27be3fe0a0abdc6a3185d7a42c7a912e51403743a2ec7a5323"
-  }
+  ]
 }
