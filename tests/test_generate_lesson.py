@@ -219,9 +219,16 @@ class GenerationTests(unittest.TestCase):
         self.assertGreaterEqual(len(candidates), 1)
         item = candidates[0]
         self.assertEqual(item["sentence"], "____")
+        self.assertIn("meaning", item)
+        self.assertTrue(item["meaning"])
         self.assertEqual(len(item["answer"].split()), 2)
         self.assertGreaterEqual(item["start"], 25)
         self.assertLess(item["start"], item["end"])
+
+    def test_korean_clue_marks_uncertain_meanings(self):
+        self.assertIn('분기 실적', g.korean_study_clue('quarterly earnings'))
+        self.assertIn('부분 단서', g.korean_study_clue('unlisted climate'))
+        self.assertIn('의미 단서를 확인하지', g.korean_study_clue('unlisted unknown'))
 
     def test_short_expression_checker_confirms_exact_two_words(self):
         candidates = g.make_short_items([segment()])
