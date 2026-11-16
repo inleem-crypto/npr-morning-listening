@@ -23,7 +23,7 @@ STATUS = ROOT / "generation-status.json"
 REPORT = ROOT / "generation-report.json"
 FEED = "https://feeds.npr.org/500005/podcast.xml"
 USER_AGENT = "NPR-Morning-Listening/4.0 (+https://github.com/inleem-crypto/npr-morning-listening)"
-GENERATOR_VERSION = 11
+GENERATOR_VERSION = 12
 PRIMARY_MODEL = "small.en"
 CHECK_MODEL = "medium.en"
 MAX_CANDIDATES = 16
@@ -492,6 +492,83 @@ def check_short_items(items, audio, model, diagnostics=None):
 
 
 
+# Bilingual aliases are deliberately explicit: this is a keyword rubric,
+# not an LLM-based judgment of a learner's meaning or factual accuracy.
+SUMMARY_TERMS = {
+    "resigned": ["resign", "resigned", "resignation", "사임", "사퇴"],
+    "relationship": ["relationship", "affair", "관계", "불륜"],
+    "financial": ["financial", "finance", "재무", "금융"],
+    "officer": ["officer", "executive", "임원", "책임자"],
+    "confidence": ["confidence", "trust", "신뢰", "믿음"],
+    "president": ["president", "대통령"],
+    "government": ["government", "정부"],
+    "election": ["election", "선거"],
+    "court": ["court", "judge", "법원", "판사"],
+    "military": ["military", "troops", "군사", "군대", "군인"],
+    "agreement": ["agreement", "deal", "deals", "합의", "협정", "거래", "계약"],
+    "company": ["company", "companies", "기업", "회사"],
+    "investigation": ["investigation", "investigating", "조사", "수사"],
+    "security": ["security", "안보", "보안"],
+    "police": ["police", "경찰"],
+    "killed": ["killed", "dead", "death", "deaths", "사망", "숨졌", "사살"],
+    "prices": ["prices", "price", "물가", "가격"],
+    "inflation": ["inflation", "인플레이션", "물가상승"],
+    "health": ["health", "건강", "보건"],
+    "school": ["school", "schools", "학교"],
+    "climate": ["climate", "기후"],
+    "attack": ["attack", "attacks", "공격", "공습"],
+    "tariffs": ["tariffs", "tariff", "관세"],
+    "shutdown": ["shutdown", "셧다운", "업무중단", "업무 중단"],
+}
+
+def make_summary_review(segments):
+    """Extract an explicitly approximate first-story window and auditably scoreable terms."""
+    words = [w for s in segments for w in (getattr(s, "words", None) or [])
+             if math.isfinite(w.start) and math.isfinite(w.end) and w.end > w.start]
+    if not words:
+        return None
+    # Find and skip the host introduction, including any preceding dynamic ads.
+    start_index = 0
+    opening_words = [w for w in words if w.start < 70]
+    opening = "".join(w.word for w in opening_words)
+    intro = re.search(r"(?:Live\s+)?from NPR News.*?(?:I'm|I am) [^.!?]{1,65}[.!?]", opening, re.I)
+    if intro:
+        position = 0
+        for i, w in enumerate(opening_words):
+            position += len(w.word)
+            if position >= intro.end():
+                start_index = i+1
+                break
+    remaining = words[start_index:]
+    if not remaining:
+        return None
+    selected = []
+    for w in remaining:
+        if w.end - remaining[0].start > 80:
+            break
+        selected.append(w)
+        # Reporter sign-off is a strong story boundary when present.
+        tail = "".join(x.word for x in selected[-8:])
+        if w.end - remaining[0].start > 15 and re.search(r"NPR News[.!?]?$", tail.strip()):
+            break
+    transcript = "".join(w.word for w in selected).strip()
+    tokens = normalized_words(transcript)
+    if len(tokens) < 12:
+        return None
+    keywords = []
+    for label, aliases in SUMMARY_TERMS.items():
+        if any(t in tokens for t in aliases if re.fullmatch('[a-z]+', t)):
+            korean = next((a for a in aliases if re.search('[가-힣]', a)), '')
+            keywords.append({"label": label + (" · " + korean if korean else ''), "terms": aliases})
+    # Require bilingual content anchors; a generic structure score alone is not
+    # advertised as article-content feedback.
+    if len(keywords) < 2:
+        return None
+    return {"kind": "keyword_rubric", "start": round(selected[0].start, 2),
+            "end": round(selected[-1].end, 2), "transcript": transcript,
+            "keywords": keywords[:6], "boundary": "automatically_estimated"}
+
+
 def atomic_json(path, value):
     temporary = path.with_suffix(path.suffix + ".tmp")
     temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -522,7 +599,9 @@ def generate(report) -> dict:
         model = WhisperModel(PRIMARY_MODEL, device="cpu", compute_type="int8", cpu_threads=4)
         segments, _ = model.transcribe(decoded, language="en", beam_size=5, temperature=0,
                                        word_timestamps=True, condition_on_previous_text=False)
-        candidates = make_short_items(list(segments))
+        primary_segments = list(segments)
+        summary_review = make_summary_review(primary_segments)
+        candidates = make_short_items(primary_segments)
         report["candidates"] = candidates
         print(f"{len(candidates)} short-expression candidates passed primary audio checks", flush=True)
         if not candidates:
@@ -555,6 +634,7 @@ def generate(report) -> dict:
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "episode": episode,
         "items": items,
+        "summaryReview": summary_review,
     }
     atomic_json(OUTPUT, lesson)
     for old in media.glob("*.mp3"):

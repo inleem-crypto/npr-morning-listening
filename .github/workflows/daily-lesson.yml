@@ -6,6 +6,7 @@ on:
     paths:
       - index.html
       - lesson-status.js
+      - summary-review.js
       - scripts/generate_lesson.py
       - tests/**
       - requirements.txt
@@ -35,7 +36,7 @@ jobs:
           key: whisper-small-medium-en-v2
       - run: python -m pip install -r requirements.txt
       - run: python -m unittest discover -s tests -v
-      - run: node --test tests/test_lesson_status.js
+      - run: node --test tests/*.js
       - name: Generate lesson
         id: generate
         run: python scripts/generate_lesson.py

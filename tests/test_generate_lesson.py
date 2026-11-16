@@ -215,6 +215,14 @@ class GenerationTests(unittest.TestCase):
             'faster_whisper': NS(WhisperModel=model),
             'faster_whisper.audio': NS(decode_audio=lambda *a: [0]*600000)}))
 
+    def test_summary_reference_skips_intro_and_stops_at_signoff(self):
+        text = "Live from NPR News, I'm Pat Smith. An officer resigned following a relationship with another executive. Pat Smith, NPR News. The president announced tariffs."
+        result = g.make_summary_review([segment(text, start=0)])
+        self.assertIsNotNone(result)
+        self.assertNotIn("Live from", result['transcript'])
+        self.assertTrue(any(k['label'].startswith('resigned') for k in result['keywords']))
+        self.assertTrue(all(k['terms'] for k in result['keywords']))
+
     def test_short_expression_candidate_has_conservative_shape(self):
         candidates = g.make_short_items([segment()])
         self.assertGreaterEqual(len(candidates), 1)
