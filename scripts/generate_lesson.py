@@ -23,7 +23,7 @@ STATUS = ROOT / "generation-status.json"
 REPORT = ROOT / "generation-report.json"
 FEED = "https://feeds.npr.org/500005/podcast.xml"
 USER_AGENT = "NPR-Morning-Listening/4.0 (+https://github.com/inleem-crypto/npr-morning-listening)"
-GENERATOR_VERSION = 9
+GENERATOR_VERSION = 10
 PRIMARY_MODEL = "small.en"
 CHECK_MODEL = "medium.en"
 MAX_CANDIDATES = 16
@@ -274,6 +274,89 @@ PHRASE_EXCLUDED = {
 }
 
 
+
+# Conservative Korean study clues. An unknown expression is not translated by
+# guessing: a single-word clue is labeled explicitly as a partial clue.
+PHRASE_GLOSSES = {
+    "ground stop": "항공기의 이륙을 일시적으로 전면 중단하는 조치",
+    "quarterly earnings": "기업의 분기 실적",
+    "interest rates": "금리",
+    "federal government": "미국 연방정부",
+    "climate change": "기후변화",
+    "peace talks": "평화협상",
+    "election results": "선거 결과",
+    "voter turnout": "투표율 또는 유권자 투표 참여",
+    "national security": "국가 안보",
+    "state officials": "주정부 당국자들",
+    "public health": "공중보건",
+    "economic growth": "경제성장",
+    "budget cuts": "예산 삭감",
+    "legal challenges": "법적 이의제기 또는 법적 분쟁",
+    "new restrictions": "새로운 제한 조치",
+    "restrictions remain": "제한 조치가 계속 유지되다",
+    "various types": "여러 종류",
+    "there was": "~이 있었다",
+    "those conversions": "그러한 전환·변환 (대상은 문맥 확인)",
+    "like leaving": "떠나는 것처럼 또는 떠나는 것과 같은 (문맥 확인)",
+    "press conference": "기자회견",
+    "supreme court": "대법원",
+    "senate vote": "상원 표결",
+    "white house": "미국 백악관",
+    "stock market": "주식시장",
+    "local authorities": "지역 당국자들",
+    "final decision": "최종 결정",
+    "health care": "의료 서비스",
+    "new policy": "새로운 정책",
+    "supply chain": "공급망",
+    "natural disasters": "자연재해",
+    "air traffic": "항공 교통",
+    "flight delays": "항공편 지연",
+    "government shutdown": "정부 업무 중단",
+    "court ruling": "법원 판결",
+}
+WORD_GLOSSES = {
+    **NEWS_HINTS,
+    "ground": "지상", "stop": "중단", "quarterly": "분기별의",
+    "earnings": "기업 실적", "conversions": "전환·변환", "restrictions": "제한 조치",
+    "remain": "남아 있다", "various": "여러 가지의", "types": "종류",
+    "local": "지역의", "authorities": "당국자들", "final": "최종의",
+    "decision": "결정", "airport": "공항", "airports": "공항들",
+    "flight": "항공편", "flights": "항공편들", "delays": "지연",
+    "cancelled": "취소되었다", "cancel": "취소하다", "payments": "지급액",
+    "restrictions": "제한 조치", "increase": "증가", "increases": "증가",
+    "decline": "감소", "declined": "감소했다", "rising": "상승하는",
+    "falling": "하락하는", "growth": "성장", "quarterly": "분기별",
+    "earnings": "실적", "report": "보도", "reports": "보도들",
+    "decisions": "결정들", "announced": "발표했다",
+    "talks": "협상", "agreement": "합의", "agreements": "합의들",
+    "proposal": "제안", "proposals": "제안들", "reviewing": "검토하는",
+    "investigation": "조사", "investigators": "조사관들",
+    "review": "검토", "results": "결과", "restrictions": "제한",
+    "available": "이용 가능한", "services": "서비스",
+    "changes": "변화", "system": "시스템", "systems": "시스템들",
+    "public": "공공의", "private": "민간의", "new": "새로운",
+    "current": "현재의", "previous": "이전의", "future": "미래의",
+    "official": "공식의", "statement": "성명", "deadline": "마감 시한",
+    "evidence": "증거", "cause": "원인", "impact": "영향",
+    "support": "지지·지원", "needed": "필요했다",
+    "temporary": "일시적인", "permanent": "영구적인",
+    "months": "개월", "weeks": "주", "years": "년", "days": "일",
+}
+
+def korean_study_clue(answer: str) -> str:
+    """Offer an exact curated Korean gloss, or honestly label a partial clue."""
+    answer = answer.casefold().strip()
+    if answer in PHRASE_GLOSSES:
+        return PHRASE_GLOSSES[answer]
+    words = answer.split()
+    known = [(word, WORD_GLOSSES[word]) for word in words if word in WORD_GLOSSES]
+    if len(known) == len(words):
+        return "핵심 단어 뜻: " + ", ".join(f"{word}={meaning}" for word, meaning in known) + " (전체 뜻은 문맥 확인)"
+    if known:
+        return "부분 단서: " + ", ".join(f"{word}={meaning}" for word, meaning in known) + " (나머지는 듣고 완성)"
+    return "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요."
+
+
 def _phrase_token(word):
     """Reject digits, punctuation-only tokens and capitalized proper-name risks."""
     raw = str(word).strip().strip(".,!?;:()[]{}\"'“”‘’")
@@ -316,6 +399,7 @@ def make_short_items(segments):
             result.append({
                 "sentence": "____",
                 "answer": answer,
+                "meaning": korean_study_clue(answer),
                 "hint": hint,
                 "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
                 "start": round(start, 2),
@@ -425,7 +509,7 @@ def generate(report) -> dict:
         "transcription": {"model": PRIMARY_MODEL, "check_model": CHECK_MODEL,
                           "policy": "short-phrase-word-confidence-time-alignment-v3",
                           "human_verified": False},
-        "sourceNote": "동일 음원의 짧은 2단어 표현을 두 음성인식 모델이 교차 확인했습니다. 사람 검수 대본은 아니며 단어 오류 가능성이 있습니다. 7개 정답의 총 영어 원문은 최대 14단어입니다.",
+        "sourceNote": "같은 음원의 2단어 표현을 두 음성인식 모델이 비교 확인했습니다. 한국어 단서는 사람이 작성한 제한된 용어 사전에 기반하며 부분 단서는 정답의 전체 번역이 아닙니다. 실제 음성을 확인하세요. 인용한 영어 정답은 최대 14단어입니다.",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "episode": episode,
         "items": items,
