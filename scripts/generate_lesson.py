@@ -23,7 +23,7 @@ STATUS = ROOT / "generation-status.json"
 REPORT = ROOT / "generation-report.json"
 FEED = "https://feeds.npr.org/500005/podcast.xml"
 USER_AGENT = "NPR-Morning-Listening/4.0 (+https://github.com/inleem-crypto/npr-morning-listening)"
-GENERATOR_VERSION = 10
+GENERATOR_VERSION = 11
 PRIMARY_MODEL = "small.en"
 CHECK_MODEL = "medium.en"
 MAX_CANDIDATES = 16
@@ -313,6 +313,11 @@ PHRASE_GLOSSES = {
     "flight delays": "항공편 지연",
     "government shutdown": "정부 업무 중단",
     "court ruling": "법원 판결",
+    "allegedly had": "~을 가지고 있었다고 주장되거나 전해졌다",
+    "financial officer": "재무 담당 임원",
+    "had expected": "예상했었다",
+    "public statement": "공개 성명",
+    "voyage data": "항해 자료",
 }
 WORD_GLOSSES = {
     **NEWS_HINTS,
@@ -393,11 +398,20 @@ def make_short_items(segments):
             answer = a + " " + b
             if answer in seen:
                 continue
+            # Preserve audible context instead of replacing the entire prompt
+            # with a bare blank. Never synthesize a sentence around the answer.
+            left, right = max(0, i - 4), min(len(words), i + 6)
+            context = words[left:right]
+            before = "".join(w.word for w in words[left:i]).strip()
+            after = "".join(w.word for w in words[i + 2:right]).strip()
+            sentence = (before + " ____ " + after).strip()
             meaning = NEWS_HINTS.get(a) or NEWS_HINTS.get(b)
             hint = ((meaning + " 관련 표현 · ") if meaning else "해당 음성 구간의 표현 · ")
             hint += f"{a[0].upper()}… {b[0].upper()}… (2단어)"
             result.append({
-                "sentence": "____",
+                "sentence": sentence,
+                "context_start": round(context[0].start, 2),
+                "context_end": round(context[-1].end, 2),
                 "answer": answer,
                 "meaning": korean_study_clue(answer),
                 "hint": hint,
@@ -418,8 +432,8 @@ def check_short_items(items, audio, model, diagnostics=None):
     for item in items:
         if accepted and item["start"] - accepted[-1]["start"] < 18:
             continue
-        clip_start = max(0.0, item["start"] - 2)
-        clip_end = min(len(audio) / 16000, item["end"] + 2)
+        clip_start = max(0.0, min(item["start"] - 2, item.get("context_start", item["start"]) - .5))
+        clip_end = min(len(audio) / 16000, max(item["end"] + 2, item.get("context_end", item["end"]) + .5))
         sample = audio[int(clip_start * 16000):int(clip_end * 16000)]
         segments, _ = model.transcribe(
             sample, language="en", beam_size=5, temperature=0,
@@ -427,7 +441,19 @@ def check_short_items(items, audio, model, diagnostics=None):
         segments = list(segments)
         words = [(word, seg) for seg in segments for word in (seg.words or [])]
         expected = normalized_words(item["answer"])
+        # The displayed context must also agree. A correct isolated answer is
+        # insufficient if the surrounding prompt says something else.
+        context_expected = normalized_words(item["sentence"].replace("____", item["answer"]))
+        observed_context = [t for w, _ in words for t in normalized_words(w.word)]
+        context_matches = any(observed_context[j:j + len(context_expected)] == context_expected
+                              for j in range(len(observed_context) - len(context_expected) + 1))
         matched = False
+        if not context_matches:
+            if diagnostics is not None:
+                diagnostics.append({"start": item["start"], "reason": "context_mismatch",
+                                    "expected": item["sentence"].replace("____", item["answer"]),
+                                    "context_text": "".join(w.word for w, _ in words).strip()})
+            continue
         for i in range(len(words) - len(expected) + 1):
             group = words[i:i + len(expected)]
             observed = [t for w, _ in group for t in normalized_words(w.word)]
@@ -501,20 +527,34 @@ def generate(report) -> dict:
         items = check_short_items(candidates, decoded, checker, report["checks"])
         print(f"{len(items)} short expressions agreed with {CHECK_MODEL}", flush=True)
 
+    # Publish the exact bytes used by BOTH recognizers. Podcast redirects can
+    # insert different ads on another device, invalidating all word timestamps.
+    digest = report["audio_sha256"]
+    media = ROOT / "media"
+    media.mkdir(exist_ok=True)
+    snapshot = media / (digest + ".mp3")
+    snapshot.write_bytes(audio)
+    source_url = episode["audioURL"]
+    episode = {**episode, "sourceAudioURL": source_url,
+               "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/" + snapshot.name,
+               "audio_sha256": digest, "via": "문제 생성에 사용한 고정 음원"}
     lesson = {
         "title": f"{episode['title']} · 자동 딕테이션",
         "kind": "auto_transcribed",
         "generator_version": GENERATOR_VERSION,
         "verified": False,
         "transcription": {"model": PRIMARY_MODEL, "check_model": CHECK_MODEL,
-                          "policy": "short-phrase-word-confidence-time-alignment-v3",
+                          "policy": "frozen-audio-context-agreement-v4",
                           "human_verified": False},
-        "sourceNote": "같은 음원의 2단어 표현을 두 음성인식 모델이 비교 확인했습니다. 한국어 단서는 사람이 작성한 제한된 용어 사전에 기반하며 부분 단서는 정답의 전체 번역이 아닙니다. 실제 음성을 확인하세요. 인용한 영어 정답은 최대 14단어입니다.",
+        "sourceNote": "문제를 만들 때 사용한 고정 음원을 재생합니다. 빈칸 앞뒤 영어 지문과 2단어 정답을 두 음성인식 모델이 비교했습니다. 자동 전사이므로 오류가 있을 수 있습니다.",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "episode": episode,
         "items": items,
     }
     atomic_json(OUTPUT, lesson)
+    for old in media.glob("*.mp3"):
+        if old != snapshot:
+            old.unlink()
     print(f"Saved {len(items)} questions for {episode['title']}")
     return lesson
 

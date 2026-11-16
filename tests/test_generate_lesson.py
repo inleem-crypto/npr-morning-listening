@@ -196,6 +196,7 @@ class QualityTests(unittest.TestCase):
 class GenerationTests(unittest.TestCase):
     def setUp(self):
         self.directory = Path(self.enterContext(tempfile.TemporaryDirectory()))
+        self.enterContext(patch.object(g, "ROOT", self.directory))
         for name, file in [('OUTPUT', 'lesson.json'), ('STATUS', 'status.json'), ('REPORT', 'report.json')]:
             self.enterContext(patch.object(g, name, self.directory / file))
         g.OUTPUT.write_bytes(b'{"previous":"unchanged"}\n')
@@ -218,7 +219,10 @@ class GenerationTests(unittest.TestCase):
         candidates = g.make_short_items([segment()])
         self.assertGreaterEqual(len(candidates), 1)
         item = candidates[0]
-        self.assertEqual(item["sentence"], "____")
+        self.assertIn("____", item["sentence"])
+        self.assertNotEqual(item["sentence"], "____")
+        self.assertLessEqual(item["context_start"], item["start"])
+        self.assertGreaterEqual(item["context_end"], item["end"])
         self.assertIn("meaning", item)
         self.assertTrue(item["meaning"])
         self.assertEqual(len(item["answer"].split()), 2)
@@ -247,6 +251,15 @@ class GenerationTests(unittest.TestCase):
         accepted = g.check_short_items([first], [0]*600000, model)
         self.assertEqual(accepted, [first])
 
+    def test_correct_answer_with_wrong_context_is_rejected(self):
+        item = g.make_short_items([segment()])[0]
+        model = NS(transcribe=lambda *a, **k: (
+            iter([segment(TEXT.replace("reviewing", "rejecting"), start=2)]), None))
+        diagnostics = []
+        with self.assertRaises(RuntimeError):
+            g.check_short_items([item], [0]*600000, model, diagnostics)
+        self.assertEqual(diagnostics[0]['reason'], 'context_mismatch')
+
     def test_short_expression_mismatch_does_not_invent_an_answer(self):
         candidates = g.make_short_items([segment()])
         self.assertTrue(candidates)
@@ -262,7 +275,12 @@ class GenerationTests(unittest.TestCase):
         lesson = json.loads(g.OUTPUT.read_text(encoding='utf-8'))
         self.assertEqual(lesson['episode']['id'], 'new')
         self.assertFalse(lesson['verified'])
-        self.assertEqual(lesson['items'][0]['sentence'], '____')
+        self.assertIn('____', lesson['items'][0]['sentence'])
+        self.assertNotEqual(lesson['items'][0]['sentence'], '____')
+        snapshot = self.directory / 'media' / (lesson['episode']['audio_sha256'] + '.mp3')
+        self.assertEqual(snapshot.read_bytes(), b'audio')
+        self.assertIn(snapshot.name, lesson['episode']['audioURL'])
+        self.assertEqual(lesson['episode']['sourceAudioURL'], self.episode['audioURL'])
         self.assertEqual(len(lesson['items'][0]['answer'].split()), 2)
         self.assertLessEqual(len(lesson['items']), 7)
         self.assertEqual(json.loads(g.STATUS.read_text(encoding='utf-8'))['status'], 'success')
@@ -278,7 +296,7 @@ class GenerationTests(unittest.TestCase):
         self.assertEqual(g.OUTPUT.read_bytes(), self.before)
         self.assertEqual(json.loads(g.STATUS.read_text(encoding='utf-8'))['status'], 'failed')
         report = json.loads(g.REPORT.read_text(encoding='utf-8'))
-        self.assertEqual(report['checks'][0]['reason'], 'phrase_or_time_mismatch')
+        self.assertEqual(report['checks'][0]['reason'], 'context_mismatch')
         self.assertIn('officials', report['checks'][0]['context_text'])
         self.assertIn('audio_sha256', report)
 
