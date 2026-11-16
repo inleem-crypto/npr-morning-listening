@@ -1,5 +1,5 @@
 {
-  "title": "5am ET, November 16 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "6am ET, November 16 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
   "generator_version": 13,
   "verified": false,
@@ -10,199 +10,152 @@
     "human_verified": false
   },
   "sourceNote": "문제를 만들 때 사용한 고정 음원을 재생합니다. 빈칸 앞뒤 영어 지문과 2단어 정답을 두 음성인식 모델이 비교했습니다. 자동 전사이므로 오류가 있을 수 있습니다.",
-  "generated_at": "2026-11-16T10:56:10.676Z",
+  "generated_at": "2026-11-16T12:08:57.421553+00:00",
   "episode": {
-    "id": "d909bb17-7f4d-43b4-8d0f-69f901b6512b",
-    "title": "5am ET, November 16 | The latest headlines from NPR",
-    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/cdf979ffcbbce0bb2d3511af03375f36658d0f0a9a45d95b21da54d56790afb2.mp3",
-    "date": "2026-11-16T10:09:38+00:00",
+    "id": "7358f913-ab74-4db3-9159-5adc7678ef72",
+    "title": "6am ET, November 16 | The latest headlines from NPR",
+    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/5be376767d806f98db02a4ceececd7025fa12839dda999b855943c42ec9dadb2.mp3",
+    "date": "2026-11-16T11:09:38+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "문제 생성에 사용한 고정 음원",
-    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/4ca6db0d-9c69-4abe-8efa-af211eac868f/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=4ca6db0d-9c69-4abe-8efa-af211eac868f&feed=O9WlY7a5&t=podcast&e=nx-s1-20261116-0500-long&p=500005&d=280&size=4586728",
-    "audio_sha256": "cdf979ffcbbce0bb2d3511af03375f36658d0f0a9a45d95b21da54d56790afb2"
+    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/f1124198-4437-4b77-a75b-7ac3b542b8df/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=f1124198-4437-4b77-a75b-7ac3b542b8df&feed=O9WlY7a5&t=podcast&e=nx-s1-20261116-0600-long&p=500005&d=280&size=4586729",
+    "audio_sha256": "5be376767d806f98db02a4ceececd7025fa12839dda999b855943c42ec9dadb2"
   },
   "items": [
     {
-      "sentence": "wants to negotiate a ____ -control deal with Russia",
-      "context_start": 37.48,
-      "context_end": 40.32,
-      "answer": "new arms",
-      "meaning": "‘새로운 군비 통제 협정’이라는 구절의 앞부분 (뒤의 -control과 연결)",
-      "hint": "해당 음성 구간의 표현 · N… A… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 38.6,
-      "end": 39.08,
+      "sentence": "to replace older copper ____ new fiber optic cable",
       "meaning_context": {
-        "start": 12.04,
-        "end": 65.82,
-        "text": "President Trump leaves today for a summit in Asia. NPR's Anthony Kuhn reports this summit will include an unprecedented three-way meeting Thursday with the leaders of Russia and China. Trump's first stop is Manila, the Philippines, where he will attend a summit of the Association of Southeast Asian Nations, or ASEAN. From there, it's on to the southern Chinese city of Shenzhen for an Asia-Pacific Economic Cooperation Organization summit. Trump has said he wants to negotiate a new arms-control deal with Russia and China, but China, which has the smallest nuclear arsenal of the three, is not likely to be interested. Trump will also try to extend a truce in the U.S.'s trade war with China. Trump's critics are concerned that Trump could side with Russia's Vladimir Putin and China's Xi Jinping in deciding the fate of smaller actors, such as Ukraine and Taiwan, without their participation or consent. Anthony Kuhn in PR News, Seoul.",
-        "source": "automatic_article_transcription"
+        "start": 13.58,
+        "end": 54.5,
+        "text": "delayed into out of or within the U.S. today. The airline industry is recovering from Friday's national ground stop. NPR's Joel Rose says the government reports a contractor called L-3 Harris Technologies was doing some work. The FAA says the company was replacing a router in El Dorado, Arkansas, as part of work to replace older copper wire with new fiber optic cable when something went very wrong, whether that was the router itself or operator error is still under investigation. That's one of two sites investigators are looking at, including another in Amarillo, Texas, that apparently disrupted FAA communication and radar equipment across a big part of the country, forcing the FAA to issue a rare nationwide",
+        "requested_padding_seconds": 20,
+        "source": "automatic_transcription"
       },
-      "meaning_review": {
-        "method": "assistant_context_review",
-        "reviewed_at": "2026-11-16T10:56:10.675Z"
-      }
+      "context_start": 32.08,
+      "context_end": 35.4,
+      "answer": "wire with",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · W… W… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 33.74,
+      "end": 34.24
     },
     {
-      "sentence": "former head of NVIDIA ____ gained support for his",
-      "context_start": 66.86,
-      "context_end": 70.1,
-      "answer": "has recently",
-      "meaning": "최근에 …했다·해왔다 (현재완료 표현의 앞부분)",
-      "hint": "해당 음성 구간의 표현 · H… R… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 68.14,
-      "end": 69.06,
+      "sentence": "An ____ to bring Jensen Huang",
       "meaning_context": {
-        "start": 66.6,
-        "end": 105.85,
-        "text": "The now former head of NVIDIA has recently gained support for his return to the company after resigning just last week, and PR's Rick Mulvey explains. There's a petition for Jensen to return. It has over 120,000 signatures, including support from Elon Musk and, according to the petition's website, about 6,000 current NVIDIA employees. Don't forget, Jensen Wong made a lot of people a lot of money over the long term. Jensen Wong, who was the CEO of the computer chip company, resigned amid revelations over multiple affairs. One of those affairs allegedly involved a woman whom U.S. intelligence officials claimed to be spying for China.",
-        "source": "automatic_article_transcription"
+        "start": 45.56,
+        "end": 86.7,
+        "text": "Amarillo, Texas, that apparently disrupted FAA communication and radar equipment across a big part of the country, forcing the FAA to issue a rare nationwide ground stop on Friday. FAA officials say this was supposed to be routine maintenance work, why it basically broke the national airspace is still under investigation. And Pierre's Joel Rose reporting. An online petition to bring Jensen Huang back as CEO of NVIDIA has more than 160,000 names on it. He resigned from the company last week following reports he'd had multiple affairs, that includes with a woman suspected of being recruited by China as a spy. And Pierre's John Ruich reports. The petition calls for Huang to be reinstated",
+        "requested_padding_seconds": 20,
+        "source": "automatic_transcription"
       },
-      "meaning_review": {
-        "method": "assistant_context_review",
-        "reviewed_at": "2026-11-16T10:56:10.676Z"
-      }
+      "context_start": 65.44,
+      "context_end": 67.54,
+      "answer": "online petition",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · O… P… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 65.58,
+      "end": 66.24
     },
     {
-      "sentence": "people a lot of ____ the long term.",
-      "context_start": 90.31,
-      "context_end": 92.51,
-      "answer": "money over",
-      "meaning": "‘장기적으로 돈을 벌어 주다’라는 구절의 일부 (돈을, ~에 걸쳐)",
-      "hint": "해당 음성 구간의 표현 · M… O… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 91.39,
-      "end": 91.89,
+      "sentence": "of the inquiry's scope, ____ timeline, and asks for",
       "meaning_context": {
-        "start": 66.6,
-        "end": 105.85,
-        "text": "The now former head of NVIDIA has recently gained support for his return to the company after resigning just last week, and PR's Rick Mulvey explains. There's a petition for Jensen to return. It has over 120,000 signatures, including support from Elon Musk and, according to the petition's website, about 6,000 current NVIDIA employees. Don't forget, Jensen Wong made a lot of people a lot of money over the long term. Jensen Wong, who was the CEO of the computer chip company, resigned amid revelations over multiple affairs. One of those affairs allegedly involved a woman whom U.S. intelligence officials claimed to be spying for China.",
-        "source": "automatic_article_transcription"
+        "start": 71.64,
+        "end": 112.9,
+        "text": "names on it. He resigned from the company last week following reports he'd had multiple affairs, that includes with a woman suspected of being recruited by China as a spy. And Pierre's John Ruich reports. The petition calls for Huang to be reinstated while the company conducts an independent investigation. It calls for details of the inquiry's scope, independence, and timeline, and asks for Huang to be given an opportunity to respond before a final decision. It says Huang deserves fairness. According to statistics on the website where the Stand With Jensen petition is posted, nearly 8,000 current NVIDIA employees have added their names to the letter. That's out of more than 42,000 in total. Tens of thousands",
+        "requested_padding_seconds": 20,
+        "source": "automatic_transcription"
       },
-      "meaning_review": {
-        "method": "assistant_context_review",
-        "reviewed_at": "2026-11-16T10:56:10.676Z"
-      }
+      "context_start": 90.58,
+      "context_end": 94.34,
+      "answer": "independence and",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · I… A… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 91.98,
+      "end": 92.72
     },
     {
-      "sentence": "NPR's Eric McDaniel ____ story.",
-      "context_start": 116.55,
-      "context_end": 118.53,
-      "answer": "has the",
-      "meaning": "해당 기자가 그 소식을 전한다는 소개 표현의 일부",
-      "hint": "해당 음성 구간의 표현 · H… T… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 117.63,
-      "end": 118.11,
+      "sentence": "Among the names ____ well-known figures, including",
       "meaning_context": {
-        "start": 116.55,
-        "end": 118.53,
-        "text": "NPR's Eric McDaniel has the story.",
-        "source": "question_context"
+        "start": 95.7,
+        "end": 136.52,
+        "text": "to respond before a final decision. It says Huang deserves fairness. According to statistics on the website where the Stand With Jensen petition is posted, nearly 8,000 current NVIDIA employees have added their names to the letter. That's out of more than 42,000 in total. Tens of thousands of shareholders have also signed on. Among the names are some well-known figures, including SpaceX and Tesla boss Elon Musk, Epic Games CEO Tim Sweeney and Zhang Yiming, the co-founder of TikTok's parent company ByteDance. John Ruich, NPR News. New data out today show U.S. colleges are seeing a 3 percent drop in overall international student enrollment. From member station",
+        "requested_padding_seconds": 20,
+        "source": "automatic_transcription"
       },
-      "meaning_review": {
-        "method": "assistant_context_review",
-        "reviewed_at": "2026-11-16T10:56:10.676Z"
-      }
+      "context_start": 115.36,
+      "context_end": 117.82,
+      "answer": "are some",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · A… S… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 115.9,
+      "end": 116.4
     },
     {
-      "sentence": "30 Democrats in a ____ vote to",
-      "context_start": 139.77,
-      "context_end": 142.05,
-      "answer": "secret ballot",
-      "meaning": "무기명·비밀 투표",
-      "hint": "해당 음성 구간의 표현 · S… B… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 141.03,
-      "end": 141.55,
+      "sentence": "Geraldo Blanco ____ education at Boston College.",
       "meaning_context": {
-        "start": 139.77,
-        "end": 142.05,
-        "text": "30 Democrats in a secret ballot vote to",
-        "source": "question_context"
+        "start": 141.72,
+        "end": 182.7,
+        "text": "International Education, the total number of international undergraduates barely budged last academic year, compared to the previous year. But graduate enrollment fell 13 percent, researchers blamed stricter visa restrictions, a nationwide crackdown on campus activism, and growing competition from universities abroad. Geraldo Blanco studies international education at Boston College. The majority of people who are working as postdoctoral researchers in different labs are born outside of the United States. Blanco says fewer international students put the U.S. at a disadvantage as it competes with China on AI and in other fields. For NPR News,",
+        "requested_padding_seconds": 20,
+        "source": "automatic_transcription"
       },
-      "meaning_review": {
-        "method": "assistant_context_review",
-        "reviewed_at": "2026-11-16T10:56:10.676Z"
-      }
+      "context_start": 161.22,
+      "context_end": 164.72,
+      "answer": "studies international",
+      "meaning": "부분 단서: international=국제적인 (나머지는 듣고 완성)",
+      "hint": "국제적인 관련 표현 · S… I… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 161.82,
+      "end": 162.88
     },
     {
-      "sentence": "All 100 people aboard ____ evacuated. This is NPR.",
-      "context_start": 181.01,
-      "context_end": 185.85,
-      "answer": "were safely",
-      "meaning": "안전하게 대피했다는 수동태 표현의 앞부분",
-      "hint": "해당 음성 구간의 표현 · W… S… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 182.79,
-      "end": 183.99,
+      "sentence": "on AI and in ____",
       "meaning_context": {
-        "start": 181.01,
-        "end": 185.85,
-        "text": "All 100 people aboard were safely evacuated. This is NPR.",
-        "source": "question_context"
+        "start": 161.22,
+        "end": 201.94,
+        "text": "Geraldo Blanco studies international education at Boston College. The majority of people who are working as postdoctoral researchers in different labs are born outside of the United States. Blanco says fewer international students put the U.S. at a disadvantage as it competes with China on AI and in other fields. For NPR News, I'm Kirk Carapaza in Boston. This is NPR. The Canadian military says a fifth soldier has died from injuries suffered in a sudden and grass fire last month. The private was caught in the fire in Alberta in October during a training exercise. To maintain",
+        "requested_padding_seconds": 20,
+        "source": "automatic_transcription"
       },
-      "meaning_review": {
-        "method": "assistant_context_review",
-        "reviewed_at": "2026-11-16T10:56:10.676Z"
-      }
+      "context_start": 179.56,
+      "context_end": 181.6,
+      "answer": "other fields",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · O… F… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 181.08,
+      "end": 181.6
     },
     {
-      "sentence": "50th anniversary this year, ____ win was the schmear",
-      "context_start": 232.71,
-      "context_end": 237.09,
-      "answer": "and the",
-      "meaning": "그리고 그·해당 … (뒤의 ‘승리’라는 명사구와 연결)",
-      "hint": "해당 음성 구간의 표현 · A… T… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 235.13,
-      "end": 235.47,
+      "sentence": "to ____ they eat and get",
       "meaning_context": {
-        "start": 232.71,
-        "end": 237.09,
-        "text": "50th anniversary this year, and the win was the schmear",
-        "source": "question_context"
+        "start": 184.64,
+        "end": 225.54,
+        "text": "This is NPR. The Canadian military says a fifth soldier has died from injuries suffered in a sudden and grass fire last month. The private was caught in the fire in Alberta in October during a training exercise. To maintain a healthy weight, Americans are advised to watch what they eat and get some exercise. But as NPR's Maria Godoy reports, how much we sleep can also have a powerful influence on weight. Adults are supposed to sleep seven to nine hours a night. Many of us don't hit that mark. Research has shown insufficient sleep can lead to weight gain, primarily by driving us",
+        "requested_padding_seconds": 20,
+        "source": "automatic_transcription"
       },
-      "meaning_review": {
-        "method": "assistant_context_review",
-        "reviewed_at": "2026-11-16T10:56:10.676Z"
-      }
+      "context_start": 204.42,
+      "context_end": 206.26,
+      "answer": "watch what",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · W… W… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 204.76,
+      "end": 205.4
     }
   ],
   "summaryReview": {
     "kind": "keyword_rubric",
     "article": 1,
-    "start": 12.04,
-    "end": 65.82,
-    "transcript": "President Trump leaves today for a summit in Asia. NPR's Anthony Kuhn reports this summit will include an unprecedented three-way meeting Thursday with the leaders of Russia and China. Trump's first stop is Manila, the Philippines, where he will attend a summit of the Association of Southeast Asian Nations, or ASEAN. From there, it's on to the southern Chinese city of Shenzhen for an Asia-Pacific Economic Cooperation Organization summit. Trump has said he wants to negotiate a new arms-control deal with Russia and China, but China, which has the smallest nuclear arsenal of the three, is not likely to be interested. Trump will also try to extend a truce in the U.S.'s trade war with China. Trump's critics are concerned that Trump could side with Russia's Vladimir Putin and China's Xi Jinping in deciding the fate of smaller actors, such as Ukraine and Taiwan, without their participation or consent. Anthony Kuhn in PR News, Seoul.",
+    "start": 10.42,
+    "end": 109.24,
+    "transcript": "The tracking slight flight aware says hundreds of flights are delayed into out of or within the U.S. today. The airline industry is recovering from Friday's national ground stop. NPR's Joel Rose says the government reports a contractor called L-3 Harris Technologies was doing some work. The FAA says the company was replacing a router in El Dorado, Arkansas, as part of work to replace older copper wire with new fiber optic cable when something went very wrong, whether that was the router itself or operator error is still under investigation. That's one of two sites investigators are looking at, including another in Amarillo, Texas, that apparently disrupted FAA communication and radar equipment across a big part of the country, forcing the FAA to issue a rare nationwide ground stop on Friday. FAA officials say this was supposed to be routine maintenance work, why it basically broke the national airspace is still under investigation. Pierre's Joel Rose reporting. An online petition to bring Jensen Huang back as CEO of NVIDIA has more than 160,000 names on it. He resigned from the company last week following reports he'd had multiple affairs, that includes with a woman suspected of being recruited by China as a spy. And Pierre's John Ruich reports. The petition calls for Huang to be reinstated while the company conducts an independent investigation. It calls for details of the inquiry's scope, independence, and timeline, and asks for Huang to be given an opportunity to respond before a final decision. It says Huang deserves fairness. According to statistics on the website where the Stand With Jensen petition is posted, nearly 8,000 current NVIDIA employees have added their names to the letter.",
     "keywords": [
-      {
-        "label": "trump · 트럼프",
-        "terms": [
-          "trump",
-          "트럼프"
-        ]
-      },
-      {
-        "label": "asia · 아시아",
-        "terms": [
-          "asia",
-          "asian",
-          "아시아"
-        ]
-      },
-      {
-        "label": "summit · 정상회담",
-        "terms": [
-          "summit",
-          "summits",
-          "정상회담",
-          "정상 회담",
-          "정상회의",
-          "정상 회의"
-        ]
-      },
       {
         "label": "china · 중국",
         "terms": [
@@ -212,21 +165,45 @@
         ]
       },
       {
-        "label": "russia · 러시아",
+        "label": "nvidia · 엔비디아",
         "terms": [
-          "russia",
-          "russian",
-          "러시아"
+          "nvidia",
+          "엔비디아"
         ]
       },
       {
-        "label": "nuclear · 핵",
+        "label": "petition · 청원",
         "terms": [
-          "nuclear",
-          "arms",
-          "핵",
-          "군축",
-          "군비"
+          "petition",
+          "signatures",
+          "청원",
+          "서명"
+        ]
+      },
+      {
+        "label": "resigned · 사임",
+        "terms": [
+          "resign",
+          "resigned",
+          "resignation",
+          "사임",
+          "사퇴"
+        ]
+      },
+      {
+        "label": "government · 정부",
+        "terms": [
+          "government",
+          "정부"
+        ]
+      },
+      {
+        "label": "company · 기업",
+        "terms": [
+          "company",
+          "companies",
+          "기업",
+          "회사"
         ]
       }
     ],
@@ -236,71 +213,9 @@
     {
       "kind": "keyword_rubric",
       "article": 1,
-      "start": 12.04,
-      "end": 65.82,
-      "transcript": "President Trump leaves today for a summit in Asia. NPR's Anthony Kuhn reports this summit will include an unprecedented three-way meeting Thursday with the leaders of Russia and China. Trump's first stop is Manila, the Philippines, where he will attend a summit of the Association of Southeast Asian Nations, or ASEAN. From there, it's on to the southern Chinese city of Shenzhen for an Asia-Pacific Economic Cooperation Organization summit. Trump has said he wants to negotiate a new arms-control deal with Russia and China, but China, which has the smallest nuclear arsenal of the three, is not likely to be interested. Trump will also try to extend a truce in the U.S.'s trade war with China. Trump's critics are concerned that Trump could side with Russia's Vladimir Putin and China's Xi Jinping in deciding the fate of smaller actors, such as Ukraine and Taiwan, without their participation or consent. Anthony Kuhn in PR News, Seoul.",
-      "keywords": [
-        {
-          "label": "trump · 트럼프",
-          "terms": [
-            "trump",
-            "트럼프"
-          ]
-        },
-        {
-          "label": "asia · 아시아",
-          "terms": [
-            "asia",
-            "asian",
-            "아시아"
-          ]
-        },
-        {
-          "label": "summit · 정상회담",
-          "terms": [
-            "summit",
-            "summits",
-            "정상회담",
-            "정상 회담",
-            "정상회의",
-            "정상 회의"
-          ]
-        },
-        {
-          "label": "china · 중국",
-          "terms": [
-            "china",
-            "chinese",
-            "중국"
-          ]
-        },
-        {
-          "label": "russia · 러시아",
-          "terms": [
-            "russia",
-            "russian",
-            "러시아"
-          ]
-        },
-        {
-          "label": "nuclear · 핵",
-          "terms": [
-            "nuclear",
-            "arms",
-            "핵",
-            "군축",
-            "군비"
-          ]
-        }
-      ],
-      "boundary": "reporter_handoff_estimate"
-    },
-    {
-      "kind": "keyword_rubric",
-      "article": 2,
-      "start": 66.6,
-      "end": 105.85,
-      "transcript": "The now former head of NVIDIA has recently gained support for his return to the company after resigning just last week, and PR's Rick Mulvey explains. There's a petition for Jensen to return. It has over 120,000 signatures, including support from Elon Musk and, according to the petition's website, about 6,000 current NVIDIA employees. Don't forget, Jensen Wong made a lot of people a lot of money over the long term. Jensen Wong, who was the CEO of the computer chip company, resigned amid revelations over multiple affairs. One of those affairs allegedly involved a woman whom U.S. intelligence officials claimed to be spying for China.",
+      "start": 10.42,
+      "end": 109.24,
+      "transcript": "The tracking slight flight aware says hundreds of flights are delayed into out of or within the U.S. today. The airline industry is recovering from Friday's national ground stop. NPR's Joel Rose says the government reports a contractor called L-3 Harris Technologies was doing some work. The FAA says the company was replacing a router in El Dorado, Arkansas, as part of work to replace older copper wire with new fiber optic cable when something went very wrong, whether that was the router itself or operator error is still under investigation. That's one of two sites investigators are looking at, including another in Amarillo, Texas, that apparently disrupted FAA communication and radar equipment across a big part of the country, forcing the FAA to issue a rare nationwide ground stop on Friday. FAA officials say this was supposed to be routine maintenance work, why it basically broke the national airspace is still under investigation. Pierre's Joel Rose reporting. An online petition to bring Jensen Huang back as CEO of NVIDIA has more than 160,000 names on it. He resigned from the company last week following reports he'd had multiple affairs, that includes with a woman suspected of being recruited by China as a spy. And Pierre's John Ruich reports. The petition calls for Huang to be reinstated while the company conducts an independent investigation. It calls for details of the inquiry's scope, independence, and timeline, and asks for Huang to be given an opportunity to respond before a final decision. It says Huang deserves fairness. According to statistics on the website where the Stand With Jensen petition is posted, nearly 8,000 current NVIDIA employees have added their names to the letter.",
       "keywords": [
         {
           "label": "china · 중국",
@@ -327,23 +242,6 @@
           ]
         },
         {
-          "label": "return · 복귀",
-          "terms": [
-            "return",
-            "returning",
-            "복귀",
-            "돌아"
-          ]
-        },
-        {
-          "label": "support · 지지",
-          "terms": [
-            "support",
-            "지지",
-            "지원"
-          ]
-        },
-        {
           "label": "resigned · 사임",
           "terms": [
             "resign",
@@ -351,6 +249,50 @@
             "resignation",
             "사임",
             "사퇴"
+          ]
+        },
+        {
+          "label": "government · 정부",
+          "terms": [
+            "government",
+            "정부"
+          ]
+        },
+        {
+          "label": "company · 기업",
+          "terms": [
+            "company",
+            "companies",
+            "기업",
+            "회사"
+          ]
+        }
+      ],
+      "boundary": "reporter_handoff_estimate"
+    },
+    {
+      "kind": "keyword_rubric",
+      "article": 2,
+      "start": 127.66,
+      "end": 200.44,
+      "transcript": "New data out today show U.S. colleges are seeing a 3 percent drop in overall international student enrollment. From member station GBH in Boston, Kirk Carapessa reports. According to the Institute of International Education, total number of international undergraduates barely budged last academic year, compared to the previous year. But graduate enrollment fell 13 percent, researchers blamed stricter visa restrictions, a nationwide crackdown on campus activism, and growing competition from universities abroad. Geraldo Blanco studies international education at Boston College. The majority of people who are working as postdoctoral researchers in different labs are born outside of the United States. Blanco says fewer international students put the U.S. at a disadvantage as it competes with China on AI and in other fields. For NPR News, I'm Kirk Carapaza in Boston. This is NPR. The Canadian military says a fifth soldier has died from injuries suffered in a sudden and grass fire last month. The private was caught in the fire in Alberta in October during a training exercise.",
+      "keywords": [
+        {
+          "label": "china · 중국",
+          "terms": [
+            "china",
+            "chinese",
+            "중국"
+          ]
+        },
+        {
+          "label": "military · 군사",
+          "terms": [
+            "military",
+            "troops",
+            "군사",
+            "군대",
+            "군인"
           ]
         }
       ],
