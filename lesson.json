@@ -10,7 +10,7 @@
     "human_verified": false
   },
   "sourceNote": "문제를 만들 때 사용한 고정 음원을 재생합니다. 빈칸 앞뒤 영어 지문과 2단어 정답을 두 음성인식 모델이 비교했습니다. 자동 전사이므로 오류가 있을 수 있습니다.",
-  "generated_at": "2026-11-16T10:13:45.580772+00:00",
+  "generated_at": "2026-11-16T10:15:24.662Z",
   "episode": {
     "id": "d909bb17-7f4d-43b4-8d0f-69f901b6512b",
     "title": "5am ET, November 16 | The latest headlines from NPR",
@@ -104,34 +104,58 @@
     "kind": "keyword_rubric",
     "start": 29.12,
     "end": 109.12,
-    "transcript": "President Trump leaves today for a summit in Asia, and VR's Anthony Kuhn reports this summit will include an unprecedented three-way meeting Thursday with the leaders of Russia and China. Trump's first stop is Manila, the Philippines, where he will attend a summit of the Association of Southeast Asian Nations, or ASEAN. From there, it's on to the southern Chinese city of Shenzhen for an Asia-Pacific Economic Cooperation Organization summit. Trump has said he wants to negotiate a new arms control deal with Russia and China, but China, which has the smallest nuclear arsenal of the three, is not likely to be interested. Trump will also try to extend a truce in the U.S.'s trade war with China. Trump's critics are concerned that Trump could side with Russia's Vladimir Putin and China's Xi Jinping in deciding the fate of smaller actors such as Ukraine and Taiwan without their participation or consent. The now-former head of Nvidia has recently gained support for his return to the company after resigning just last week. And PR's Rick Mulvey explains. There's a petition for Jensen to return. It has over 120,000 signatures, including support from Elon Musk and, according to the petition's website, about 6,000 current Nvidia employees. Don't forget, Jensen Wong made a lot of people a lot of",
+    "transcript": "President Trump leaves today for a summit in Asia, and VR's Anthony Kuhn reports this summit will include an unprecedented three-way meeting Thursday with the leaders of Russia and China. Trump's first stop is Manila, the Philippines, where he will attend a summit of the Association of Southeast Asian Nations, or ASEAN. From there, it's on to the southern Chinese city of Shenzhen for an Asia-Pacific Economic Cooperation Organization summit. Trump has said he wants to negotiate a new arms control deal with Russia and China, but China, which has the smallest nuclear arsenal of the three, is not likely to be interested. Trump will also try to extend a truce in the U.S.'s trade war with China. Trump's critics are concerned that Trump could side with Russia's Vladimir Putin and China's Xi Jinping in deciding the fate of smaller actors such as Ukraine and Taiwan without their participation or consent.",
     "keywords": [
       {
-        "label": "president · 대통령",
+        "label": "trump · 트럼프",
         "terms": [
-          "president",
-          "대통령"
+          "trump",
+          "트럼프"
         ]
       },
       {
-        "label": "agreement · 합의",
+        "label": "asia · 아시아",
         "terms": [
-          "agreement",
-          "deal",
-          "deals",
-          "합의",
-          "협정",
-          "거래",
-          "계약"
+          "asia",
+          "asian",
+          "아시아"
         ]
       },
       {
-        "label": "company · 기업",
+        "label": "summit · 정상회담",
         "terms": [
-          "company",
-          "companies",
-          "기업",
-          "회사"
+          "summit",
+          "summits",
+          "정상회담",
+          "정상 회담",
+          "정상회의",
+          "정상 회의"
+        ]
+      },
+      {
+        "label": "china · 중국",
+        "terms": [
+          "china",
+          "chinese",
+          "중국"
+        ]
+      },
+      {
+        "label": "russia · 러시아",
+        "terms": [
+          "russia",
+          "russian",
+          "러시아"
+        ]
+      },
+      {
+        "label": "nuclear · 핵·군축",
+        "terms": [
+          "nuclear",
+          "arms",
+          "핵",
+          "군축",
+          "군비"
         ]
       }
     ],

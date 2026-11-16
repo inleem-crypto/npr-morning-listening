@@ -495,6 +495,16 @@ def check_short_items(items, audio, model, diagnostics=None):
 # Bilingual aliases are deliberately explicit: this is a keyword rubric,
 # not an LLM-based judgment of a learner's meaning or factual accuracy.
 SUMMARY_TERMS = {
+    "trump": ["trump", "트럼프"],
+    "asia": ["asia", "asian", "아시아"],
+    "summit": ["summit", "summits", "정상회담", "정상 회담", "정상회의", "정상 회의"],
+    "china": ["china", "chinese", "중국"],
+    "russia": ["russia", "russian", "러시아"],
+    "nuclear": ["nuclear", "arms", "핵", "군축", "군비"],
+    "trade": ["trade", "무역"],
+    "ukraine": ["ukraine", "우크라이나"],
+    "taiwan": ["taiwan", "대만"],
+
     "resigned": ["resign", "resigned", "resignation", "사임", "사퇴"],
     "relationship": ["relationship", "affair", "관계", "불륜"],
     "financial": ["financial", "finance", "재무", "금융"],
@@ -544,7 +554,7 @@ def make_summary_review(segments):
         return None
     selected = []
     for w in remaining:
-        if w.end - remaining[0].start > 80:
+        if w.end - remaining[0].start > 45:
             break
         selected.append(w)
         # Reporter sign-off is a strong story boundary when present.
