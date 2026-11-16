@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-11-16T12:06:04.004000+00:00",
+  "policy": "context-meaning-v1",
+  "model": "gpt-5.6-terra",
+  "month": "2026-11",
+  "monthly_limit_usd": "1.00",
+  "daily_call_limit": 1,
+  "pricing_basis_date": "2026-11-16",
+  "credit_application": "not_verified",
+  "cash_charge_usd": null,
+  "month_accounted_usd": "0",
+  "month_call_count": 0,
+  "month_input_tokens": 0,
+  "month_output_tokens": 0,
+  "state": "needs_api_key"
+}

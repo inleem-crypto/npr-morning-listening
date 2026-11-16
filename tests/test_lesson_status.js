@@ -26,3 +26,16 @@ test('older raw file uses alternate fetch, current or newer files stay',()=>{
   assert.equal(lessonNeedsRefresh({...data,generated_at:'2026-11-02T20:30:00Z'},status),false);
   assert.equal(lessonNeedsRefresh(data,null),false);
 });
+const {aiReviewMessage}=require('../lesson-status.js');
+test('AI usage messages separate estimated usage from actual cash charges',()=>{
+ const message=aiReviewMessage({state:'needs_api_key',month:'2026-11',month_accounted_usd:'0',monthly_limit_usd:'1'});
+ assert.match(message,/API 키 연결 대기/);
+ assert.match(message,/\$0\.0000/);
+ assert.match(message,/실제 현금 청구액/);
+ assert.doesNotMatch(message,/무료입니다/);
+});
+test('budget and review failures are visible without claiming completed AI review',()=>{
+ assert.match(aiReviewMessage({state:'monthly_limit_reached'}),/월 예산/);
+ assert.match(aiReviewMessage({state:'review_failed'}),/기존 문제/);
+ assert.match(aiReviewMessage({state:'cached'}),/추가 API 호출 없음/);
+});
