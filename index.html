@@ -66,7 +66,7 @@ let episodes=[],selected=null,loading=false,markA=null,markB=null,looping=false,
 const safeGet=(key,defaultValue)=>{try{return localStorage.getItem(key)||defaultValue}catch{return defaultValue}};
 const safeSet=(key,value)=>{try{localStorage.setItem(key,value)}catch{}};
 const format=(n)=>Number.isFinite(n)?Math.floor(n/60)+':'+String(Math.floor(n%60)).padStart(2,'0'):'--:--';
-const formatTenths=(n)=>Number.isFinite(n)?Math.floor(n/60)+':'+String(Math.floor(n%60)).padStart(2,'0')+'.'+Math.floor((n%1)*10):'--:--';
+const formatTenths=(n)=>{if(!Number.isFinite(n))return '--:--';const tenths=Math.round(n*10);return Math.floor(tenths/600)+':'+String(Math.floor(tenths/10)%60).padStart(2,'0')+'.'+(tenths%10)};
 const datefmt=v=>{if(!v)return '시간 미확인';const d=new Date(v);if(!Number.isFinite(d.getTime()))return '시간 미확인';return new Intl.DateTimeFormat('ko-KR',{timeZone:'Asia/Seoul',year:'numeric',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit',hour12:false}).format(d)+' KST';};
 function message(t,type=''){ $status.textContent=t; $status.className='status '+type; }
 function cleanURL(v){try{const u=new URL(v);if(!['https:','http:'].includes(u.protocol))return '';return u.href}catch{return ''}}
