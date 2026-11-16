@@ -1,7 +1,7 @@
 {
   "title": "5am ET, November 16 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
-  "generator_version": 12,
+  "generator_version": 13,
   "verified": false,
   "transcription": {
     "model": "small.en",
@@ -10,101 +10,102 @@
     "human_verified": false
   },
   "sourceNote": "문제를 만들 때 사용한 고정 음원을 재생합니다. 빈칸 앞뒤 영어 지문과 2단어 정답을 두 음성인식 모델이 비교했습니다. 자동 전사이므로 오류가 있을 수 있습니다.",
-  "generated_at": "2026-11-16T10:15:24.662Z",
+  "generated_at": "2026-11-16T10:48:20.456176+00:00",
   "episode": {
     "id": "d909bb17-7f4d-43b4-8d0f-69f901b6512b",
     "title": "5am ET, November 16 | The latest headlines from NPR",
-    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/a133871f7ea7a00a69f3e6e4a659a751eb474ec4e1ec48a5c92d8c22ca18ab2e.mp3",
+    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/cdf979ffcbbce0bb2d3511af03375f36658d0f0a9a45d95b21da54d56790afb2.mp3",
     "date": "2026-11-16T10:09:38+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "문제 생성에 사용한 고정 음원",
     "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/4ca6db0d-9c69-4abe-8efa-af211eac868f/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=4ca6db0d-9c69-4abe-8efa-af211eac868f&feed=O9WlY7a5&t=podcast&e=nx-s1-20261116-0500-long&p=500005&d=280&size=4586728",
-    "audio_sha256": "a133871f7ea7a00a69f3e6e4a659a751eb474ec4e1ec48a5c92d8c22ca18ab2e"
+    "audio_sha256": "cdf979ffcbbce0bb2d3511af03375f36658d0f0a9a45d95b21da54d56790afb2"
   },
   "items": [
     {
-      "sentence": "-former head of Nvidia ____ gained support for his",
-      "context_start": 84.6,
-      "context_end": 87.84,
+      "sentence": "wants to negotiate a ____ -control deal with Russia",
+      "context_start": 37.48,
+      "context_end": 40.32,
+      "answer": "new arms",
+      "meaning": "부분 단서: new=새로운 (나머지는 듣고 완성)",
+      "hint": "해당 음성 구간의 표현 · N… A… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 38.6,
+      "end": 39.08
+    },
+    {
+      "sentence": "former head of NVIDIA ____ gained support for his",
+      "context_start": 66.86,
+      "context_end": 70.1,
       "answer": "has recently",
       "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
       "hint": "해당 음성 구간의 표현 · H… R… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 85.84,
-      "end": 86.78
+      "start": 68.14,
+      "end": 69.06
     },
     {
       "sentence": "people a lot of ____ the long term.",
-      "context_start": 108.04,
-      "context_end": 110.2,
+      "context_start": 90.31,
+      "context_end": 92.51,
       "answer": "money over",
       "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
       "hint": "해당 음성 구간의 표현 · M… O… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 109.12,
-      "end": 109.62
+      "start": 91.39,
+      "end": 91.89
     },
     {
       "sentence": "NPR's Eric McDaniel ____ story.",
-      "context_start": 134.26,
-      "context_end": 136.26,
+      "context_start": 116.55,
+      "context_end": 118.53,
       "answer": "has the",
       "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
       "hint": "해당 음성 구간의 표현 · H… T… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 135.34,
-      "end": 135.84
+      "start": 117.63,
+      "end": 118.11
     },
     {
-      "sentence": "due to what is ____ a steering casualty.",
-      "context_start": 177.52,
-      "context_end": 179.94,
-      "answer": "being termed",
+      "sentence": "30 Democrats in a ____ vote to",
+      "context_start": 139.77,
+      "context_end": 142.05,
+      "answer": "secret ballot",
       "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
-      "hint": "해당 음성 구간의 표현 · B… T… (2단어)",
+      "hint": "해당 음성 구간의 표현 · S… B… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 178.14,
-      "end": 178.58
+      "start": 141.03,
+      "end": 141.55
     },
     {
-      "sentence": "the New York Mets, ____ sixth annual New York",
-      "context_start": 208.08,
-      "context_end": 211.36,
-      "answer": "hosted the",
+      "sentence": "All 100 people aboard ____ evacuated. This is NPR.",
+      "context_start": 181.01,
+      "context_end": 185.85,
+      "answer": "were safely",
       "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
-      "hint": "해당 음성 구간의 표현 · H… T… (2단어)",
+      "hint": "해당 음성 구간의 표현 · W… S… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 209.38,
-      "end": 210.08
+      "start": 182.79,
+      "end": 183.99
     },
     {
-      "sentence": "did too, and at ____ of the day, a",
-      "context_start": 233.54,
-      "context_end": 235.92,
-      "answer": "the end",
+      "sentence": "50th anniversary this year, ____ win was the schmear",
+      "context_start": 232.71,
+      "context_end": 237.09,
+      "answer": "and the",
       "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
-      "hint": "해당 음성 구간의 표현 · T… E… (2단어)",
+      "hint": "해당 음성 구간의 표현 · A… T… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 234.58,
-      "end": 235.02
-    },
-    {
-      "sentence": "anniversary this year, and ____ was the Schmear on",
-      "context_start": 251.2,
-      "context_end": 255.22,
-      "answer": "the win",
-      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
-      "hint": "해당 음성 구간의 표현 · T… W… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 253.08,
-      "end": 253.54
+      "start": 235.13,
+      "end": 235.47
     }
   ],
   "summaryReview": {
     "kind": "keyword_rubric",
-    "start": 29.12,
-    "end": 109.12,
-    "transcript": "President Trump leaves today for a summit in Asia, and VR's Anthony Kuhn reports this summit will include an unprecedented three-way meeting Thursday with the leaders of Russia and China. Trump's first stop is Manila, the Philippines, where he will attend a summit of the Association of Southeast Asian Nations, or ASEAN. From there, it's on to the southern Chinese city of Shenzhen for an Asia-Pacific Economic Cooperation Organization summit. Trump has said he wants to negotiate a new arms control deal with Russia and China, but China, which has the smallest nuclear arsenal of the three, is not likely to be interested. Trump will also try to extend a truce in the U.S.'s trade war with China. Trump's critics are concerned that Trump could side with Russia's Vladimir Putin and China's Xi Jinping in deciding the fate of smaller actors such as Ukraine and Taiwan without their participation or consent.",
+    "article": 1,
+    "start": 12.04,
+    "end": 65.82,
+    "transcript": "President Trump leaves today for a summit in Asia. NPR's Anthony Kuhn reports this summit will include an unprecedented three-way meeting Thursday with the leaders of Russia and China. Trump's first stop is Manila, the Philippines, where he will attend a summit of the Association of Southeast Asian Nations, or ASEAN. From there, it's on to the southern Chinese city of Shenzhen for an Asia-Pacific Economic Cooperation Organization summit. Trump has said he wants to negotiate a new arms-control deal with Russia and China, but China, which has the smallest nuclear arsenal of the three, is not likely to be interested. Trump will also try to extend a truce in the U.S.'s trade war with China. Trump's critics are concerned that Trump could side with Russia's Vladimir Putin and China's Xi Jinping in deciding the fate of smaller actors, such as Ukraine and Taiwan, without their participation or consent. Anthony Kuhn in PR News, Seoul.",
     "keywords": [
       {
         "label": "trump · 트럼프",
@@ -149,7 +150,7 @@
         ]
       },
       {
-        "label": "nuclear · 핵·군축",
+        "label": "nuclear · 핵",
         "terms": [
           "nuclear",
           "arms",
@@ -159,6 +160,131 @@
         ]
       }
     ],
-    "boundary": "automatically_estimated"
-  }
+    "boundary": "reporter_handoff_estimate"
+  },
+  "summaryReviews": [
+    {
+      "kind": "keyword_rubric",
+      "article": 1,
+      "start": 12.04,
+      "end": 65.82,
+      "transcript": "President Trump leaves today for a summit in Asia. NPR's Anthony Kuhn reports this summit will include an unprecedented three-way meeting Thursday with the leaders of Russia and China. Trump's first stop is Manila, the Philippines, where he will attend a summit of the Association of Southeast Asian Nations, or ASEAN. From there, it's on to the southern Chinese city of Shenzhen for an Asia-Pacific Economic Cooperation Organization summit. Trump has said he wants to negotiate a new arms-control deal with Russia and China, but China, which has the smallest nuclear arsenal of the three, is not likely to be interested. Trump will also try to extend a truce in the U.S.'s trade war with China. Trump's critics are concerned that Trump could side with Russia's Vladimir Putin and China's Xi Jinping in deciding the fate of smaller actors, such as Ukraine and Taiwan, without their participation or consent. Anthony Kuhn in PR News, Seoul.",
+      "keywords": [
+        {
+          "label": "trump · 트럼프",
+          "terms": [
+            "trump",
+            "트럼프"
+          ]
+        },
+        {
+          "label": "asia · 아시아",
+          "terms": [
+            "asia",
+            "asian",
+            "아시아"
+          ]
+        },
+        {
+          "label": "summit · 정상회담",
+          "terms": [
+            "summit",
+            "summits",
+            "정상회담",
+            "정상 회담",
+            "정상회의",
+            "정상 회의"
+          ]
+        },
+        {
+          "label": "china · 중국",
+          "terms": [
+            "china",
+            "chinese",
+            "중국"
+          ]
+        },
+        {
+          "label": "russia · 러시아",
+          "terms": [
+            "russia",
+            "russian",
+            "러시아"
+          ]
+        },
+        {
+          "label": "nuclear · 핵",
+          "terms": [
+            "nuclear",
+            "arms",
+            "핵",
+            "군축",
+            "군비"
+          ]
+        }
+      ],
+      "boundary": "reporter_handoff_estimate"
+    },
+    {
+      "kind": "keyword_rubric",
+      "article": 2,
+      "start": 66.6,
+      "end": 105.85,
+      "transcript": "The now former head of NVIDIA has recently gained support for his return to the company after resigning just last week, and PR's Rick Mulvey explains. There's a petition for Jensen to return. It has over 120,000 signatures, including support from Elon Musk and, according to the petition's website, about 6,000 current NVIDIA employees. Don't forget, Jensen Wong made a lot of people a lot of money over the long term. Jensen Wong, who was the CEO of the computer chip company, resigned amid revelations over multiple affairs. One of those affairs allegedly involved a woman whom U.S. intelligence officials claimed to be spying for China.",
+      "keywords": [
+        {
+          "label": "china · 중국",
+          "terms": [
+            "china",
+            "chinese",
+            "중국"
+          ]
+        },
+        {
+          "label": "nvidia · 엔비디아",
+          "terms": [
+            "nvidia",
+            "엔비디아"
+          ]
+        },
+        {
+          "label": "petition · 청원",
+          "terms": [
+            "petition",
+            "signatures",
+            "청원",
+            "서명"
+          ]
+        },
+        {
+          "label": "return · 복귀",
+          "terms": [
+            "return",
+            "returning",
+            "복귀",
+            "돌아"
+          ]
+        },
+        {
+          "label": "support · 지지",
+          "terms": [
+            "support",
+            "지지",
+            "지원"
+          ]
+        },
+        {
+          "label": "resigned · 사임",
+          "terms": [
+            "resign",
+            "resigned",
+            "resignation",
+            "사임",
+            "사퇴"
+          ]
+        }
+      ],
+      "boundary": "reporter_handoff_estimate"
+    }
+  ]
 }
