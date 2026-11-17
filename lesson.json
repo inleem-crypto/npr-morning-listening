@@ -9,7 +9,7 @@
     "policy": "frozen-audio-context-agreement-v4",
     "human_verified": false
   },
-  "sourceNote": "문제를 만들 때 사용한 고정 음원을 재생합니다. 빈칸 앞뒤 영어 지문과 2단어 정답을 두 음성인식 모델이 비교했습니다. 자동 전사이므로 오류가 있을 수 있습니다.",
+  "sourceNote": "문제와 기사별 구간은 학습자료 제작에 사용한 고정 음원을 재생합니다. 이 회차의 지문과 정답은 같은 파일을 추가 전사해 비교했습니다.",
   "generated_at": "2026-11-17T22:32:44.124493+00:00",
   "episode": {
     "id": "ca268ec8-46fb-47b5-8926-7c821ed65998",
@@ -23,7 +23,7 @@
   },
   "items": [
     {
-      "sentence": "root cause of what happened, we don't ____ yet.",
+      "sentence": "The root cause of what happened, we don't ____ yet.",
       "meaning_context": {
         "start": 4.76,
         "end": 45.66,
@@ -31,16 +31,20 @@
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 23.64,
-      "context_end": 25.9,
+      "context_start": 23.66,
+      "context_end": 26.16,
       "answer": "have clarity",
       "hint": "해당 음성 구간의 표현 · H… C… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "explanation": "같은 고정 음원에서 별도 자동 전사로 정답과 앞뒤 문맥을 다시 대조했습니다.",
       "start": 25.16,
-      "end": 25.64
+      "end": 25.64,
+      "meaning": "명확히 파악하다 (이 문장에서는 ‘아직 원인을 명확히 파악하지 못했다’)",
+      "meaning_review": {
+        "method": "editorial_context_review"
+      }
     },
     {
-      "sentence": "been installed in El Dorado, Arkansas. The ____ malfunctioned last week are",
+      "sentence": "The ____ malfunctioned last week are being tested",
       "meaning_context": {
         "start": 30.04,
         "end": 70.14,
@@ -48,16 +52,20 @@
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 46.68,
-      "context_end": 50.92,
+      "context_start": 49.46,
+      "context_end": 51.62,
       "answer": "routers that",
       "hint": "해당 음성 구간의 표현 · R… T… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "explanation": "같은 고정 음원에서 별도 자동 전사로 정답과 앞뒤 문맥을 다시 대조했습니다.",
       "start": 49.46,
-      "end": 49.86
+      "end": 49.86,
+      "meaning": "지난주 오작동한 라우터들 (뒤의 malfunctioned와 연결)",
+      "meaning_review": {
+        "method": "editorial_context_review"
+      }
     },
     {
-      "sentence": "the trip. Former Nvidia CEO Jensen Huang ____ his silence after stepping",
+      "sentence": "____ his silence after stepping down",
       "meaning_context": {
         "start": 55.9,
         "end": 96.18,
@@ -65,16 +73,20 @@
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 72.6,
-      "context_end": 77.68,
+      "context_start": 75.78,
+      "context_end": 78.24,
       "answer": "has broken",
       "hint": "해당 음성 구간의 표현 · H… B… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "explanation": "같은 고정 음원에서 별도 자동 전사로 정답과 앞뒤 문맥을 다시 대조했습니다.",
       "start": 75.78,
-      "end": 76.38
+      "end": 76.38,
+      "meaning": "침묵을 깨고 입장을 밝혔다 (뒤의 his silence와 연결)",
+      "meaning_review": {
+        "method": "editorial_context_review"
+      }
     },
     {
-      "sentence": "Times and others said he had a ____ a Chinese woman",
+      "sentence": "others said he had a ____ a Chinese woman",
       "meaning_context": {
         "start": 79.14,
         "end": 120.14,
@@ -82,16 +94,20 @@
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 97.6,
-      "context_end": 100.66,
+      "context_start": 98.2,
+      "context_end": 100.78,
       "answer": "relationship with",
       "hint": "해당 음성 구간의 표현 · R… W… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "explanation": "같은 고정 음원에서 별도 자동 전사로 정답과 앞뒤 문맥을 다시 대조했습니다.",
       "start": 99.26,
-      "end": 99.88
+      "end": 99.88,
+      "meaning": "~와의 관계 (뒤의 a Chinese woman과 연결)",
+      "meaning_review": {
+        "method": "editorial_context_review"
+      }
     },
     {
-      "sentence": "of policy toward Israel, and now he's ____",
+      "sentence": "policy toward Israel, and now he's ____.",
       "meaning_context": {
         "start": 120.82,
         "end": 161.96,
@@ -99,16 +115,20 @@
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 139.02,
-      "context_end": 141.74,
+      "context_start": 139.3,
+      "context_end": 141.86,
       "answer": "given details",
       "hint": "해당 음성 구간의 표현 · G… D… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "explanation": "같은 고정 음원에서 별도 자동 전사로 정답과 앞뒤 문맥을 다시 대조했습니다.",
       "start": 141.0,
-      "end": 141.74
+      "end": 141.74,
+      "meaning": "구체적인 내용을 밝혔다",
+      "meaning_review": {
+        "method": "editorial_context_review"
+      }
     },
     {
-      "sentence": "-state solution. His Israeli counterpart Gideon Saar ____ sanctions a hostile act",
+      "sentence": "His Israeli counterpart Gideon Saar ____ sanctions a hostile act",
       "meaning_context": {
         "start": 142.72,
         "end": 183.22,
@@ -116,16 +136,20 @@
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 159.42,
-      "context_end": 165.04,
+      "context_start": 160.84,
+      "context_end": 165.26,
       "answer": "calls these",
       "hint": "해당 음성 구간의 표현 · C… T… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "explanation": "같은 고정 음원에서 별도 자동 전사로 정답과 앞뒤 문맥을 다시 대조했습니다.",
       "start": 162.88,
-      "end": 163.36
+      "end": 163.36,
+      "meaning": "이 제재를 적대 행위라고 부르다",
+      "meaning_review": {
+        "method": "editorial_context_review"
+      }
     },
     {
-      "sentence": "UN report says chemicals and many everyday ____ tinker with the body's",
+      "sentence": "many everyday ____ tinker with the body's hormones",
       "meaning_context": {
         "start": 170.24,
         "end": 211.6,
@@ -133,145 +157,137 @@
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 187.74,
-      "context_end": 192.36,
+      "context_start": 189.98,
+      "context_end": 192.82,
       "answer": "items that",
       "hint": "해당 음성 구간의 표현 · I… T… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "explanation": "같은 고정 음원에서 별도 자동 전사로 정답과 앞뒤 문맥을 다시 대조했습니다.",
       "start": 190.58,
-      "end": 191.4
+      "end": 191.4,
+      "meaning": "일상에서 쓰는 물건들 (이어서 that이 그 물건을 설명)",
+      "meaning_review": {
+        "method": "editorial_context_review"
+      }
     }
   ],
   "summaryReview": {
     "kind": "keyword_rubric",
     "article": 1,
     "start": 10.52,
-    "end": 72.96,
-    "transcript": "The FAA has paused the installation of the routers that were linked to last week's nationwide ground stop and turned off any that were already installed. Secretary Sean Duffy says officials still don't fully understand the problem. The root cause of what happened, we don't have clarity yet. And I promise all of you that when I know what happened with that router, injecting that overload into our system, I will most definitely share that with you. If we were subject to a hack, we will share that with you as well. But all of my intelligence partners are telling me that wasn't the case. Technicians linked Friday's disruption to a router that had just been installed in El Dorado, Arkansas. The routers that malfunctioned last week are being tested in a lab at the headquarters of the company that installed them named L3 Harris. Homeland Security Secretary Mark Wayne Mullen is defending using a government plane to attend the LSU Texas college football game as the air industry recovered from the ground stop last weekend. Speaking on CNBC, Mullen says he's required to fly on government planes and personally paid for the trip.",
+    "end": 55.48,
+    "transcript": "The FAA has paused the installation of the routers that were linked to last week's nationwide ground stop and turned off any that were already installed. Secretary Sean Duffy says officials still don't fully understand the problem. The root cause of what happened, we don't have clarity yet. And I promise all of you that when I know what happened with that router, injecting that overload into our system, I will most definitely share that with you. If we were subject to a hack, we will share that with you as well. But all of my intelligence partners are telling me that wasn't the case. Technicians linked Friday's disruption to a router that had just been installed in El Dorado, Arkansas. The routers that malfunctioned last week are being tested in a lab at the headquarters of the company that installed them named L3 Harris.",
     "keywords": [
       {
-        "label": "government · 정부",
+        "label": "FAA · 미 연방항공청",
         "terms": [
-          "government",
-          "정부"
+          "FAA",
+          "Federal Aviation Administration",
+          "연방항공청",
+          "항공청"
         ]
       },
       {
-        "label": "company · 기업",
+        "label": "라우터 설치 중단",
         "terms": [
-          "company",
-          "companies",
-          "기업",
-          "회사"
+          "routers",
+          "router",
+          "라우터",
+          "설치 중단"
         ]
       },
       {
-        "label": "security · 안보",
+        "label": "전국 이륙 일시 중단과 원인 조사",
         "terms": [
-          "security",
-          "안보",
-          "보안"
+          "ground stop",
+          "root cause",
+          "이륙 중단",
+          "원인",
+          "조사",
+          "오작동"
         ]
       }
     ],
-    "boundary": "reporter_handoff_estimate"
+    "boundary": "transcript_topic_and_audio_alignment"
   },
   "summaryReviews": [
     {
       "kind": "keyword_rubric",
       "article": 1,
       "start": 10.52,
-      "end": 72.96,
-      "transcript": "The FAA has paused the installation of the routers that were linked to last week's nationwide ground stop and turned off any that were already installed. Secretary Sean Duffy says officials still don't fully understand the problem. The root cause of what happened, we don't have clarity yet. And I promise all of you that when I know what happened with that router, injecting that overload into our system, I will most definitely share that with you. If we were subject to a hack, we will share that with you as well. But all of my intelligence partners are telling me that wasn't the case. Technicians linked Friday's disruption to a router that had just been installed in El Dorado, Arkansas. The routers that malfunctioned last week are being tested in a lab at the headquarters of the company that installed them named L3 Harris. Homeland Security Secretary Mark Wayne Mullen is defending using a government plane to attend the LSU Texas college football game as the air industry recovered from the ground stop last weekend. Speaking on CNBC, Mullen says he's required to fly on government planes and personally paid for the trip.",
+      "end": 55.48,
+      "transcript": "The FAA has paused the installation of the routers that were linked to last week's nationwide ground stop and turned off any that were already installed. Secretary Sean Duffy says officials still don't fully understand the problem. The root cause of what happened, we don't have clarity yet. And I promise all of you that when I know what happened with that router, injecting that overload into our system, I will most definitely share that with you. If we were subject to a hack, we will share that with you as well. But all of my intelligence partners are telling me that wasn't the case. Technicians linked Friday's disruption to a router that had just been installed in El Dorado, Arkansas. The routers that malfunctioned last week are being tested in a lab at the headquarters of the company that installed them named L3 Harris.",
       "keywords": [
         {
-          "label": "government · 정부",
+          "label": "FAA · 미 연방항공청",
           "terms": [
-            "government",
-            "정부"
+            "FAA",
+            "Federal Aviation Administration",
+            "연방항공청",
+            "항공청"
           ]
         },
         {
-          "label": "company · 기업",
+          "label": "라우터 설치 중단",
           "terms": [
-            "company",
-            "companies",
-            "기업",
-            "회사"
+            "routers",
+            "router",
+            "라우터",
+            "설치 중단"
           ]
         },
         {
-          "label": "security · 안보",
+          "label": "전국 이륙 일시 중단과 원인 조사",
           "terms": [
-            "security",
-            "안보",
-            "보안"
+            "ground stop",
+            "root cause",
+            "이륙 중단",
+            "원인",
+            "조사",
+            "오작동"
           ]
         }
       ],
-      "boundary": "reporter_handoff_estimate"
+      "boundary": "transcript_topic_and_audio_alignment"
     },
     {
       "kind": "keyword_rubric",
       "article": 2,
-      "start": 73.72,
-      "end": 123.06,
-      "transcript": "Nvidia CEO Jensen Huang has broken his silence after stepping down amid reports he had an affair with a woman who may have been spying for China, and PRS John Ruich reports Huang says he would return as CEO if the board asked him to. In a message on X, Huang said he has seen an outpouring of calls for him to return since he resigned last week. has admitted to being unfaithful to his wife, and reports from the New York Times and others said he had a relationship with a Chinese woman who U.S. intelligence agencies suspect was recruited by Beijing to spy on him. An online petition to reinstate Huang has gathered nearly 200,000 names, including thousands of NVIDIA employees. Huang now says he'd be honored to come back if NVIDIA's board decides it's in the best interests of the company, its shareholders, employees, and the country. John Ruich, NPR News.",
+      "start": 55.48,
+      "end": 73.25999999999999,
+      "transcript": "Homeland Security Secretary Mark Wayne Mullen is defending using a government plane to attend the LSU Texas college football game as the air industry recovered from the ground stop last weekend. Speaking on CNBC, Mullen says he's required to fly on government planes and personally paid for the trip.",
+      "boundary": "transcript_topic_and_audio_alignment",
       "keywords": [
         {
-          "label": "china · 중국",
+          "label": "국토안보부 장관",
           "terms": [
-            "china",
-            "chinese",
-            "중국"
+            "Homeland Security",
+            "Mullen",
+            "국토안보부",
+            "국토안보부 장관"
           ]
         },
         {
-          "label": "nvidia · 엔비디아",
+          "label": "정부 전용기 사용",
           "terms": [
-            "nvidia",
-            "엔비디아"
+            "government plane",
+            "government planes",
+            "정부 전용기",
+            "정부 항공기",
+            "전용기"
           ]
         },
         {
-          "label": "petition · 청원",
+          "label": "경기 관람과 비용 해명",
           "terms": [
-            "petition",
-            "signatures",
-            "청원",
-            "서명"
-          ]
-        },
-        {
-          "label": "return · 복귀",
-          "terms": [
-            "return",
-            "returning",
-            "복귀",
-            "돌아"
-          ]
-        },
-        {
-          "label": "resigned · 사임",
-          "terms": [
-            "resign",
-            "resigned",
-            "resignation",
-            "사임",
-            "사퇴"
-          ]
-        },
-        {
-          "label": "relationship · 관계",
-          "terms": [
-            "relationship",
-            "affair",
-            "관계",
-            "불륜"
+            "football game",
+            "paid",
+            "경기",
+            "미식축구",
+            "비용",
+            "부담"
           ]
         }
-      ],
-      "boundary": "reporter_handoff_estimate"
+      ]
     }
   ],
   "fullTranscript": {

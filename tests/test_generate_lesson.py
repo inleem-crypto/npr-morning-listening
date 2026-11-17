@@ -260,17 +260,17 @@ class GenerationTests(unittest.TestCase):
 
     def test_articles_are_visible_context_but_never_answers(self):
         items = g.make_short_items([
-            segment('The flooding the continued rainfall disrupted a vital road for an entire district.', 30)
+            segment('The flooding from the continued rainfall disrupted a vital road for an entire district.', 30)
         ])
         self.assertTrue(items)
-        self.assertIn('the flooding the', items[0]['sentence'].casefold())
+        self.assertIn('the flooding from the', items[0]['sentence'].casefold())
         self.assertTrue(all(not set(item['answer'].split()) & g.ARTICLES for item in items))
 
     def test_seven_leading_words_can_cross_contiguous_segments(self):
         earlier = segment('The agency said the emergency crews had', 22.2)
-        current = segment('implemented staggered arrivals for staff members.', 25)
+        current = segment('staggered arrivals for staff members.', 25)
         item = g.make_short_items([earlier, current])[0]
-        self.assertEqual(item['sentence'], 'The agency said the emergency crews had ____ arrivals for staff members.')
+        self.assertEqual(item['sentence'], 'The agency said the emergency crews had ____ for staff members.')
         self.assertEqual(item['context_start'], 22.2)
         self.assertEqual(g.make_short_items([earlier, segment(current.text, 30)])[0]['context_start'], 30)
 
@@ -289,7 +289,7 @@ class GenerationTests(unittest.TestCase):
         self.assertNotEqual(item["sentence"], "____")
         self.assertLessEqual(item["context_start"], item["start"])
         self.assertGreaterEqual(item["context_end"], item["end"])
-        self.assertNotIn("meaning", item)
+        self.assertTrue(item['meaning'])
         self.assertEqual(len(item["answer"].split()), 2)
         self.assertGreaterEqual(item["start"], 25)
         self.assertLess(item["start"], item["end"])
@@ -324,6 +324,22 @@ class GenerationTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             g.check_short_items([item], [0]*600000, model, diagnostics)
         self.assertEqual(diagnostics[0]['reason'], 'context_mismatch')
+
+    def test_correct_context_at_another_occurrence_does_not_validate_the_clip(self):
+        item = g.make_short_items([segment()])[0]
+        clip_start = max(0.0, min(item["start"] - 2, item["context_start"] - .5))
+        local_start = item["start"] - clip_start
+        misleading = segment(item["answer"] + " in that area.", start=local_start)
+        complete = segment(TEXT, start=local_start + 2)
+        model = NS(transcribe=lambda *a, **k: (iter([misleading, complete]), None))
+        diagnostics = []
+        with self.assertRaisesRegex(RuntimeError, "No short expressions"):
+            g.check_short_items([item], [0]*600000, model, diagnostics)
+        self.assertEqual(diagnostics[0]['reason'], 'phrase_or_time_mismatch')
+
+    def test_unknown_korean_meaning_does_not_make_a_candidate(self):
+        text = 'Newcomers casually observe distant islands during unusually mild afternoons.'
+        self.assertEqual(g.make_short_items([segment(text, start=30)]), [])
 
     def test_short_expression_mismatch_does_not_invent_an_answer(self):
         candidates = g.make_short_items([segment()])
