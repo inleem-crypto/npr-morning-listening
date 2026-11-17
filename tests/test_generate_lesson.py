@@ -258,6 +258,22 @@ class GenerationTests(unittest.TestCase):
         self.assertNotIn('and the', answers)
         self.assertNotIn('has the', answers)
 
+    def test_articles_are_visible_context_but_never_answers(self):
+        items = g.make_short_items([
+            segment('The flooding the continued rainfall disrupted a vital road for an entire district.', 30)
+        ])
+        self.assertTrue(items)
+        self.assertIn('the flooding the', items[0]['sentence'].casefold())
+        self.assertTrue(all(not set(item['answer'].split()) & g.ARTICLES for item in items))
+
+    def test_seven_leading_words_can_cross_contiguous_segments(self):
+        earlier = segment('The agency said the emergency crews had', 22.2)
+        current = segment('implemented staggered arrivals for staff members.', 25)
+        item = g.make_short_items([earlier, current])[0]
+        self.assertEqual(item['sentence'], 'The agency said the emergency crews had ____ arrivals for staff members.')
+        self.assertEqual(item['context_start'], 22.2)
+        self.assertEqual(g.make_short_items([earlier, segment(current.text, 30)])[0]['context_start'], 30)
+
     def test_contextual_meanings_do_not_guess_polysemous_fragments(self):
         self.assertIn('장기적', g.korean_study_clue('money over', 'made people money over the long term'))
         self.assertNotIn('장기적', g.korean_study_clue('money over', 'money over here'))
@@ -273,8 +289,7 @@ class GenerationTests(unittest.TestCase):
         self.assertNotEqual(item["sentence"], "____")
         self.assertLessEqual(item["context_start"], item["start"])
         self.assertGreaterEqual(item["context_end"], item["end"])
-        self.assertIn("meaning", item)
-        self.assertTrue(item["meaning"])
+        self.assertNotIn("meaning", item)
         self.assertEqual(len(item["answer"].split()), 2)
         self.assertGreaterEqual(item["start"], 25)
         self.assertLess(item["start"], item["end"])

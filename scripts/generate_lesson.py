@@ -23,7 +23,7 @@ STATUS = ROOT / "generation-status.json"
 REPORT = ROOT / "generation-report.json"
 FEED = "https://feeds.npr.org/500005/podcast.xml"
 USER_AGENT = "NPR-Morning-Listening/4.0 (+https://github.com/inleem-crypto/npr-morning-listening)"
-GENERATOR_VERSION = 14
+GENERATOR_VERSION = 15
 PRIMARY_MODEL = "small.en"
 CHECK_MODEL = "medium.en"
 MAX_CANDIDATES = 16
@@ -391,6 +391,7 @@ def _phrase_token(word):
     return raw.casefold()
 
 
+ARTICLES = {"a", "an", "the"}
 FUNCTION_WORDS = {"and", "the", "has", "had", "have", "was", "were", "are", "for", "with", "from", "that", "this", "but", "not", "who", "will", "can", "could", "would", "should"}
 
 
@@ -410,8 +411,13 @@ def make_short_items(segments):
     """Make 2-word prompts from contiguous high-confidence audio, not invented text."""
     result, seen = [], set()
     last = -100.0
+    previous_tail = []
     for segment in segments:
         words = getattr(segment, "words", None) or []
+        lead = []
+        if words and previous_tail and 0 <= words[0].start - previous_tail[-1].end <= .8:
+            lead = previous_tail
+        previous_tail = (lead + words)[-7:] if words else []
         for i in range(len(words) - 1):
             first, second = words[i:i + 2]
             start, end = first.start, second.end
@@ -426,24 +432,24 @@ def make_short_items(segments):
                     or second.start - first.end > .65):
                 continue
             a, b = _phrase_token(first.word), _phrase_token(second.word)
-            if (not a or not b or a == b
+            if (not a or not b or a == b or a in ARTICLES or b in ARTICLES
                     or (a in STOPWORDS and b in STOPWORDS)):
                 continue
             answer = a + " " + b
-            # Function-word fragments make poor standalone meaning questions.
-            # Do not split compounds such as "arms-control" at the blank edge.
+            preceding = (lead + words[:i])[-7:]
+            # Keep function-word fragments and split compounds out of the blank.
             if ((a in FUNCTION_WORDS and b in FUNCTION_WORDS and answer not in PHRASE_GLOSSES)
                     or (i + 2 < len(words) and words[i+2].word.strip().startswith('-'))
-                    or (i and words[i-1].word.strip().endswith('-'))):
+                    or (preceding and preceding[-1].word.strip().endswith('-'))):
                 continue
             if answer in seen:
                 continue
             # Preserve audible context instead of replacing the entire prompt
             # with a bare blank. Never synthesize a sentence around the answer.
-            left, right = max(0, i - 4), min(len(words), i + 6)
-            context = words[left:right]
-            before = "".join(w.word for w in words[left:i]).strip()
-            after = "".join(w.word for w in words[i + 2:right]).strip()
+            following = words[i + 2:i + 6]
+            context = preceding + words[i:i + 2] + following
+            before = "".join(w.word for w in preceding).strip()
+            after = "".join(w.word for w in following).strip()
             sentence = (before + " ____ " + after).strip()
             meaning = NEWS_HINTS.get(a) or NEWS_HINTS.get(b)
             hint = ((meaning + " 관련 표현 · ") if meaning else "해당 음성 구간의 표현 · ")
@@ -455,7 +461,6 @@ def make_short_items(segments):
                 "context_start": round(context[0].start, 2),
                 "context_end": round(context[-1].end, 2),
                 "answer": answer,
-                "meaning": korean_study_clue(answer, interpretation["text"] if interpretation else sentence.replace("____", answer)),
                 "hint": hint,
                 "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
                 "start": round(start, 2),
