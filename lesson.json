@@ -1,5 +1,5 @@
 {
-  "title": "5am ET, November 17 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "3pm ET, November 17 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
   "generator_version": 14,
   "verified": false,
@@ -10,199 +10,158 @@
     "human_verified": false
   },
   "sourceNote": "문제를 만들 때 사용한 고정 음원을 재생합니다. 빈칸 앞뒤 영어 지문과 2단어 정답을 두 음성인식 모델이 비교했습니다. 자동 전사이므로 오류가 있을 수 있습니다.",
-  "generated_at": "2026-11-17T10:58:53.232726+00:00",
+  "generated_at": "2026-11-17T21:01:02.407785+00:00",
   "episode": {
-    "id": "c822fc60-d3d6-4c90-abd5-83dc85e4526d",
-    "title": "5am ET, November 17 | The latest headlines from NPR",
-    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/0c58d5bd1581d1ff239df596c1d9b9ed351712c4cfdbf4101d69f4c866f48d69.mp3",
-    "date": "2026-11-17T10:09:52+00:00",
+    "id": "a27708a1-2717-4ff2-a94f-1d9279e357dc",
+    "title": "3pm ET, November 17 | The latest headlines from NPR",
+    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/af5988827bb8ccc820ae25656884ba00f73b6dce91f0a5af69f44b3c8f950249.mp3",
+    "date": "2026-11-17T20:09:31+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "문제 생성에 사용한 고정 음원",
-    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/9e07b709-7049-488d-b5f5-f4b0bd0e7119/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=9e07b709-7049-488d-b5f5-f4b0bd0e7119&feed=O9WlY7a5&t=podcast&e=nx-s1-20261117-0500-long&p=500005&d=280&size=4586729",
-    "audio_sha256": "0c58d5bd1581d1ff239df596c1d9b9ed351712c4cfdbf4101d69f4c866f48d69"
+    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/4989577c-619c-45ac-88c2-1fba61bd7328/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=4989577c-619c-45ac-88c2-1fba61bd7328&feed=O9WlY7a5&t=podcast&e=nx-s1-20261117-1500-long&p=500005&d=280&size=4586729",
+    "audio_sha256": "af5988827bb8ccc820ae25656884ba00f73b6dce91f0a5af69f44b3c8f950249"
   },
   "items": [
     {
-      "sentence": "Russian security services to ____ at a local drone",
+      "sentence": "staggered ____ for employees.",
       "meaning_context": {
-        "start": 66.72,
-        "end": 107.1,
-        "text": "and PR News, the White House. The Baltic nation of Estonia says it will soon close its border crossings with Russia, and PR's Charles Maines in Moscow says the government accuses Russia of sabotage. The closure goes into effect December 1st and follows what Estonia says was a foiled plot by Russian security services to detonate explosives at a local drone manufacturing plant. The Kremlin has denied the charge and condemned Estonia's border closure, which is the latest to complicate land travel from Russia into Europe. Finland closed its border transit with Russia in 2023 amid a surge in migrants it blamed on Moscow, and closing at other points such as Latvia and northern Norway remain limited.",
+        "start": 4.78,
+        "end": 46.14,
+        "text": "headlines every hour. Live from NPR News, I'm Lakshmi Singh. The National Security Agency confirms it is aware of reports that its internal communication system is down. A source not authorized to speak publicly has confirmed with NPR that NSA has implemented staggered arrival times for employees. It is believed this would be to avoid too many people logging onto the system while engineers work to stabilize it. Apple is reporting outages affecting several parts of its system, including its App Store, iCloud Mail, iCloud Web Apps and Apple Business. The Federal Aviation Administration is pausing the",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 84.5,
-      "context_end": 88.32,
-      "answer": "detonate explosives",
-      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
-      "hint": "해당 음성 구간의 표현 · D… E… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 86.5,
-      "end": 87.46
-    },
-    {
-      "sentence": "of ____ attacks on its infrastructure",
-      "meaning_context": {
-        "start": 90.7,
-        "end": 131.78,
-        "text": "the charge and condemned Estonia's border closure, which is the latest to complicate land travel from Russia into Europe. Finland closed its border transit with Russia in 2023 amid a surge in migrants it blamed on Moscow, and closing at other points such as Latvia and northern Norway remain limited. The throttled land traffic comes as Europe has accused Russia of launching hybrid attacks on its infrastructure in a bid to undermine the European public's support for Ukraine. Charles Maynes, NPR News, Moscow. Microsoft says it's learning more about what caused last week's global outage affecting millions of users in more than 70 countries. Here's NPR's Andrea Hsu. In a lengthy post on X, Microsoft",
-        "requested_padding_seconds": 20,
-        "source": "automatic_transcription"
-      },
-      "context_start": 110.62,
-      "context_end": 112.92,
-      "answer": "launching hybrid",
-      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
-      "hint": "해당 음성 구간의 표현 · L… H… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 110.86,
-      "end": 111.54
-    },
-    {
-      "sentence": "defect combined with increased ____ a reduced server capacity",
-      "meaning_context": {
-        "start": 117.04,
-        "end": 158.12,
-        "text": "Maynes, NPR News, Moscow. Microsoft says it's learning more about what caused last week's global outage affecting millions of users in more than 70 countries. Here's NPR's Andrea Hsu. In a lengthy post on X, Microsoft Executive Vice President Charles Lamada said a latent defect combined with increased load and a reduced server capacity were to blame for the outage, which began Thursday and spilled into Friday. The failure unfolded rapidly over just a couple hours. At one point, the previously unknown defect had rendered more than 80 percent of Microsoft servers unresponsive. Services weren't fully restored until early Saturday. Lamanna",
-        "requested_padding_seconds": 20,
-        "source": "automatic_transcription"
-      },
-      "context_start": 135.32,
-      "context_end": 139.18,
-      "answer": "load and",
-      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
-      "hint": "해당 음성 구간의 표현 · L… A… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 137.18,
-      "end": 137.82
-    },
-    {
-      "sentence": "servers unresponsive. Services weren't ____",
-      "meaning_context": {
-        "start": 135.32,
-        "end": 176.24,
-        "text": "defect combined with increased load and a reduced server capacity were to blame for the outage, which began Thursday and spilled into Friday. The failure unfolded rapidly over just a couple hours. At one point, the previously unknown defect had rendered more than 80 percent of Microsoft servers unresponsive. Services weren't fully restored until early Saturday. Lamanna explained the recovery took longer than usual because servers came back online, they were immediately overwhelmed by waiting traffic. He once again apologized for the disruption caused to all Microsoft customers. Andrea Shue, NPR News. United Airlines says it doesn't believe yesterday's system",
-        "requested_padding_seconds": 20,
-        "source": "automatic_transcription"
-      },
-      "context_start": 152.72,
-      "context_end": 156.1,
-      "answer": "fully restored",
-      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
-      "hint": "해당 음성 구간의 표현 · F… R… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 155.38,
-      "end": 156.1
-    },
-    {
-      "sentence": "several other banks. Many ____ trouble accessing online",
-      "meaning_context": {
-        "start": 177.34,
-        "end": 217.96,
-        "text": "delayed departing flights for more than 90 minutes was the result of a cybersecurity issue. This is NPR News from Washington. JPMorgan Chase says hackers were not responsible for yesterday's technical issue that affected thousands of customers as well as several other banks. Many people had trouble accessing online accounts and transferring money through Zelle. The issue was blamed on a software bug and appears to be resolved this morning. Gasoline and diesel prices continue falling across the U.S. AAA says regular now averages $3.78 a gallon. The price has dropped about 20 cents in the last week.",
-        "requested_padding_seconds": 20,
-        "source": "automatic_transcription"
-      },
-      "context_start": 195.76,
-      "context_end": 199.48,
-      "answer": "people had",
-      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
-      "hint": "해당 음성 구간의 표현 · P… H… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 197.44,
-      "end": 198.0
-    },
-    {
-      "sentence": "Diesel is ____ of another drop in",
-      "meaning_context": {
-        "start": 204.64,
-        "end": 245.64,
-        "text": "appears to be resolved this morning. Gasoline and diesel prices continue falling across the U.S. AAA says regular now averages $3.78 a gallon. The price has dropped about 20 cents in the last week. NPR's Willa Rubin says the cost of diesel has fallen to less than $6 a gallon. Diesel is dropping because of another drop in crude prices. Crude is getting cheaper because more oil is getting out of the Middle East. So supply and demand. And here's why lower diesel prices matter. Diesel is the workhorse of the economy. Many, much of the nation's farming and trucking runs on diesel. When diesel goes up over time,",
-        "requested_padding_seconds": 20,
-        "source": "automatic_transcription"
-      },
-      "context_start": 224.4,
-      "context_end": 227.52,
-      "answer": "dropping because",
-      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
-      "hint": "해당 음성 구간의 표현 · D… B… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 224.9,
-      "end": 225.76
-    },
-    {
-      "sentence": "to face many questions ____ war with",
-      "meaning_context": {
-        "start": 249.52,
-        "end": 285.26,
-        "text": "counterweight to inflation. But a gallon of diesel still costs more than $2 more than a year ago. Willa Rubin, NPR News. President Trump's choice to serve as Secretary of the Navy is scheduled to appear before the Senate Armed Services Committee today. Acting Secretary Hung Kao is expected to face many questions about the war with Iran as he seeks the Navy's top civilian job. Kao was a combat veteran who would need a waiver from Congress to serve having left active duty less than seven years ago. I'm Dave Mattingly, NPR News in Washington.",
-        "requested_padding_seconds": 20,
-        "source": "automatic_transcription"
-      },
-      "context_start": 268.22,
-      "context_end": 270.5,
-      "answer": "about the",
+      "context_start": 24.54,
+      "context_end": 26.74,
+      "answer": "arrival times",
       "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
       "hint": "해당 음성 구간의 표현 · A… T… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 269.54,
-      "end": 270.1
+      "start": 25.12,
+      "end": 25.98
+    },
+    {
+      "sentence": "Federal Aviation Administration is ____ installation of new routers",
+      "meaning_context": {
+        "start": 25.12,
+        "end": 66.4,
+        "text": "arrival times for employees. It is believed this would be to avoid too many people logging onto the system while engineers work to stabilize it. Apple is reporting outages affecting several parts of its system, including its App Store, iCloud Mail, iCloud Web Apps and Apple Business. The Federal Aviation Administration is pausing the installation of new routers following a nationwide ground stop on Friday and PR's Joe Hernandez reports maintenance work caused technical disruptions that led to thousands of flight cancellations across the U.S. Federal aviation officials say workers were converting old copper wires to fiber cables when a router made by the company Juniper",
+        "requested_padding_seconds": 20,
+        "source": "automatic_transcription"
+      },
+      "context_start": 43.74,
+      "context_end": 47.6,
+      "answer": "pausing the",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · P… T… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 45.52,
+      "end": 46.14
+    },
+    {
+      "sentence": "company Juniper Networks began ____ system with information.",
+      "meaning_context": {
+        "start": 47.14,
+        "end": 88.08,
+        "text": "routers following a nationwide ground stop on Friday and PR's Joe Hernandez reports maintenance work caused technical disruptions that led to thousands of flight cancellations across the U.S. Federal aviation officials say workers were converting old copper wires to fiber cables when a router made by the company Juniper Networks began flooding the system with information. Now the FAA is pausing the installation of Juniper routers while it continues to investigate what went wrong. That's according to an FAA official who requested anonymity because they are not authorized to speak publicly. The FAA says it's replaced around 70 percent of the copper wire in its networks so far. It comes as the",
+        "requested_padding_seconds": 20,
+        "source": "automatic_transcription"
+      },
+      "context_start": 65.54,
+      "context_end": 69.02,
+      "answer": "flooding the",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · F… T… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 67.24,
+      "end": 67.94
+    },
+    {
+      "sentence": "continues to press Congress ____ of dollars",
+      "meaning_context": {
+        "start": 70.28,
+        "end": 111.26,
+        "text": "is pausing the installation of Juniper routers while it continues to investigate what went wrong. That's according to an FAA official who requested anonymity because they are not authorized to speak publicly. The FAA says it's replaced around 70 percent of the copper wire in its networks so far. It comes as the Trump administration continues to press Congress for billions of dollars in additional funding to modernize the country's air traffic control system. Joe Hernandez, NPR News. President Trump is preparing to travel to China in the morning for a historic trilateral meeting with Presidents Xi Jinping and Vladimir Putin of Russia on the sidelines of the APEC summit. Trump has said the war in Ukraine is",
+        "requested_padding_seconds": 20,
+        "source": "automatic_transcription"
+      },
+      "context_start": 88.82,
+      "context_end": 91.72,
+      "answer": "for billions",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · F… B… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 90.46,
+      "end": 91.16
+    },
+    {
+      "sentence": "Trump has said ____ in Ukraine is on",
+      "meaning_context": {
+        "start": 89.5,
+        "end": 130.58,
+        "text": "to press Congress for billions of dollars in additional funding to modernize the country's air traffic control system. Joe Hernandez, NPR News. President Trump is preparing to travel to China in the morning for a historic trilateral meeting with Presidents Xi Jinping and Vladimir Putin of Russia on the sidelines of the APEC summit. Trump has said the war in Ukraine is on the agenda but Ukrainian leader Volodymyr Zelensky will not be at the summit and says he's concerned about his country's fate being discussed in his absence. Trump has been staying the night in Manila Philippines after attending the ASEAN summit. The US and China are in the midst of an AI race but are also competing on numerous other fronts including in",
+        "requested_padding_seconds": 20,
+        "source": "automatic_transcription"
+      },
+      "context_start": 108.76,
+      "context_end": 111.44,
+      "answer": "the war",
+      "meaning": "부분 단서: war=전쟁 (나머지는 듣고 완성)",
+      "hint": "전쟁 관련 표현 · T… W… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 109.82,
+      "end": 110.14
+    },
+    {
+      "sentence": "is, by far, Africa's ____ partner, and now more",
+      "meaning_context": {
+        "start": 116.56,
+        "end": 157.2,
+        "text": "about his country's fate being discussed in his absence. Trump has been staying the night in Manila Philippines after attending the ASEAN summit. The US and China are in the midst of an AI race but are also competing on numerous other fronts including in mineral rich Africa. Here's Kate Bartlett in Johannesburg. China is, by far, Africa's biggest trading partner, and now more and more African countries are turning to the Chinese yuan for trade and to pay their debt. Christian Gérôt-Nima is an editor with the China Global South project. He points out several African countries, like Kenya, have already restructured their debt to China. It really just makes sense for many African countries now",
+        "requested_padding_seconds": 20,
+        "source": "automatic_transcription"
+      },
+      "context_start": 134.62,
+      "context_end": 138.88,
+      "answer": "biggest trading",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · B… T… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 136.6,
+      "end": 137.12
+    },
+    {
+      "sentence": "recently resumed strikes on ____ with the United States.",
+      "meaning_context": {
+        "start": 160.66,
+        "end": 201.9,
+        "text": "with China in US dollar. The Trump administration shifting tariff policies have only strengthened the case for African businesses to diversify away from the dollar. Kate Bartlett, NPR News, Johannesburg. Iran fired drones at a U.S. radar facility in Bahrain today. Bahrain says it intercepted those drones. Iran recently resumed strikes on neighbors allied with the United States. This is NPR News. The key measure of retail sales barely rose two-tenths of a percent in October compared to September. People spent less on autos and",
+        "requested_padding_seconds": 20,
+        "source": "automatic_transcription"
+      },
+      "context_start": 179.44,
+      "context_end": 182.72,
+      "answer": "neighbors allied",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · N… A… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 180.8,
+      "end": 181.66
     }
   ],
   "summaryReview": {
     "kind": "keyword_rubric",
     "article": 1,
-    "start": 12.56,
-    "end": 107.1,
-    "transcript": "President Trump has arrived in Manila, where he'll attend a summit in the Philippines ahead of this week's meetings in China with Chinese President Xi Jinping and Russian President Vladimir Putin and PR's Franco Ordonez reports. parts. President Trump will meet with Southeast Asian leaders who are gathering for the ASEAN summit, but much of the attention will be on the second half of the trip when Trump travels to China to meet with President Xi Jinping and Vladimir Putin. Well, we're to be talking about denuclearization. We'll talk about Iran. We have Iran in very good shape. But we'll talk about Iran in a little bit. We'll talk about my favorite subject, Ukraine's losing, Ukraine, Russia's losing 25,000 soldiers in the month of. We'll be talking about that. We'll all be talking about economics and trade. Trump suggested he may also meet with Kim Jong-un of North Korea, Ordonez, and PR News, the White House. The Baltic nation of Estonia says it will soon close its border crossings with Russia, and PR's Charles Maines in Moscow says the government accuses Russia of sabotage. The closure goes into effect December 1st and follows what Estonia says was a foiled plot by Russian security services to detonate explosives at a local drone manufacturing plant. The Kremlin has denied the charge and condemned Estonia's border closure, which is the latest to complicate land travel from Russia into Europe. Finland closed its border transit with Russia in 2023 amid a surge in migrants it blamed on Moscow, and closing at other points such as Latvia and northern Norway remain limited.",
+    "start": 11.38,
+    "end": 42.68,
+    "transcript": "The National Security Agency confirms it is aware of reports that its internal communication system is down. A source not authorized to speak publicly has confirmed with NPR that NSA has implemented staggered arrival times for employees. It is believed this would be to avoid too many people logging onto the system while engineers work to stabilize it. Apple is reporting outages affecting several parts of its system, including its App Store, iCloud Mail, iCloud Web Apps and Apple Business.",
     "keywords": [
       {
-        "label": "trump · 트럼프",
+        "label": "security · 안보",
         "terms": [
-          "trump",
-          "트럼프"
-        ]
-      },
-      {
-        "label": "asia · 아시아",
-        "terms": [
-          "asia",
-          "asian",
-          "아시아"
-        ]
-      },
-      {
-        "label": "summit · 정상회담",
-        "terms": [
-          "summit",
-          "summits",
-          "정상회담",
-          "정상 회담",
-          "정상회의",
-          "정상 회의"
-        ]
-      },
-      {
-        "label": "china · 중국",
-        "terms": [
-          "china",
-          "chinese",
-          "중국"
-        ]
-      },
-      {
-        "label": "russia · 러시아",
-        "terms": [
-          "russia",
-          "russian",
-          "러시아"
-        ]
-      },
-      {
-        "label": "trade · 무역",
-        "terms": [
-          "trade",
-          "무역"
+          "security",
+          "안보",
+          "보안"
         ]
       }
     ],
@@ -212,9 +171,27 @@
     {
       "kind": "keyword_rubric",
       "article": 1,
-      "start": 12.56,
-      "end": 107.1,
-      "transcript": "President Trump has arrived in Manila, where he'll attend a summit in the Philippines ahead of this week's meetings in China with Chinese President Xi Jinping and Russian President Vladimir Putin and PR's Franco Ordonez reports. parts. President Trump will meet with Southeast Asian leaders who are gathering for the ASEAN summit, but much of the attention will be on the second half of the trip when Trump travels to China to meet with President Xi Jinping and Vladimir Putin. Well, we're to be talking about denuclearization. We'll talk about Iran. We have Iran in very good shape. But we'll talk about Iran in a little bit. We'll talk about my favorite subject, Ukraine's losing, Ukraine, Russia's losing 25,000 soldiers in the month of. We'll be talking about that. We'll all be talking about economics and trade. Trump suggested he may also meet with Kim Jong-un of North Korea, Ordonez, and PR News, the White House. The Baltic nation of Estonia says it will soon close its border crossings with Russia, and PR's Charles Maines in Moscow says the government accuses Russia of sabotage. The closure goes into effect December 1st and follows what Estonia says was a foiled plot by Russian security services to detonate explosives at a local drone manufacturing plant. The Kremlin has denied the charge and condemned Estonia's border closure, which is the latest to complicate land travel from Russia into Europe. Finland closed its border transit with Russia in 2023 amid a surge in migrants it blamed on Moscow, and closing at other points such as Latvia and northern Norway remain limited.",
+      "start": 11.38,
+      "end": 42.68,
+      "transcript": "The National Security Agency confirms it is aware of reports that its internal communication system is down. A source not authorized to speak publicly has confirmed with NPR that NSA has implemented staggered arrival times for employees. It is believed this would be to avoid too many people logging onto the system while engineers work to stabilize it. Apple is reporting outages affecting several parts of its system, including its App Store, iCloud Mail, iCloud Web Apps and Apple Business.",
+      "keywords": [
+        {
+          "label": "security · 안보",
+          "terms": [
+            "security",
+            "안보",
+            "보안"
+          ]
+        }
+      ],
+      "boundary": "reporter_handoff_estimate"
+    },
+    {
+      "kind": "keyword_rubric",
+      "article": 2,
+      "start": 43.48,
+      "end": 97.74,
+      "transcript": "The Federal Aviation Administration is pausing the installation of new routers following a nationwide ground stop on Friday and PR's Joe Hernandez reports maintenance work caused technical disruptions that led to of flight cancellations across the U.S. Federal aviation officials say workers were converting old copper wires to fiber cables when a router made by the company Juniper Networks began flooding the system with information. Now the FAA is pausing the installation of Juniper routers while it continues to investigate what went wrong. That's according to an FAA official who requested anonymity because they are not authorized to speak publicly. The FAA says it's replaced around 70 percent of the copper wire in its networks so far. It comes as the Trump administration continues to press Congress for billions of dollars in additional funding to modernize the country's air traffic control system. Joe Hernandez, NPR News.",
       "keywords": [
         {
           "label": "trump · 트럼프",
@@ -224,72 +201,12 @@
           ]
         },
         {
-          "label": "asia · 아시아",
+          "label": "company · 기업",
           "terms": [
-            "asia",
-            "asian",
-            "아시아"
-          ]
-        },
-        {
-          "label": "summit · 정상회담",
-          "terms": [
-            "summit",
-            "summits",
-            "정상회담",
-            "정상 회담",
-            "정상회의",
-            "정상 회의"
-          ]
-        },
-        {
-          "label": "china · 중국",
-          "terms": [
-            "china",
-            "chinese",
-            "중국"
-          ]
-        },
-        {
-          "label": "russia · 러시아",
-          "terms": [
-            "russia",
-            "russian",
-            "러시아"
-          ]
-        },
-        {
-          "label": "trade · 무역",
-          "terms": [
-            "trade",
-            "무역"
-          ]
-        }
-      ],
-      "boundary": "reporter_handoff_estimate"
-    },
-    {
-      "kind": "keyword_rubric",
-      "article": 2,
-      "start": 172.86,
-      "end": 258.0,
-      "transcript": "United Airlines says it doesn't believe yesterday's system-wide outage that delayed departing flights for more than 90 minutes was the result of a cybersecurity issue. This is NPR News from Washington. JPMorgan Chase says hackers were not responsible for yesterday's technical issue that affected thousands of customers as well as several other banks. Many people had trouble accessing online accounts and transferring money through Zelle. The issue was blamed on a software bug and appears to be resolved this morning. Gasoline and diesel prices continue falling across the U.S. AAA says regular now averages $3.78 a gallon. The price has dropped about 20 cents in the last week. NPR's Willa Rubin says the cost of diesel has fallen to less than $6 a gallon. Diesel is dropping because of another drop in crude prices. Crude is getting cheaper because more oil is getting out of the Middle East. supply and demand. And here's why lower diesel prices matter. Diesel is the workhorse of the economy. Many, much of the nation's farming and trucking runs on diesel. When diesel goes up over time, so does the price of just about everything. So this is a counterweight to inflation. But a gallon of diesel still costs more than $2 more than a year ago. Willa Rubin, NPR News.",
-      "keywords": [
-        {
-          "label": "prices · 물가",
-          "terms": [
-            "prices",
-            "price",
-            "물가",
-            "가격"
-          ]
-        },
-        {
-          "label": "inflation · 인플레이션",
-          "terms": [
-            "inflation",
-            "인플레이션",
-            "물가상승"
+            "company",
+            "companies",
+            "기업",
+            "회사"
           ]
         }
       ],
@@ -297,9 +214,9 @@
     }
   ],
   "fullTranscript": {
-    "transcript": "This is NPR News Now. The latest headlines every hour. Live from NPR News in Washington, I'm Dave Mattingly. President Trump has arrived in Manila, where he'll attend a summit in the Philippines ahead of this week's meetings in China with Chinese President Xi Jinping and Russian President Vladimir Putin and PR's Franco Ordonez reports. parts. President Trump will meet with Southeast Asian leaders who are gathering for the ASEAN summit, but much of the attention will be on the second half of the trip when Trump travels to China to meet with President Xi Jinping and Vladimir Putin. Well, we're to be talking about denuclearization. We'll talk about Iran. We have Iran in very good shape. But we'll talk about Iran in a little bit. We'll talk about my favorite subject, Ukraine's losing, Ukraine, Russia's losing 25,000 soldiers in the month of. We'll be talking about that. We'll all be talking about economics and trade. Trump suggested he may also meet with Kim Jong-un of North Korea, Ordonez, and PR News, the White House. The Baltic nation of Estonia says it will soon close its border crossings with Russia, and PR's Charles Maines in Moscow says the government accuses Russia of sabotage. The closure goes into effect December 1st and follows what Estonia says was a foiled plot by Russian security services to detonate explosives at a local drone manufacturing plant. The Kremlin has denied the charge and condemned Estonia's border closure, which is the latest to complicate land travel from Russia into Europe. Finland closed its border transit with Russia in 2023 amid a surge in migrants it blamed on Moscow, and closing at other points such as Latvia and northern Norway remain limited. The throttled land traffic comes as Europe has accused Russia of launching hybrid attacks on its infrastructure in a bid to undermine the European public's support for Ukraine. Charles Maynes, NPR News, Moscow. Microsoft says it's learning more about what caused last week's global outage affecting millions of users in more than 70 countries. Here's NPR's Andrea Hsu. In a lengthy post on X, Microsoft Executive Vice President Charles Lamada said a latent defect combined with increased load and a reduced server capacity were to blame for the outage, which began Thursday and spilled into Friday. The failure unfolded rapidly over just a couple hours. At one point, the previously unknown defect had rendered more than 80 percent of Microsoft servers unresponsive. Services weren't fully restored until early Saturday. Lamanna explained the recovery took longer than usual because servers came back online, they were immediately overwhelmed by waiting traffic. He once again apologized for the disruption caused to all Microsoft customers. Andrea Shue, NPR News. United Airlines says it doesn't believe yesterday's system-wide outage that delayed departing flights for more than 90 minutes was the result of a cybersecurity issue. This is NPR News from Washington. JPMorgan Chase says hackers were not responsible for yesterday's technical issue that affected thousands of customers as well as several other banks. Many people had trouble accessing online accounts and transferring money through Zelle. The issue was blamed on a software bug and appears to be resolved this morning. Gasoline and diesel prices continue falling across the U.S. AAA says regular now averages $3.78 a gallon. The price has dropped about 20 cents in the last week. NPR's Willa Rubin says the cost of diesel has fallen to less than $6 a gallon. Diesel is dropping because of another drop in crude prices. Crude is getting cheaper because more oil is getting out of the Middle East. supply and demand. And here's why lower diesel prices matter. Diesel is the workhorse of the economy. Many, much of the nation's farming and trucking runs on diesel. When diesel goes up over time, so does the price of just about everything. So this is a counterweight to inflation. But a gallon of diesel still costs more than $2 more than a year ago. Willa Rubin, NPR News. President Trump's choice to serve as of the Navy is scheduled to appear before the Senate Armed Services Committee today. Acting Secretary Hung Kao is expected to face many questions about the war with Iran as he seeks the Navy's top civilian job. Kao was a combat veteran who would need a waiver from Congress to serve having left active duty less than seven years ago. I'm Dave Mattingly, NPR News in Washington.",
+    "transcript": "This is NPR News Now. The latest headlines every hour. Live from NPR News, I'm Lakshmi Singh. The National Security Agency confirms it is aware of reports that its internal communication system is down. A source not authorized to speak publicly has confirmed with NPR that NSA has implemented staggered arrival times for employees. It is believed this would be to avoid too many people logging onto the system while engineers work to stabilize it. Apple is reporting outages affecting several parts of its system, including its App Store, iCloud Mail, iCloud Web Apps and Apple Business. The Federal Aviation Administration is pausing the installation of new routers following a nationwide ground stop on Friday and PR's Joe Hernandez reports maintenance work caused technical disruptions that led to of flight cancellations across the U.S. Federal aviation officials say workers were converting old copper wires to fiber cables when a router made by the company Juniper Networks began flooding the system with information. Now the FAA is pausing the installation of Juniper routers while it continues to investigate what went wrong. That's according to an FAA official who requested anonymity because they are not authorized to speak publicly. The FAA says it's replaced around 70 percent of the copper wire in its networks so far. It comes as the Trump administration continues to press Congress for billions of dollars in additional funding to modernize the country's air traffic control system. Joe Hernandez, NPR News. President Trump is preparing to travel to China in the morning for a historic trilateral meeting with Presidents Xi Jinping and Vladimir Putin of Russia on the sidelines of the APEC summit. Trump has said the war in Ukraine is on the agenda but Ukrainian leader Volodymyr Zelensky will not be at the summit and says he's concerned about his country's fate being discussed in his absence. Trump has been staying the night in Manila Philippines after attending the ASEAN summit. The US and China are in the midst of an AI race but are also competing on numerous other fronts including in mineral rich Africa. Here's Kate Bartlett in Johannesburg. China is, by far, Africa's biggest trading partner, and now more and more African countries are turning to the Chinese yuan for trade and to pay their debt. Christian Gérôt-Nima is an editor with the China Global South project. He points out several African countries, like Kenya, have already restructured their debt to China. It really just makes sense for many African countries now to starting to trade with China in renminbi instead of trading with China in US dollar. The Trump administration shifting tariff policies have only strengthened the case for African businesses to diversify away from the dollar. Kate Bartlett, NPR News, Johannesburg. Iran fired drones at a U.S. radar facility in Bahrain today. Bahrain says it intercepted those drones. Iran recently resumed strikes on neighbors allied with the United States. This is NPR News. The key measure of retail sales barely rose two-tenths of a percent in October compared to September. People spent less on autos and auto parts and really scaled back home improvement purchases. The data does show the impact of Halloween. Spending in the category of stores called miscellaneous rose 4.7 percent compared to September. In the October data also shifts notably comparing this year to October of last year, up nearly 7%. People spent more at restaurants and bars. sales were up nearly 12%, in part thanks to Prime Day and Halloween. And higher gas prices kept driving a surge of spending at gas stations, up nearly 30% from last year. Alina Saluch, NPR News. The administrations repeal to Biden their rule meant to make salaries for federal childcare providers more competitive than Pierre Sequoia Corrillo. The Trump administration published a final rule in the Federal Register on Monday to roll back a Biden-era policy that would have raised educator salaries in the nation's largest federal childcare program, Head Start. The rule was finalized in 2024 and would have gone into effect in 2031. This move is part of a broader push by the administration to deregulate the program. They estimate these changes will result in over $2 billion in cost savings. But Head Start advocates argue that in order to maintain quality services and attract talent to Head Start centers, the program needs to re-evaluate how much it pays its workers. Sequoia Carillo, NPR News. You're listening to NPR News.",
     "start": 0.0,
-    "end": 285.26,
+    "end": 285.52,
     "kind": "full_broadcast"
   }
 }
