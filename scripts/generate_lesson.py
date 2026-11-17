@@ -23,7 +23,7 @@ STATUS = ROOT / "generation-status.json"
 REPORT = ROOT / "generation-report.json"
 FEED = "https://feeds.npr.org/500005/podcast.xml"
 USER_AGENT = "NPR-Morning-Listening/4.0 (+https://github.com/inleem-crypto/npr-morning-listening)"
-GENERATOR_VERSION = 14
+GENERATOR_VERSION = 15
 PRIMARY_MODEL = "small.en"
 CHECK_MODEL = "medium.en"
 MAX_CANDIDATES = 16
@@ -295,9 +295,7 @@ PHRASE_GLOSSES = {
     "new restrictions": "새로운 제한 조치",
     "restrictions remain": "제한 조치가 계속 유지되다",
     "various types": "여러 종류",
-    "there was": "~이 있었다",
     "those conversions": "그러한 전환·변환 (대상은 문맥 확인)",
-    "like leaving": "떠나는 것처럼 또는 떠나는 것과 같은 (문맥 확인)",
     "press conference": "기자회견",
     "supreme court": "대법원",
     "senate vote": "상원 표결",
@@ -309,14 +307,18 @@ PHRASE_GLOSSES = {
     "new policy": "새로운 정책",
     "supply chain": "공급망",
     "natural disasters": "자연재해",
-    "air traffic": "항공 교통",
     "flight delays": "항공편 지연",
+    "arrival times": "도착 시각 (직원의 경우 출근 시각)",
+    "trading partner": "교역 상대",
+    "flight cancellations": "항공편 취소",
+    "service outages": "서비스 장애",
+    "internal communication": "내부 통신",
+    "additional funding": "추가 자금",
+    "air traffic": "항공 교통",
     "government shutdown": "정부 업무 중단",
     "court ruling": "법원 판결",
     "secret ballot": "무기명·비밀 투표",
-    "allegedly had": "~을 가지고 있었다고 주장되거나 전해졌다",
     "financial officer": "재무 담당 임원",
-    "the confidence": "그 신뢰·믿음",
     "touts the": "그 ~을 적극 홍보한다 (뒤의 명사와 연결)",
     "federal judge": "연방 판사",
     "assisting with": "~을 돕거나 지원하는 중인",
@@ -358,6 +360,18 @@ def korean_study_clue(answer: str, context: str = "") -> str:
     """Offer an exact curated Korean gloss, or honestly label a partial clue."""
     answer = answer.casefold().strip()
     normalized_context = " ".join(context.casefold().split())
+    if answer == "flooding the" and "flooding the system with information" in normalized_context:
+        return "시스템에 과도한 정보를 쏟아붓다"
+    if answer == "biggest trading" and "biggest trading partner" in normalized_context:
+        return "최대 교역 상대 (뒤의 partner와 연결)"
+    if answer == "pausing the" and "pausing the installation" in normalized_context:
+        return "설치를 잠정 중단하다 (뒤의 installation과 연결)"
+    if answer == "for billions" and "for billions of dollars" in normalized_context:
+        return "수십억 달러를 확보하기 위해 (뒤의 of dollars와 연결)"
+    if answer == "the war" and "the war in ukraine" in normalized_context:
+        return "우크라이나 전쟁 (뒤의 in Ukraine와 연결)"
+    if answer == "neighbors allied" and "neighbors allied with" in normalized_context:
+        return "(~와) 동맹을 맺은 이웃 국가들 (뒤의 with와 연결)"
     if answer == "new arms" and re.search(r"arms\s*[- ]\s*control", normalized_context):
         return "‘새로운 군비 통제 협정’이라는 구절의 앞부분 (뒤의 -control과 연결)"
     if answer == "money over" and "long term" in normalized_context:
@@ -441,13 +455,24 @@ def make_short_items(segments):
             # Preserve audible context instead of replacing the entire prompt
             # with a bare blank. Never synthesize a sentence around the answer.
             left, right = max(0, i - 4), min(len(words), i + 6)
+            # A prompt should stay within the same sentence and expose context.
+            while left < i and any(re.search(r'[.!?]["”’]?$',
+                                            w.word.strip()) for w in words[left:i]):
+                left += 1
+            for j in range(i + 1, right):
+                if re.search(r'[.!?]["”’]?$', words[j].word.strip()):
+                    right = j + 1
+                    break
+            if right - left < 5 or re.search(r'[.!?]["”’]?$', first.word.strip()):
+                continue
             context = words[left:right]
             before = "".join(w.word for w in words[left:i]).strip()
             after = "".join(w.word for w in words[i + 2:right]).strip()
             sentence = (before + " ____ " + after).strip()
-            meaning = NEWS_HINTS.get(a) or NEWS_HINTS.get(b)
-            hint = ((meaning + " 관련 표현 · ") if meaning else "해당 음성 구간의 표현 · ")
-            hint += f"{a[0].upper()}… {b[0].upper()}… (2단어)"
+            meaning = korean_study_clue(answer, sentence.replace("____", answer))
+            if meaning.startswith(("부분 단서:", "핵심 단어 뜻:", "의미 단서를 확인하지 못했습니다.")):
+                continue
+            hint = f"{a[0].upper()}… {b[0].upper()}… (2단어)"
             interpretation = meaning_context(segments, start, end)
             result.append({
                 "sentence": sentence,
@@ -455,7 +480,7 @@ def make_short_items(segments):
                 "context_start": round(context[0].start, 2),
                 "context_end": round(context[-1].end, 2),
                 "answer": answer,
-                "meaning": korean_study_clue(answer, interpretation["text"] if interpretation else sentence.replace("____", answer)),
+                "meaning": meaning,
                 "hint": hint,
                 "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
                 "start": round(start, 2),
@@ -486,32 +511,35 @@ def check_short_items(items, audio, model, diagnostics=None):
         # The displayed context must also agree. A correct isolated answer is
         # insufficient if the surrounding prompt says something else.
         context_expected = normalized_words(item["sentence"].replace("____", item["answer"]))
-        observed_context = [t for w, _ in words for t in normalized_words(w.word)]
-        context_matches = any(observed_context[j:j + len(context_expected)] == context_expected
-                              for j in range(len(observed_context) - len(context_expected) + 1))
-        matched = False
+        observed = [(token, w, seg) for w, seg in words for token in normalized_words(w.word)]
+        tokens = [token for token, _, _ in observed]
+        prefix = normalized_words(item["sentence"].split("____", 1)[0])
+        matched = context_matches = False
+        for offset in range(len(tokens) - len(context_expected) + 1):
+            if tokens[offset:offset + len(context_expected)] != context_expected:
+                continue
+            context_matches = True
+            start_token = offset + len(prefix)
+            group = observed[start_token:start_token + len(expected)]
+            if [token for token, _, _ in group] != expected:
+                continue
+            a, b = group[0][1], group[-1][1]
+            if not (math.isfinite(a.start) and math.isfinite(b.end)
+                    and abs(clip_start + a.start - item["start"]) <= 1.05
+                    and abs(clip_start + b.end - item["end"]) <= 1.05
+                    and all(reliable_segment(seg, [w]) and w.probability >= .68
+                            for _, w, seg in group)):
+                continue
+            if len(group) == 2 and b.start - a.end > .9:
+                continue
+            matched = True
+            break
         if not context_matches:
             if diagnostics is not None:
                 diagnostics.append({"start": item["start"], "reason": "context_mismatch",
                                     "expected": item["sentence"].replace("____", item["answer"]),
                                     "context_text": "".join(w.word for w, _ in words).strip()})
             continue
-        for i in range(len(words) - len(expected) + 1):
-            group = words[i:i + len(expected)]
-            observed = [t for w, _ in group for t in normalized_words(w.word)]
-            if observed != expected:
-                continue
-            a, b = group[0][0], group[-1][0]
-            if not (math.isfinite(a.start) and math.isfinite(b.end)
-                    and abs(clip_start + a.start - item["start"]) <= 1.05
-                    and abs(clip_start + b.end - item["end"]) <= 1.05
-                    and all(reliable_segment(seg, [w]) and w.probability >= .68
-                            for w, seg in group)):
-                continue
-            if len(group) == 2 and group[1][0].start - group[0][0].end > .9:
-                continue
-            matched = True
-            break
         reason = "accepted_short_phrase" if matched else "phrase_or_time_mismatch"
         if diagnostics is not None:
             diagnostics.append({
@@ -619,8 +647,11 @@ def make_summary_reviews(segments):
     text = lambda group: "".join(w.word for w in group).strip()
     reporter = re.compile(r"\b(?:NPR|[A-Za-z]+ [VP]R)['’]?s?\s+[A-Z][A-Za-z.' -]{2,75}?\b(?:reports|explains|has (?:this|the) story)\b", re.I)
     starts = [0]
+    transition = re.compile(r"^(?:In other news|Turning now to|Now to)\b", re.I)
     for i, sentence in enumerate(sentences):
         content = text(sentence)
+        if i and transition.search(content) and i > starts[-1]:
+            starts.append(i)
         match = reporter.search(content)
         if not match:
             continue
@@ -675,9 +706,11 @@ def atomic_json(path, value):
 def generate(report) -> dict:
     episode = latest_episode()
     report["episode"] = episode
+    previous_digest = None
     if OUTPUT.exists():
         try:
             previous = json.loads(OUTPUT.read_text(encoding="utf-8"))
+            previous_digest = (previous.get("episode") or {}).get("audio_sha256")
             if previous.get("episode", {}).get("id") == episode["id"] and previous.get("generator_version") == GENERATOR_VERSION:
                 print("Latest episode already has a lesson")
                 return previous
@@ -732,7 +765,7 @@ def generate(report) -> dict:
         "generator_version": GENERATOR_VERSION,
         "verified": False,
         "transcription": {"model": PRIMARY_MODEL, "check_model": CHECK_MODEL,
-                          "policy": "frozen-audio-context-agreement-v4",
+                          "policy": "frozen-audio-context-agreement-v5",
                           "human_verified": False},
         "sourceNote": "문제를 만들 때 사용한 고정 음원을 재생합니다. 빈칸 앞뒤 영어 지문과 2단어 정답을 두 음성인식 모델이 비교했습니다. 자동 전사이므로 오류가 있을 수 있습니다.",
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -744,7 +777,7 @@ def generate(report) -> dict:
     }
     atomic_json(OUTPUT, lesson)
     for old in media.glob("*.mp3"):
-        if old != snapshot:
+        if old != snapshot and old.stem != previous_digest:
             old.unlink()
     print(f"Saved {len(items)} questions for {episode['title']}")
     return lesson
@@ -770,4 +803,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

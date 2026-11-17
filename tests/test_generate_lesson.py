@@ -310,6 +310,24 @@ class GenerationTests(unittest.TestCase):
             g.check_short_items([item], [0]*600000, model, diagnostics)
         self.assertEqual(diagnostics[0]['reason'], 'context_mismatch')
 
+    def test_correct_context_at_another_occurrence_does_not_validate_the_clip(self):
+        item = g.make_short_items([segment()])[0]
+        clip_start = max(0.0, min(item["start"] - 2, item["context_start"] - .5))
+        # The expected answer is heard at the target time, but its surrounding
+        # words only match elsewhere in the checker output.
+        local_start = item["start"] - clip_start
+        misleading = segment(item["answer"] + " in that area.", start=local_start)
+        complete = segment(TEXT, start=local_start + 2)
+        model = NS(transcribe=lambda *a, **k: (iter([misleading, complete]), None))
+        diagnostics = []
+        with self.assertRaisesRegex(RuntimeError, "No short expressions"):
+            g.check_short_items([item], [0]*600000, model, diagnostics)
+        self.assertEqual(diagnostics[0]['reason'], 'phrase_or_time_mismatch')
+
+    def test_unknown_korean_meaning_does_not_make_a_candidate(self):
+        text = 'Newcomers casually observe distant islands during unusually mild afternoons.'
+        self.assertEqual(g.make_short_items([segment(text, start=30)]), [])
+
     def test_short_expression_mismatch_does_not_invent_an_answer(self):
         candidates = g.make_short_items([segment()])
         self.assertTrue(candidates)

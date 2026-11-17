@@ -35,10 +35,13 @@ test('two article notes persist independently and both clear for a new broadcast
 });
 
 
-test('transcript view uses full broadcast without pretending it is an article rubric',()=>{
+test('transcript view prefers the selected article and labels the full-broadcast fallback',()=>{
  const first={transcript:'Estimated first article',keywords:[{label:'first',terms:['first']}]};
  const full={transcript:'Whole broadcast',start:0,end:300};
- const view=transcriptReference([first],full,1);
+ const second={article:2,transcript:'Estimated second article'};
+ assert.equal(transcriptReference([first,second],full,1),first);
+ assert.equal(transcriptReference([first,second],full,2),second);
+ const view=transcriptReference([first],full,2);
  assert.equal(view.transcript,'Whole broadcast');
  assert.equal(view.kind,'full_broadcast');
  assert.equal(reviewSummary('My article summary.',view).unavailable,true);

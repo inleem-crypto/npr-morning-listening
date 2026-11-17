@@ -9,7 +9,7 @@
     "policy": "frozen-audio-context-agreement-v4",
     "human_verified": false
   },
-  "sourceNote": "문제를 만들 때 사용한 고정 음원을 재생합니다. 빈칸 앞뒤 영어 지문과 2단어 정답을 두 음성인식 모델이 비교했습니다. 자동 전사이므로 오류가 있을 수 있습니다.",
+  "sourceNote": "문제와 기사별 구간은 학습자료 제작에 사용한 고정 음원을 재생합니다. 이 회차의 지문과 정답은 같은 파일을 추가 전사해 비교했습니다.",
   "generated_at": "2026-11-17T21:01:02.407785+00:00",
   "episode": {
     "id": "a27708a1-2717-4ff2-a94f-1d9279e357dc",
@@ -32,16 +32,19 @@
         "source": "automatic_transcription"
       },
       "context_start": 24.54,
-      "context_end": 26.74,
+      "context_end": 26.92,
       "answer": "arrival times",
-      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "meaning": "출근 시각 (직원들이 서로 다른 시각에 출근하도록 조정한 문맥)",
       "hint": "해당 음성 구간의 표현 · A… T… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "explanation": "같은 고정 음원에서 별도 자동 전사로 정답과 앞뒤 문맥을 다시 대조했습니다.",
       "start": 25.12,
-      "end": 25.98
+      "end": 25.98,
+      "meaning_review": {
+        "method": "editorial_context_review"
+      }
     },
     {
-      "sentence": "Federal Aviation Administration is ____ installation of new routers",
+      "sentence": "Administration is ____ installation of new routers",
       "meaning_context": {
         "start": 25.12,
         "end": 66.4,
@@ -50,16 +53,19 @@
         "source": "automatic_transcription"
       },
       "context_start": 43.74,
-      "context_end": 47.6,
+      "context_end": 47.7,
       "answer": "pausing the",
-      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "meaning": "새 라우터 설치를 잠정 중단하다 (뒤의 installation과 연결)",
       "hint": "해당 음성 구간의 표현 · P… T… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "explanation": "같은 고정 음원에서 별도 자동 전사로 정답과 앞뒤 문맥을 다시 대조했습니다.",
       "start": 45.52,
-      "end": 46.14
+      "end": 46.14,
+      "meaning_review": {
+        "method": "editorial_context_review"
+      }
     },
     {
-      "sentence": "company Juniper Networks began ____ system with information.",
+      "sentence": "Juniper Networks began ____ system with information.",
       "meaning_context": {
         "start": 47.14,
         "end": 88.08,
@@ -68,13 +74,16 @@
         "source": "automatic_transcription"
       },
       "context_start": 65.54,
-      "context_end": 69.02,
+      "context_end": 69.14,
       "answer": "flooding the",
-      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "meaning": "시스템에 과도한 정보를 쏟아붓다 (뒤의 system과 연결)",
       "hint": "해당 음성 구간의 표현 · F… T… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "explanation": "같은 고정 음원에서 별도 자동 전사로 정답과 앞뒤 문맥을 다시 대조했습니다.",
       "start": 67.24,
-      "end": 67.94
+      "end": 67.94,
+      "meaning_review": {
+        "method": "editorial_context_review"
+      }
     },
     {
       "sentence": "continues to press Congress ____ of dollars",
@@ -86,16 +95,19 @@
         "source": "automatic_transcription"
       },
       "context_start": 88.82,
-      "context_end": 91.72,
+      "context_end": 91.84,
       "answer": "for billions",
-      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "meaning": "수십억 달러를 확보하기 위해 (뒤의 of dollars와 연결)",
       "hint": "해당 음성 구간의 표현 · F… B… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "explanation": "같은 고정 음원에서 별도 자동 전사로 정답과 앞뒤 문맥을 다시 대조했습니다.",
       "start": 90.46,
-      "end": 91.16
+      "end": 91.16,
+      "meaning_review": {
+        "method": "editorial_context_review"
+      }
     },
     {
-      "sentence": "Trump has said ____ in Ukraine is on",
+      "sentence": "Trump has said ____ in Ukraine is on the agenda",
       "meaning_context": {
         "start": 89.5,
         "end": 130.58,
@@ -104,16 +116,19 @@
         "source": "automatic_transcription"
       },
       "context_start": 108.76,
-      "context_end": 111.44,
+      "context_end": 112.0,
       "answer": "the war",
-      "meaning": "부분 단서: war=전쟁 (나머지는 듣고 완성)",
+      "meaning": "우크라이나 전쟁 (뒤의 in Ukraine와 연결)",
       "hint": "전쟁 관련 표현 · T… W… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "explanation": "같은 고정 음원에서 별도 자동 전사로 정답과 앞뒤 문맥을 다시 대조했습니다.",
       "start": 109.82,
-      "end": 110.14
+      "end": 110.14,
+      "meaning_review": {
+        "method": "editorial_context_review"
+      }
     },
     {
-      "sentence": "is, by far, Africa's ____ partner, and now more",
+      "sentence": "China is, by far, Africa's ____ partner",
       "meaning_context": {
         "start": 116.56,
         "end": 157.2,
@@ -121,17 +136,20 @@
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 134.62,
-      "context_end": 138.88,
+      "context_start": 134.3,
+      "context_end": 137.7,
       "answer": "biggest trading",
-      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "meaning": "최대 교역 상대 (뒤의 partner와 연결)",
       "hint": "해당 음성 구간의 표현 · B… T… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "explanation": "같은 고정 음원에서 별도 자동 전사로 정답과 앞뒤 문맥을 다시 대조했습니다.",
       "start": 136.6,
-      "end": 137.12
+      "end": 137.12,
+      "meaning_review": {
+        "method": "editorial_context_review"
+      }
     },
     {
-      "sentence": "recently resumed strikes on ____ with the United States.",
+      "sentence": "recently resumed strikes on ____ with",
       "meaning_context": {
         "start": 160.66,
         "end": 201.9,
@@ -140,77 +158,132 @@
         "source": "automatic_transcription"
       },
       "context_start": 179.44,
-      "context_end": 182.72,
+      "context_end": 182.06,
       "answer": "neighbors allied",
-      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "meaning": "(~와) 동맹을 맺은 이웃 국가들 (뒤의 with와 연결)",
       "hint": "해당 음성 구간의 표현 · N… A… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "explanation": "같은 고정 음원에서 별도 자동 전사로 정답과 앞뒤 문맥을 다시 대조했습니다.",
       "start": 180.8,
-      "end": 181.66
+      "end": 181.66,
+      "meaning_review": {
+        "method": "editorial_context_review"
+      }
     }
   ],
   "summaryReview": {
     "kind": "keyword_rubric",
     "article": 1,
     "start": 11.38,
-    "end": 42.68,
-    "transcript": "The National Security Agency confirms it is aware of reports that its internal communication system is down. A source not authorized to speak publicly has confirmed with NPR that NSA has implemented staggered arrival times for employees. It is believed this would be to avoid too many people logging onto the system while engineers work to stabilize it. Apple is reporting outages affecting several parts of its system, including its App Store, iCloud Mail, iCloud Web Apps and Apple Business.",
+    "end": 34.42,
+    "transcript": "The National Security Agency confirms it is aware of reports that its internal communication system is down. A source not authorized to speak publicly has confirmed with NPR that NSA has implemented staggered arrival times for employees. It is believed this would be to avoid too many people logging onto the system while engineers work to stabilize it.",
     "keywords": [
       {
-        "label": "security · 안보",
+        "label": "NSA · 미국 국가안보국",
         "terms": [
-          "security",
-          "안보",
-          "보안"
+          "NSA",
+          "National Security Agency",
+          "국가안보국"
+        ]
+      },
+      {
+        "label": "내부 통신 장애",
+        "terms": [
+          "outage",
+          "system is down",
+          "장애",
+          "먹통",
+          "중단"
+        ]
+      },
+      {
+        "label": "출근 시각 분산",
+        "terms": [
+          "staggered",
+          "arrival times",
+          "출근 시각",
+          "출근 시간",
+          "시차 출근"
         ]
       }
     ],
-    "boundary": "reporter_handoff_estimate"
+    "boundary": "transcript_topic_and_audio_alignment"
   },
   "summaryReviews": [
     {
       "kind": "keyword_rubric",
       "article": 1,
       "start": 11.38,
-      "end": 42.68,
-      "transcript": "The National Security Agency confirms it is aware of reports that its internal communication system is down. A source not authorized to speak publicly has confirmed with NPR that NSA has implemented staggered arrival times for employees. It is believed this would be to avoid too many people logging onto the system while engineers work to stabilize it. Apple is reporting outages affecting several parts of its system, including its App Store, iCloud Mail, iCloud Web Apps and Apple Business.",
+      "end": 34.42,
+      "transcript": "The National Security Agency confirms it is aware of reports that its internal communication system is down. A source not authorized to speak publicly has confirmed with NPR that NSA has implemented staggered arrival times for employees. It is believed this would be to avoid too many people logging onto the system while engineers work to stabilize it.",
       "keywords": [
         {
-          "label": "security · 안보",
+          "label": "NSA · 미국 국가안보국",
           "terms": [
-            "security",
-            "안보",
-            "보안"
+            "NSA",
+            "National Security Agency",
+            "국가안보국"
+          ]
+        },
+        {
+          "label": "내부 통신 장애",
+          "terms": [
+            "outage",
+            "system is down",
+            "장애",
+            "먹통",
+            "중단"
+          ]
+        },
+        {
+          "label": "출근 시각 분산",
+          "terms": [
+            "staggered",
+            "arrival times",
+            "출근 시각",
+            "출근 시간",
+            "시차 출근"
           ]
         }
       ],
-      "boundary": "reporter_handoff_estimate"
+      "boundary": "transcript_topic_and_audio_alignment"
     },
     {
       "kind": "keyword_rubric",
       "article": 2,
-      "start": 43.48,
-      "end": 97.74,
-      "transcript": "The Federal Aviation Administration is pausing the installation of new routers following a nationwide ground stop on Friday and PR's Joe Hernandez reports maintenance work caused technical disruptions that led to of flight cancellations across the U.S. Federal aviation officials say workers were converting old copper wires to fiber cables when a router made by the company Juniper Networks began flooding the system with information. Now the FAA is pausing the installation of Juniper routers while it continues to investigate what went wrong. That's according to an FAA official who requested anonymity because they are not authorized to speak publicly. The FAA says it's replaced around 70 percent of the copper wire in its networks so far. It comes as the Trump administration continues to press Congress for billions of dollars in additional funding to modernize the country's air traffic control system. Joe Hernandez, NPR News.",
+      "start": 34.519999999999996,
+      "end": 42.980000000000004,
+      "transcript": "Apple is reporting outages affecting several parts of its system, including its App Store, iCloud Mail, iCloud Web Apps and Apple Business.",
+      "boundary": "transcript_topic_and_audio_alignment",
       "keywords": [
         {
-          "label": "trump · 트럼프",
+          "label": "Apple · 애플",
           "terms": [
-            "trump",
-            "트럼프"
+            "Apple",
+            "애플"
           ]
         },
         {
-          "label": "company · 기업",
+          "label": "서비스 장애",
           "terms": [
-            "company",
-            "companies",
-            "기업",
-            "회사"
+            "outages",
+            "outage",
+            "장애",
+            "먹통",
+            "중단"
+          ]
+        },
+        {
+          "label": "App Store·iCloud 등 영향",
+          "terms": [
+            "App Store",
+            "iCloud",
+            "Apple Business",
+            "앱스토어",
+            "아이클라우드",
+            "애플 비즈니스"
           ]
         }
-      ],
-      "boundary": "reporter_handoff_estimate"
+      ]
     }
   ],
   "fullTranscript": {
