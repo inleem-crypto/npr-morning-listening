@@ -47,9 +47,6 @@
 <section class="panel"><h2>첫 기사 요약 메모</h2><p class="sub">첫 번째 기사를 듣고 핵심 내용을 2~3문장으로 적어 보세요. 같은 방송에서는 자동 저장되고, 학습 방송이 바뀌면 비워집니다.</p>
 <label class="sectionLabel" for="note1">첫 번째 기사 요약</label><textarea id="note1" class="textarea" placeholder="누가 무엇을 했는지, 왜 중요한지 2~3문장으로 적어 보세요."></textarea>
 <div class="buttons"><button id="saveNotes" class="button primaryBtn" type="button">요약 채점 · 피드백 보기</button><button id="viewTranscript1" class="button" type="button">전사문 보기</button><button id="exportNotes" class="button" type="button">메모 복사</button></div><div id="noteStatus" class="sub" role="status">이 브라우저에만 보관됩니다.</div><div id="noteCriteria" class="cardNote hidden" style="margin-top:12px"><strong>요약 채점 결과</strong><br>① 첫 기사의 핵심 사건이나 발표를 정확히 적었나요?<br>② 관련 인물·기관과 주요 숫자·장소를 음원에서 다시 확인했나요?<br>③ 추측한 내용은 사실과 구분하고, 2~3문장으로 간결하게 썼나요?</div></section>
-<section class="panel"><h2>두 번째 기사 요약 메모</h2><p class="sub">두 번째 기사를 듣고 핵심 내용을 2~3문장으로 적어 보세요. 같은 방송에서는 자동 저장되고, 학습 방송이 바뀌면 비워집니다.</p>
-<label class="sectionLabel" for="note2">두 번째 기사 요약</label><textarea id="note2" class="textarea" placeholder="누가 무엇을 했는지, 왜 중요한지 2~3문장으로 적어 보세요."></textarea>
-<div class="buttons"><button id="saveNotes2" class="button primaryBtn" type="button">요약 채점 · 피드백 보기</button><button id="viewTranscript2" class="button" type="button">전사문 보기</button><button id="exportNotes2" class="button" type="button">메모 복사</button></div><div id="noteStatus2" class="sub" role="status">이 브라우저에만 보관됩니다.</div><div id="noteCriteria2" class="cardNote hidden" style="margin-top:12px"><strong>요약 채점 결과</strong><br>① 두 번째 기사의 핵심 사건이나 발표를 정확히 적었나요?<br>② 관련 인물·기관과 주요 숫자·장소를 음원에서 다시 확인했나요?<br>③ 추측한 내용은 사실과 구분하고, 2~3문장으로 간결하게 썼나요?</div></section>
  <section class="panel"><h2>딕테이션 연습</h2><p class="sub">매일 아침 방송에서 확인된 짧은 영어 표현을 최대 7개 출제합니다. 각 문제에 시간과 한국어 단서를 표시하고, 해당 구간만 듣도록 재생합니다. 교차검증을 통과한 표현이 적으면 문제 수도 줄어듭니다. 자동 전사에는 오류가 있을 수 있으니 들리는 음성으로 확인해 주세요. 답안은 이 브라우저에 자동 저장됩니다.</p>
  <details class="cardNote"><summary>문맥 검토 및 API 사용량</summary><p id="aiReviewStatus" role="status">AI 문맥 검토 상태를 확인하는 중입니다.</p></details><div id="lessonFreshness" class="status warn" role="status" aria-live="polite">학습자료의 방송 시각을 확인하는 중입니다…</div>
  <div id="lessonHeader" class="cardNote" style="margin-top:14px">오늘의 문제를 확인하는 중입니다…</div><div id="questionList"></div><div class="buttons" id="gradeButtons" style="display:none"><button class="button primaryBtn" id="gradeAll" type="button">전체 채점</button><button class="button" id="showAnswers" type="button">정답 보기</button></div><div id="gradeResult" class="sub"></div>
@@ -90,10 +87,9 @@ function playQuizClip(ep,q){if(!ep||!Number.isFinite(q.start)||!Number.isFinite(
 function loopState(){$('loopState').textContent='A: '+(markA==null?'미설정':format(markA))+' / B: '+(markB==null?'미설정':format(markB))+' · '+(markB!=null&&markA!=null?(looping?'반복 재생 켜짐':'반복 재생 꺼짐'):'A와 B를 지정하면 반복 청취할 수 있습니다.');$('toggleLoop').textContent=looping?'반복 끄기':'반복 켜기'}
  $('playSkip').addEventListener('click',()=>startAt(Number($('skip').value)||0));$('back3').addEventListener('click',()=>{audio.currentTime=Math.max(0,audio.currentTime-3)});$('back10').addEventListener('click',()=>{audio.currentTime=Math.max(0,audio.currentTime-10)});$('markA').addEventListener('click',()=>{markA=audio.currentTime;markB=null;looping=false;loopState()});$('markB').addEventListener('click',()=>{if(markA==null){$('loopState').textContent='먼저 A 시작 위치를 눌러 주세요.';return}if(audio.currentTime<=markA){$('loopState').textContent='B는 A보다 뒤에 있어야 합니다.';return}markB=audio.currentTime;looping=true;loopState()});$('toggleLoop').addEventListener('click',()=>{if(markA==null||markB==null){$('loopState').textContent='A와 B를 먼저 지정해 주세요.';return}looping=!looping;loopState()});$('clearLoop').addEventListener('click',()=>{markA=markB=null;looping=false;loopState()});audio.addEventListener('timeupdate',()=>{if(quizClipEnd!==null&&audio.currentTime>=quizClipEnd){audio.pause();quizClipEnd=null;return}if(looping&&markB!=null&&markA!=null&&audio.currentTime>=markB){audio.currentTime=markA;if(audio.paused)audio.play().catch(()=>{})}});audio.addEventListener('loadedmetadata',()=>{audio.playbackRate=Number($('speed').value)||.75;$('playingStatus').textContent='음원 준비 완료 · 전체 '+format(audio.duration)+' · '+audio.playbackRate+'배속'});audio.addEventListener('error',()=>{if(audio.currentSrc) {$('playingStatus').textContent='오디오 서버에서 재생되지 않습니다. 다른 회차나 NPR 공식 페이지를 이용해 주세요.';message('음원 재생 오류가 발생했습니다. NPR 공식 페이지에서도 시도할 수 있습니다.','warn')}});audio.addEventListener('playing',()=>{$('playingStatus').textContent='재생 중 · '+audio.playbackRate+'배속'});$('speed').addEventListener('change',()=>{audio.playbackRate=Number($('speed').value)||.75;safeSet('npr-speed',$('speed').value)});audio.addEventListener('ratechange',()=>{const value=String(audio.playbackRate);if([...$('speed').options].some(o=>o.value===value)){$('speed').value=value;safeSet('npr-speed',value)}});$('skip').addEventListener('change',()=>safeSet('npr-skip',$('skip').value));
 $('fallbackSource').addEventListener('click',()=>{const stream='https://pd.npr.org/anon.npr-mp3/npr/news/newscast.mp3?ts='+Date.now();choose({title:'NPR Newscast · 공식 직접 스트림 (회차 정보 미확인)',audioURL:stream,date:'',link:OFFICIAL,id:stream,via:'NPR 직접 주소 · 회차 미확인'},true);message('NPR 직접 주소로 재생을 시도합니다. 이 주소의 제공 여부·최신 시각은 확인되지 않았습니다.','warn')});$('manualURL').addEventListener('click',()=>$('manualArea').classList.toggle('hidden'));$('applyManual').addEventListener('click',()=>{const url=cleanURL($('manualInput').value);if(!url){message('http(s) 형식의 실제 오디오 주소를 입력해 주세요.','warn');return}choose({title:'직접 입력한 뉴스 음원',audioURL:url,date:'',link:OFFICIAL,id:url,via:'사용자 지정 URL'},true)});
- let summaryReferences=[],summaryEpisodeId='';
+ let summaryReferences=[],fullTranscript=null,summaryEpisodeId='';
  const summaryPanels=[
-  {ordinal:1,title:'첫 기사',note:$('note1'),criteria:$('noteCriteria'),status:$('noteStatus'),grade:$('saveNotes'),view:$('viewTranscript1'),copy:$('exportNotes'),key:'npr-summary-note-v2'},
-  {ordinal:2,title:'두 번째 기사',note:$('note2'),criteria:$('noteCriteria2'),status:$('noteStatus2'),grade:$('saveNotes2'),view:$('viewTranscript2'),copy:$('exportNotes2'),key:'npr-summary-note-2-v2'}
+  {ordinal:1,title:'첫 기사',note:$('note1'),criteria:$('noteCriteria'),status:$('noteStatus'),grade:$('saveNotes'),view:$('viewTranscript1'),copy:$('exportNotes'),key:'npr-summary-note-v2'}
  ];
  function selectSummaryEpisode(id){
   if(!id||id===summaryEpisodeId)return;
@@ -108,9 +104,9 @@ $('fallbackSource').addEventListener('click',()=>{const stream='https://pd.npr.o
  function summaryReferenceFor(panel){return selected?.id===deck?.episode?.id?summaryReferences[panel.ordinal-1]:null}
  function appendTranscript(panel,reference){
   const details=document.createElement('details'),title=document.createElement('summary'),source=document.createElement('p');
-  title.textContent=panel.title+' 참고 전사문';source.textContent=reference.transcript;details.open=true;
+  title.textContent=reference.kind==='full_broadcast'?'방송 전체 전사문 · 첫 기사 포함':panel.title+' 참고 전사문';source.textContent=reference.transcript;details.open=true;
   const timing=document.createElement('p');timing.textContent='참고 구간: '+format(reference.start)+'~'+format(reference.end)+' · 기사 경계와 전사는 자동 추정이며 오류가 있을 수 있습니다.';
-  const listen=document.createElement('button');listen.type='button';listen.className='button';listen.textContent='▶ '+panel.title+' 구간 듣기';
+  const listen=document.createElement('button');listen.type='button';listen.className='button';listen.textContent=reference.kind==='full_broadcast'?'▶ 방송 전체 듣기':'▶ '+panel.title+' 구간 듣기';
   listen.addEventListener('click',()=>{if(deck?.episode){if(selected?.audioURL!==deck.episode.audioURL)choose(deck.episode,false);startAt(reference.start,reference.end)}});
   details.append(title,source,timing,listen);panel.criteria.append(details);
  }
@@ -122,9 +118,14 @@ $('fallbackSource').addEventListener('click',()=>{const stream='https://pd.npr.o
    panel.criteria.classList.add('hidden');panel.status.textContent='자동 저장되었습니다. 요약 채점이나 전사문 보기를 눌러 확인해 보세요.';
   });
   panel.view.addEventListener('click',()=>{
-   const reference=summaryReferenceFor(panel);
-   if(!reference?.transcript){panel.status.textContent=panel.title+'의 전사문을 아직 준비하지 못했습니다. 학습자료가 있는 방송을 선택해 주세요.';return}
-   panel.criteria.replaceChildren();appendTranscript(panel,reference);panel.criteria.classList.remove('hidden');panel.status.textContent=panel.title+' 전사문을 표시했습니다.';
+   const reference=selected?.id===deck?.episode?.id?transcriptReference(summaryReferences,fullTranscript,panel.ordinal):null;
+   if(!reference?.transcript){
+    panel.status.textContent=selected?.id!==deck?.episode?.id?'선택한 최신 방송은 음원만 갱신되었으며 아직 전사 작업 전입니다. 전사문은 학습자료 생성 때 준비됩니다.':'이 기사의 경계를 구분하지 못했습니다. 다음 학습자료 생성 시 전체 전사문도 준비됩니다.';
+    panel.criteria.replaceChildren();
+    if(deck?.episode&&selected?.id!==deck.episode.id){const button=document.createElement('button');button.type='button';button.className='button';button.textContent='전사문이 준비된 방송 선택';button.addEventListener('click',()=>{choose(deck.episode,false);panel.view.click()});panel.criteria.append(button);panel.criteria.classList.remove('hidden')}
+    return;
+   }
+   panel.criteria.replaceChildren();appendTranscript(panel,reference);panel.criteria.classList.remove('hidden');panel.status.textContent=reference.kind==='full_broadcast'?'첫 기사를 포함한 방송 전체 전사문입니다. 기사 구분과 자동 전사는 오류가 있을 수 있으니 음원과 함께 확인해 주세요.':panel.title+' 전사문을 표시했습니다.';
   });
   panel.grade.addEventListener('click',()=>{
    const reference=summaryReferenceFor(panel),result=reviewSummary(panel.note.value,reference);
@@ -158,6 +159,7 @@ function normalizeAnswer(s){return String(s||'').trim().toLowerCase().replace(/[
   const episode=data.episode&&valid(data.episode)?normalized(data.episode):null;
   deck={title:String(data.title||'딕테이션 문제'),verified:data.verified===true,kind:String(data.kind||''),sourceNote:String(data.sourceNote||''),generated_at:data.generated_at,episode,items:parsed};
   summaryReferences=Array.isArray(data.summaryReviews)?data.summaryReviews:[data.summaryReview||null];
+  fullTranscript=data.fullTranscript||null;
   const answerKey='npr-answers-'+(episode?.id||deck.title)+'-'+(deck.generated_at||'manual');
   let savedAnswers={};try{savedAnswers=JSON.parse(safeGet(answerKey,'{}'))||{}}catch{}
   const saveAnswers=()=>{const answers={};[...$('questionList').children].forEach((root,i)=>{answers[i]=root._input.value});safeSet(answerKey,JSON.stringify(answers))};
@@ -208,3 +210,4 @@ if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceW
 </script>
 </body>
 </html>
+

@@ -1,6 +1,6 @@
 const {test}=require('node:test');
 const assert=require('node:assert/strict');
-const {reviewSummary,summaryNoteState}=require('../summary-review.js');
+const {reviewSummary,summaryNoteState,transcriptReference}=require('../summary-review.js');
 const ref={keywords:[{label:'resigned',terms:['resigned','resignation','사임','사퇴']},{label:'relationship',terms:['relationship','affair','관계','불륜']} ]};
 test('same broadcast retains note, different broadcast clears it',()=>{
  const old={episodeId:'first',text:'Saved summary'};
@@ -32,4 +32,16 @@ test('two article notes persist independently and both clear for a new broadcast
  assert.equal(summaryNoteState(first,'same').text,'First article summary');
  assert.equal(summaryNoteState(second,'same').text,'Second article summary');
  for(const note of [first,second])assert.equal(summaryNoteState(note,'new').text,'');
+});
+
+
+test('transcript view uses full broadcast without pretending it is an article rubric',()=>{
+ const first={transcript:'Estimated first article',keywords:[{label:'first',terms:['first']}]};
+ const full={transcript:'Whole broadcast',start:0,end:300};
+ const view=transcriptReference([first],full,1);
+ assert.equal(view.transcript,'Whole broadcast');
+ assert.equal(view.kind,'full_broadcast');
+ assert.equal(reviewSummary('My article summary.',view).unavailable,true);
+ assert.equal(transcriptReference([first],null,1),first);
+ assert.equal(transcriptReference([],null,1),null);
 });

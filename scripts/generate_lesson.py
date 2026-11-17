@@ -23,7 +23,7 @@ STATUS = ROOT / "generation-status.json"
 REPORT = ROOT / "generation-report.json"
 FEED = "https://feeds.npr.org/500005/podcast.xml"
 USER_AGENT = "NPR-Morning-Listening/4.0 (+https://github.com/inleem-crypto/npr-morning-listening)"
-GENERATOR_VERSION = 13
+GENERATOR_VERSION = 14
 PRIMARY_MODEL = "small.en"
 CHECK_MODEL = "medium.en"
 MAX_CANDIDATES = 16
@@ -699,6 +699,12 @@ def generate(report) -> dict:
         primary_segments = list(segments)
         summary_reviews = make_summary_reviews(primary_segments)
         summary_review = summary_reviews[0] if summary_reviews else None
+        timed_words = [w for s in primary_segments for w in (getattr(s, "words", None) or [])
+                       if math.isfinite(w.start) and math.isfinite(w.end) and w.end > w.start]
+        full_transcript = ({"transcript": "".join(w.word for w in timed_words).strip(),
+                            "start": round(timed_words[0].start, 2),
+                            "end": round(timed_words[-1].end, 2), "kind": "full_broadcast"}
+                           if timed_words else None)
         candidates = make_short_items(primary_segments)
         report["candidates"] = candidates
         print(f"{len(candidates)} short-expression candidates passed primary audio checks", flush=True)
@@ -734,6 +740,7 @@ def generate(report) -> dict:
         "items": items,
         "summaryReview": summary_review,
         "summaryReviews": summary_reviews,
+        "fullTranscript": full_transcript,
     }
     atomic_json(OUTPUT, lesson)
     for old in media.glob("*.mp3"):
@@ -763,3 +770,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

@@ -325,6 +325,8 @@ class GenerationTests(unittest.TestCase):
         lesson = json.loads(g.OUTPUT.read_text(encoding='utf-8'))
         self.assertEqual(lesson['episode']['id'], 'new')
         self.assertFalse(lesson['verified'])
+        self.assertEqual(lesson['fullTranscript']['transcript'], TEXT)
+        self.assertEqual(lesson['fullTranscript']['kind'], 'full_broadcast')
         self.assertIn('____', lesson['items'][0]['sentence'])
         self.assertNotEqual(lesson['items'][0]['sentence'], '____')
         snapshot = self.directory / 'media' / (lesson['episode']['audio_sha256'] + '.mp3')
@@ -360,3 +362,4 @@ class GenerationTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

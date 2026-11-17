@@ -3,6 +3,11 @@ function summaryNoteState(saved, episodeId) {
   if (!episodeId) return saved || {episodeId:'',text:''};
   return saved?.episodeId === episodeId ? saved : {episodeId,text:''};
 }
+function transcriptReference(references, fullTranscript, ordinal) {
+  const reference=references?.[ordinal-1];
+  if(fullTranscript?.transcript)return {...fullTranscript,kind:'full_broadcast'};
+  return reference?.transcript ? reference : null;
+}
 function reviewSummary(text, reference) {
   const clean=String(text||'').trim();
   if (!clean) return {empty:true,message:'먼저 요약을 입력해 주세요.'};
@@ -20,4 +25,5 @@ function reviewSummary(text, reference) {
     matched:matched.map(k=>k.label),missing:missing.map(k=>k.label),
     caveat:'핵심어와 형식 기준의 참고 점수입니다. 동의어·부정문·사실관계의 정확성을 완전히 판정하지 못합니다.'};
 }
-if(typeof module!=='undefined')module.exports={reviewSummary,summaryNoteState};
+if(typeof module!=='undefined')module.exports={reviewSummary,summaryNoteState,transcriptReference};
+
