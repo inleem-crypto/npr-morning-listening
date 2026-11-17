@@ -1,7 +1,7 @@
 {
-  "title": "3pm ET, November 16 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "5am ET, November 17 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
-  "generator_version": 13,
+  "generator_version": 14,
   "verified": false,
   "transcription": {
     "model": "small.en",
@@ -10,152 +10,186 @@
     "human_verified": false
   },
   "sourceNote": "문제를 만들 때 사용한 고정 음원을 재생합니다. 빈칸 앞뒤 영어 지문과 2단어 정답을 두 음성인식 모델이 비교했습니다. 자동 전사이므로 오류가 있을 수 있습니다.",
-  "generated_at": "2026-11-16T20:57:20.639306+00:00",
+  "generated_at": "2026-11-17T10:58:53.232726+00:00",
   "episode": {
-    "id": "785d8a80-230a-442b-a8c1-7eac3c2d4c1a",
-    "title": "3pm ET, November 16 | The latest headlines from NPR",
-    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/407beb671525fdd46cd96d00b36770f5d81cd716519cb9159c561e35000ff4b5.mp3",
-    "date": "2026-11-16T20:09:35+00:00",
+    "id": "c822fc60-d3d6-4c90-abd5-83dc85e4526d",
+    "title": "5am ET, November 17 | The latest headlines from NPR",
+    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/0c58d5bd1581d1ff239df596c1d9b9ed351712c4cfdbf4101d69f4c866f48d69.mp3",
+    "date": "2026-11-17T10:09:52+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "문제 생성에 사용한 고정 음원",
-    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/b61b8e8e-cf48-4e0b-bfc0-d203c9daa915/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=b61b8e8e-cf48-4e0b-bfc0-d203c9daa915&feed=O9WlY7a5&t=podcast&e=nx-s1-20261116-1500-long&p=500005&d=280&size=4586729",
-    "audio_sha256": "407beb671525fdd46cd96d00b36770f5d81cd716519cb9159c561e35000ff4b5"
+    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/9e07b709-7049-488d-b5f5-f4b0bd0e7119/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=9e07b709-7049-488d-b5f5-f4b0bd0e7119&feed=O9WlY7a5&t=podcast&e=nx-s1-20261117-0500-long&p=500005&d=280&size=4586729",
+    "audio_sha256": "0c58d5bd1581d1ff239df596c1d9b9ed351712c4cfdbf4101d69f4c866f48d69"
   },
   "items": [
     {
-      "sentence": "caused by an undetected ____",
+      "sentence": "Russian security services to ____ at a local drone",
       "meaning_context": {
-        "start": 5.36,
-        "end": 46.74,
-        "text": "every hour. Live from NPR News, I'm Lakshmi Singh. Microsoft is apologizing for last week's outlook outage. Charles Lamanna, the company's executive vice president of copilot agents and platform, said in a social media statement this morning that Thursday's incident was caused by an undetected software bug that overwhelmed servers when traffic surged. Recovery took longer than usual because restarting the servers triggered more failures. Senator Chris Van Hollen knows he is the underdog in the fight to unseat Chuck Schumer as Senate Majority Leader, but the Maryland Democrat tells NPR he can muster the support",
+        "start": 66.72,
+        "end": 107.1,
+        "text": "and PR News, the White House. The Baltic nation of Estonia says it will soon close its border crossings with Russia, and PR's Charles Maines in Moscow says the government accuses Russia of sabotage. The closure goes into effect December 1st and follows what Estonia says was a foiled plot by Russian security services to detonate explosives at a local drone manufacturing plant. The Kremlin has denied the charge and condemned Estonia's border closure, which is the latest to complicate land travel from Russia into Europe. Finland closed its border transit with Russia in 2023 amid a surge in migrants it blamed on Moscow, and closing at other points such as Latvia and northern Norway remain limited.",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 23.86,
-      "context_end": 26.66,
-      "answer": "software bug",
+      "context_start": 84.5,
+      "context_end": 88.32,
+      "answer": "detonate explosives",
       "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
-      "hint": "해당 음성 구간의 표현 · S… B… (2단어)",
+      "hint": "해당 음성 구간의 표현 · D… E… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 25.52,
-      "end": 26.66
+      "start": 86.5,
+      "end": 87.46
     },
     {
-      "sentence": "he ____ the support he needs",
+      "sentence": "of ____ attacks on its infrastructure",
       "meaning_context": {
-        "start": 25.52,
-        "end": 66.3,
-        "text": "software bug that overwhelmed servers when traffic surged. Recovery took longer than usual because restarting the servers triggered more failures. Senator Chris Van Hollen knows he is the underdog in the fight to unseat Chuck Schumer as Senate Majority Leader, but the Maryland Democrat tells NPR he can muster the support he needs to win. Here's NPR's Eric McDaniel. By some measures, Chuck Schumer is the most unpopular politician in America. Many voters don't like his party either. Only some 40% hold a favorable view of Democrats, but they did just give the Senate minority leader and his party huge governing majorities. And Senator Van Hollen actually tells NPR that's part of",
+        "start": 90.7,
+        "end": 131.78,
+        "text": "the charge and condemned Estonia's border closure, which is the latest to complicate land travel from Russia into Europe. Finland closed its border transit with Russia in 2023 amid a surge in migrants it blamed on Moscow, and closing at other points such as Latvia and northern Norway remain limited. The throttled land traffic comes as Europe has accused Russia of launching hybrid attacks on its infrastructure in a bid to undermine the European public's support for Ukraine. Charles Maynes, NPR News, Moscow. Microsoft says it's learning more about what caused last week's global outage affecting millions of users in more than 70 countries. Here's NPR's Andrea Hsu. In a lengthy post on X, Microsoft",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 45.5,
-      "context_end": 47.1,
-      "answer": "can muster",
+      "context_start": 110.62,
+      "context_end": 112.92,
+      "answer": "launching hybrid",
       "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
-      "hint": "해당 음성 구간의 표현 · C… M… (2단어)",
+      "hint": "해당 음성 구간의 표현 · L… H… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 45.8,
-      "end": 46.26
+      "start": 110.86,
+      "end": 111.54
     },
     {
-      "sentence": "senators into Van Hollen's ____ picking the Senate",
+      "sentence": "defect combined with increased ____ a reduced server capacity",
       "meaning_context": {
-        "start": 55.32,
-        "end": 96.72,
-        "text": "Only some 40% hold a favorable view of Democrats, but they did just give the Senate minority leader and his party huge governing majorities. And Senator Van Hollen actually tells NPR that's part of a larger plea for something new. People around the country are looking for change, and my colleagues are listening to people around the country. Public pressure could move senators into Van Hollen's column, but picking the Senate majority leader is a closed-door, closed-ballot election, and it's not until December 1st. Anything could happen. Eric McDaniel, NPR News Washington. At least six people were injured after Ukraine launched a large-scale drone attack on targets in Russia and the occupied territories overnight. NPR's Charles Mains has more",
+        "start": 117.04,
+        "end": 158.12,
+        "text": "Maynes, NPR News, Moscow. Microsoft says it's learning more about what caused last week's global outage affecting millions of users in more than 70 countries. Here's NPR's Andrea Hsu. In a lengthy post on X, Microsoft Executive Vice President Charles Lamada said a latent defect combined with increased load and a reduced server capacity were to blame for the outage, which began Thursday and spilled into Friday. The failure unfolded rapidly over just a couple hours. At one point, the previously unknown defect had rendered more than 80 percent of Microsoft servers unresponsive. Services weren't fully restored until early Saturday. Lamanna",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 74.86,
-      "context_end": 77.22,
-      "answer": "column but",
+      "context_start": 135.32,
+      "context_end": 139.18,
+      "answer": "load and",
       "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
-      "hint": "해당 음성 구간의 표현 · C… B… (2단어)",
+      "hint": "해당 음성 구간의 표현 · L… A… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 76.02,
-      "end": 76.62
+      "start": 137.18,
+      "end": 137.82
     },
     {
-      "sentence": "full-scale invasion nearly ____ ago, Russia said its",
+      "sentence": "servers unresponsive. Services weren't ____",
       "meaning_context": {
-        "start": 82.72,
-        "end": 124.48,
-        "text": "Eric McDaniel, NPR News Washington. At least six people were injured after Ukraine launched a large-scale drone attack on targets in Russia and the occupied territories overnight. NPR's Charles Mains has more from Moscow. What appeared to mark the largest combined drone counterattack by Kiev since Russia launched its full-scale invasion nearly five years ago, Russia said its air defenses successfully intercepted the Ukrainian barrage, a claim that stood at odds with reports of damage at several large Russian oil and industrial facilities, also hit the lone bridge linking occupied Crimea to mainland Russia, a project seen as a physical symbol of Russia's hold over the peninsula. It illegally annexed from Ukraine back in 2014.",
+        "start": 135.32,
+        "end": 176.24,
+        "text": "defect combined with increased load and a reduced server capacity were to blame for the outage, which began Thursday and spilled into Friday. The failure unfolded rapidly over just a couple hours. At one point, the previously unknown defect had rendered more than 80 percent of Microsoft servers unresponsive. Services weren't fully restored until early Saturday. Lamanna explained the recovery took longer than usual because servers came back online, they were immediately overwhelmed by waiting traffic. He once again apologized for the disruption caused to all Microsoft customers. Andrea Shue, NPR News. United Airlines says it doesn't believe yesterday's system",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 102.12,
-      "context_end": 105.48,
-      "answer": "five years",
-      "meaning": "부분 단서: years=년 (나머지는 듣고 완성)",
-      "hint": "해당 음성 구간의 표현 · F… Y… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 103.34,
-      "end": 103.98
-    },
-    {
-      "sentence": "____ a halt to traffic",
-      "meaning_context": {
-        "start": 106.12,
-        "end": 147.24,
-        "text": "successfully intercepted the Ukrainian barrage, a claim that stood at odds with reports of damage at several large Russian oil and industrial facilities, also hit the lone bridge linking occupied Crimea to mainland Russia, a project seen as a physical symbol of Russia's hold over the peninsula. It illegally annexed from Ukraine back in 2014. The local Moscow-backed authorities reported a halt to traffic along the bridge. The Kremlin later dismissed the damage as minor. Charles Maines, NPR News, Moscow. Lindsay Clancy will face another trial for the deaths of her three children in 2023. Massachusetts prosecutors asked the judge today to set a date for a jury trial. Deborah Becker of Member Station WBUR was at the hearing",
-        "requested_padding_seconds": 20,
-        "source": "automatic_transcription"
-      },
-      "context_start": 126.22,
-      "context_end": 127.98,
-      "answer": "authorities reported",
-      "meaning": "핵심 단어 뜻: authorities=당국자들, reported=보도했다 (전체 뜻은 문맥 확인)",
-      "hint": "보도했다 관련 표현 · A… R… (2단어)",
-      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 126.22,
-      "end": 127.06
-    },
-    {
-      "sentence": "a date for a ____ but",
-      "meaning_context": {
-        "start": 131.86,
-        "end": 171.92,
-        "text": "Charles Maines, NPR News, Moscow. Lindsay Clancy will face another trial for the deaths of her three children in 2023. Massachusetts prosecutors asked the judge today to set a date for a jury trial. Deborah Becker of Member Station WBUR was at the hearing in Plymouth. During the brief hearing, prosecutors requested a date for a jury trial but did not directly commit to once again pursuing first-degree murder charges. Clancy's attorney, Kevin Reddington, expects the district attorney will not seek lesser charges where a jury could be waived. When they say that the case is going to require a jury, that it's an indirect comment from the DA that they",
-        "requested_padding_seconds": 20,
-        "source": "automatic_transcription"
-      },
-      "context_start": 150.18,
-      "context_end": 152.0,
-      "answer": "jury trial",
+      "context_start": 152.72,
+      "context_end": 156.1,
+      "answer": "fully restored",
       "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
-      "hint": "해당 음성 구간의 표현 · J… T… (2단어)",
+      "hint": "해당 음성 구간의 표현 · F… R… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 151.1,
-      "end": 151.78
+      "start": 155.38,
+      "end": 156.1
     },
     {
-      "sentence": "case ended in a ____ months ago.",
+      "sentence": "several other banks. Many ____ trouble accessing online",
       "meaning_context": {
-        "start": 156.46,
-        "end": 197.54,
-        "text": "charges. Clancy's attorney, Kevin Reddington, expects the district attorney will not seek lesser charges where a jury could be waived. When they say that the case is going to require a jury, that it's an indirect comment from the DA that they intend to proceed on first-degree murder indictments. Clancy's case ended in a mistrial two months ago. The next trial is set to begin March 29. For NPR News, I'm Debra Becker in Boston. It's NPR. Customers with some major banks are reporting problems accessing their online accounts today. The website downdetector.com lists Bank of America,",
+        "start": 177.34,
+        "end": 217.96,
+        "text": "delayed departing flights for more than 90 minutes was the result of a cybersecurity issue. This is NPR News from Washington. JPMorgan Chase says hackers were not responsible for yesterday's technical issue that affected thousands of customers as well as several other banks. Many people had trouble accessing online accounts and transferring money through Zelle. The issue was blamed on a software bug and appears to be resolved this morning. Gasoline and diesel prices continue falling across the U.S. AAA says regular now averages $3.78 a gallon. The price has dropped about 20 cents in the last week.",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 175.9,
-      "context_end": 178.22,
-      "answer": "mistrial two",
+      "context_start": 195.76,
+      "context_end": 199.48,
+      "answer": "people had",
       "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
-      "hint": "해당 음성 구간의 표현 · M… T… (2단어)",
+      "hint": "해당 음성 구간의 표현 · P… H… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 176.88,
-      "end": 177.66
+      "start": 197.44,
+      "end": 198.0
+    },
+    {
+      "sentence": "Diesel is ____ of another drop in",
+      "meaning_context": {
+        "start": 204.64,
+        "end": 245.64,
+        "text": "appears to be resolved this morning. Gasoline and diesel prices continue falling across the U.S. AAA says regular now averages $3.78 a gallon. The price has dropped about 20 cents in the last week. NPR's Willa Rubin says the cost of diesel has fallen to less than $6 a gallon. Diesel is dropping because of another drop in crude prices. Crude is getting cheaper because more oil is getting out of the Middle East. So supply and demand. And here's why lower diesel prices matter. Diesel is the workhorse of the economy. Many, much of the nation's farming and trucking runs on diesel. When diesel goes up over time,",
+        "requested_padding_seconds": 20,
+        "source": "automatic_transcription"
+      },
+      "context_start": 224.4,
+      "context_end": 227.52,
+      "answer": "dropping because",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · D… B… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 224.9,
+      "end": 225.76
+    },
+    {
+      "sentence": "to face many questions ____ war with",
+      "meaning_context": {
+        "start": 249.52,
+        "end": 285.26,
+        "text": "counterweight to inflation. But a gallon of diesel still costs more than $2 more than a year ago. Willa Rubin, NPR News. President Trump's choice to serve as Secretary of the Navy is scheduled to appear before the Senate Armed Services Committee today. Acting Secretary Hung Kao is expected to face many questions about the war with Iran as he seeks the Navy's top civilian job. Kao was a combat veteran who would need a waiver from Congress to serve having left active duty less than seven years ago. I'm Dave Mattingly, NPR News in Washington.",
+        "requested_padding_seconds": 20,
+        "source": "automatic_transcription"
+      },
+      "context_start": 268.22,
+      "context_end": 270.5,
+      "answer": "about the",
+      "meaning": "의미 단서를 확인하지 못했습니다. 지정된 짧은 음성을 듣고 두 단어를 적으세요.",
+      "hint": "해당 음성 구간의 표현 · A… T… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 269.54,
+      "end": 270.1
     }
   ],
   "summaryReview": {
     "kind": "keyword_rubric",
     "article": 1,
-    "start": 11.52,
-    "end": 97.38,
-    "transcript": "Microsoft is apologizing for last week's outlook outage. Charles Lamanna, the company's executive vice president of copilot agents and platform, said in a social media statement this morning that Thursday's incident was caused by an undetected software bug that overwhelmed servers when traffic surged. took longer than usual because restarting the servers triggered more failures. Chris Van Hollen knows he is the underdog in the fight to unseat Chuck Schumer as Senate Majority Leader, but the Maryland Democrat tells NPR he can muster the support he needs to win. Here's NPR's Eric McDaniel. By some measures, Chuck Schumer is the most unpopular politician in America. Many voters don't like his party either. Only some 40% hold a favorable view of Democrats, but they did just give the Senate minority leader and his party huge governing majorities. And Senator Van Hollen actually tells NPR that's part of a larger plea for something new. People around the country are looking for change, and my colleagues are listening to people around the country. Public pressure could move senators into Van Hollen's column, but picking the Senate majority leader is a closed-door, closed-ballot election, and it's not until December 1st. Anything could happen. Eric McDaniel, NPR News Washington. At least six people were injured after Ukraine launched a large-scale drone attack on targets in Russia and the occupied territories overnight. NPR's Charles Mains has more from Moscow.",
+    "start": 12.56,
+    "end": 107.1,
+    "transcript": "President Trump has arrived in Manila, where he'll attend a summit in the Philippines ahead of this week's meetings in China with Chinese President Xi Jinping and Russian President Vladimir Putin and PR's Franco Ordonez reports. parts. President Trump will meet with Southeast Asian leaders who are gathering for the ASEAN summit, but much of the attention will be on the second half of the trip when Trump travels to China to meet with President Xi Jinping and Vladimir Putin. Well, we're to be talking about denuclearization. We'll talk about Iran. We have Iran in very good shape. But we'll talk about Iran in a little bit. We'll talk about my favorite subject, Ukraine's losing, Ukraine, Russia's losing 25,000 soldiers in the month of. We'll be talking about that. We'll all be talking about economics and trade. Trump suggested he may also meet with Kim Jong-un of North Korea, Ordonez, and PR News, the White House. The Baltic nation of Estonia says it will soon close its border crossings with Russia, and PR's Charles Maines in Moscow says the government accuses Russia of sabotage. The closure goes into effect December 1st and follows what Estonia says was a foiled plot by Russian security services to detonate explosives at a local drone manufacturing plant. The Kremlin has denied the charge and condemned Estonia's border closure, which is the latest to complicate land travel from Russia into Europe. Finland closed its border transit with Russia in 2023 amid a surge in migrants it blamed on Moscow, and closing at other points such as Latvia and northern Norway remain limited.",
     "keywords": [
+      {
+        "label": "trump · 트럼프",
+        "terms": [
+          "trump",
+          "트럼프"
+        ]
+      },
+      {
+        "label": "asia · 아시아",
+        "terms": [
+          "asia",
+          "asian",
+          "아시아"
+        ]
+      },
+      {
+        "label": "summit · 정상회담",
+        "terms": [
+          "summit",
+          "summits",
+          "정상회담",
+          "정상 회담",
+          "정상회의",
+          "정상 회의"
+        ]
+      },
+      {
+        "label": "china · 중국",
+        "terms": [
+          "china",
+          "chinese",
+          "중국"
+        ]
+      },
       {
         "label": "russia · 러시아",
         "terms": [
@@ -165,41 +199,10 @@
         ]
       },
       {
-        "label": "ukraine · 우크라이나",
+        "label": "trade · 무역",
         "terms": [
-          "ukraine",
-          "우크라이나"
-        ]
-      },
-      {
-        "label": "support · 지지",
-        "terms": [
-          "support",
-          "지지",
-          "지원"
-        ]
-      },
-      {
-        "label": "officer · 임원",
-        "terms": [
-          "officer",
-          "executive",
-          "임원",
-          "책임자"
-        ]
-      },
-      {
-        "label": "president · 대통령",
-        "terms": [
-          "president",
-          "대통령"
-        ]
-      },
-      {
-        "label": "election · 선거",
-        "terms": [
-          "election",
-          "선거"
+          "trade",
+          "무역"
         ]
       }
     ],
@@ -209,10 +212,44 @@
     {
       "kind": "keyword_rubric",
       "article": 1,
-      "start": 11.52,
-      "end": 97.38,
-      "transcript": "Microsoft is apologizing for last week's outlook outage. Charles Lamanna, the company's executive vice president of copilot agents and platform, said in a social media statement this morning that Thursday's incident was caused by an undetected software bug that overwhelmed servers when traffic surged. took longer than usual because restarting the servers triggered more failures. Chris Van Hollen knows he is the underdog in the fight to unseat Chuck Schumer as Senate Majority Leader, but the Maryland Democrat tells NPR he can muster the support he needs to win. Here's NPR's Eric McDaniel. By some measures, Chuck Schumer is the most unpopular politician in America. Many voters don't like his party either. Only some 40% hold a favorable view of Democrats, but they did just give the Senate minority leader and his party huge governing majorities. And Senator Van Hollen actually tells NPR that's part of a larger plea for something new. People around the country are looking for change, and my colleagues are listening to people around the country. Public pressure could move senators into Van Hollen's column, but picking the Senate majority leader is a closed-door, closed-ballot election, and it's not until December 1st. Anything could happen. Eric McDaniel, NPR News Washington. At least six people were injured after Ukraine launched a large-scale drone attack on targets in Russia and the occupied territories overnight. NPR's Charles Mains has more from Moscow.",
+      "start": 12.56,
+      "end": 107.1,
+      "transcript": "President Trump has arrived in Manila, where he'll attend a summit in the Philippines ahead of this week's meetings in China with Chinese President Xi Jinping and Russian President Vladimir Putin and PR's Franco Ordonez reports. parts. President Trump will meet with Southeast Asian leaders who are gathering for the ASEAN summit, but much of the attention will be on the second half of the trip when Trump travels to China to meet with President Xi Jinping and Vladimir Putin. Well, we're to be talking about denuclearization. We'll talk about Iran. We have Iran in very good shape. But we'll talk about Iran in a little bit. We'll talk about my favorite subject, Ukraine's losing, Ukraine, Russia's losing 25,000 soldiers in the month of. We'll be talking about that. We'll all be talking about economics and trade. Trump suggested he may also meet with Kim Jong-un of North Korea, Ordonez, and PR News, the White House. The Baltic nation of Estonia says it will soon close its border crossings with Russia, and PR's Charles Maines in Moscow says the government accuses Russia of sabotage. The closure goes into effect December 1st and follows what Estonia says was a foiled plot by Russian security services to detonate explosives at a local drone manufacturing plant. The Kremlin has denied the charge and condemned Estonia's border closure, which is the latest to complicate land travel from Russia into Europe. Finland closed its border transit with Russia in 2023 amid a surge in migrants it blamed on Moscow, and closing at other points such as Latvia and northern Norway remain limited.",
       "keywords": [
+        {
+          "label": "trump · 트럼프",
+          "terms": [
+            "trump",
+            "트럼프"
+          ]
+        },
+        {
+          "label": "asia · 아시아",
+          "terms": [
+            "asia",
+            "asian",
+            "아시아"
+          ]
+        },
+        {
+          "label": "summit · 정상회담",
+          "terms": [
+            "summit",
+            "summits",
+            "정상회담",
+            "정상 회담",
+            "정상회의",
+            "정상 회의"
+          ]
+        },
+        {
+          "label": "china · 중국",
+          "terms": [
+            "china",
+            "chinese",
+            "중국"
+          ]
+        },
         {
           "label": "russia · 러시아",
           "terms": [
@@ -222,45 +259,47 @@
           ]
         },
         {
-          "label": "ukraine · 우크라이나",
+          "label": "trade · 무역",
           "terms": [
-            "ukraine",
-            "우크라이나"
+            "trade",
+            "무역"
+          ]
+        }
+      ],
+      "boundary": "reporter_handoff_estimate"
+    },
+    {
+      "kind": "keyword_rubric",
+      "article": 2,
+      "start": 172.86,
+      "end": 258.0,
+      "transcript": "United Airlines says it doesn't believe yesterday's system-wide outage that delayed departing flights for more than 90 minutes was the result of a cybersecurity issue. This is NPR News from Washington. JPMorgan Chase says hackers were not responsible for yesterday's technical issue that affected thousands of customers as well as several other banks. Many people had trouble accessing online accounts and transferring money through Zelle. The issue was blamed on a software bug and appears to be resolved this morning. Gasoline and diesel prices continue falling across the U.S. AAA says regular now averages $3.78 a gallon. The price has dropped about 20 cents in the last week. NPR's Willa Rubin says the cost of diesel has fallen to less than $6 a gallon. Diesel is dropping because of another drop in crude prices. Crude is getting cheaper because more oil is getting out of the Middle East. supply and demand. And here's why lower diesel prices matter. Diesel is the workhorse of the economy. Many, much of the nation's farming and trucking runs on diesel. When diesel goes up over time, so does the price of just about everything. So this is a counterweight to inflation. But a gallon of diesel still costs more than $2 more than a year ago. Willa Rubin, NPR News.",
+      "keywords": [
+        {
+          "label": "prices · 물가",
+          "terms": [
+            "prices",
+            "price",
+            "물가",
+            "가격"
           ]
         },
         {
-          "label": "support · 지지",
+          "label": "inflation · 인플레이션",
           "terms": [
-            "support",
-            "지지",
-            "지원"
-          ]
-        },
-        {
-          "label": "officer · 임원",
-          "terms": [
-            "officer",
-            "executive",
-            "임원",
-            "책임자"
-          ]
-        },
-        {
-          "label": "president · 대통령",
-          "terms": [
-            "president",
-            "대통령"
-          ]
-        },
-        {
-          "label": "election · 선거",
-          "terms": [
-            "election",
-            "선거"
+            "inflation",
+            "인플레이션",
+            "물가상승"
           ]
         }
       ],
       "boundary": "reporter_handoff_estimate"
     }
-  ]
+  ],
+  "fullTranscript": {
+    "transcript": "This is NPR News Now. The latest headlines every hour. Live from NPR News in Washington, I'm Dave Mattingly. President Trump has arrived in Manila, where he'll attend a summit in the Philippines ahead of this week's meetings in China with Chinese President Xi Jinping and Russian President Vladimir Putin and PR's Franco Ordonez reports. parts. President Trump will meet with Southeast Asian leaders who are gathering for the ASEAN summit, but much of the attention will be on the second half of the trip when Trump travels to China to meet with President Xi Jinping and Vladimir Putin. Well, we're to be talking about denuclearization. We'll talk about Iran. We have Iran in very good shape. But we'll talk about Iran in a little bit. We'll talk about my favorite subject, Ukraine's losing, Ukraine, Russia's losing 25,000 soldiers in the month of. We'll be talking about that. We'll all be talking about economics and trade. Trump suggested he may also meet with Kim Jong-un of North Korea, Ordonez, and PR News, the White House. The Baltic nation of Estonia says it will soon close its border crossings with Russia, and PR's Charles Maines in Moscow says the government accuses Russia of sabotage. The closure goes into effect December 1st and follows what Estonia says was a foiled plot by Russian security services to detonate explosives at a local drone manufacturing plant. The Kremlin has denied the charge and condemned Estonia's border closure, which is the latest to complicate land travel from Russia into Europe. Finland closed its border transit with Russia in 2023 amid a surge in migrants it blamed on Moscow, and closing at other points such as Latvia and northern Norway remain limited. The throttled land traffic comes as Europe has accused Russia of launching hybrid attacks on its infrastructure in a bid to undermine the European public's support for Ukraine. Charles Maynes, NPR News, Moscow. Microsoft says it's learning more about what caused last week's global outage affecting millions of users in more than 70 countries. Here's NPR's Andrea Hsu. In a lengthy post on X, Microsoft Executive Vice President Charles Lamada said a latent defect combined with increased load and a reduced server capacity were to blame for the outage, which began Thursday and spilled into Friday. The failure unfolded rapidly over just a couple hours. At one point, the previously unknown defect had rendered more than 80 percent of Microsoft servers unresponsive. Services weren't fully restored until early Saturday. Lamanna explained the recovery took longer than usual because servers came back online, they were immediately overwhelmed by waiting traffic. He once again apologized for the disruption caused to all Microsoft customers. Andrea Shue, NPR News. United Airlines says it doesn't believe yesterday's system-wide outage that delayed departing flights for more than 90 minutes was the result of a cybersecurity issue. This is NPR News from Washington. JPMorgan Chase says hackers were not responsible for yesterday's technical issue that affected thousands of customers as well as several other banks. Many people had trouble accessing online accounts and transferring money through Zelle. The issue was blamed on a software bug and appears to be resolved this morning. Gasoline and diesel prices continue falling across the U.S. AAA says regular now averages $3.78 a gallon. The price has dropped about 20 cents in the last week. NPR's Willa Rubin says the cost of diesel has fallen to less than $6 a gallon. Diesel is dropping because of another drop in crude prices. Crude is getting cheaper because more oil is getting out of the Middle East. supply and demand. And here's why lower diesel prices matter. Diesel is the workhorse of the economy. Many, much of the nation's farming and trucking runs on diesel. When diesel goes up over time, so does the price of just about everything. So this is a counterweight to inflation. But a gallon of diesel still costs more than $2 more than a year ago. Willa Rubin, NPR News. President Trump's choice to serve as of the Navy is scheduled to appear before the Senate Armed Services Committee today. Acting Secretary Hung Kao is expected to face many questions about the war with Iran as he seeks the Navy's top civilian job. Kao was a combat veteran who would need a waiver from Congress to serve having left active duty less than seven years ago. I'm Dave Mattingly, NPR News in Washington.",
+    "start": 0.0,
+    "end": 285.26,
+    "kind": "full_broadcast"
+  }
 }
