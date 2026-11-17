@@ -40,12 +40,6 @@ jobs:
       - name: Generate lesson
         id: generate
         run: python scripts/generate_lesson.py
-      - name: Review contextual Korean meanings and record API usage
-        if: steps.generate.outcome == 'success'
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          NPR_AI_REVIEW_ENABLED: ${{ vars.NPR_AI_REVIEW_ENABLED || 'true' }}
-        run: python scripts/review_meanings.py
       - name: Save transcription diagnostics
         if: always() && steps.generate.outcome != 'skipped'
         uses: actions/upload-artifact@v4
@@ -58,8 +52,6 @@ jobs:
         if: always() && (steps.generate.outcome == 'success' || steps.generate.outcome == 'failure')
         run: |
           git add lesson.json
-          if [ -f ai-review-status.json ]; then git add ai-review-status.json; fi
-          if [ -f ai-usage-ledger.json ]; then git add ai-usage-ledger.json; fi
           if [ -d media ]; then git add -A media; fi
           if [ -f generation-status.json ]; then git add generation-status.json; fi
           if git diff --cached --quiet; then exit 0; fi

@@ -1,4 +1,4 @@
-const CACHE='npr-listening-v15';
+const CACHE='npr-listening-v16';
 const ASSETS=['./','./index.html','./lesson-status.js','./summary-review.js','./manifest.webmanifest','./icon.svg'];
 const shellPaths=new Set(ASSETS.map(path=>new URL(path,self.registration.scope).href));
 self.addEventListener('install',event=>{

@@ -23,7 +23,7 @@ STATUS = ROOT / "generation-status.json"
 REPORT = ROOT / "generation-report.json"
 FEED = "https://feeds.npr.org/500005/podcast.xml"
 USER_AGENT = "NPR-Morning-Listening/4.0 (+https://github.com/inleem-crypto/npr-morning-listening)"
-GENERATOR_VERSION = 15
+GENERATOR_VERSION = 16
 PRIMARY_MODEL = "small.en"
 CHECK_MODEL = "medium.en"
 MAX_CANDIDATES = 16
@@ -308,6 +308,11 @@ PHRASE_GLOSSES = {
     "supply chain": "공급망",
     "natural disasters": "자연재해",
     "flight delays": "항공편 지연",
+    "continued rainfall": "계속된 강우",
+    "staggered arrivals": "여러 시각에 나누어 도착함",
+    "have clarity": "명확히 파악하다",
+    "given details": "구체적인 내용을 밝혔다",
+    "relationship with": "~와의 관계",
     "arrival times": "도착 시각 (직원의 경우 출근 시각)",
     "trading partner": "교역 상대",
     "flight cancellations": "항공편 취소",
@@ -360,16 +365,12 @@ def korean_study_clue(answer: str, context: str = "") -> str:
     """Offer an exact curated Korean gloss, or honestly label a partial clue."""
     answer = answer.casefold().strip()
     normalized_context = " ".join(context.casefold().split())
-    if answer == "flooding the" and "flooding the system with information" in normalized_context:
-        return "시스템에 과도한 정보를 쏟아붓다"
+    if answer == "has broken" and "has broken his silence" in normalized_context:
+        return "침묵을 깨고 입장을 밝혔다 (뒤의 his silence와 연결)"
     if answer == "biggest trading" and "biggest trading partner" in normalized_context:
         return "최대 교역 상대 (뒤의 partner와 연결)"
-    if answer == "pausing the" and "pausing the installation" in normalized_context:
-        return "설치를 잠정 중단하다 (뒤의 installation과 연결)"
     if answer == "for billions" and "for billions of dollars" in normalized_context:
         return "수십억 달러를 확보하기 위해 (뒤의 of dollars와 연결)"
-    if answer == "the war" and "the war in ukraine" in normalized_context:
-        return "우크라이나 전쟁 (뒤의 in Ukraine와 연결)"
     if answer == "neighbors allied" and "neighbors allied with" in normalized_context:
         return "(~와) 동맹을 맺은 이웃 국가들 (뒤의 with와 연결)"
     if answer == "new arms" and re.search(r"arms\s*[- ]\s*control", normalized_context):
@@ -405,6 +406,7 @@ def _phrase_token(word):
     return raw.casefold()
 
 
+ARTICLES = {"a", "an", "the"}
 FUNCTION_WORDS = {"and", "the", "has", "had", "have", "was", "were", "are", "for", "with", "from", "that", "this", "but", "not", "who", "will", "can", "could", "would", "should"}
 
 
@@ -424,8 +426,12 @@ def make_short_items(segments):
     """Make 2-word prompts from contiguous high-confidence audio, not invented text."""
     result, seen = [], set()
     last = -100.0
+    previous_tail = []
     for segment in segments:
         words = getattr(segment, "words", None) or []
+        lead = (previous_tail if words and previous_tail
+                and 0 <= words[0].start - previous_tail[-1].end <= .8 else [])
+        previous_tail = (lead + words)[-7:] if words else []
         for i in range(len(words) - 1):
             first, second = words[i:i + 2]
             start, end = first.start, second.end
@@ -440,34 +446,32 @@ def make_short_items(segments):
                     or second.start - first.end > .65):
                 continue
             a, b = _phrase_token(first.word), _phrase_token(second.word)
-            if (not a or not b or a == b
+            if (not a or not b or a == b or a in ARTICLES or b in ARTICLES
                     or (a in STOPWORDS and b in STOPWORDS)):
                 continue
             answer = a + " " + b
+            preceding = (lead + words[:i])[-7:]
             # Function-word fragments make poor standalone meaning questions.
             # Do not split compounds such as "arms-control" at the blank edge.
             if ((a in FUNCTION_WORDS and b in FUNCTION_WORDS and answer not in PHRASE_GLOSSES)
                     or (i + 2 < len(words) and words[i+2].word.strip().startswith('-'))
-                    or (i and words[i-1].word.strip().endswith('-'))):
+                    or (preceding and preceding[-1].word.strip().endswith('-'))):
                 continue
             if answer in seen:
                 continue
             # Preserve audible context instead of replacing the entire prompt
             # with a bare blank. Never synthesize a sentence around the answer.
-            left, right = max(0, i - 4), min(len(words), i + 6)
-            # A prompt should stay within the same sentence and expose context.
-            while left < i and any(re.search(r'[.!?]["”’]?$',
-                                            w.word.strip()) for w in words[left:i]):
-                left += 1
-            for j in range(i + 1, right):
-                if re.search(r'[.!?]["”’]?$', words[j].word.strip()):
-                    right = j + 1
-                    break
-            if right - left < 5 or re.search(r'[.!?]["”’]?$', first.word.strip()):
+            terminal = lambda w: re.search(r'[.!?]["”’]?$', w.word.strip())
+            boundary = max((j for j, word in enumerate(preceding) if terminal(word)), default=-1)
+            preceding = preceding[boundary + 1:]
+            following = [] if terminal(second) else words[i + 2:i + 6]
+            boundary = next((j for j, word in enumerate(following) if terminal(word)), len(following))
+            following = following[:boundary + 1]
+            context = preceding + [first, second] + following
+            if len(context) < 5 or terminal(first):
                 continue
-            context = words[left:right]
-            before = "".join(w.word for w in words[left:i]).strip()
-            after = "".join(w.word for w in words[i + 2:right]).strip()
+            before = "".join(w.word for w in preceding).strip()
+            after = "".join(w.word for w in following).strip()
             sentence = (before + " ____ " + after).strip()
             meaning = korean_study_clue(answer, sentence.replace("____", answer))
             if meaning.startswith(("부분 단서:", "핵심 단어 뜻:", "의미 단서를 확인하지 못했습니다.")):
