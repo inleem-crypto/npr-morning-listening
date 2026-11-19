@@ -1,5 +1,5 @@
 {
-  "title": "3pm ET, November 18 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "3pm ET, November 19 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
   "generator_version": 15,
   "verified": false,
@@ -10,93 +10,144 @@
     "human_verified": false
   },
   "sourceNote": "문제를 만들 때 사용한 고정 음원을 재생합니다. 빈칸 앞뒤 영어 지문과 2단어 정답을 두 음성인식 모델이 비교했습니다. 자동 전사이므로 오류가 있을 수 있습니다.",
-  "generated_at": "2026-11-18T21:00:17.177496+00:00",
+  "generated_at": "2026-11-19T21:00:00.252769+00:00",
   "episode": {
-    "id": "15d9f1de-5d34-418a-95fe-adefde9d9c97",
-    "title": "3pm ET, November 18 | The latest headlines from NPR",
-    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/731737929cd883d9680153cb828b51da024bfd029e8f92c315fa8c25908a5b32.mp3",
-    "date": "2026-11-18T20:09:52+00:00",
+    "id": "c85056a8-2ded-4225-8c35-267d2554a82b",
+    "title": "3pm ET, November 19 | The latest headlines from NPR",
+    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/4f533400e0995e67d8be5225f409fec6678e2fbfe9f5e03f085a9e1e8dafa444.mp3",
+    "date": "2026-11-19T20:09:37+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "문제 생성에 사용한 고정 음원",
-    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/7ddc6cad-9cf6-4525-a29e-0e496190cf96/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=7ddc6cad-9cf6-4525-a29e-0e496190cf96&feed=O9WlY7a5&t=podcast&e=nx-s1-20261118-1500-long&p=500005&d=280&size=4586728",
-    "audio_sha256": "731737929cd883d9680153cb828b51da024bfd029e8f92c315fa8c25908a5b32"
+    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/0e219590-1294-4f8f-aa05-c9a65fe6ea42/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=0e219590-1294-4f8f-aa05-c9a65fe6ea42&feed=O9WlY7a5&t=podcast&e=nx-s1-20261119-1500-long&p=500005&d=280&size=4586728",
+    "audio_sha256": "4f533400e0995e67d8be5225f409fec6678e2fbfe9f5e03f085a9e1e8dafa444"
   },
   "items": [
     {
-      "sentence": "been set for a new presidential election, ____ Venezuelans about the U",
+      "sentence": "of Russia's claim to the peninsula, Moscow ____ from Ukraine in 2014,",
       "meaning_context": {
-        "start": 37.84,
-        "end": 79.2,
-        "text": "underscoring the Trump administration's desire to expand its influence in the South American country since the U.S. military raid that removed Venezuelan President Nicolás Maduro from power. A Maduro ally took over, though her term formally expired in July, and no date has been set for a new presidential election, unnerving many Venezuelans about the U.S.'s priorities in their country. Congressman Hakeem Jeffries has been nominated for House Speaker. The Democrats take control of Congress in January. Here's NPR's Gloria Grisales. House Democrats voted during a closed-door meeting, 251 to 11, in support of Hakeem Jeffries' nomination.",
+        "start": 16.76,
+        "end": 57.92,
+        "text": "China, his host, and Russia. This as Russia leader Vladimir Putin threatens revenge for Ukraine's bombing of a bridge linking Russia's mainland to the annex Crimean Peninsula. up. And P.S. Charles Maine's has details for Moscow. The 12-mile Kerch Bridge from Russia to Crimea has always been a symbol of Russia's claim to the peninsula, Moscow illegally annexed from Ukraine in 2014, and a pet project of the Russian presidents. For that reason, Ukraine has repeatedly targeted the structure, including several missile attacks this week that sent a section of road tumbling into the sea. Addressing the media following his meetings with Presidents Trump and Xi, Putin acknowledged serious damage to the bridge, but vowed Russia's response would be even",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 55.74,
-      "context_end": 59.88,
-      "answer": "unnerving many",
-      "hint": "해당 음성 구간의 표현 · U… M… (2단어)",
+      "context_start": 34.88,
+      "context_end": 39.06,
+      "answer": "illegally annexed",
+      "hint": "해당 음성 구간의 표현 · I… A… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 58.18,
-      "end": 58.86
+      "start": 36.94,
+      "end": 37.62
     },
     {
-      "sentence": "Our job is to fight MAGA extremism, ____ other, to fight MAGA",
+      "sentence": "Xi, Putin acknowledged serious damage to the ____ vowed Russia's response would",
       "meaning_context": {
-        "start": 69.88,
-        "end": 109.86,
-        "text": "Here's NPR's Gloria Grisales. House Democrats voted during a closed-door meeting, 251 to 11, in support of Hakeem Jeffries' nomination. Afterwards, the current House Minority Leader told reporters his caucus will work to deliver for the American people. Our job is to fight MAGA extremism, not each other, to fight MAGA extremism and to get big things done. Several incoming, more left-wing House members who did not support Jeffries' bid said But they're still pushing for a more aggressive agenda to address affordability, immigration, and other issues. The House floor will hold its vote for Speaker on the first day of the new",
+        "start": 35.44,
+        "end": 75.98,
+        "text": "claim to the peninsula, Moscow illegally annexed from Ukraine in 2014, and a pet project of the Russian presidents. For that reason, Ukraine has repeatedly targeted the structure, including several missile attacks this week that sent a section of road tumbling into the sea. Addressing the media following his meetings with Presidents Trump and Xi, Putin acknowledged serious damage to the bridge, but vowed Russia's response would be even more painful. Putin also claimed at the time the bridge was struck, he'd been on the verge of agreeing to a ceasefire with Ukraine on energy and maritime targets. That deal, said Putin, was no longer on offer. Charles Mains, NPR News, Moscow. The International Court of Justice says Myanmar committed genocide against the Rohingya",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 86.06,
-      "context_end": 91.0,
-      "answer": "not each",
-      "hint": "해당 음성 구간의 표현 · N… E… (2단어)",
+      "context_start": 53.1,
+      "context_end": 57.4,
+      "answer": "bridge but",
+      "hint": "해당 음성 구간의 표현 · B… B… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 89.42,
-      "end": 89.72
+      "start": 55.5,
+      "end": 55.94
     },
     {
-      "sentence": "Things are moving faster. We need to ____ We need to protect",
+      "sentence": "2017 crackdown in Rakhine State. It's the ____ the United Nations",
       "meaning_context": {
-        "start": 173.08,
-        "end": 214.02,
-        "text": "Pay. The outage is the latest in a string of disruptions affecting the FAA, United Airlines, Microsoft, Chase, Zelle, and the National Security Agency. Lori Crainer, a cybersecurity researcher at Carnegie Mellon University, points to the pressure to fix security flaws. Things are moving faster. We need to upgrade faster. We need to protect against threats discovered by AI. So there may be more of a flurry of upgrading, which is causing outages when the upgrades are not being done carefully. That's NPR's Windsor Johnston. Globally, Muslims are expected to outnumber Christians Christians by the year 2035, and PRS Jason",
+        "start": 61.48,
+        "end": 102.44,
+        "text": "he'd been on the verge of agreeing to a ceasefire with Ukraine on energy and maritime targets. That deal, said Putin, was no longer on offer. Charles Mains, NPR News, Moscow. The International Court of Justice says Myanmar committed genocide against the Rohingya Muslim minority during the 2017 crackdown in Rakhine State. It's the first time the United Nations highest court has found a country responsible for genocide. A State Department spokesperson says the U.S. is reviewing the implications of the findings from the ICJ. The ruling is legally binding, but the court has no way to enforce it. Torrential rain is flooding cities in California and",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 191.66,
-      "context_end": 195.02,
-      "answer": "upgrade faster",
-      "hint": "해당 음성 구간의 표현 · U… F… (2단어)",
+      "context_start": 77.82,
+      "context_end": 83.04,
+      "answer": "first time",
+      "hint": "해당 음성 구간의 표현 · F… T… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 193.16,
-      "end": 193.92
+      "start": 81.54,
+      "end": 82.12
     },
     {
-      "sentence": "and Hindus in this country if recent ____ continue. Globally, Pew projects",
+      "sentence": "cities in California and Florida as the ____ into a busy",
       "meaning_context": {
-        "start": 226.1,
-        "end": 267.24,
-        "text": "largest single religious group. At the same time, religiously unaffiliated people will rise to just over 40%, mostly due to people leaving Christianity. Currently, Judaism is the largest non-Christian religion in U.S., but researchers say that by 2070, Jews will be outnumbered by both Muslims and Hindus in this country if recent demographic trends continue. Globally, Pew projects that more than half of the world's Christians will live in sub-Saharan Africa by the year 2070, largely due to higher birth rates there. Jason DeRose, NPR News. David Beckham's luxury fragrances have allegedly been found on sale at a British discount store",
+        "start": 83.04,
+        "end": 123.52,
+        "text": "highest court has found a country responsible for genocide. A State Department spokesperson says the U.S. is reviewing the implications of the findings from the ICJ. The ruling is legally binding, but the court has no way to enforce it. Torrential rain is flooding cities in California and Florida as the country heads into a busy holiday travel week. Here's NPR's Ava Berger. Social media is filled with images of flooded homes, underwater streets, and it's not just in one U.S. city. Palm Bay and Broward, Florida, as well as San Francisco, California, are just three cities dealing with massive waves, historic rainfall,",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 244.02,
-      "context_end": 249.38,
-      "answer": "demographic trends",
-      "hint": "해당 음성 구간의 표현 · D… T… (2단어)",
+      "context_start": 100.44,
+      "context_end": 104.98,
+      "answer": "country heads",
+      "hint": "해당 음성 구간의 표현 · C… H… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 246.24,
-      "end": 247.16
+      "start": 103.18,
+      "end": 103.68
+    },
+    {
+      "sentence": "week on the East Coast. It doesn't ____ it's going to be",
+      "meaning_context": {
+        "start": 125.44,
+        "end": 166.44,
+        "text": "storms. This year, Super El Nino is making that wet weather more likely. As for travel, it's too early to know exactly how Thanksgiving week will look. But Jeff Baradelli, a chief meteorologist at WFLA-TV in Tampa Bay, says more storms are expected through the weekend and next week on the East Coast. It doesn't look like it's going to be an easy week for travel. AAA says about 81 million Americans will be traveling next week. Ava Berger, NPR News. The AI giant Anthropics debuted on the NASDAQ at $111.50 a share, About 30% above its $83 IPO price, giving it an initial valuation of one and a",
+        "requested_padding_seconds": 20,
+        "source": "automatic_transcription"
+      },
+      "context_start": 143.9,
+      "context_end": 147.02,
+      "answer": "look like",
+      "hint": "해당 음성 구간의 표현 · L… L… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 145.78,
+      "end": 146.34
+    },
+    {
+      "sentence": "we are obsessed with safety. And an ____ safety and public benefit",
+      "meaning_context": {
+        "start": 160.26,
+        "end": 201.66,
+        "text": "share, About 30% above its $83 IPO price, giving it an initial valuation of one and a half trillion dollars before ringing the opening bell today CEO Daria Amade read a statement. There is a gigantic difference between how AI will go if we pay little attention to safety versus how it will go if we are obsessed with safety. And an obsession with safety and public benefit has been built into anthropics DNA from the start. It's NPR. An Illinois man accused of plotting a mass shooting at a Chicago-area Hindu temple last month pleaded not guilty in court today to terrorism and other charges. Police say 19-year-old Alexandros Paparakis was",
+        "requested_padding_seconds": 20,
+        "source": "automatic_transcription"
+      },
+      "context_start": 178.28,
+      "context_end": 182.78,
+      "answer": "obsession with",
+      "hint": "해당 음성 구간의 표현 · O… W… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 180.4,
+      "end": 181.44
+    },
+    {
+      "sentence": "rifle ammunition and a patch displaying imagery ____ white supremacist extremism.",
+      "meaning_context": {
+        "start": 192.74,
+        "end": 234.72,
+        "text": "temple last month pleaded not guilty in court today to terrorism and other charges. Police say 19-year-old Alexandros Paparakis was on the verge of carrying out an attack outside the temple in Aurora, but his gun jammed. He said a search of his house, turned up a rifle ammunition and a patch displaying imagery associated with white supremacist extremism. FIFA president Gianni Infantino will face two challengers in the upcoming election to head the world soccer body, but as NPR's Rafael Nam tells us, Infantino appears well-placed to win another term. The president of the French Football Federation, Philippe Diallo,",
+        "requested_padding_seconds": 20,
+        "source": "automatic_transcription"
+      },
+      "context_start": 209.92,
+      "context_end": 216.34,
+      "answer": "associated with",
+      "hint": "해당 음성 구간의 표현 · A… W… (2단어)",
+      "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
+      "start": 213.12,
+      "end": 214.38
     }
   ],
   "summaryReview": {
     "kind": "keyword_rubric",
     "article": 1,
-    "start": 29.26,
-    "end": 124.16,
-    "transcript": "The U.S. is re-establishing ties with Venezuela. Defense Secretary Pete Heksteth announced the agreement during a visit to Caracas, underscoring the Trump administration's desire to expand its influence in the South American country since the U.S. military raid that removed Venezuelan President Nicolás Maduro from power. A Maduro ally took over, though her term formally expired in July, and no date has been set for a new presidential election, unnerving many Venezuelans about the U.S.'s priorities in their country. Hakeem Jeffries has been nominated for House Speaker. The Democrats take control of Congress in January. Here's NPR's Gloria Grisales. House Democrats voted during a closed-door meeting, 251 to 11, in support of Hakeem Jeffries' nomination. Afterwards, current House Minority Leader told reporters his caucus will work to deliver for the American people. Our job is to fight MAGA extremism, not each other, to fight MAGA extremism and to get big things done. Several incoming, more left-wing House members who did not support Jeffries' bid said they're still pushing for a more aggressive agenda to address affordability, immigration, and other issues. The House floor will hold its vote for Speaker on the first day of the new Congress next year, on January 3. Claudia Ritzalis, NPR News, the Capitol. At yesterday's earnings call, chair of NVIDIA's board ruled out Jensen Wong's reinstatement as CEO, despite pressure from Wong's allies.",
+    "start": 11.36,
+    "end": 108.16,
+    "transcript": "President Trump is returning from a historic trilateral summit in Asia with the of China, his host, and Russia. This as Russia leader Vladimir Putin threatens revenge for Ukraine's bombing of a bridge linking Russia's mainland to the annex Crimean Peninsula. up. And P.S. Charles Maine's has details for Moscow. The 12-mile Kerch Bridge from Russia to Crimea has always been a symbol of Russia's claim to the peninsula, illegally annexed from Ukraine in 2014, and a pet project of the Russian presidents. For that reason, Ukraine has repeatedly targeted the structure, including several missile attacks this week that sent a section of road tumbling into the sea. Addressing the media following his meetings with Presidents Trump and Xi, Putin acknowledged serious damage to the bridge, but vowed Russia's response would be even more painful. Putin also claimed at the time the bridge was struck, he'd been on the verge of agreeing to a ceasefire with Ukraine on energy and maritime targets. That deal, said Putin, was no longer on offer. Charles Mains, NPR News, Moscow. The International Court of Justice says Myanmar committed genocide against the Rohingya Muslim minority during the 2017 crackdown in Rakhine State. It's the first time the United Nations highest court has found a country responsible for genocide. A State Department spokesperson says the U.S. is reviewing the implications of the findings from the ICJ. The ruling is legally binding, but the court has no way to enforce it. Torrential rain is flooding cities in California and Florida as the country heads into a busy holiday travel week. Here's NPR's Ava Berger.",
     "keywords": [
       {
         "label": "trump · 트럼프",
@@ -106,47 +157,45 @@
         ]
       },
       {
-        "label": "support · 지지",
+        "label": "asia · 아시아",
         "terms": [
-          "support",
-          "지지",
-          "지원"
+          "asia",
+          "asian",
+          "아시아"
         ]
       },
       {
-        "label": "president · 대통령",
+        "label": "summit · 정상회담",
         "terms": [
-          "president",
-          "대통령"
+          "summit",
+          "summits",
+          "정상회담",
+          "정상 회담",
+          "정상회의",
+          "정상 회의"
         ]
       },
       {
-        "label": "election · 선거",
+        "label": "china · 중국",
         "terms": [
-          "election",
-          "선거"
+          "china",
+          "chinese",
+          "중국"
         ]
       },
       {
-        "label": "military · 군사",
+        "label": "russia · 러시아",
         "terms": [
-          "military",
-          "troops",
-          "군사",
-          "군대",
-          "군인"
+          "russia",
+          "russian",
+          "러시아"
         ]
       },
       {
-        "label": "agreement · 합의",
+        "label": "ukraine · 우크라이나",
         "terms": [
-          "agreement",
-          "deal",
-          "deals",
-          "합의",
-          "협정",
-          "거래",
-          "계약"
+          "ukraine",
+          "우크라이나"
         ]
       }
     ],
@@ -156,9 +205,9 @@
     {
       "kind": "keyword_rubric",
       "article": 1,
-      "start": 29.26,
-      "end": 124.16,
-      "transcript": "The U.S. is re-establishing ties with Venezuela. Defense Secretary Pete Heksteth announced the agreement during a visit to Caracas, underscoring the Trump administration's desire to expand its influence in the South American country since the U.S. military raid that removed Venezuelan President Nicolás Maduro from power. A Maduro ally took over, though her term formally expired in July, and no date has been set for a new presidential election, unnerving many Venezuelans about the U.S.'s priorities in their country. Hakeem Jeffries has been nominated for House Speaker. The Democrats take control of Congress in January. Here's NPR's Gloria Grisales. House Democrats voted during a closed-door meeting, 251 to 11, in support of Hakeem Jeffries' nomination. Afterwards, current House Minority Leader told reporters his caucus will work to deliver for the American people. Our job is to fight MAGA extremism, not each other, to fight MAGA extremism and to get big things done. Several incoming, more left-wing House members who did not support Jeffries' bid said they're still pushing for a more aggressive agenda to address affordability, immigration, and other issues. The House floor will hold its vote for Speaker on the first day of the new Congress next year, on January 3. Claudia Ritzalis, NPR News, the Capitol. At yesterday's earnings call, chair of NVIDIA's board ruled out Jensen Wong's reinstatement as CEO, despite pressure from Wong's allies.",
+      "start": 11.36,
+      "end": 108.16,
+      "transcript": "President Trump is returning from a historic trilateral summit in Asia with the of China, his host, and Russia. This as Russia leader Vladimir Putin threatens revenge for Ukraine's bombing of a bridge linking Russia's mainland to the annex Crimean Peninsula. up. And P.S. Charles Maine's has details for Moscow. The 12-mile Kerch Bridge from Russia to Crimea has always been a symbol of Russia's claim to the peninsula, illegally annexed from Ukraine in 2014, and a pet project of the Russian presidents. For that reason, Ukraine has repeatedly targeted the structure, including several missile attacks this week that sent a section of road tumbling into the sea. Addressing the media following his meetings with Presidents Trump and Xi, Putin acknowledged serious damage to the bridge, but vowed Russia's response would be even more painful. Putin also claimed at the time the bridge was struck, he'd been on the verge of agreeing to a ceasefire with Ukraine on energy and maritime targets. That deal, said Putin, was no longer on offer. Charles Mains, NPR News, Moscow. The International Court of Justice says Myanmar committed genocide against the Rohingya Muslim minority during the 2017 crackdown in Rakhine State. It's the first time the United Nations highest court has found a country responsible for genocide. A State Department spokesperson says the U.S. is reviewing the implications of the findings from the ICJ. The ruling is legally binding, but the court has no way to enforce it. Torrential rain is flooding cities in California and Florida as the country heads into a busy holiday travel week. Here's NPR's Ava Berger.",
       "keywords": [
         {
           "label": "trump · 트럼프",
@@ -168,13 +217,57 @@
           ]
         },
         {
-          "label": "support · 지지",
+          "label": "asia · 아시아",
           "terms": [
-            "support",
-            "지지",
-            "지원"
+            "asia",
+            "asian",
+            "아시아"
           ]
         },
+        {
+          "label": "summit · 정상회담",
+          "terms": [
+            "summit",
+            "summits",
+            "정상회담",
+            "정상 회담",
+            "정상회의",
+            "정상 회의"
+          ]
+        },
+        {
+          "label": "china · 중국",
+          "terms": [
+            "china",
+            "chinese",
+            "중국"
+          ]
+        },
+        {
+          "label": "russia · 러시아",
+          "terms": [
+            "russia",
+            "russian",
+            "러시아"
+          ]
+        },
+        {
+          "label": "ukraine · 우크라이나",
+          "terms": [
+            "ukraine",
+            "우크라이나"
+          ]
+        }
+      ],
+      "boundary": "reporter_handoff_estimate"
+    },
+    {
+      "kind": "keyword_rubric",
+      "article": 2,
+      "start": 155.48,
+      "end": 254.28,
+      "transcript": "The AI giant Anthropics debuted on the NASDAQ at $111.50 a share, About 30% above its $83 IPO price, giving it an initial valuation of one and a half trillion dollars before ringing the opening bell today CEO Daria Amade read a statement. is a gigantic difference between how AI will go if we pay little attention to safety versus how it will go if we are obsessed with safety. And an obsession with safety and public benefit has been built into anthropics DNA from the start. It's NPR. An Illinois man accused of plotting a mass shooting at a Chicago-area Hindu temple last month pleaded not guilty in court today to terrorism and other charges. say 19-year-old Alexandros Paparakis was on the verge of carrying out an attack outside the temple in Aurora, but his gun jammed. He said a search of his house, turned up a rifle ammunition and a patch displaying imagery associated with white supremacist extremism. FIFA president Gianni Infantino will face two challengers in the upcoming election to head the world soccer body, but as NPR's Rafael Nam tells us, Infantino appears well-placed to win another term. The president of the French Football Federation, Philippe Diallo, and Japanese soccer official Kozo Tashima are officially running in the FIFA elections scheduled for mid-March. By the tally by the Associated Press, shows Infantino is only a vote short of the threshold needed to be re-elected, based on endorsements from soccer federations around the world.",
+      "keywords": [
         {
           "label": "president · 대통령",
           "terms": [
@@ -190,44 +283,40 @@
           ]
         },
         {
-          "label": "military · 군사",
+          "label": "court · 법원",
           "terms": [
-            "military",
-            "troops",
-            "군사",
-            "군대",
-            "군인"
+            "court",
+            "judge",
+            "법원",
+            "판사"
           ]
         },
         {
-          "label": "agreement · 합의",
+          "label": "prices · 물가",
           "terms": [
-            "agreement",
-            "deal",
-            "deals",
-            "합의",
-            "협정",
-            "거래",
-            "계약"
+            "prices",
+            "price",
+            "물가",
+            "가격"
+          ]
+        },
+        {
+          "label": "attack · 공격",
+          "terms": [
+            "attack",
+            "attacks",
+            "공격",
+            "공습"
           ]
         }
       ],
       "boundary": "reporter_handoff_estimate"
-    },
-    {
-      "kind": "keyword_rubric",
-      "article": 2,
-      "start": 207.88,
-      "end": 259.86,
-      "transcript": "Globally, Muslims are expected to outnumber Christians Christians by the year 2035, and PRS Jason DeRose reports that's among the findings of a new study on religious trends from Pew Research. Pew projects that by the year 2070, Christians will decline to less than half of the U.S. population, though they'll remain the country's largest single religious group. At the same time, religiously unaffiliated people will rise to just over 40%, mostly due to people leaving Christianity. Currently, Judaism is the largest non-Christian religion in U.S., but researchers say that by 2070, Jews will be outnumbered by both Muslims and Hindus in this country if recent demographic trends continue. Globally, Pew projects that more than half of the world's Christians will live in sub-Saharan Africa by the year 2070, largely due to higher birth rates there. Jason DeRose, NPR News.",
-      "keywords": [],
-      "boundary": "reporter_handoff_estimate"
     }
   ],
   "fullTranscript": {
-    "transcript": "This message comes from Google Workspace with Gemini, one subscription that does it all. Personalized AI and premium business versions of Gmail, Google Docs, Drive, and more. Try it free for 14 days at goo.gle slash Workspace with Gemini. This is NPR News Now. The latest headlines every hour. Live from NPR News, I'm Lakshmi Singh. The U.S. is re-establishing ties with Venezuela. Defense Secretary Pete Heksteth announced the agreement during a visit to Caracas, underscoring the Trump administration's desire to expand its influence in the South American country since the U.S. military raid that removed Venezuelan President Nicolás Maduro from power. A Maduro ally took over, though her term formally expired in July, and no date has been set for a new presidential election, unnerving many Venezuelans about the U.S.'s priorities in their country. Hakeem Jeffries has been nominated for House Speaker. The Democrats take control of Congress in January. Here's NPR's Gloria Grisales. House Democrats voted during a closed-door meeting, 251 to 11, in support of Hakeem Jeffries' nomination. Afterwards, current House Minority Leader told reporters his caucus will work to deliver for the American people. Our job is to fight MAGA extremism, not each other, to fight MAGA extremism and to get big things done. Several incoming, more left-wing House members who did not support Jeffries' bid said they're still pushing for a more aggressive agenda to address affordability, immigration, and other issues. The House floor will hold its vote for Speaker on the first day of the new Congress next year, on January 3. Claudia Ritzalis, NPR News, the Capitol. At yesterday's earnings call, chair of NVIDIA's board ruled out Jensen Wong's reinstatement as CEO, despite pressure from Wong's allies. NPR's John Ruich says Wong's the subject of multiple investigations involving his connection to a suspected Chinese spy. are allegations that companies like the one run by the Chinese woman that Jensen Huang reportedly had an affair with were helping China get a hold of banned ships that could potentially point to violations of U.S. export controls. That's NPR's John Ruich reporting. Homeland Security Secretary Mark Wayne Mullins testifying on Capitol Hill at a hearing about the recent spate of global tech outages arguing there's no evidence they resulted from cyber attacks, but AI is a factor. And Piers Windsor Johnson looks at the latest disruption to Apple and reporting on how AI may be pushing companies to fix security flaws faster. Apple says an internal update disrupted iCloud and Apple Pay. The outage is the latest in a string of disruptions affecting the FAA, United Airlines, Microsoft, Zelle, and the National Security Agency. Lori Crainer, a cybersecurity researcher at Carnegie Mellon University, points to the pressure to fix security flaws. Things are moving faster. We need to upgrade faster. We need to protect against threats discovered by AI. So there may be more of a flurry of upgrading, which is causing outages when the upgrades are not being done carefully. That's NPR's Windsor Johnston. Globally, Muslims are expected to outnumber Christians Christians by the year 2035, and PRS Jason DeRose reports that's among the findings of a new study on religious trends from Pew Research. Pew projects that by the year 2070, Christians will decline to less than half of the U.S. population, though they'll remain the country's largest single religious group. At the same time, religiously unaffiliated people will rise to just over 40%, mostly due to people leaving Christianity. Currently, Judaism is the largest non-Christian religion in U.S., but researchers say that by 2070, Jews will be outnumbered by both Muslims and Hindus in this country if recent demographic trends continue. Globally, Pew projects that more than half of the world's Christians will live in sub-Saharan Africa by the year 2070, largely due to higher birth rates there. Jason DeRose, NPR News. David Beckham's luxury fragrances have allegedly been found on sale at a British discount store and a gas station bargain bin and the soccer-style icon is not having it. His commercial company DB Ventures is seeking $41 million in damages for breach of its licensing agreement with a German company. in New York argue the David Beckham brand should be associated with luxury, not with quote cheap discount products, but the company that's being sued accuses DB Ventures of using the suit filed in April to get out of its agreement it's asking that the lawsuit be dismissed. This is NPR.",
+    "transcript": "This is NPR News Now. The latest headlines every hour. Live from NPR News, I'm Lakshmi Singh. President Trump is returning from a historic trilateral summit in Asia with the of China, his host, and Russia. This as Russia leader Vladimir Putin threatens revenge for Ukraine's bombing of a bridge linking Russia's mainland to the annex Crimean Peninsula. up. And P.S. Charles Maine's has details for Moscow. The 12-mile Kerch Bridge from Russia to Crimea has always been a symbol of Russia's claim to the peninsula, illegally annexed from Ukraine in 2014, and a pet project of the Russian presidents. For that reason, Ukraine has repeatedly targeted the structure, including several missile attacks this week that sent a section of road tumbling into the sea. Addressing the media following his meetings with Presidents Trump and Xi, Putin acknowledged serious damage to the bridge, but vowed Russia's response would be even more painful. Putin also claimed at the time the bridge was struck, he'd been on the verge of agreeing to a ceasefire with Ukraine on energy and maritime targets. That deal, said Putin, was no longer on offer. Charles Mains, NPR News, Moscow. The International Court of Justice says Myanmar committed genocide against the Rohingya Muslim minority during the 2017 crackdown in Rakhine State. It's the first time the United Nations highest court has found a country responsible for genocide. A State Department spokesperson says the U.S. is reviewing the implications of the findings from the ICJ. The ruling is legally binding, but the court has no way to enforce it. Torrential rain is flooding cities in California and Florida as the country heads into a busy holiday travel week. Here's NPR's Ava Berger. Social media is filled with images of flooded homes, underwater streets, and it's not just in one U.S. city. Palm Bay and Broward, Florida, as well as San Francisco, California, are just three cities dealing with massive waves, historic rainfall, and seemingly never-ending storms. This year, Super El Nino is making that wet weather more likely. As for travel, it's too early to know exactly how Thanksgiving week will look. But Jeff Baradelli, a chief meteorologist at WFLA-TV in Tampa Bay, says more storms are expected through the weekend and next week on the East Coast. It doesn't look like it's going to be an easy week for travel. AAA says about 81 million Americans will be traveling next week. Ava Berger, NPR News. The AI giant Anthropics debuted on the NASDAQ at $111.50 a share, About 30% above its $83 IPO price, giving it an initial valuation of one and a half trillion dollars before ringing the opening bell today CEO Daria Amade read a statement. is a gigantic difference between how AI will go if we pay little attention to safety versus how it will go if we are obsessed with safety. And an obsession with safety and public benefit has been built into anthropics DNA from the start. It's NPR. An Illinois man accused of plotting a mass shooting at a Chicago-area Hindu temple last month pleaded not guilty in court today to terrorism and other charges. say 19-year-old Alexandros Paparakis was on the verge of carrying out an attack outside the temple in Aurora, but his gun jammed. He said a search of his house, turned up a rifle ammunition and a patch displaying imagery associated with white supremacist extremism. FIFA president Gianni Infantino will face two challengers in the upcoming election to head the world soccer body, but as NPR's Rafael Nam tells us, Infantino appears well-placed to win another term. The president of the French Football Federation, Philippe Diallo, and Japanese soccer official Kozo Tashima are officially running in the FIFA elections scheduled for mid-March. By the tally by the Associated Press, shows Infantino is only a vote short of the threshold needed to be re-elected, based on endorsements from soccer federations around the world. It's a remarkable comeback after Infantino sparked major controversy after working on a secret plan to sell a stake in the World Cup to private investors. Infantino quickly abandoned the proposal and has been traveling around the world to make amends. Rafal Naum, NPR News. Grand Theft Auto 6 made a major debut today. The series' latest installment dropped at midnight, time around the globe. I'm Lakshmi Singh, NPR News. Want to hear this podcast without sponsor breaks? Amazon Prime members can listen to NPR News now, sponsor free through Amazon Music or Or you can also support NPR's vital journalism and get NPR Plus at plus.npr.org. That's plus.npr.org.",
     "start": 0.0,
-    "end": 303.56,
+    "end": 304.06,
     "kind": "full_broadcast"
   }
 }
