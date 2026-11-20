@@ -1,5 +1,5 @@
 {
-  "title": "3pm ET, November 19 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "3pm ET, November 20 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
   "generator_version": 15,
   "verified": false,
@@ -10,169 +10,150 @@
     "human_verified": false
   },
   "sourceNote": "문제를 만들 때 사용한 고정 음원을 재생합니다. 빈칸 앞뒤 영어 지문과 2단어 정답을 두 음성인식 모델이 비교했습니다. 자동 전사이므로 오류가 있을 수 있습니다.",
-  "generated_at": "2026-11-19T21:00:00.252769+00:00",
+  "generated_at": "2026-11-20T20:58:37.719717+00:00",
   "episode": {
-    "id": "c85056a8-2ded-4225-8c35-267d2554a82b",
-    "title": "3pm ET, November 19 | The latest headlines from NPR",
-    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/4f533400e0995e67d8be5225f409fec6678e2fbfe9f5e03f085a9e1e8dafa444.mp3",
-    "date": "2026-11-19T20:09:37+00:00",
+    "id": "02873056-2c9e-4587-bd3c-c1bae6c0ca1a",
+    "title": "3pm ET, November 20 | The latest headlines from NPR",
+    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/a698cc652bca66101ca4fa31915641671bfd13571a88694f2aea91b7b1e2aabb.mp3",
+    "date": "2026-11-20T20:09:38+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "문제 생성에 사용한 고정 음원",
-    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/0e219590-1294-4f8f-aa05-c9a65fe6ea42/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=0e219590-1294-4f8f-aa05-c9a65fe6ea42&feed=O9WlY7a5&t=podcast&e=nx-s1-20261119-1500-long&p=500005&d=280&size=4586728",
-    "audio_sha256": "4f533400e0995e67d8be5225f409fec6678e2fbfe9f5e03f085a9e1e8dafa444"
+    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/9be48176-1967-4bec-9080-c39615a9cc67/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=9be48176-1967-4bec-9080-c39615a9cc67&feed=O9WlY7a5&t=podcast&e=nx-s1-20261120-1500-long&p=500005&d=280&size=4586728",
+    "audio_sha256": "a698cc652bca66101ca4fa31915641671bfd13571a88694f2aea91b7b1e2aabb"
   },
   "items": [
     {
-      "sentence": "of Russia's claim to the peninsula, Moscow ____ from Ukraine in 2014,",
+      "sentence": "Singh. President Trump says the U.S. ____ be selling China older",
       "meaning_context": {
-        "start": 16.76,
-        "end": 57.92,
-        "text": "China, his host, and Russia. This as Russia leader Vladimir Putin threatens revenge for Ukraine's bombing of a bridge linking Russia's mainland to the annex Crimean Peninsula. up. And P.S. Charles Maine's has details for Moscow. The 12-mile Kerch Bridge from Russia to Crimea has always been a symbol of Russia's claim to the peninsula, Moscow illegally annexed from Ukraine in 2014, and a pet project of the Russian presidents. For that reason, Ukraine has repeatedly targeted the structure, including several missile attacks this week that sent a section of road tumbling into the sea. Addressing the media following his meetings with Presidents Trump and Xi, Putin acknowledged serious damage to the bridge, but vowed Russia's response would be even",
+        "start": 6.38,
+        "end": 47.36,
+        "text": "annual Capital One travel credit. Capital One. What's in your wallet? Terms of fly. Details at CapitalOne.com. This is NPR News Now. The latest headlines every hour. Live from NPR News, I'm Lakshmi Singh. President Trump says the U.S. should only be selling China older chips in the wake of intensified scrutiny of Nvidia, the world's top supplier of high-end chips used for AI. You have to understand China makes chips too. And if we're not going to sell them, they'll make them themselves. So that's one of the reasons that Jensen would use, used to try and say like, hey, and he was, he's a good man. By the way, he's",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 34.88,
-      "context_end": 39.06,
-      "answer": "illegally annexed",
-      "hint": "해당 음성 구간의 표현 · I… A… (2단어)",
+      "context_start": 24.56,
+      "context_end": 28.72,
+      "answer": "should only",
+      "hint": "해당 음성 구간의 표현 · S… O… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 36.94,
-      "end": 37.62
+      "start": 26.86,
+      "end": 27.26
     },
     {
-      "sentence": "Xi, Putin acknowledged serious damage to the ____ vowed Russia's response would",
+      "sentence": "Made ____ decisions.",
       "meaning_context": {
-        "start": 35.44,
-        "end": 75.98,
-        "text": "claim to the peninsula, Moscow illegally annexed from Ukraine in 2014, and a pet project of the Russian presidents. For that reason, Ukraine has repeatedly targeted the structure, including several missile attacks this week that sent a section of road tumbling into the sea. Addressing the media following his meetings with Presidents Trump and Xi, Putin acknowledged serious damage to the bridge, but vowed Russia's response would be even more painful. Putin also claimed at the time the bridge was struck, he'd been on the verge of agreeing to a ceasefire with Ukraine on energy and maritime targets. That deal, said Putin, was no longer on offer. Charles Mains, NPR News, Moscow. The International Court of Justice says Myanmar committed genocide against the Rohingya",
+        "start": 29.96,
+        "end": 71.34,
+        "text": "intensified scrutiny of Nvidia, the world's top supplier of high-end chips used for AI. You have to understand China makes chips too. And if we're not going to sell them, they'll make them themselves. So that's one of the reasons that Jensen would use, used to try and say like, hey, and he was, he's a good man. By the way, he's a man while we're at it. Made some bad decisions. Trump defending Nvidia's former CEO, Jensen Wong, who who recently resigned after reports of an affair with a suspected Chinese spy. The president was addressing reporters about his first trilateral meeting yesterday with the presidents of China, Xi Jinping, and of Russia, Vladimir Putin. Trump said he and China agreed",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 53.1,
-      "context_end": 57.4,
-      "answer": "bridge but",
-      "hint": "해당 음성 구간의 표현 · B… B… (2단어)",
+      "context_start": 50.08,
+      "context_end": 51.72,
+      "answer": "some bad",
+      "hint": "해당 음성 구간의 표현 · S… B… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 55.5,
-      "end": 55.94
+      "start": 50.3,
+      "end": 51.14
     },
     {
-      "sentence": "2017 crackdown in Rakhine State. It's the ____ the United Nations",
+      "sentence": "give the chair or ranking member subpoena ____",
       "meaning_context": {
-        "start": 61.48,
-        "end": 102.44,
-        "text": "he'd been on the verge of agreeing to a ceasefire with Ukraine on energy and maritime targets. That deal, said Putin, was no longer on offer. Charles Mains, NPR News, Moscow. The International Court of Justice says Myanmar committed genocide against the Rohingya Muslim minority during the 2017 crackdown in Rakhine State. It's the first time the United Nations highest court has found a country responsible for genocide. A State Department spokesperson says the U.S. is reviewing the implications of the findings from the ICJ. The ruling is legally binding, but the court has no way to enforce it. Torrential rain is flooding cities in California and",
+        "start": 102.26,
+        "end": 143.06,
+        "text": "on NPR's Here and Now. The House Ethics Committee is trying to change the way it handles sexual misconduct investigations, here's NPR's Elena Moore. The panel approved the internal rule changes on Thursday by a unanimous vote. It comes after the committee announced earlier in the week it was reviewing several rule changes, including one that would give the chair or ranking member subpoena power without needing a full committee vote. Another focused on, quote, consolidating deadlines for when a member who's being investigated has to respond to findings. These steps come after multiple House lawmakers faced high-profile sexual harassment and misconduct allegations this year, and the committee weathered criticism for moving too slowly on investigating cases. Alaina Moore,",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 77.82,
-      "context_end": 83.04,
-      "answer": "first time",
-      "hint": "해당 음성 구간의 표현 · F… T… (2단어)",
+      "context_start": 120.26,
+      "context_end": 123.12,
+      "answer": "power without",
+      "hint": "해당 음성 구간의 표현 · P… W… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 81.54,
-      "end": 82.12
+      "start": 122.32,
+      "end": 123.12
     },
     {
-      "sentence": "cities in California and Florida as the ____ into a busy",
+      "sentence": "Federal Appeals Court has temporarily suspended the ____ the Army's planned",
       "meaning_context": {
-        "start": 83.04,
-        "end": 123.52,
-        "text": "highest court has found a country responsible for genocide. A State Department spokesperson says the U.S. is reviewing the implications of the findings from the ICJ. The ruling is legally binding, but the court has no way to enforce it. Torrential rain is flooding cities in California and Florida as the country heads into a busy holiday travel week. Here's NPR's Ava Berger. Social media is filled with images of flooded homes, underwater streets, and it's not just in one U.S. city. Palm Bay and Broward, Florida, as well as San Francisco, California, are just three cities dealing with massive waves, historic rainfall,",
+        "start": 126.56,
+        "end": 167.44,
+        "text": "consolidating deadlines for when a member who's being investigated has to respond to findings. These steps come after multiple House lawmakers faced high-profile sexual harassment and misconduct allegations this year, and the committee weathered criticism for moving too slowly on investigating cases. Alaina Moore, NPR News. The Federal Appeals Court has temporarily suspended the permit for the Army's planned detonation of roughly five tons of unstable lead-base explosives in southeast Iowa. Here's Iowa Public Radio's Tom Barton. The court put the EPA's emergency permit on hold late Thursday while it considers a request to block the blast at the Iowa Army Ammunition Plant in Middletown. Two Iowa environmental groups say the EPA didn't fully consider safer",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 100.44,
-      "context_end": 104.98,
-      "answer": "country heads",
-      "hint": "해당 음성 구간의 표현 · C… H… (2단어)",
+      "context_start": 144.52,
+      "context_end": 148.12,
+      "answer": "permit for",
+      "hint": "해당 음성 구간의 표현 · P… F… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 103.18,
-      "end": 103.68
+      "start": 146.5,
+      "end": 147.34
     },
     {
-      "sentence": "week on the East Coast. It doesn't ____ it's going to be",
+      "sentence": "the public. After Iowa and Illinois lawmakers ____ a delay, the Army",
       "meaning_context": {
-        "start": 125.44,
-        "end": 166.44,
-        "text": "storms. This year, Super El Nino is making that wet weather more likely. As for travel, it's too early to know exactly how Thanksgiving week will look. But Jeff Baradelli, a chief meteorologist at WFLA-TV in Tampa Bay, says more storms are expected through the weekend and next week on the East Coast. It doesn't look like it's going to be an easy week for travel. AAA says about 81 million Americans will be traveling next week. Ava Berger, NPR News. The AI giant Anthropics debuted on the NASDAQ at $111.50 a share, About 30% above its $83 IPO price, giving it an initial valuation of one and a",
+        "start": 160.6,
+        "end": 199.42,
+        "text": "at the Iowa Army Ammunition Plant in Middletown. Two Iowa environmental groups say the EPA didn't fully consider safer options. They say toxic-led dust could travel 100 miles or more, depending on the weather. Federal officials say they've been planning since March and are prepared to take extensive precautions to protect the public. After Iowa and Illinois lawmakers called for a delay, the Army postponed the blast to Monday. It says detonating the 68 drums where they're stored inside earth-covered concrete bunkers surrounded by sand-filled barriers and water misters, poses the lowest risk to the public. For NPR News, I'm Tom Barton in Des Moines. This is NPR News.",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 143.9,
-      "context_end": 147.02,
-      "answer": "look like",
-      "hint": "해당 음성 구간의 표현 · L… L… (2단어)",
+      "context_start": 178.2,
+      "context_end": 182.16,
+      "answer": "called for",
+      "hint": "해당 음성 구간의 표현 · C… F… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 145.78,
-      "end": 146.34
+      "start": 180.68,
+      "end": 181.3
     },
     {
-      "sentence": "we are obsessed with safety. And an ____ safety and public benefit",
+      "sentence": "Iraqi Prime Minister Ali al-Zaidi ____ to disarm Iraq's extensive",
       "meaning_context": {
-        "start": 160.26,
-        "end": 201.66,
-        "text": "share, About 30% above its $83 IPO price, giving it an initial valuation of one and a half trillion dollars before ringing the opening bell today CEO Daria Amade read a statement. There is a gigantic difference between how AI will go if we pay little attention to safety versus how it will go if we are obsessed with safety. And an obsession with safety and public benefit has been built into anthropics DNA from the start. It's NPR. An Illinois man accused of plotting a mass shooting at a Chicago-area Hindu temple last month pleaded not guilty in court today to terrorism and other charges. Police say 19-year-old Alexandros Paparakis was",
+        "start": 217.48,
+        "end": 258.9,
+        "text": "security officials announced Friday that government forces would deploy to Jervon Nasser, where Iran-backed Qatab Hezbollah has bases. The government has accused the paramilitary group and some government officials of oil smuggling operations in the area south of Baghdad. Iraqi Prime Minister Ali al-Zaidi has pledged to disarm Iraq's extensive network of armed groups that aren't fully under government control. While some have agreed, Katab Hezbollah, one of the most powerful, has refused to give up its weapons. Jane Araff, NPR News, Aman. New psychedelic treatments could become more widely available as soon as next year. Here's",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 178.28,
-      "context_end": 182.78,
-      "answer": "obsession with",
-      "hint": "해당 음성 구간의 표현 · O… W… (2단어)",
+      "context_start": 235.86,
+      "context_end": 240.78,
+      "answer": "has pledged",
+      "hint": "해당 음성 구간의 표현 · H… P… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 180.4,
-      "end": 181.44
+      "start": 237.88,
+      "end": 238.76
     },
     {
-      "sentence": "rifle ammunition and a patch displaying imagery ____ white supremacist extremism.",
+      "sentence": "minority of patients do experience new and ____ difficulties in the weeks",
       "meaning_context": {
-        "start": 192.74,
-        "end": 234.72,
-        "text": "temple last month pleaded not guilty in court today to terrorism and other charges. Police say 19-year-old Alexandros Paparakis was on the verge of carrying out an attack outside the temple in Aurora, but his gun jammed. He said a search of his house, turned up a rifle ammunition and a patch displaying imagery associated with white supremacist extremism. FIFA president Gianni Infantino will face two challengers in the upcoming election to head the world soccer body, but as NPR's Rafael Nam tells us, Infantino appears well-placed to win another term. The president of the French Football Federation, Philippe Diallo,",
+        "start": 249.24,
+        "end": 290.07,
+        "text": "has refused to give up its weapons. Jane Araff, NPR News, Aman. New psychedelic treatments could become more widely available as soon as next year. Here's NPR's Will Stowe. Studies on psychedelics screen patients carefully beforehand and monitor them closely while they're under the influence. However, a minority of patients do experience new and sometimes serious difficulties in the weeks and months after. Research suggests serious adverse events like suicidality are very rare in drug trials. Experts like Roman Politsky at Emory University School of Medicine, who's running a study on this, says it isn't being tracked well enough and the full array of problems aren't being documented. Quite common on the list are things",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 209.92,
-      "context_end": 216.34,
-      "answer": "associated with",
-      "hint": "해당 음성 구간의 표현 · A… W… (2단어)",
+      "context_start": 266.46,
+      "context_end": 270.79,
+      "answer": "sometimes serious",
+      "hint": "해당 음성 구간의 표현 · S… S… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 213.12,
-      "end": 214.38
+      "start": 268.85,
+      "end": 269.69
     }
   ],
   "summaryReview": {
     "kind": "keyword_rubric",
     "article": 1,
-    "start": 11.36,
-    "end": 108.16,
-    "transcript": "President Trump is returning from a historic trilateral summit in Asia with the of China, his host, and Russia. This as Russia leader Vladimir Putin threatens revenge for Ukraine's bombing of a bridge linking Russia's mainland to the annex Crimean Peninsula. up. And P.S. Charles Maine's has details for Moscow. The 12-mile Kerch Bridge from Russia to Crimea has always been a symbol of Russia's claim to the peninsula, illegally annexed from Ukraine in 2014, and a pet project of the Russian presidents. For that reason, Ukraine has repeatedly targeted the structure, including several missile attacks this week that sent a section of road tumbling into the sea. Addressing the media following his meetings with Presidents Trump and Xi, Putin acknowledged serious damage to the bridge, but vowed Russia's response would be even more painful. Putin also claimed at the time the bridge was struck, he'd been on the verge of agreeing to a ceasefire with Ukraine on energy and maritime targets. That deal, said Putin, was no longer on offer. Charles Mains, NPR News, Moscow. The International Court of Justice says Myanmar committed genocide against the Rohingya Muslim minority during the 2017 crackdown in Rakhine State. It's the first time the United Nations highest court has found a country responsible for genocide. A State Department spokesperson says the U.S. is reviewing the implications of the findings from the ICJ. The ruling is legally binding, but the court has no way to enforce it. Torrential rain is flooding cities in California and Florida as the country heads into a busy holiday travel week. Here's NPR's Ava Berger.",
+    "start": 25.72,
+    "end": 124.5,
+    "transcript": "President Trump says the U.S. should only be selling China older chips in the wake of intensified scrutiny of Nvidia, the world's top supplier of high-end chips used for AI. have to understand China makes chips too. And if we're not going to sell them, they'll make them themselves. that's one of the reasons that Jensen would use, used to try and say like, hey, and he was, he's a good man. By the way, he's a man while we're at it. Made some bad decisions. Trump defending Nvidia's former CEO, Jensen Wong, who recently resigned after reports of an affair with a suspected Chinese spy. The president was addressing reporters about his first trilateral meeting yesterday with the presidents of China, Xi Jinping, and of Russia, Vladimir Putin. Trump said he and China agreed on joint guardrails for AI, and Trump also expressed warm sentiments for Putin. U.S. ambassador to Russia, Michael McFall, had this reaction to that. think he understands what it means to represent the United States of America when he goes abroad, and he kind of said it himself. Caitlin Collins asked him about, you know, what you're doing for America. And he said, well, I don't, I think he meant I don't speak for America, or maybe, but I think he said I don't speak to America, but Putin is my friend. McFall on NPR's Here and Now. The House Ethics Committee is trying to change the way it handles sexual misconduct investigations, here's NPR's Elena Moore. The panel approved the internal rule changes on Thursday by a unanimous vote. It comes after the committee announced earlier in the week it was reviewing several rule changes, including one that would give the chair or ranking member subpoena power without needing a full committee vote.",
     "keywords": [
       {
         "label": "trump · 트럼프",
         "terms": [
           "trump",
           "트럼프"
-        ]
-      },
-      {
-        "label": "asia · 아시아",
-        "terms": [
-          "asia",
-          "asian",
-          "아시아"
-        ]
-      },
-      {
-        "label": "summit · 정상회담",
-        "terms": [
-          "summit",
-          "summits",
-          "정상회담",
-          "정상 회담",
-          "정상회의",
-          "정상 회의"
         ]
       },
       {
@@ -192,10 +173,29 @@
         ]
       },
       {
-        "label": "ukraine · 우크라이나",
+        "label": "nvidia · 엔비디아",
         "terms": [
-          "ukraine",
-          "우크라이나"
+          "nvidia",
+          "엔비디아"
+        ]
+      },
+      {
+        "label": "resigned · 사임",
+        "terms": [
+          "resign",
+          "resigned",
+          "resignation",
+          "사임",
+          "사퇴"
+        ]
+      },
+      {
+        "label": "relationship · 관계",
+        "terms": [
+          "relationship",
+          "affair",
+          "관계",
+          "불륜"
         ]
       }
     ],
@@ -205,34 +205,15 @@
     {
       "kind": "keyword_rubric",
       "article": 1,
-      "start": 11.36,
-      "end": 108.16,
-      "transcript": "President Trump is returning from a historic trilateral summit in Asia with the of China, his host, and Russia. This as Russia leader Vladimir Putin threatens revenge for Ukraine's bombing of a bridge linking Russia's mainland to the annex Crimean Peninsula. up. And P.S. Charles Maine's has details for Moscow. The 12-mile Kerch Bridge from Russia to Crimea has always been a symbol of Russia's claim to the peninsula, illegally annexed from Ukraine in 2014, and a pet project of the Russian presidents. For that reason, Ukraine has repeatedly targeted the structure, including several missile attacks this week that sent a section of road tumbling into the sea. Addressing the media following his meetings with Presidents Trump and Xi, Putin acknowledged serious damage to the bridge, but vowed Russia's response would be even more painful. Putin also claimed at the time the bridge was struck, he'd been on the verge of agreeing to a ceasefire with Ukraine on energy and maritime targets. That deal, said Putin, was no longer on offer. Charles Mains, NPR News, Moscow. The International Court of Justice says Myanmar committed genocide against the Rohingya Muslim minority during the 2017 crackdown in Rakhine State. It's the first time the United Nations highest court has found a country responsible for genocide. A State Department spokesperson says the U.S. is reviewing the implications of the findings from the ICJ. The ruling is legally binding, but the court has no way to enforce it. Torrential rain is flooding cities in California and Florida as the country heads into a busy holiday travel week. Here's NPR's Ava Berger.",
+      "start": 25.72,
+      "end": 124.5,
+      "transcript": "President Trump says the U.S. should only be selling China older chips in the wake of intensified scrutiny of Nvidia, the world's top supplier of high-end chips used for AI. have to understand China makes chips too. And if we're not going to sell them, they'll make them themselves. that's one of the reasons that Jensen would use, used to try and say like, hey, and he was, he's a good man. By the way, he's a man while we're at it. Made some bad decisions. Trump defending Nvidia's former CEO, Jensen Wong, who recently resigned after reports of an affair with a suspected Chinese spy. The president was addressing reporters about his first trilateral meeting yesterday with the presidents of China, Xi Jinping, and of Russia, Vladimir Putin. Trump said he and China agreed on joint guardrails for AI, and Trump also expressed warm sentiments for Putin. U.S. ambassador to Russia, Michael McFall, had this reaction to that. think he understands what it means to represent the United States of America when he goes abroad, and he kind of said it himself. Caitlin Collins asked him about, you know, what you're doing for America. And he said, well, I don't, I think he meant I don't speak for America, or maybe, but I think he said I don't speak to America, but Putin is my friend. McFall on NPR's Here and Now. The House Ethics Committee is trying to change the way it handles sexual misconduct investigations, here's NPR's Elena Moore. The panel approved the internal rule changes on Thursday by a unanimous vote. It comes after the committee announced earlier in the week it was reviewing several rule changes, including one that would give the chair or ranking member subpoena power without needing a full committee vote.",
       "keywords": [
         {
           "label": "trump · 트럼프",
           "terms": [
             "trump",
             "트럼프"
-          ]
-        },
-        {
-          "label": "asia · 아시아",
-          "terms": [
-            "asia",
-            "asian",
-            "아시아"
-          ]
-        },
-        {
-          "label": "summit · 정상회담",
-          "terms": [
-            "summit",
-            "summits",
-            "정상회담",
-            "정상 회담",
-            "정상회의",
-            "정상 회의"
           ]
         },
         {
@@ -252,10 +233,29 @@
           ]
         },
         {
-          "label": "ukraine · 우크라이나",
+          "label": "nvidia · 엔비디아",
           "terms": [
-            "ukraine",
-            "우크라이나"
+            "nvidia",
+            "엔비디아"
+          ]
+        },
+        {
+          "label": "resigned · 사임",
+          "terms": [
+            "resign",
+            "resigned",
+            "resignation",
+            "사임",
+            "사퇴"
+          ]
+        },
+        {
+          "label": "relationship · 관계",
+          "terms": [
+            "relationship",
+            "affair",
+            "관계",
+            "불륜"
           ]
         }
       ],
@@ -264,24 +264,10 @@
     {
       "kind": "keyword_rubric",
       "article": 2,
-      "start": 155.48,
-      "end": 254.28,
-      "transcript": "The AI giant Anthropics debuted on the NASDAQ at $111.50 a share, About 30% above its $83 IPO price, giving it an initial valuation of one and a half trillion dollars before ringing the opening bell today CEO Daria Amade read a statement. is a gigantic difference between how AI will go if we pay little attention to safety versus how it will go if we are obsessed with safety. And an obsession with safety and public benefit has been built into anthropics DNA from the start. It's NPR. An Illinois man accused of plotting a mass shooting at a Chicago-area Hindu temple last month pleaded not guilty in court today to terrorism and other charges. say 19-year-old Alexandros Paparakis was on the verge of carrying out an attack outside the temple in Aurora, but his gun jammed. He said a search of his house, turned up a rifle ammunition and a patch displaying imagery associated with white supremacist extremism. FIFA president Gianni Infantino will face two challengers in the upcoming election to head the world soccer body, but as NPR's Rafael Nam tells us, Infantino appears well-placed to win another term. The president of the French Football Federation, Philippe Diallo, and Japanese soccer official Kozo Tashima are officially running in the FIFA elections scheduled for mid-March. By the tally by the Associated Press, shows Infantino is only a vote short of the threshold needed to be re-elected, based on endorsements from soccer federations around the world.",
+      "start": 144.1,
+      "end": 199.42,
+      "transcript": "The Federal Appeals Court has temporarily suspended the permit for the Army's planned detonation of roughly five tons of unstable lead-base explosives in southeast Iowa. Here's Iowa Public Radio's Barton. The court put the EPA's emergency permit on hold late Thursday while it considers a request to block the blast at the Iowa Army Ammunition Plant in Middletown. Two Iowa environmental groups say the EPA didn't fully consider safer options. They say toxic-led dust could travel 100 miles or more, depending on the weather. Federal officials say they've been planning since March and are prepared to take extensive precautions to protect the public. After Iowa and Illinois lawmakers called for a delay, the Army postponed the blast to Monday. It says detonating the 68 drums where they're stored inside earth-covered concrete bunkers surrounded by sand-filled barriers and water misters, poses the lowest risk to the public. For NPR News, I'm Tom Barton in Des Moines. This is NPR News.",
       "keywords": [
-        {
-          "label": "president · 대통령",
-          "terms": [
-            "president",
-            "대통령"
-          ]
-        },
-        {
-          "label": "election · 선거",
-          "terms": [
-            "election",
-            "선거"
-          ]
-        },
         {
           "label": "court · 법원",
           "terms": [
@@ -290,33 +276,15 @@
             "법원",
             "판사"
           ]
-        },
-        {
-          "label": "prices · 물가",
-          "terms": [
-            "prices",
-            "price",
-            "물가",
-            "가격"
-          ]
-        },
-        {
-          "label": "attack · 공격",
-          "terms": [
-            "attack",
-            "attacks",
-            "공격",
-            "공습"
-          ]
         }
       ],
       "boundary": "reporter_handoff_estimate"
     }
   ],
   "fullTranscript": {
-    "transcript": "This is NPR News Now. The latest headlines every hour. Live from NPR News, I'm Lakshmi Singh. President Trump is returning from a historic trilateral summit in Asia with the of China, his host, and Russia. This as Russia leader Vladimir Putin threatens revenge for Ukraine's bombing of a bridge linking Russia's mainland to the annex Crimean Peninsula. up. And P.S. Charles Maine's has details for Moscow. The 12-mile Kerch Bridge from Russia to Crimea has always been a symbol of Russia's claim to the peninsula, illegally annexed from Ukraine in 2014, and a pet project of the Russian presidents. For that reason, Ukraine has repeatedly targeted the structure, including several missile attacks this week that sent a section of road tumbling into the sea. Addressing the media following his meetings with Presidents Trump and Xi, Putin acknowledged serious damage to the bridge, but vowed Russia's response would be even more painful. Putin also claimed at the time the bridge was struck, he'd been on the verge of agreeing to a ceasefire with Ukraine on energy and maritime targets. That deal, said Putin, was no longer on offer. Charles Mains, NPR News, Moscow. The International Court of Justice says Myanmar committed genocide against the Rohingya Muslim minority during the 2017 crackdown in Rakhine State. It's the first time the United Nations highest court has found a country responsible for genocide. A State Department spokesperson says the U.S. is reviewing the implications of the findings from the ICJ. The ruling is legally binding, but the court has no way to enforce it. Torrential rain is flooding cities in California and Florida as the country heads into a busy holiday travel week. Here's NPR's Ava Berger. Social media is filled with images of flooded homes, underwater streets, and it's not just in one U.S. city. Palm Bay and Broward, Florida, as well as San Francisco, California, are just three cities dealing with massive waves, historic rainfall, and seemingly never-ending storms. This year, Super El Nino is making that wet weather more likely. As for travel, it's too early to know exactly how Thanksgiving week will look. But Jeff Baradelli, a chief meteorologist at WFLA-TV in Tampa Bay, says more storms are expected through the weekend and next week on the East Coast. It doesn't look like it's going to be an easy week for travel. AAA says about 81 million Americans will be traveling next week. Ava Berger, NPR News. The AI giant Anthropics debuted on the NASDAQ at $111.50 a share, About 30% above its $83 IPO price, giving it an initial valuation of one and a half trillion dollars before ringing the opening bell today CEO Daria Amade read a statement. is a gigantic difference between how AI will go if we pay little attention to safety versus how it will go if we are obsessed with safety. And an obsession with safety and public benefit has been built into anthropics DNA from the start. It's NPR. An Illinois man accused of plotting a mass shooting at a Chicago-area Hindu temple last month pleaded not guilty in court today to terrorism and other charges. say 19-year-old Alexandros Paparakis was on the verge of carrying out an attack outside the temple in Aurora, but his gun jammed. He said a search of his house, turned up a rifle ammunition and a patch displaying imagery associated with white supremacist extremism. FIFA president Gianni Infantino will face two challengers in the upcoming election to head the world soccer body, but as NPR's Rafael Nam tells us, Infantino appears well-placed to win another term. The president of the French Football Federation, Philippe Diallo, and Japanese soccer official Kozo Tashima are officially running in the FIFA elections scheduled for mid-March. By the tally by the Associated Press, shows Infantino is only a vote short of the threshold needed to be re-elected, based on endorsements from soccer federations around the world. It's a remarkable comeback after Infantino sparked major controversy after working on a secret plan to sell a stake in the World Cup to private investors. Infantino quickly abandoned the proposal and has been traveling around the world to make amends. Rafal Naum, NPR News. Grand Theft Auto 6 made a major debut today. The series' latest installment dropped at midnight, time around the globe. I'm Lakshmi Singh, NPR News. Want to hear this podcast without sponsor breaks? Amazon Prime members can listen to NPR News now, sponsor free through Amazon Music or Or you can also support NPR's vital journalism and get NPR Plus at plus.npr.org. That's plus.npr.org.",
+    "transcript": "This message comes from Capital One with the Venture X-Card. Earn unlimited double miles and a $300 annual Capital One travel credit. Capital One. What's in your wallet? of fly. at CapitalOne.com. This is NPR News Now. The latest headlines every hour. Live from NPR News, I'm Lakshmi Singh. President Trump says the U.S. should only be selling China older chips in the wake of intensified scrutiny of Nvidia, the world's top supplier of high-end chips used for AI. have to understand China makes chips too. And if we're not going to sell them, they'll make them themselves. that's one of the reasons that Jensen would use, used to try and say like, hey, and he was, he's a good man. By the way, he's a man while we're at it. Made some bad decisions. Trump defending Nvidia's former CEO, Jensen Wong, who recently resigned after reports of an affair with a suspected Chinese spy. The president was addressing reporters about his first trilateral meeting yesterday with the presidents of China, Xi Jinping, and of Russia, Vladimir Putin. Trump said he and China agreed on joint guardrails for AI, and Trump also expressed warm sentiments for Putin. U.S. ambassador to Russia, Michael McFall, had this reaction to that. think he understands what it means to represent the United States of America when he goes abroad, and he kind of said it himself. Caitlin Collins asked him about, you know, what you're doing for America. And he said, well, I don't, I think he meant I don't speak for America, or maybe, but I think he said I don't speak to America, but Putin is my friend. McFall on NPR's Here and Now. The House Ethics Committee is trying to change the way it handles sexual misconduct investigations, here's NPR's Elena Moore. The panel approved the internal rule changes on Thursday by a unanimous vote. It comes after the committee announced earlier in the week it was reviewing several rule changes, including one that would give the chair or ranking member subpoena power without needing a full committee vote. Another focused on, quote, consolidating deadlines for when a member who's being investigated has to respond to findings. These steps come after multiple House lawmakers faced high-profile sexual harassment and misconduct allegations this year, and the committee weathered criticism for moving too slowly on investigating cases. Alaina Moore, NPR News. The Federal Appeals Court has temporarily suspended the permit for the Army's planned detonation of roughly five tons of unstable lead-base explosives in southeast Iowa. Here's Iowa Public Radio's Barton. The court put the EPA's emergency permit on hold late Thursday while it considers a request to block the blast at the Iowa Army Ammunition Plant in Middletown. Two Iowa environmental groups say the EPA didn't fully consider safer options. They say toxic-led dust could travel 100 miles or more, depending on the weather. Federal officials say they've been planning since March and are prepared to take extensive precautions to protect the public. After Iowa and Illinois lawmakers called for a delay, the Army postponed the blast to Monday. It says detonating the 68 drums where they're stored inside earth-covered concrete bunkers surrounded by sand-filled barriers and water misters, poses the lowest risk to the public. For NPR News, I'm Tom Barton in Des Moines. This is NPR News. The Iraqi government has reached a deal with a major Iran-backed militia over control of bases near Baghdad. NPR's Jana Raff reports the move diffuses fears over clashes between militia fighters and Iraqi security forces. Iraqi security officials announced Friday that government forces would deploy to Jervon Nasser, where Iran-backed Qatab Hezbollah has bases. The government has accused the paramilitary group and some government officials of oil smuggling operations in the area south of Baghdad. Iraqi Prime Minister Ali al-Zaidi has pledged to disarm Iraq's extensive network of armed groups that aren't fully under government control. While some have agreed, Katab Hezbollah, one of the most powerful, has refused to give up its weapons. Jane Araff, NPR News, Aman. New psychedelic treatments could become more widely available as soon as next year. Here's NPR's Will Stowe. on psychedelics screen patients carefully beforehand and monitor them closely while they're under the influence. However, a minority of patients do experience new and sometimes serious difficulties in the weeks and months after. suggests serious adverse events like suicidality are very rare in drug trials. Experts like Roman Politsky at Emory University School of Medicine, who's running a study on this, says it isn't being tracked well enough and the full array of problems aren't being documented. Quite common on the list are things like anxiety, depression. Others are existential distress, insomnia, and feeling disassociated. Will Stone, NPR News. is NPR. This message comes from Schwab. At Schwab, you can get everything from self-directed investing to full-service wealth management all in one place. No matter your investing goal, life stage, amount to invest or know-how, you can invest your way with Schwab.",
     "start": 0.0,
-    "end": 304.06,
+    "end": 317.15,
     "kind": "full_broadcast"
   }
 }
