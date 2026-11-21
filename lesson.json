@@ -1,5 +1,5 @@
 {
-  "title": "3pm ET, November 20 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "3pm ET, November 21 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
   "generator_version": 15,
   "verified": false,
@@ -10,144 +10,144 @@
     "human_verified": false
   },
   "sourceNote": "문제를 만들 때 사용한 고정 음원을 재생합니다. 빈칸 앞뒤 영어 지문과 2단어 정답을 두 음성인식 모델이 비교했습니다. 자동 전사이므로 오류가 있을 수 있습니다.",
-  "generated_at": "2026-11-20T20:58:37.719717+00:00",
+  "generated_at": "2026-11-21T20:49:46.837832+00:00",
   "episode": {
-    "id": "02873056-2c9e-4587-bd3c-c1bae6c0ca1a",
-    "title": "3pm ET, November 20 | The latest headlines from NPR",
-    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/a698cc652bca66101ca4fa31915641671bfd13571a88694f2aea91b7b1e2aabb.mp3",
-    "date": "2026-11-20T20:09:38+00:00",
+    "id": "66cc06f4-9367-4837-8a91-52b385d00d6c",
+    "title": "3pm ET, November 21 | The latest headlines from NPR",
+    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/10a21154f0401f7ba306acb69dfadd91fc3637494416f885aada1877df1c054d.mp3",
+    "date": "2026-11-21T20:09:30+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "문제 생성에 사용한 고정 음원",
-    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/9be48176-1967-4bec-9080-c39615a9cc67/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=9be48176-1967-4bec-9080-c39615a9cc67&feed=O9WlY7a5&t=podcast&e=nx-s1-20261120-1500-long&p=500005&d=280&size=4586728",
-    "audio_sha256": "a698cc652bca66101ca4fa31915641671bfd13571a88694f2aea91b7b1e2aabb"
+    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/5ea4d8e9-ebf4-4389-aa7c-ecb93f22d17d/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=5ea4d8e9-ebf4-4389-aa7c-ecb93f22d17d&feed=O9WlY7a5&t=podcast&e=nx-s1-20261121-1500-long&p=500005&d=280&size=4586728",
+    "audio_sha256": "10a21154f0401f7ba306acb69dfadd91fc3637494416f885aada1877df1c054d"
   },
   "items": [
     {
-      "sentence": "Singh. President Trump says the U.S. ____ be selling China older",
+      "sentence": "know at this point is that Russia ____ launched",
       "meaning_context": {
-        "start": 6.38,
-        "end": 47.36,
-        "text": "annual Capital One travel credit. Capital One. What's in your wallet? Terms of fly. Details at CapitalOne.com. This is NPR News Now. The latest headlines every hour. Live from NPR News, I'm Lakshmi Singh. President Trump says the U.S. should only be selling China older chips in the wake of intensified scrutiny of Nvidia, the world's top supplier of high-end chips used for AI. You have to understand China makes chips too. And if we're not going to sell them, they'll make them themselves. So that's one of the reasons that Jensen would use, used to try and say like, hey, and he was, he's a good man. By the way, he's",
+        "start": 12.38,
+        "end": 53.1,
+        "text": "history this week with the first-ever trilateral meeting with the leaders of China and Russia. The question is, will there be an immediate or lasting impact? NPR's Ron Elving has more. It could have if these various vows of peaceful cooperation bear fruit, or if these vaunted trade deals come to pass. But what we do know at this point is that Russia this week launched one of its most massive assaults against Ukraine since it first invaded that country in 2022. Assaults against civilian targets that also struck Poland, a NATO alloy of the US. And it makes a difference that Trump was more interested in meeting with Chinese President Xi than he was in confronting that country's efforts to obtain the most",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 24.56,
-      "context_end": 28.72,
-      "answer": "should only",
-      "hint": "해당 음성 구간의 표현 · S… O… (2단어)",
+      "context_start": 31.08,
+      "context_end": 33.4,
+      "answer": "this week",
+      "hint": "해당 음성 구간의 표현 · T… W… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 26.86,
-      "end": 27.26
+      "start": 32.68,
+      "end": 33.08
     },
     {
-      "sentence": "Made ____ decisions.",
+      "sentence": "on Palestinian olive farmers, as well as ____ and diplomats who try",
       "meaning_context": {
-        "start": 29.96,
-        "end": 71.34,
-        "text": "intensified scrutiny of Nvidia, the world's top supplier of high-end chips used for AI. You have to understand China makes chips too. And if we're not going to sell them, they'll make them themselves. So that's one of the reasons that Jensen would use, used to try and say like, hey, and he was, he's a good man. By the way, he's a man while we're at it. Made some bad decisions. Trump defending Nvidia's former CEO, Jensen Wong, who who recently resigned after reports of an affair with a suspected Chinese spy. The president was addressing reporters about his first trilateral meeting yesterday with the presidents of China, Xi Jinping, and of Russia, Vladimir Putin. Trump said he and China agreed",
+        "start": 55.56,
+        "end": 96.64,
+        "text": "And PR's Ron Elving. The U.N. says there have been more Israeli settler attacks on the Palestinian olive harvest this year than in any other year since record keeping began. And PR's Lauren Freire has details. The United Nations cites more than 400 Israeli settler attacks since September on Palestinian olive farmers, as well as activists, journalists and diplomats who try to help them. And it says more than 55,000 pounds of produce have been vandalized or stolen. This weekend, a Palestinian lawmaker in Israel's parliament shared video he says shows Israeli settlers stealing fruit and vegetables from Palestinian vendors in the occupied West Bank, accusing settlers who serve in Prime Minister",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 50.08,
-      "context_end": 51.72,
-      "answer": "some bad",
-      "hint": "해당 음성 구간의 표현 · S… B… (2단어)",
+      "context_start": 72.84,
+      "context_end": 77.8,
+      "answer": "activists journalists",
+      "hint": "해당 음성 구간의 표현 · A… J… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 50.3,
-      "end": 51.14
+      "start": 75.46,
+      "end": 76.58
     },
     {
-      "sentence": "give the chair or ranking member subpoena ____",
+      "sentence": "Palestinian vendors in the occupied West Bank, ____ who serve in Prime",
       "meaning_context": {
-        "start": 102.26,
-        "end": 143.06,
-        "text": "on NPR's Here and Now. The House Ethics Committee is trying to change the way it handles sexual misconduct investigations, here's NPR's Elena Moore. The panel approved the internal rule changes on Thursday by a unanimous vote. It comes after the committee announced earlier in the week it was reviewing several rule changes, including one that would give the chair or ranking member subpoena power without needing a full committee vote. Another focused on, quote, consolidating deadlines for when a member who's being investigated has to respond to findings. These steps come after multiple House lawmakers faced high-profile sexual harassment and misconduct allegations this year, and the committee weathered criticism for moving too slowly on investigating cases. Alaina Moore,",
+        "start": 74.28,
+        "end": 115.34,
+        "text": "farmers, as well as activists, journalists and diplomats who try to help them. And it says more than 55,000 pounds of produce have been vandalized or stolen. This weekend, a Palestinian lawmaker in Israel's parliament shared video he says shows Israeli settlers stealing fruit and vegetables from Palestinian vendors in the occupied West Bank, accusing settlers who serve in Prime Minister Benjamin Netanyahu's far-right government of allowing them to do so. The Israeli military has said it seeks to prevent friction during the olive harvest. But the U.N. accuses it of, quote, acquiescence, support, and participation in attacks. Lauren Fryer and PR News, Tel Aviv. Ice agents will be allowed",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 120.26,
-      "context_end": 123.12,
-      "answer": "power without",
-      "hint": "해당 음성 구간의 표현 · P… W… (2단어)",
+      "context_start": 91.42,
+      "context_end": 96.26,
+      "answer": "accusing settlers",
+      "hint": "해당 음성 구간의 표현 · A… S… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 122.32,
-      "end": 123.12
+      "start": 94.44,
+      "end": 95.28
     },
     {
-      "sentence": "Federal Appeals Court has temporarily suspended the ____ the Army's planned",
+      "sentence": "federal judge ruled the state's attempt to ____ wearing was unconstitutional.",
       "meaning_context": {
-        "start": 126.56,
-        "end": 167.44,
-        "text": "consolidating deadlines for when a member who's being investigated has to respond to findings. These steps come after multiple House lawmakers faced high-profile sexual harassment and misconduct allegations this year, and the committee weathered criticism for moving too slowly on investigating cases. Alaina Moore, NPR News. The Federal Appeals Court has temporarily suspended the permit for the Army's planned detonation of roughly five tons of unstable lead-base explosives in southeast Iowa. Here's Iowa Public Radio's Tom Barton. The court put the EPA's emergency permit on hold late Thursday while it considers a request to block the blast at the Iowa Army Ammunition Plant in Middletown. Two Iowa environmental groups say the EPA didn't fully consider safer",
+        "start": 101.66,
+        "end": 142.96,
+        "text": "has said it seeks to prevent friction during the olive harvest. But the U.N. accuses it of, quote, acquiescence, support, and participation in attacks. Lauren Fryer and PR News, Tel Aviv. Ice agents will be allowed to keep wearing face coverings while making arrests in Connecticut. A federal judge ruled the state's attempt to ban mask wearing was unconstitutional. From member station WSHU, Molly Ingram reports. Earlier this year, the state legislature passed a law that in part banned ice agents from wearing masks to hide their identity and required them to wear name badges. It was challenged by the Trump administration shortly after. In a preliminary injunction on Friday, a Biden",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 144.52,
-      "context_end": 148.12,
-      "answer": "permit for",
-      "hint": "해당 음성 구간의 표현 · P… F… (2단어)",
+      "context_start": 119.82,
+      "context_end": 124.46,
+      "answer": "ban mask",
+      "hint": "해당 음성 구간의 표현 · B… M… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 146.5,
-      "end": 147.34
+      "start": 121.9,
+      "end": 122.74
     },
     {
-      "sentence": "the public. After Iowa and Illinois lawmakers ____ a delay, the Army",
+      "sentence": "preliminary injunction on Friday, a Biden-appointed ____ in New Haven",
       "meaning_context": {
-        "start": 160.6,
-        "end": 199.42,
-        "text": "at the Iowa Army Ammunition Plant in Middletown. Two Iowa environmental groups say the EPA didn't fully consider safer options. They say toxic-led dust could travel 100 miles or more, depending on the weather. Federal officials say they've been planning since March and are prepared to take extensive precautions to protect the public. After Iowa and Illinois lawmakers called for a delay, the Army postponed the blast to Monday. It says detonating the 68 drums where they're stored inside earth-covered concrete bunkers surrounded by sand-filled barriers and water misters, poses the lowest risk to the public. For NPR News, I'm Tom Barton in Des Moines. This is NPR News.",
+        "start": 123.12,
+        "end": 164.26,
+        "text": "was unconstitutional. From member station WSHU, Molly Ingram reports. Earlier this year, the state legislature passed a law that in part banned ice agents from wearing masks to hide their identity and required them to wear name badges. It was challenged by the Trump administration shortly after. In a preliminary injunction on Friday, a Biden-appointed federal judge in New Haven ruled the law violated the supremacy clause of the U.S. Constitution. Similar decisions have been made by judges in New York, California, and Pennsylvania. In Connecticut, community members and officials have long complained the law had no teeth. Even Governor Ned Lamont said the state would not arrest agents for refusing to wear masks. For NPR",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 178.2,
-      "context_end": 182.16,
-      "answer": "called for",
-      "hint": "해당 음성 구간의 표현 · C… F… (2단어)",
+      "context_start": 140.74,
+      "context_end": 144.82,
+      "answer": "federal judge",
+      "hint": "연방정부의 관련 표현 · F… J… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 180.68,
-      "end": 181.3
+      "start": 143.42,
+      "end": 144.14
     },
     {
-      "sentence": "Iraqi Prime Minister Ali al-Zaidi ____ to disarm Iraq's extensive",
+      "sentence": "said the state would not arrest agents ____ to wear masks.",
       "meaning_context": {
-        "start": 217.48,
-        "end": 258.9,
-        "text": "security officials announced Friday that government forces would deploy to Jervon Nasser, where Iran-backed Qatab Hezbollah has bases. The government has accused the paramilitary group and some government officials of oil smuggling operations in the area south of Baghdad. Iraqi Prime Minister Ali al-Zaidi has pledged to disarm Iraq's extensive network of armed groups that aren't fully under government control. While some have agreed, Katab Hezbollah, one of the most powerful, has refused to give up its weapons. Jane Araff, NPR News, Aman. New psychedelic treatments could become more widely available as soon as next year. Here's",
+        "start": 141.7,
+        "end": 182.76,
+        "text": "on Friday, a Biden-appointed federal judge in New Haven ruled the law violated the supremacy clause of the U.S. Constitution. Similar decisions have been made by judges in New York, California, and Pennsylvania. In Connecticut, community members and officials have long complained the law had no teeth. Even Governor Ned Lamont said the state would not arrest agents for refusing to wear masks. For NPR News, I'm Molly Ingram in Fairfield. One of the FBI's 10 most wanted fugitives has been captured by Mexican authorities. Mexico's defense cabinet says seven alleged cartel gunmen, four Mexican soldiers were killed in a fierce firefight that erupted in Sinaloa as Fosto Isidro Mezaflores",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 235.86,
-      "context_end": 240.78,
-      "answer": "has pledged",
-      "hint": "해당 음성 구간의 표현 · H… P… (2단어)",
+      "context_start": 159.8,
+      "context_end": 163.28,
+      "answer": "for refusing",
+      "hint": "해당 음성 구간의 표현 · F… R… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 237.88,
-      "end": 238.76
+      "start": 161.74,
+      "end": 162.44
     },
     {
-      "sentence": "minority of patients do experience new and ____ difficulties in the weeks",
+      "sentence": "President Trump is ____ he's prepared to work",
       "meaning_context": {
-        "start": 249.24,
-        "end": 290.07,
-        "text": "has refused to give up its weapons. Jane Araff, NPR News, Aman. New psychedelic treatments could become more widely available as soon as next year. Here's NPR's Will Stowe. Studies on psychedelics screen patients carefully beforehand and monitor them closely while they're under the influence. However, a minority of patients do experience new and sometimes serious difficulties in the weeks and months after. Research suggests serious adverse events like suicidality are very rare in drug trials. Experts like Roman Politsky at Emory University School of Medicine, who's running a study on this, says it isn't being tracked well enough and the full array of problems aren't being documented. Quite common on the list are things",
+        "start": 168.44,
+        "end": 209.66,
+        "text": "fugitives has been captured by Mexican authorities. Mexico's defense cabinet says seven alleged cartel gunmen, four Mexican soldiers were killed in a fierce firefight that erupted in Sinaloa as Fosto Isidro Mezaflores was apprehended. This is NPR News. President Trump is saying that he's prepared to work with the new Democratic Control Congress to cap credit card interest rates. Trump had talked about this on the 2024 campaign trail, but the banking industry and a GOP majority were not interested. Democrats and Trump have both back capping rates at 10%. Funeral services for labor activist",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 266.46,
-      "context_end": 270.79,
-      "answer": "sometimes serious",
-      "hint": "해당 음성 구간의 표현 · S… S… (2단어)",
+      "context_start": 187.8,
+      "context_end": 190.48,
+      "answer": "saying that",
+      "hint": "해당 음성 구간의 표현 · S… T… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 268.85,
-      "end": 269.69
+      "start": 189.0,
+      "end": 189.44
     }
   ],
   "summaryReview": {
     "kind": "keyword_rubric",
     "article": 1,
-    "start": 25.72,
-    "end": 124.5,
-    "transcript": "President Trump says the U.S. should only be selling China older chips in the wake of intensified scrutiny of Nvidia, the world's top supplier of high-end chips used for AI. have to understand China makes chips too. And if we're not going to sell them, they'll make them themselves. that's one of the reasons that Jensen would use, used to try and say like, hey, and he was, he's a good man. By the way, he's a man while we're at it. Made some bad decisions. Trump defending Nvidia's former CEO, Jensen Wong, who recently resigned after reports of an affair with a suspected Chinese spy. The president was addressing reporters about his first trilateral meeting yesterday with the presidents of China, Xi Jinping, and of Russia, Vladimir Putin. Trump said he and China agreed on joint guardrails for AI, and Trump also expressed warm sentiments for Putin. U.S. ambassador to Russia, Michael McFall, had this reaction to that. think he understands what it means to represent the United States of America when he goes abroad, and he kind of said it himself. Caitlin Collins asked him about, you know, what you're doing for America. And he said, well, I don't, I think he meant I don't speak for America, or maybe, but I think he said I don't speak to America, but Putin is my friend. McFall on NPR's Here and Now. The House Ethics Committee is trying to change the way it handles sexual misconduct investigations, here's NPR's Elena Moore. The panel approved the internal rule changes on Thursday by a unanimous vote. It comes after the committee announced earlier in the week it was reviewing several rule changes, including one that would give the chair or ranking member subpoena power without needing a full committee vote.",
+    "start": 11.48,
+    "end": 110.74,
+    "transcript": "President Trump made history this week with the first-ever trilateral meeting with the leaders of China and Russia. The question is, will there be an immediate or lasting impact? NPR's Ron Elving has more. could have if these various vows of peaceful cooperation bear fruit, or if these vaunted trade deals come to pass. what we do know at this point is that Russia this week launched one of its most massive assaults against Ukraine since it first invaded that country in 2022. Assaults against civilian targets that also struck Poland, a NATO alloy of the US. And it makes a difference that Trump was more interested in meeting with Chinese President Xi than he was in confronting that country's efforts to obtain the most advanced American computer chips. And PR's Ron Elving. The U.N. says there have been more Israeli settler attacks on the Palestinian olive harvest this year than in any other year since record keeping began. And PR's Freire has details. The United Nations cites more than 400 Israeli settler attacks since September on Palestinian olive farmers, as well as activists, journalists and diplomats who try to help them. And it says more than 55,000 pounds of produce have been vandalized or stolen. This weekend, Palestinian lawmaker in Israel's shared video he says shows Israeli settlers stealing fruit and vegetables from Palestinian vendors in the occupied West Bank, accusing settlers who serve in Prime Minister Benjamin Netanyahu's far-right government of allowing them to do so. The Israeli military has said it seeks to prevent friction during the olive harvest. But the U.N. accuses it of, quote, acquiescence, support, and participation in attacks.",
     "keywords": [
       {
         "label": "trump · 트럼프",
@@ -173,29 +173,25 @@
         ]
       },
       {
-        "label": "nvidia · 엔비디아",
+        "label": "trade · 무역",
         "terms": [
-          "nvidia",
-          "엔비디아"
+          "trade",
+          "무역"
         ]
       },
       {
-        "label": "resigned · 사임",
+        "label": "ukraine · 우크라이나",
         "terms": [
-          "resign",
-          "resigned",
-          "resignation",
-          "사임",
-          "사퇴"
+          "ukraine",
+          "우크라이나"
         ]
       },
       {
-        "label": "relationship · 관계",
+        "label": "support · 지지",
         "terms": [
-          "relationship",
-          "affair",
-          "관계",
-          "불륜"
+          "support",
+          "지지",
+          "지원"
         ]
       }
     ],
@@ -205,9 +201,9 @@
     {
       "kind": "keyword_rubric",
       "article": 1,
-      "start": 25.72,
-      "end": 124.5,
-      "transcript": "President Trump says the U.S. should only be selling China older chips in the wake of intensified scrutiny of Nvidia, the world's top supplier of high-end chips used for AI. have to understand China makes chips too. And if we're not going to sell them, they'll make them themselves. that's one of the reasons that Jensen would use, used to try and say like, hey, and he was, he's a good man. By the way, he's a man while we're at it. Made some bad decisions. Trump defending Nvidia's former CEO, Jensen Wong, who recently resigned after reports of an affair with a suspected Chinese spy. The president was addressing reporters about his first trilateral meeting yesterday with the presidents of China, Xi Jinping, and of Russia, Vladimir Putin. Trump said he and China agreed on joint guardrails for AI, and Trump also expressed warm sentiments for Putin. U.S. ambassador to Russia, Michael McFall, had this reaction to that. think he understands what it means to represent the United States of America when he goes abroad, and he kind of said it himself. Caitlin Collins asked him about, you know, what you're doing for America. And he said, well, I don't, I think he meant I don't speak for America, or maybe, but I think he said I don't speak to America, but Putin is my friend. McFall on NPR's Here and Now. The House Ethics Committee is trying to change the way it handles sexual misconduct investigations, here's NPR's Elena Moore. The panel approved the internal rule changes on Thursday by a unanimous vote. It comes after the committee announced earlier in the week it was reviewing several rule changes, including one that would give the chair or ranking member subpoena power without needing a full committee vote.",
+      "start": 11.48,
+      "end": 110.74,
+      "transcript": "President Trump made history this week with the first-ever trilateral meeting with the leaders of China and Russia. The question is, will there be an immediate or lasting impact? NPR's Ron Elving has more. could have if these various vows of peaceful cooperation bear fruit, or if these vaunted trade deals come to pass. what we do know at this point is that Russia this week launched one of its most massive assaults against Ukraine since it first invaded that country in 2022. Assaults against civilian targets that also struck Poland, a NATO alloy of the US. And it makes a difference that Trump was more interested in meeting with Chinese President Xi than he was in confronting that country's efforts to obtain the most advanced American computer chips. And PR's Ron Elving. The U.N. says there have been more Israeli settler attacks on the Palestinian olive harvest this year than in any other year since record keeping began. And PR's Freire has details. The United Nations cites more than 400 Israeli settler attacks since September on Palestinian olive farmers, as well as activists, journalists and diplomats who try to help them. And it says more than 55,000 pounds of produce have been vandalized or stolen. This weekend, Palestinian lawmaker in Israel's shared video he says shows Israeli settlers stealing fruit and vegetables from Palestinian vendors in the occupied West Bank, accusing settlers who serve in Prime Minister Benjamin Netanyahu's far-right government of allowing them to do so. The Israeli military has said it seeks to prevent friction during the olive harvest. But the U.N. accuses it of, quote, acquiescence, support, and participation in attacks.",
       "keywords": [
         {
           "label": "trump · 트럼프",
@@ -233,29 +229,25 @@
           ]
         },
         {
-          "label": "nvidia · 엔비디아",
+          "label": "trade · 무역",
           "terms": [
-            "nvidia",
-            "엔비디아"
+            "trade",
+            "무역"
           ]
         },
         {
-          "label": "resigned · 사임",
+          "label": "ukraine · 우크라이나",
           "terms": [
-            "resign",
-            "resigned",
-            "resignation",
-            "사임",
-            "사퇴"
+            "ukraine",
+            "우크라이나"
           ]
         },
         {
-          "label": "relationship · 관계",
+          "label": "support · 지지",
           "terms": [
-            "relationship",
-            "affair",
-            "관계",
-            "불륜"
+            "support",
+            "지지",
+            "지원"
           ]
         }
       ],
@@ -264,17 +256,22 @@
     {
       "kind": "keyword_rubric",
       "article": 2,
-      "start": 144.1,
-      "end": 199.42,
-      "transcript": "The Federal Appeals Court has temporarily suspended the permit for the Army's planned detonation of roughly five tons of unstable lead-base explosives in southeast Iowa. Here's Iowa Public Radio's Barton. The court put the EPA's emergency permit on hold late Thursday while it considers a request to block the blast at the Iowa Army Ammunition Plant in Middletown. Two Iowa environmental groups say the EPA didn't fully consider safer options. They say toxic-led dust could travel 100 miles or more, depending on the weather. Federal officials say they've been planning since March and are prepared to take extensive precautions to protect the public. After Iowa and Illinois lawmakers called for a delay, the Army postponed the blast to Monday. It says detonating the 68 drums where they're stored inside earth-covered concrete bunkers surrounded by sand-filled barriers and water misters, poses the lowest risk to the public. For NPR News, I'm Tom Barton in Des Moines. This is NPR News.",
+      "start": 187.8,
+      "end": 286.0,
+      "transcript": "President Trump is saying that he's prepared to work with the new Democratic Control Congress to cap credit card interest rates. Trump had talked about this on the 2024 campaign trail, but the banking industry and a GOP majority were not interested. Democrats and Trump have both back capping rates at 10%. Funeral services for labor activist Dolores Huerta have ended in her final hometown, Bakersfield, California. Amare Alvarez from member station KVPR has that story. of Huerta's family and state leaders spoke about her legacy at her final goodbye. California's Democratic governor-elect, Javier Becerra, highlighted her fight for farmworker rights. There's never been a day in my life without Dolores Huerta. There was never a fight that I saw that didn't include Dolores Huerta. Former President Bill Clinton and actress Jane Fonda appeared in video messages. This event kept off a week of services that started with Huerta laying in honor in the state capitol. By the end of the night, everyone was on their feet, dancing to the Mexican-American group Los Lobos. For NPR, I'm Anne-Marie Alvarez in Bakersfield. Catherine, Princess of Wales, appears in a new documentary about life after her cancer diagnosis in 2024, and titled Healed, the project follows her as she attempts the Three Peaks Challenge. Climbing the highest mountains in Scotland, England, and Wales within 24 hours, she completed the feat to raise money for the cancer charity of the Royal Marston Hospital that treated her. I'm Louise Quivone, NPR News.",
       "keywords": [
         {
-          "label": "court · 법원",
+          "label": "trump · 트럼프",
           "terms": [
-            "court",
-            "judge",
-            "법원",
-            "판사"
+            "trump",
+            "트럼프"
+          ]
+        },
+        {
+          "label": "president · 대통령",
+          "terms": [
+            "president",
+            "대통령"
           ]
         }
       ],
@@ -282,9 +279,9 @@
     }
   ],
   "fullTranscript": {
-    "transcript": "This message comes from Capital One with the Venture X-Card. Earn unlimited double miles and a $300 annual Capital One travel credit. Capital One. What's in your wallet? of fly. at CapitalOne.com. This is NPR News Now. The latest headlines every hour. Live from NPR News, I'm Lakshmi Singh. President Trump says the U.S. should only be selling China older chips in the wake of intensified scrutiny of Nvidia, the world's top supplier of high-end chips used for AI. have to understand China makes chips too. And if we're not going to sell them, they'll make them themselves. that's one of the reasons that Jensen would use, used to try and say like, hey, and he was, he's a good man. By the way, he's a man while we're at it. Made some bad decisions. Trump defending Nvidia's former CEO, Jensen Wong, who recently resigned after reports of an affair with a suspected Chinese spy. The president was addressing reporters about his first trilateral meeting yesterday with the presidents of China, Xi Jinping, and of Russia, Vladimir Putin. Trump said he and China agreed on joint guardrails for AI, and Trump also expressed warm sentiments for Putin. U.S. ambassador to Russia, Michael McFall, had this reaction to that. think he understands what it means to represent the United States of America when he goes abroad, and he kind of said it himself. Caitlin Collins asked him about, you know, what you're doing for America. And he said, well, I don't, I think he meant I don't speak for America, or maybe, but I think he said I don't speak to America, but Putin is my friend. McFall on NPR's Here and Now. The House Ethics Committee is trying to change the way it handles sexual misconduct investigations, here's NPR's Elena Moore. The panel approved the internal rule changes on Thursday by a unanimous vote. It comes after the committee announced earlier in the week it was reviewing several rule changes, including one that would give the chair or ranking member subpoena power without needing a full committee vote. Another focused on, quote, consolidating deadlines for when a member who's being investigated has to respond to findings. These steps come after multiple House lawmakers faced high-profile sexual harassment and misconduct allegations this year, and the committee weathered criticism for moving too slowly on investigating cases. Alaina Moore, NPR News. The Federal Appeals Court has temporarily suspended the permit for the Army's planned detonation of roughly five tons of unstable lead-base explosives in southeast Iowa. Here's Iowa Public Radio's Barton. The court put the EPA's emergency permit on hold late Thursday while it considers a request to block the blast at the Iowa Army Ammunition Plant in Middletown. Two Iowa environmental groups say the EPA didn't fully consider safer options. They say toxic-led dust could travel 100 miles or more, depending on the weather. Federal officials say they've been planning since March and are prepared to take extensive precautions to protect the public. After Iowa and Illinois lawmakers called for a delay, the Army postponed the blast to Monday. It says detonating the 68 drums where they're stored inside earth-covered concrete bunkers surrounded by sand-filled barriers and water misters, poses the lowest risk to the public. For NPR News, I'm Tom Barton in Des Moines. This is NPR News. The Iraqi government has reached a deal with a major Iran-backed militia over control of bases near Baghdad. NPR's Jana Raff reports the move diffuses fears over clashes between militia fighters and Iraqi security forces. Iraqi security officials announced Friday that government forces would deploy to Jervon Nasser, where Iran-backed Qatab Hezbollah has bases. The government has accused the paramilitary group and some government officials of oil smuggling operations in the area south of Baghdad. Iraqi Prime Minister Ali al-Zaidi has pledged to disarm Iraq's extensive network of armed groups that aren't fully under government control. While some have agreed, Katab Hezbollah, one of the most powerful, has refused to give up its weapons. Jane Araff, NPR News, Aman. New psychedelic treatments could become more widely available as soon as next year. Here's NPR's Will Stowe. on psychedelics screen patients carefully beforehand and monitor them closely while they're under the influence. However, a minority of patients do experience new and sometimes serious difficulties in the weeks and months after. suggests serious adverse events like suicidality are very rare in drug trials. Experts like Roman Politsky at Emory University School of Medicine, who's running a study on this, says it isn't being tracked well enough and the full array of problems aren't being documented. Quite common on the list are things like anxiety, depression. Others are existential distress, insomnia, and feeling disassociated. Will Stone, NPR News. is NPR. This message comes from Schwab. At Schwab, you can get everything from self-directed investing to full-service wealth management all in one place. No matter your investing goal, life stage, amount to invest or know-how, you can invest your way with Schwab.",
+    "transcript": "This is NPR News Now. The latest headlines every hour. Live from NPR News in Washington, I'm Louise Schiavone. President Trump made history this week with the first-ever trilateral meeting with the leaders of China and Russia. The question is, will there be an immediate or lasting impact? NPR's Ron Elving has more. could have if these various vows of peaceful cooperation bear fruit, or if these vaunted trade deals come to pass. what we do know at this point is that Russia this week launched one of its most massive assaults against Ukraine since it first invaded that country in 2022. Assaults against civilian targets that also struck Poland, a NATO alloy of the US. And it makes a difference that Trump was more interested in meeting with Chinese President Xi than he was in confronting that country's efforts to obtain the most advanced American computer chips. And PR's Ron Elving. The U.N. says there have been more Israeli settler attacks on the Palestinian olive harvest this year than in any other year since record keeping began. And PR's Freire has details. The United Nations cites more than 400 Israeli settler attacks since September on Palestinian olive farmers, as well as activists, journalists and diplomats who try to help them. And it says more than 55,000 pounds of produce have been vandalized or stolen. This weekend, Palestinian lawmaker in Israel's shared video he says shows Israeli settlers stealing fruit and vegetables from Palestinian vendors in the occupied West Bank, accusing settlers who serve in Prime Minister Benjamin Netanyahu's far-right government of allowing them to do so. The Israeli military has said it seeks to prevent friction during the olive harvest. But the U.N. accuses it of, quote, acquiescence, support, and participation in attacks. Lauren Fryer and PR News, Tel Aviv. agents will be allowed to keep wearing face coverings while making arrests in Connecticut. A federal judge ruled the state's attempt to ban mask wearing was unconstitutional. From member station WSHU, Molly Ingram reports. Earlier this year, the state legislature passed a law that in part banned ice agents from wearing masks to hide their identity and required them to wear name badges. It was challenged by the Trump administration shortly after. In a preliminary injunction on Friday, a Biden-appointed federal judge in New Haven ruled the law violated the supremacy clause of the U.S. Constitution. decisions have been made by judges in New York, California, and Pennsylvania. In Connecticut, community members and officials have long complained the law had no teeth. Even Governor Ned Lamont said the state would not arrest agents for refusing to wear masks. For NPR News, I'm Molly Ingram in Fairfield. One of the FBI's 10 most wanted fugitives has been captured by Mexican authorities. Mexico's defense cabinet says seven alleged cartel gunmen, four Mexican soldiers were killed in a fierce firefight that erupted in Sinaloa as Fosto Isidro Mezaflores was apprehended. This is NPR News. President Trump is saying that he's prepared to work with the new Democratic Control Congress to cap credit card interest rates. Trump had talked about this on the 2024 campaign trail, but the banking industry and a GOP majority were not interested. Democrats and Trump have both back capping rates at 10%. Funeral services for labor activist Dolores Huerta have ended in her final hometown, Bakersfield, California. Amare Alvarez from member station KVPR has that story. of Huerta's family and state leaders spoke about her legacy at her final goodbye. California's Democratic governor-elect, Javier Becerra, highlighted her fight for farmworker rights. There's never been a day in my life without Dolores Huerta. There was never a fight that I saw that didn't include Dolores Huerta. Former President Bill Clinton and actress Jane Fonda appeared in video messages. This event kept off a week of services that started with Huerta laying in honor in the state capitol. By the end of the night, everyone was on their feet, dancing to the Mexican-American group Los Lobos. For NPR, I'm Anne-Marie Alvarez in Bakersfield. Catherine, Princess of Wales, appears in a new documentary about life after her cancer diagnosis in 2024, and titled Healed, the project follows her as she attempts the Three Peaks Challenge. Climbing the highest mountains in Scotland, England, and Wales within 24 hours, she completed the feat to raise money for the cancer charity of the Royal Marston Hospital that treated her. I'm Louise Quivone, NPR News. This message comes from Thumbtack. Some tasks can feel easy, but home projects can bring second guesses. Is that noise normal? Is that water damage? Who should be called? That's where Thumbtack comes in. Just upload a photo or voice note, and it uses AI-powered search to match with the right top-rated local pro. So instead of guessing, there's clarity and confidence when hiring. For your next home project, try Thumb Tech. Hire the right pro today.",
     "start": 0.0,
-    "end": 317.15,
+    "end": 313.86,
     "kind": "full_broadcast"
   }
 }
