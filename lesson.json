@@ -1,5 +1,5 @@
 {
-  "title": "3pm ET, November 21 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "3pm ET, November 22 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
   "generator_version": 15,
   "verified": false,
@@ -10,188 +10,176 @@
     "human_verified": false
   },
   "sourceNote": "문제를 만들 때 사용한 고정 음원을 재생합니다. 빈칸 앞뒤 영어 지문과 2단어 정답을 두 음성인식 모델이 비교했습니다. 자동 전사이므로 오류가 있을 수 있습니다.",
-  "generated_at": "2026-11-21T20:49:46.837832+00:00",
+  "generated_at": "2026-11-22T20:53:35.911096+00:00",
   "episode": {
-    "id": "66cc06f4-9367-4837-8a91-52b385d00d6c",
-    "title": "3pm ET, November 21 | The latest headlines from NPR",
-    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/10a21154f0401f7ba306acb69dfadd91fc3637494416f885aada1877df1c054d.mp3",
-    "date": "2026-11-21T20:09:30+00:00",
+    "id": "efbfe392-3398-469f-b4fd-eca216efdb7e",
+    "title": "3pm ET, November 22 | The latest headlines from NPR",
+    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/643cd720595992fc9138e4959ed4cca996b2c67e82796e09c760bf3b515d129f.mp3",
+    "date": "2026-11-22T20:09:38+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "문제 생성에 사용한 고정 음원",
-    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/5ea4d8e9-ebf4-4389-aa7c-ecb93f22d17d/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=5ea4d8e9-ebf4-4389-aa7c-ecb93f22d17d&feed=O9WlY7a5&t=podcast&e=nx-s1-20261121-1500-long&p=500005&d=280&size=4586728",
-    "audio_sha256": "10a21154f0401f7ba306acb69dfadd91fc3637494416f885aada1877df1c054d"
+    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/b734b173-64f5-4d89-a20b-65ebae4ae419/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=b734b173-64f5-4d89-a20b-65ebae4ae419&feed=O9WlY7a5&t=podcast&e=nx-s1-20261122-1500-long&p=500005&d=280&size=4586728",
+    "audio_sha256": "643cd720595992fc9138e4959ed4cca996b2c67e82796e09c760bf3b515d129f"
   },
   "items": [
     {
-      "sentence": "know at this point is that Russia ____ launched",
+      "sentence": "drivers of environmental damage. Despite record-long ____ negotiations to reach a",
       "meaning_context": {
-        "start": 12.38,
-        "end": 53.1,
-        "text": "history this week with the first-ever trilateral meeting with the leaders of China and Russia. The question is, will there be an immediate or lasting impact? NPR's Ron Elving has more. It could have if these various vows of peaceful cooperation bear fruit, or if these vaunted trade deals come to pass. But what we do know at this point is that Russia this week launched one of its most massive assaults against Ukraine since it first invaded that country in 2022. Assaults against civilian targets that also struck Poland, a NATO alloy of the US. And it makes a difference that Trump was more interested in meeting with Chinese President Xi than he was in confronting that country's efforts to obtain the most",
+        "start": 7.7,
+        "end": 48.58,
+        "text": "Live from NPR News in Washington, I'm Louise Kievone. European Union negotiators are deeply disappointed with the collapse of climate talks in Turkey. Terry Schultz reports the EU team said it could not accept the final draft that omitted the mention of fossil fuel, considered one of the main drivers of environmental damage. Despite record-long and extended negotiations to reach a compromise, Irish Environment Minister Dara O'Brien, negotiating on behalf of the EU, said the absence of any mention of transitioning away from coal, oil and gas was a disgrace. We could not, with any good conscience, support a text that effectively denies what is happening in the world and was hijacked by fossil",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 31.08,
-      "context_end": 33.4,
-      "answer": "this week",
-      "hint": "해당 음성 구간의 표현 · T… W… (2단어)",
+      "context_start": 24.24,
+      "context_end": 29.58,
+      "answer": "and extended",
+      "hint": "해당 음성 구간의 표현 · A… E… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 32.68,
-      "end": 33.08
+      "start": 27.48,
+      "end": 28.3
     },
     {
-      "sentence": "on Palestinian olive farmers, as well as ____ and diplomats who try",
+      "sentence": "EU will continue working with like-minded ____ redouble its own efforts",
       "meaning_context": {
-        "start": 55.56,
-        "end": 96.64,
-        "text": "And PR's Ron Elving. The U.N. says there have been more Israeli settler attacks on the Palestinian olive harvest this year than in any other year since record keeping began. And PR's Lauren Freire has details. The United Nations cites more than 400 Israeli settler attacks since September on Palestinian olive farmers, as well as activists, journalists and diplomats who try to help them. And it says more than 55,000 pounds of produce have been vandalized or stolen. This weekend, a Palestinian lawmaker in Israel's parliament shared video he says shows Israeli settlers stealing fruit and vegetables from Palestinian vendors in the occupied West Bank, accusing settlers who serve in Prime Minister",
+        "start": 44.94,
+        "end": 86.26,
+        "text": "denies what is happening in the world and was hijacked by fossil fuel producers. O'Brien's fellow negotiator, EU Climate Commissioner Wipke Hoekstra, echoed the disappointment. This is larger than just all of us. This is something that doesn't discriminate and that humanity urgently need to tackle. Hoekstra said the EU will continue working with like-minded countries and redouble its own efforts to combat climate change. For NPR News, I'm Teri Schultz in Brussels. A leaked intelligence memo says the Pentagon is putting new limits on military cooperation with Canada. The Canadian Defense Minister says the two militaries are still working closely together. Julian Abraham has details. The leaked Classified Department of Defense",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 72.84,
-      "context_end": 77.8,
-      "answer": "activists journalists",
-      "hint": "해당 음성 구간의 표현 · A… J… (2단어)",
+      "context_start": 63.14,
+      "context_end": 67.12,
+      "answer": "countries and",
+      "hint": "해당 음성 구간의 표현 · C… A… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 75.46,
-      "end": 76.58
+      "start": 65.32,
+      "end": 66.1
     },
     {
-      "sentence": "Palestinian vendors in the occupied West Bank, ____ who serve in Prime",
+      "sentence": "memo, first reported by the Washington Post, ____ conversations at the Halifax",
       "meaning_context": {
-        "start": 74.28,
-        "end": 115.34,
-        "text": "farmers, as well as activists, journalists and diplomats who try to help them. And it says more than 55,000 pounds of produce have been vandalized or stolen. This weekend, a Palestinian lawmaker in Israel's parliament shared video he says shows Israeli settlers stealing fruit and vegetables from Palestinian vendors in the occupied West Bank, accusing settlers who serve in Prime Minister Benjamin Netanyahu's far-right government of allowing them to do so. The Israeli military has said it seeks to prevent friction during the olive harvest. But the U.N. accuses it of, quote, acquiescence, support, and participation in attacks. Lauren Fryer and PR News, Tel Aviv. Ice agents will be allowed",
+        "start": 68.74,
+        "end": 109.42,
+        "text": "For NPR News, I'm Teri Schultz in Brussels. A leaked intelligence memo says the Pentagon is putting new limits on military cooperation with Canada. The Canadian Defense Minister says the two militaries are still working closely together. Julian Abraham has details. The leaked Classified Department of Defense memo, first reported by the Washington Post, has dominated conversations at the Halifax International Security Forum. Republican South Dakota Senator Mike Rounds confirmed its existence in a speech at the forum. While it was a classified discussion, it was one that was put together several months ago, only recently signed, and then it was unfortunately then released publicly. Rounds says, according to the memo,",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 91.42,
-      "context_end": 96.26,
-      "answer": "accusing settlers",
-      "hint": "해당 음성 구간의 표현 · A… S… (2단어)",
+      "context_start": 86.26,
+      "context_end": 91.0,
+      "answer": "has dominated",
+      "hint": "해당 음성 구간의 표현 · H… D… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 94.44,
-      "end": 95.28
+      "start": 88.66,
+      "end": 89.48
     },
     {
-      "sentence": "federal judge ruled the state's attempt to ____ wearing was unconstitutional.",
+      "sentence": "according to the memo, U.S. military ____ need permission to",
       "meaning_context": {
-        "start": 101.66,
-        "end": 142.96,
-        "text": "has said it seeks to prevent friction during the olive harvest. But the U.N. accuses it of, quote, acquiescence, support, and participation in attacks. Lauren Fryer and PR News, Tel Aviv. Ice agents will be allowed to keep wearing face coverings while making arrests in Connecticut. A federal judge ruled the state's attempt to ban mask wearing was unconstitutional. From member station WSHU, Molly Ingram reports. Earlier this year, the state legislature passed a law that in part banned ice agents from wearing masks to hide their identity and required them to wear name badges. It was challenged by the Trump administration shortly after. In a preliminary injunction on Friday, a Biden",
+        "start": 90.06,
+        "end": 131.34,
+        "text": "at the Halifax International Security Forum. Republican South Dakota Senator Mike Rounds confirmed its existence in a speech at the forum. While it was a classified discussion, it was one that was put together several months ago, only recently signed, and then it was unfortunately then released publicly. Rounds says, according to the memo, U.S. military officials will need permission to with 10 Canadian think tank events or social gatherings, the latest strain on an already fraught relationship between the two allies. But speaking at the forum, Canada's Defense Minister David McGinty insisted cooperation with the U.S. on defense, security, and intelligence continues. For NPR News, I'm Julian Abraham in Halifax.",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 119.82,
-      "context_end": 124.46,
-      "answer": "ban mask",
-      "hint": "해당 음성 구간의 표현 · B… M… (2단어)",
+      "context_start": 108.58,
+      "context_end": 112.12,
+      "answer": "officials will",
+      "hint": "당국자들 관련 표현 · O… W… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 121.9,
-      "end": 122.74
+      "start": 110.38,
+      "end": 111.16
     },
     {
-      "sentence": "preliminary injunction on Friday, a Biden-appointed ____ in New Haven",
+      "sentence": "Bob Ferguson is condemning the arrest of ____",
       "meaning_context": {
-        "start": 123.12,
-        "end": 164.26,
-        "text": "was unconstitutional. From member station WSHU, Molly Ingram reports. Earlier this year, the state legislature passed a law that in part banned ice agents from wearing masks to hide their identity and required them to wear name badges. It was challenged by the Trump administration shortly after. In a preliminary injunction on Friday, a Biden-appointed federal judge in New Haven ruled the law violated the supremacy clause of the U.S. Constitution. Similar decisions have been made by judges in New York, California, and Pennsylvania. In Connecticut, community members and officials have long complained the law had no teeth. Even Governor Ned Lamont said the state would not arrest agents for refusing to wear masks. For NPR",
+        "start": 115.4,
+        "end": 156.3,
+        "text": "the latest strain on an already fraught relationship between the two allies. But speaking at the forum, Canada's Defense Minister David McGinty insisted cooperation with the U.S. on defense, security, and intelligence continues. For NPR News, I'm Julian Abraham in Halifax. Washington Governor Bob Ferguson is condemning the arrest of two people as they boarded an Alaska Airlines flight at Seattle-Tacoma International Airport yesterday. He says he did speak to the airline. I made my view very clear to Alaska Airlines. They need to call on ICE to get out of our airports. Reacting to the arrest video. The video is horrific and it is chilling. Masked agents who do not identify themselves during",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 140.74,
-      "context_end": 144.82,
-      "answer": "federal judge",
-      "hint": "연방정부의 관련 표현 · F… J… (2단어)",
+      "context_start": 132.86,
+      "context_end": 135.8,
+      "answer": "two people",
+      "hint": "해당 음성 구간의 표현 · T… P… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 143.42,
-      "end": 144.14
+      "start": 135.2,
+      "end": 135.8
     },
     {
-      "sentence": "said the state would not arrest agents ____ to wear masks.",
+      "sentence": "The new Democratic-controlled Congress ____ in January today hit",
       "meaning_context": {
-        "start": 141.7,
-        "end": 182.76,
-        "text": "on Friday, a Biden-appointed federal judge in New Haven ruled the law violated the supremacy clause of the U.S. Constitution. Similar decisions have been made by judges in New York, California, and Pennsylvania. In Connecticut, community members and officials have long complained the law had no teeth. Even Governor Ned Lamont said the state would not arrest agents for refusing to wear masks. For NPR News, I'm Molly Ingram in Fairfield. One of the FBI's 10 most wanted fugitives has been captured by Mexican authorities. Mexico's defense cabinet says seven alleged cartel gunmen, four Mexican soldiers were killed in a fierce firefight that erupted in Sinaloa as Fosto Isidro Mezaflores",
+        "start": 169.68,
+        "end": 210.78,
+        "text": "coffee at officers, Alaska Airlines says it has no advance notice and is reviewing whether proper procedures were followed, the Port of Seattle says it is in talks with Homeland Security. This is NPR News in Washington. The new Democratic-controlled Congress that convenes in January today hit a milestone of at least 258 seats, with confirmation that Democrat Chuck Hubbard defeated Republican Virginia Fox in North Carolina. Four other house races remain outstanding, two of which are in Louisiana, and are heading to a December run-off, a sweep like this for house seats has",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 159.8,
-      "context_end": 163.28,
-      "answer": "for refusing",
-      "hint": "해당 음성 구간의 표현 · F… R… (2단어)",
+      "context_start": 188.02,
+      "context_end": 192.22,
+      "answer": "that convenes",
+      "hint": "해당 음성 구간의 표현 · T… C… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 161.74,
-      "end": 162.44
+      "start": 189.92,
+      "end": 190.74
     },
     {
-      "sentence": "President Trump is ____ he's prepared to work",
+      "sentence": "speak and sing due to ALS, a ____ destroys nerve cells that",
       "meaning_context": {
-        "start": 168.44,
-        "end": 209.66,
-        "text": "fugitives has been captured by Mexican authorities. Mexico's defense cabinet says seven alleged cartel gunmen, four Mexican soldiers were killed in a fierce firefight that erupted in Sinaloa as Fosto Isidro Mezaflores was apprehended. This is NPR News. President Trump is saying that he's prepared to work with the new Democratic Control Congress to cap credit card interest rates. Trump had talked about this on the 2024 campaign trail, but the banking industry and a GOP majority were not interested. Democrats and Trump have both back capping rates at 10%. Funeral services for labor activist",
+        "start": 206.6,
+        "end": 247.06,
+        "text": "and are heading to a December run-off, a sweep like this for house seats has not been seen since 1992. Researchers are developing brain implants that can help restore people's speech and movement, and PR's Ping Wong has more. A 58-year-old trained singer had lost much of her ability to speak and sing due to ALS, a disease that destroys nerve cells that control muscle movement. Maitreyi Wairkar is a neuroscientist at UC Davis. She and her colleagues designed an implant that connects to parts of the singer's brain related to speech, pitch and tone. We designed a task to enable her to sing a musical scale. We asked her to sing a typical major scale and we were able",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 187.8,
-      "context_end": 190.48,
-      "answer": "saying that",
-      "hint": "해당 음성 구간의 표현 · S… T… (2단어)",
+      "context_start": 224.1,
+      "context_end": 228.02,
+      "answer": "disease that",
+      "hint": "해당 음성 구간의 표현 · D… T… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 189.0,
-      "end": 189.44
+      "start": 226.48,
+      "end": 226.92
     }
   ],
   "summaryReview": {
     "kind": "keyword_rubric",
     "article": 1,
-    "start": 11.48,
-    "end": 110.74,
-    "transcript": "President Trump made history this week with the first-ever trilateral meeting with the leaders of China and Russia. The question is, will there be an immediate or lasting impact? NPR's Ron Elving has more. could have if these various vows of peaceful cooperation bear fruit, or if these vaunted trade deals come to pass. what we do know at this point is that Russia this week launched one of its most massive assaults against Ukraine since it first invaded that country in 2022. Assaults against civilian targets that also struck Poland, a NATO alloy of the US. And it makes a difference that Trump was more interested in meeting with Chinese President Xi than he was in confronting that country's efforts to obtain the most advanced American computer chips. And PR's Ron Elving. The U.N. says there have been more Israeli settler attacks on the Palestinian olive harvest this year than in any other year since record keeping began. And PR's Freire has details. The United Nations cites more than 400 Israeli settler attacks since September on Palestinian olive farmers, as well as activists, journalists and diplomats who try to help them. And it says more than 55,000 pounds of produce have been vandalized or stolen. This weekend, Palestinian lawmaker in Israel's shared video he says shows Israeli settlers stealing fruit and vegetables from Palestinian vendors in the occupied West Bank, accusing settlers who serve in Prime Minister Benjamin Netanyahu's far-right government of allowing them to do so. The Israeli military has said it seeks to prevent friction during the olive harvest. But the U.N. accuses it of, quote, acquiescence, support, and participation in attacks.",
+    "start": 11.2,
+    "end": 109.98,
+    "transcript": "European Union negotiators are deeply disappointed with the collapse of climate talks in Turkey. Schultz reports the EU team said it could not accept the final draft that omitted the mention of fossil fuel, considered one of the main drivers of environmental damage. Despite record-long and extended negotiations to reach a compromise, Environment Minister Dara O'Brien, negotiating on behalf of the EU, said the absence of any mention of transitioning away from coal, oil and gas was a disgrace. We could not, with any good conscience, support a text that effectively denies what is happening in the world and was hijacked by fossil fuel producers. O'Brien's fellow negotiator, EU Climate Commissioner Wipke Hoekstra, echoed the disappointment. This is larger than just all of us. This is something that doesn't discriminate and that humanity urgently need to tackle. Hoekstra said the EU will continue working with like-minded countries and redouble its own efforts to combat climate change. For NPR News, I'm Teri Schultz in Brussels. A leaked intelligence memo says the Pentagon is putting new limits on military cooperation with Canada. The Canadian Defense Minister says the two militaries are still working closely together. Julian Abraham has details. The leaked Classified Department of Defense memo, first reported by the Washington Post, has dominated conversations at the Halifax International Security Forum. South Dakota Senator Mike Rounds confirmed its existence in a speech at the forum. While it was a classified discussion, was one that was put together several months ago, only recently signed, and then it was unfortunately then released publicly. Rounds says, according to the memo, U.S.",
     "keywords": [
-      {
-        "label": "trump · 트럼프",
-        "terms": [
-          "trump",
-          "트럼프"
-        ]
-      },
-      {
-        "label": "china · 중국",
-        "terms": [
-          "china",
-          "chinese",
-          "중국"
-        ]
-      },
-      {
-        "label": "russia · 러시아",
-        "terms": [
-          "russia",
-          "russian",
-          "러시아"
-        ]
-      },
-      {
-        "label": "trade · 무역",
-        "terms": [
-          "trade",
-          "무역"
-        ]
-      },
-      {
-        "label": "ukraine · 우크라이나",
-        "terms": [
-          "ukraine",
-          "우크라이나"
-        ]
-      },
       {
         "label": "support · 지지",
         "terms": [
           "support",
           "지지",
           "지원"
+        ]
+      },
+      {
+        "label": "military · 군사",
+        "terms": [
+          "military",
+          "troops",
+          "군사",
+          "군대",
+          "군인"
+        ]
+      },
+      {
+        "label": "security · 안보",
+        "terms": [
+          "security",
+          "안보",
+          "보안"
+        ]
+      },
+      {
+        "label": "climate · 기후",
+        "terms": [
+          "climate",
+          "기후"
         ]
       }
     ],
@@ -201,53 +189,41 @@
     {
       "kind": "keyword_rubric",
       "article": 1,
-      "start": 11.48,
-      "end": 110.74,
-      "transcript": "President Trump made history this week with the first-ever trilateral meeting with the leaders of China and Russia. The question is, will there be an immediate or lasting impact? NPR's Ron Elving has more. could have if these various vows of peaceful cooperation bear fruit, or if these vaunted trade deals come to pass. what we do know at this point is that Russia this week launched one of its most massive assaults against Ukraine since it first invaded that country in 2022. Assaults against civilian targets that also struck Poland, a NATO alloy of the US. And it makes a difference that Trump was more interested in meeting with Chinese President Xi than he was in confronting that country's efforts to obtain the most advanced American computer chips. And PR's Ron Elving. The U.N. says there have been more Israeli settler attacks on the Palestinian olive harvest this year than in any other year since record keeping began. And PR's Freire has details. The United Nations cites more than 400 Israeli settler attacks since September on Palestinian olive farmers, as well as activists, journalists and diplomats who try to help them. And it says more than 55,000 pounds of produce have been vandalized or stolen. This weekend, Palestinian lawmaker in Israel's shared video he says shows Israeli settlers stealing fruit and vegetables from Palestinian vendors in the occupied West Bank, accusing settlers who serve in Prime Minister Benjamin Netanyahu's far-right government of allowing them to do so. The Israeli military has said it seeks to prevent friction during the olive harvest. But the U.N. accuses it of, quote, acquiescence, support, and participation in attacks.",
+      "start": 11.2,
+      "end": 109.98,
+      "transcript": "European Union negotiators are deeply disappointed with the collapse of climate talks in Turkey. Schultz reports the EU team said it could not accept the final draft that omitted the mention of fossil fuel, considered one of the main drivers of environmental damage. Despite record-long and extended negotiations to reach a compromise, Environment Minister Dara O'Brien, negotiating on behalf of the EU, said the absence of any mention of transitioning away from coal, oil and gas was a disgrace. We could not, with any good conscience, support a text that effectively denies what is happening in the world and was hijacked by fossil fuel producers. O'Brien's fellow negotiator, EU Climate Commissioner Wipke Hoekstra, echoed the disappointment. This is larger than just all of us. This is something that doesn't discriminate and that humanity urgently need to tackle. Hoekstra said the EU will continue working with like-minded countries and redouble its own efforts to combat climate change. For NPR News, I'm Teri Schultz in Brussels. A leaked intelligence memo says the Pentagon is putting new limits on military cooperation with Canada. The Canadian Defense Minister says the two militaries are still working closely together. Julian Abraham has details. The leaked Classified Department of Defense memo, first reported by the Washington Post, has dominated conversations at the Halifax International Security Forum. South Dakota Senator Mike Rounds confirmed its existence in a speech at the forum. While it was a classified discussion, was one that was put together several months ago, only recently signed, and then it was unfortunately then released publicly. Rounds says, according to the memo, U.S.",
       "keywords": [
-        {
-          "label": "trump · 트럼프",
-          "terms": [
-            "trump",
-            "트럼프"
-          ]
-        },
-        {
-          "label": "china · 중국",
-          "terms": [
-            "china",
-            "chinese",
-            "중국"
-          ]
-        },
-        {
-          "label": "russia · 러시아",
-          "terms": [
-            "russia",
-            "russian",
-            "러시아"
-          ]
-        },
-        {
-          "label": "trade · 무역",
-          "terms": [
-            "trade",
-            "무역"
-          ]
-        },
-        {
-          "label": "ukraine · 우크라이나",
-          "terms": [
-            "ukraine",
-            "우크라이나"
-          ]
-        },
         {
           "label": "support · 지지",
           "terms": [
             "support",
             "지지",
             "지원"
+          ]
+        },
+        {
+          "label": "military · 군사",
+          "terms": [
+            "military",
+            "troops",
+            "군사",
+            "군대",
+            "군인"
+          ]
+        },
+        {
+          "label": "security · 안보",
+          "terms": [
+            "security",
+            "안보",
+            "보안"
+          ]
+        },
+        {
+          "label": "climate · 기후",
+          "terms": [
+            "climate",
+            "기후"
           ]
         }
       ],
@@ -256,32 +232,17 @@
     {
       "kind": "keyword_rubric",
       "article": 2,
-      "start": 187.8,
-      "end": 286.0,
-      "transcript": "President Trump is saying that he's prepared to work with the new Democratic Control Congress to cap credit card interest rates. Trump had talked about this on the 2024 campaign trail, but the banking industry and a GOP majority were not interested. Democrats and Trump have both back capping rates at 10%. Funeral services for labor activist Dolores Huerta have ended in her final hometown, Bakersfield, California. Amare Alvarez from member station KVPR has that story. of Huerta's family and state leaders spoke about her legacy at her final goodbye. California's Democratic governor-elect, Javier Becerra, highlighted her fight for farmworker rights. There's never been a day in my life without Dolores Huerta. There was never a fight that I saw that didn't include Dolores Huerta. Former President Bill Clinton and actress Jane Fonda appeared in video messages. This event kept off a week of services that started with Huerta laying in honor in the state capitol. By the end of the night, everyone was on their feet, dancing to the Mexican-American group Los Lobos. For NPR, I'm Anne-Marie Alvarez in Bakersfield. Catherine, Princess of Wales, appears in a new documentary about life after her cancer diagnosis in 2024, and titled Healed, the project follows her as she attempts the Three Peaks Challenge. Climbing the highest mountains in Scotland, England, and Wales within 24 hours, she completed the feat to raise money for the cancer charity of the Royal Marston Hospital that treated her. I'm Louise Quivone, NPR News.",
-      "keywords": [
-        {
-          "label": "trump · 트럼프",
-          "terms": [
-            "trump",
-            "트럼프"
-          ]
-        },
-        {
-          "label": "president · 대통령",
-          "terms": [
-            "president",
-            "대통령"
-          ]
-        }
-      ],
+      "start": 269.7,
+      "end": 286.18,
+      "transcript": "Heavy rain that started in Florida is forecast to move north, saturating parts of New England through Monday. Early this week's snow is expected in parts of Michigan, Northern Rockies and the Sierras and heavy rain and flooding forecasts for Northern California. I'm Louise Kivone, NPR News.",
+      "keywords": [],
       "boundary": "reporter_handoff_estimate"
     }
   ],
   "fullTranscript": {
-    "transcript": "This is NPR News Now. The latest headlines every hour. Live from NPR News in Washington, I'm Louise Schiavone. President Trump made history this week with the first-ever trilateral meeting with the leaders of China and Russia. The question is, will there be an immediate or lasting impact? NPR's Ron Elving has more. could have if these various vows of peaceful cooperation bear fruit, or if these vaunted trade deals come to pass. what we do know at this point is that Russia this week launched one of its most massive assaults against Ukraine since it first invaded that country in 2022. Assaults against civilian targets that also struck Poland, a NATO alloy of the US. And it makes a difference that Trump was more interested in meeting with Chinese President Xi than he was in confronting that country's efforts to obtain the most advanced American computer chips. And PR's Ron Elving. The U.N. says there have been more Israeli settler attacks on the Palestinian olive harvest this year than in any other year since record keeping began. And PR's Freire has details. The United Nations cites more than 400 Israeli settler attacks since September on Palestinian olive farmers, as well as activists, journalists and diplomats who try to help them. And it says more than 55,000 pounds of produce have been vandalized or stolen. This weekend, Palestinian lawmaker in Israel's shared video he says shows Israeli settlers stealing fruit and vegetables from Palestinian vendors in the occupied West Bank, accusing settlers who serve in Prime Minister Benjamin Netanyahu's far-right government of allowing them to do so. The Israeli military has said it seeks to prevent friction during the olive harvest. But the U.N. accuses it of, quote, acquiescence, support, and participation in attacks. Lauren Fryer and PR News, Tel Aviv. agents will be allowed to keep wearing face coverings while making arrests in Connecticut. A federal judge ruled the state's attempt to ban mask wearing was unconstitutional. From member station WSHU, Molly Ingram reports. Earlier this year, the state legislature passed a law that in part banned ice agents from wearing masks to hide their identity and required them to wear name badges. It was challenged by the Trump administration shortly after. In a preliminary injunction on Friday, a Biden-appointed federal judge in New Haven ruled the law violated the supremacy clause of the U.S. Constitution. decisions have been made by judges in New York, California, and Pennsylvania. In Connecticut, community members and officials have long complained the law had no teeth. Even Governor Ned Lamont said the state would not arrest agents for refusing to wear masks. For NPR News, I'm Molly Ingram in Fairfield. One of the FBI's 10 most wanted fugitives has been captured by Mexican authorities. Mexico's defense cabinet says seven alleged cartel gunmen, four Mexican soldiers were killed in a fierce firefight that erupted in Sinaloa as Fosto Isidro Mezaflores was apprehended. This is NPR News. President Trump is saying that he's prepared to work with the new Democratic Control Congress to cap credit card interest rates. Trump had talked about this on the 2024 campaign trail, but the banking industry and a GOP majority were not interested. Democrats and Trump have both back capping rates at 10%. Funeral services for labor activist Dolores Huerta have ended in her final hometown, Bakersfield, California. Amare Alvarez from member station KVPR has that story. of Huerta's family and state leaders spoke about her legacy at her final goodbye. California's Democratic governor-elect, Javier Becerra, highlighted her fight for farmworker rights. There's never been a day in my life without Dolores Huerta. There was never a fight that I saw that didn't include Dolores Huerta. Former President Bill Clinton and actress Jane Fonda appeared in video messages. This event kept off a week of services that started with Huerta laying in honor in the state capitol. By the end of the night, everyone was on their feet, dancing to the Mexican-American group Los Lobos. For NPR, I'm Anne-Marie Alvarez in Bakersfield. Catherine, Princess of Wales, appears in a new documentary about life after her cancer diagnosis in 2024, and titled Healed, the project follows her as she attempts the Three Peaks Challenge. Climbing the highest mountains in Scotland, England, and Wales within 24 hours, she completed the feat to raise money for the cancer charity of the Royal Marston Hospital that treated her. I'm Louise Quivone, NPR News. This message comes from Thumbtack. Some tasks can feel easy, but home projects can bring second guesses. Is that noise normal? Is that water damage? Who should be called? That's where Thumbtack comes in. Just upload a photo or voice note, and it uses AI-powered search to match with the right top-rated local pro. So instead of guessing, there's clarity and confidence when hiring. For your next home project, try Thumb Tech. Hire the right pro today.",
+    "transcript": "This is NPR News Now. The latest headlines every hour. Live from NPR News in Washington, I'm Louise Kievone. European Union negotiators are deeply disappointed with the collapse of climate talks in Turkey. Schultz reports the EU team said it could not accept the final draft that omitted the mention of fossil fuel, considered one of the main drivers of environmental damage. Despite record-long and extended negotiations to reach a compromise, Environment Minister Dara O'Brien, negotiating on behalf of the EU, said the absence of any mention of transitioning away from coal, oil and gas was a disgrace. We could not, with any good conscience, support a text that effectively denies what is happening in the world and was hijacked by fossil fuel producers. O'Brien's fellow negotiator, EU Climate Commissioner Wipke Hoekstra, echoed the disappointment. This is larger than just all of us. This is something that doesn't discriminate and that humanity urgently need to tackle. Hoekstra said the EU will continue working with like-minded countries and redouble its own efforts to combat climate change. For NPR News, I'm Teri Schultz in Brussels. A leaked intelligence memo says the Pentagon is putting new limits on military cooperation with Canada. The Canadian Defense Minister says the two militaries are still working closely together. Julian Abraham has details. The leaked Classified Department of Defense memo, first reported by the Washington Post, has dominated conversations at the Halifax International Security Forum. South Dakota Senator Mike Rounds confirmed its existence in a speech at the forum. While it was a classified discussion, was one that was put together several months ago, only recently signed, and then it was unfortunately then released publicly. Rounds says, according to the memo, U.S. military officials will need permission to with 10 Canadian think tank events or social gatherings, the latest strain on an already fraught relationship between the two allies. But speaking at the forum, Canada's Defense Minister David McGinty insisted cooperation with the U.S. on defense, security, and intelligence continues. For NPR News, I'm Julian Abraham in Halifax. Washington Governor Bob Ferguson is condemning the arrest of two people as they boarded an Alaska Airlines flight at Seattle-Tacoma International Airport yesterday. He says he did speak to the airline. made my view very clear to Alaska Airlines. They need to call on ICE to get out of our airports. Reacting to the arrest video. The video is horrific and it is chilling. Masked who do not identify themselves during screaming individuals off a jetway as they're about to do something very ordinary in our country, board a flight. Homeland security says the operation targeted a man who overstayed his visa and alleges that a woman threw hot coffee at officers, Alaska Airlines says it has no advance notice and is reviewing whether proper procedures were followed, the Port of Seattle says it is in talks with Homeland Security. This is NPR News in Washington. The new Democratic-controlled Congress that convenes in January today hit a milestone of at least 258 seats, with confirmation that Democrat Chuck Hubbard defeated Republican Virginia Fox in North Carolina. Four other house races remain outstanding, two of which are in Louisiana, and are heading to a December run-off, a sweep like this for house seats has not been seen since 1992. Researchers are developing brain implants that can help restore people's speech and movement, and PR's Wong has more. A 58-year-old trained singer had lost much of her ability to speak and sing due to ALS, a disease that destroys nerve cells that control muscle movement. Maitreyi Wairkar is a neuroscientist at UC Davis. She and her colleagues designed an implant that connects to parts of the singer's brain related to speech, pitch and tone. We designed a task to enable her to sing a musical scale. We asked her to sing a typical major scale and we were able to decode all the notes that she sang with very high accuracy. The implant records her brain signals into a computer, which translates them into commands. The technology is still largely experimental and was presented at the Society for Neuroscience conference. Ping Huang, NPR News. Heavy rain that started in Florida is forecast to move north, saturating parts of New England through Monday. Early this week's snow is expected in parts of Michigan, Northern Rockies and the Sierras and heavy rain and flooding forecasts for Northern California. I'm Louise Kivone, NPR News.",
     "start": 0.0,
-    "end": 313.86,
+    "end": 286.18,
     "kind": "full_broadcast"
   }
 }
