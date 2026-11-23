@@ -1,5 +1,5 @@
 {
-  "title": "3pm ET, November 22 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "3pm ET, November 23 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
   "generator_version": 15,
   "verified": false,
@@ -10,176 +10,191 @@
     "human_verified": false
   },
   "sourceNote": "문제를 만들 때 사용한 고정 음원을 재생합니다. 빈칸 앞뒤 영어 지문과 2단어 정답을 두 음성인식 모델이 비교했습니다. 자동 전사이므로 오류가 있을 수 있습니다.",
-  "generated_at": "2026-11-22T20:53:35.911096+00:00",
+  "generated_at": "2026-11-23T20:59:30.440495+00:00",
   "episode": {
-    "id": "efbfe392-3398-469f-b4fd-eca216efdb7e",
-    "title": "3pm ET, November 22 | The latest headlines from NPR",
-    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/643cd720595992fc9138e4959ed4cca996b2c67e82796e09c760bf3b515d129f.mp3",
-    "date": "2026-11-22T20:09:38+00:00",
+    "id": "7a679136-eb34-4e4e-8a8c-a4aa4d4c6f10",
+    "title": "3pm ET, November 23 | The latest headlines from NPR",
+    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/7a3d79369e369936845be8b454c3f0c546930ac4f01aeb3954e55e2f668a9445.mp3",
+    "date": "2026-11-23T20:09:29+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "문제 생성에 사용한 고정 음원",
-    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/b734b173-64f5-4d89-a20b-65ebae4ae419/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=b734b173-64f5-4d89-a20b-65ebae4ae419&feed=O9WlY7a5&t=podcast&e=nx-s1-20261122-1500-long&p=500005&d=280&size=4586728",
-    "audio_sha256": "643cd720595992fc9138e4959ed4cca996b2c67e82796e09c760bf3b515d129f"
+    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/e183b0e8-122e-4a17-a353-a5704995992f/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=e183b0e8-122e-4a17-a353-a5704995992f&feed=O9WlY7a5&t=podcast&e=nx-s1-20261123-1500-long&p=500005&d=280&size=4586728",
+    "audio_sha256": "7a3d79369e369936845be8b454c3f0c546930ac4f01aeb3954e55e2f668a9445"
   },
   "items": [
     {
-      "sentence": "drivers of environmental damage. Despite record-long ____ negotiations to reach a",
+      "sentence": "had resigned November 12 following reports of ____ affairs, most notably",
       "meaning_context": {
-        "start": 7.7,
-        "end": 48.58,
-        "text": "Live from NPR News in Washington, I'm Louise Kievone. European Union negotiators are deeply disappointed with the collapse of climate talks in Turkey. Terry Schultz reports the EU team said it could not accept the final draft that omitted the mention of fossil fuel, considered one of the main drivers of environmental damage. Despite record-long and extended negotiations to reach a compromise, Irish Environment Minister Dara O'Brien, negotiating on behalf of the EU, said the absence of any mention of transitioning away from coal, oil and gas was a disgrace. We could not, with any good conscience, support a text that effectively denies what is happening in the world and was hijacked by fossil",
+        "start": 5.32,
+        "end": 46.52,
+        "text": "every hour. Live from NPR News, I'm Lakshmi Singh. Invidia shares are soaring up more than 30% this hour and leading a Wall Street rally hours after the company's board of directors did a U-turn and reinstated Jensen Wong as CEO. Wong had resigned November 12 following reports of his extramarital affairs, most notably one with a suspected Chinese spy, but President Trump tells CNBC he convinced the board to rehire Wang, rejecting the notion that the NVIDIA co-founder's reinstatement might pose a national security risk. I've been speaking to the board directly and indirectly and I felt very strongly about it and I felt more strongly as I saw",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 24.24,
-      "context_end": 29.58,
-      "answer": "and extended",
-      "hint": "해당 음성 구간의 표현 · A… E… (2단어)",
+      "context_start": 23.36,
+      "context_end": 27.48,
+      "answer": "his extramarital",
+      "hint": "해당 음성 구간의 표현 · H… E… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 27.48,
-      "end": 28.3
+      "start": 25.66,
+      "end": 26.42
     },
     {
-      "sentence": "EU will continue working with like-minded ____ redouble its own efforts",
+      "sentence": "company because that was to me a ____ part of our country.",
       "meaning_context": {
-        "start": 44.94,
-        "end": 86.26,
-        "text": "denies what is happening in the world and was hijacked by fossil fuel producers. O'Brien's fellow negotiator, EU Climate Commissioner Wipke Hoekstra, echoed the disappointment. This is larger than just all of us. This is something that doesn't discriminate and that humanity urgently need to tackle. Hoekstra said the EU will continue working with like-minded countries and redouble its own efforts to combat climate change. For NPR News, I'm Teri Schultz in Brussels. A leaked intelligence memo says the Pentagon is putting new limits on military cooperation with Canada. The Canadian Defense Minister says the two militaries are still working closely together. Julian Abraham has details. The leaked Classified Department of Defense",
+        "start": 30.8,
+        "end": 71.78,
+        "text": "but President Trump tells CNBC he convinced the board to rehire Wang, rejecting the notion that the NVIDIA co-founder's reinstatement might pose a national security risk. I've been speaking to the board directly and indirectly and I felt very strongly about it and I felt more strongly as I saw what was happening with the with the company because that was to me a very important part of our country. This is you know represents something very special what he's done and what the company's done. Congressman Hakeem Jeffries, the Democrat likely to become the next House speaker in January, says Wong's reinstatement is quote, indefensible. Wong is scheduled to testify to House lawmakers behind closed doors next week. Starting January 1st, work requirements",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 63.14,
-      "context_end": 67.12,
-      "answer": "countries and",
-      "hint": "해당 음성 구간의 표현 · C… A… (2단어)",
+      "context_start": 48.64,
+      "context_end": 52.36,
+      "answer": "very important",
+      "hint": "해당 음성 구간의 표현 · V… I… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 65.32,
-      "end": 66.1
+      "start": 50.86,
+      "end": 51.42
     },
     {
-      "sentence": "memo, first reported by the Washington Post, ____ conversations at the Halifax",
+      "sentence": "low-income Americans. About 5 million of ____ projected to become uninsured",
       "meaning_context": {
-        "start": 68.74,
-        "end": 109.42,
-        "text": "For NPR News, I'm Teri Schultz in Brussels. A leaked intelligence memo says the Pentagon is putting new limits on military cooperation with Canada. The Canadian Defense Minister says the two militaries are still working closely together. Julian Abraham has details. The leaked Classified Department of Defense memo, first reported by the Washington Post, has dominated conversations at the Halifax International Security Forum. Republican South Dakota Senator Mike Rounds confirmed its existence in a speech at the forum. While it was a classified discussion, it was one that was put together several months ago, only recently signed, and then it was unfortunately then released publicly. Rounds says, according to the memo,",
+        "start": 69.86,
+        "end": 110.46,
+        "text": "Starting January 1st, work requirements are being added to Medicaid, the public health insurance program for low-income people. And Pierre Salinas Simmons-Duffin reports, health policy experts warn those new rules will increase the number of people who are uninsured. Right now, Medicaid covers about 70 million low-income Americans. About 5 million of them are projected to become uninsured because of the new work requirements. Adriana McIntyre is a health policy professor at Harvard. She points out enrollment has to shrink in order to achieve savings in the Republican budget law. You only save money in Medicaid if you're covering fewer people. And if you're only covering fewer healthy people, you're not saving",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 86.26,
-      "context_end": 91.0,
-      "answer": "has dominated",
-      "hint": "해당 음성 구간의 표현 · H… D… (2단어)",
+      "context_start": 86.84,
+      "context_end": 91.94,
+      "answer": "them are",
+      "hint": "해당 음성 구간의 표현 · T… A… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 88.66,
-      "end": 89.48
+      "start": 89.98,
+      "end": 90.42
     },
     {
-      "sentence": "according to the memo, U.S. military ____ need permission to",
+      "sentence": "not saving that much money. It's covering ____ who need health care.",
       "meaning_context": {
-        "start": 90.06,
-        "end": 131.34,
-        "text": "at the Halifax International Security Forum. Republican South Dakota Senator Mike Rounds confirmed its existence in a speech at the forum. While it was a classified discussion, it was one that was put together several months ago, only recently signed, and then it was unfortunately then released publicly. Rounds says, according to the memo, U.S. military officials will need permission to with 10 Canadian think tank events or social gatherings, the latest strain on an already fraught relationship between the two allies. But speaking at the forum, Canada's Defense Minister David McGinty insisted cooperation with the U.S. on defense, security, and intelligence continues. For NPR News, I'm Julian Abraham in Halifax.",
+        "start": 92.58,
+        "end": 133.54,
+        "text": "the new work requirements. Adriana McIntyre is a health policy professor at Harvard. She points out enrollment has to shrink in order to achieve savings in the Republican budget law. You only save money in Medicaid if you're covering fewer people. And if you're only covering fewer healthy people, you're not saving that much money. It's covering fewer people who need health care. That's where you get, scare quotes, savings out of work requirements. Democrats say reversing this policy is a top priority when they take over the majority in Congress. Selena Simmons-Duffin, NPR News, Washington. Ukrainian President Volodymyr Zelensky confirms his country's military was behind an",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 108.58,
-      "context_end": 112.12,
-      "answer": "officials will",
-      "hint": "당국자들 관련 표현 · O… W… (2단어)",
+      "context_start": 109.92,
+      "context_end": 114.6,
+      "answer": "fewer people",
+      "hint": "해당 음성 구간의 표현 · F… P… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 110.38,
-      "end": 111.16
+      "start": 112.66,
+      "end": 113.42
     },
     {
-      "sentence": "Bob Ferguson is condemning the arrest of ____",
+      "sentence": "in Benghazi, Libya, home to the de ____ government",
       "meaning_context": {
-        "start": 115.4,
-        "end": 156.3,
-        "text": "the latest strain on an already fraught relationship between the two allies. But speaking at the forum, Canada's Defense Minister David McGinty insisted cooperation with the U.S. on defense, security, and intelligence continues. For NPR News, I'm Julian Abraham in Halifax. Washington Governor Bob Ferguson is condemning the arrest of two people as they boarded an Alaska Airlines flight at Seattle-Tacoma International Airport yesterday. He says he did speak to the airline. I made my view very clear to Alaska Airlines. They need to call on ICE to get out of our airports. Reacting to the arrest video. The video is horrific and it is chilling. Masked agents who do not identify themselves during",
+        "start": 129.0,
+        "end": 169.74,
+        "text": "Ukrainian President Volodymyr Zelensky confirms his country's military was behind an attack that sank a Russian warship off the coast of Libya on Sunday. NPR's Charles Mains reports the strike was one of several against Russian maritime targets. The warship Mercury is one of Russia's newest naval vessels. It was also docked at a port in Benghazi, Libya, home to the de facto separatist government that enjoys close ties to Moscow when it was hit and sunk by unmanned Ukrainian sea drones. That strike followed a suspected Ukrainian drone attack Saturday that set fire and disabled a sanctioned Russian cargo vessel traveling in the Baltic Sea. Speaking to reporters, Kremlin spokesman Dmitry Peskov called expansion of terrorist activity in the Baltic region a dangerous",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 132.86,
-      "context_end": 135.8,
-      "answer": "two people",
-      "hint": "해당 음성 구간의 표현 · T… P… (2단어)",
+      "context_start": 146.88,
+      "context_end": 150.14,
+      "answer": "facto separatist",
+      "hint": "해당 음성 구간의 표현 · F… S… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 135.2,
-      "end": 135.8
+      "start": 148.82,
+      "end": 149.66
     },
     {
-      "sentence": "The new Democratic-controlled Congress ____ in January today hit",
+      "sentence": "directly. Instead, Peskov referred questions to Russia's ____ ignored the attack in",
       "meaning_context": {
-        "start": 169.68,
-        "end": 210.78,
-        "text": "coffee at officers, Alaska Airlines says it has no advance notice and is reviewing whether proper procedures were followed, the Port of Seattle says it is in talks with Homeland Security. This is NPR News in Washington. The new Democratic-controlled Congress that convenes in January today hit a milestone of at least 258 seats, with confirmation that Democrat Chuck Hubbard defeated Republican Virginia Fox in North Carolina. Four other house races remain outstanding, two of which are in Louisiana, and are heading to a December run-off, a sweep like this for house seats has",
+        "start": 155.86,
+        "end": 197.14,
+        "text": "strike followed a suspected Ukrainian drone attack Saturday that set fire and disabled a sanctioned Russian cargo vessel traveling in the Baltic Sea. Speaking to reporters, Kremlin spokesman Dmitry Peskov called expansion of terrorist activity in the Baltic region a dangerous trend, but declined to comment on the Benghazi incident directly. Instead, Peskov referred questions to Russia's military, which ignored the attack in its daily press briefing. Charles Maines, NPR News, Moscow. From Washington, this is NPR News. Nearly 200 countries are at an impasse after they were unable to agree on how to reduce planet-arming fossil fuels, and the parties walked away from",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 188.02,
-      "context_end": 192.22,
-      "answer": "that convenes",
-      "hint": "해당 음성 구간의 표현 · T… C… (2단어)",
+      "context_start": 172.64,
+      "context_end": 177.98,
+      "answer": "military which",
+      "hint": "군의 관련 표현 · M… W… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 189.92,
-      "end": 190.74
+      "start": 176.14,
+      "end": 177.06
     },
     {
-      "sentence": "speak and sing due to ALS, a ____ destroys nerve cells that",
+      "sentence": "planet-arming fossil fuels, and the parties ____ from the COP31 climate",
       "meaning_context": {
-        "start": 206.6,
-        "end": 247.06,
-        "text": "and are heading to a December run-off, a sweep like this for house seats has not been seen since 1992. Researchers are developing brain implants that can help restore people's speech and movement, and PR's Ping Wong has more. A 58-year-old trained singer had lost much of her ability to speak and sing due to ALS, a disease that destroys nerve cells that control muscle movement. Maitreyi Wairkar is a neuroscientist at UC Davis. She and her colleagues designed an implant that connects to parts of the singer's brain related to speech, pitch and tone. We designed a task to enable her to sing a musical scale. We asked her to sing a typical major scale and we were able",
+        "start": 175.72,
+        "end": 217.3,
+        "text": "Russia's military, which ignored the attack in its daily press briefing. Charles Maines, NPR News, Moscow. From Washington, this is NPR News. Nearly 200 countries are at an impasse after they were unable to agree on how to reduce planet-arming fossil fuels, and the parties walked away from the COP31 climate summit in Turkey over the weekend without an agreement on money. As Broadway moves into the lucrative holiday season, a local wardrobe workers union has voted to authorize a strike. Jeff Lennon reports this comes weeks after union stagehands did the same. Both locals, which are members of the International Alliance of Theatrical Stage",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 224.1,
-      "context_end": 228.02,
-      "answer": "disease that",
-      "hint": "해당 음성 구간의 표현 · D… T… (2단어)",
+      "context_start": 192.74,
+      "context_end": 198.18,
+      "answer": "walked away",
+      "hint": "해당 음성 구간의 표현 · W… A… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 226.48,
-      "end": 226.92
+      "start": 196.14,
+      "end": 196.9
     }
   ],
   "summaryReview": {
     "kind": "keyword_rubric",
     "article": 1,
-    "start": 11.2,
-    "end": 109.98,
-    "transcript": "European Union negotiators are deeply disappointed with the collapse of climate talks in Turkey. Schultz reports the EU team said it could not accept the final draft that omitted the mention of fossil fuel, considered one of the main drivers of environmental damage. Despite record-long and extended negotiations to reach a compromise, Environment Minister Dara O'Brien, negotiating on behalf of the EU, said the absence of any mention of transitioning away from coal, oil and gas was a disgrace. We could not, with any good conscience, support a text that effectively denies what is happening in the world and was hijacked by fossil fuel producers. O'Brien's fellow negotiator, EU Climate Commissioner Wipke Hoekstra, echoed the disappointment. This is larger than just all of us. This is something that doesn't discriminate and that humanity urgently need to tackle. Hoekstra said the EU will continue working with like-minded countries and redouble its own efforts to combat climate change. For NPR News, I'm Teri Schultz in Brussels. A leaked intelligence memo says the Pentagon is putting new limits on military cooperation with Canada. The Canadian Defense Minister says the two militaries are still working closely together. Julian Abraham has details. The leaked Classified Department of Defense memo, first reported by the Washington Post, has dominated conversations at the Halifax International Security Forum. South Dakota Senator Mike Rounds confirmed its existence in a speech at the forum. While it was a classified discussion, was one that was put together several months ago, only recently signed, and then it was unfortunately then released publicly. Rounds says, according to the memo, U.S.",
+    "start": 11.42,
+    "end": 111.3,
+    "transcript": "Invidia shares are soaring up more than 30% this hour and leading a Wall Street rally hours after the company's board of directors did a U-turn and reinstated Jensen Wong as CEO. Wong had resigned November 12 following reports of his extramarital affairs, most notably one with a suspected Chinese spy, but President Trump tells CNBC he convinced the board to rehire Wang, rejecting the notion that the NVIDIA co-founder's reinstatement might pose a national security risk. I've been speaking to the board directly and indirectly and I felt very strongly about it and I felt more strongly as I saw what was happening with the with the company because that was to me a very important part of our country. This is you know represents something very special what he's done and what the company's done. Congressman Hakeem Jeffries, the Democrat likely to become the next House speaker in January, says Wong's reinstatement is quote, indefensible. Wong is scheduled to testify to House lawmakers behind closed doors next week. Starting January 1st, work requirements are being added to the public health insurance program for low-income people. And Pierre Salinas Simmons-Duffin reports, policy experts warn those new rules will increase the number of people who are uninsured. Right now, covers about 70 million low-income Americans. About 5 million of them are projected to become uninsured because of the new work requirements. Adriana McIntyre is a health policy professor at Harvard. She points out enrollment has to shrink in order to achieve savings in the Republican budget law. You only save money in Medicaid if you're covering fewer people. And if you're only covering fewer healthy people, you're not saving that much money.",
     "keywords": [
       {
-        "label": "support · 지지",
+        "label": "trump · 트럼프",
         "terms": [
-          "support",
-          "지지",
-          "지원"
+          "trump",
+          "트럼프"
         ]
       },
       {
-        "label": "military · 군사",
+        "label": "china · 중국",
         "terms": [
-          "military",
-          "troops",
-          "군사",
-          "군대",
-          "군인"
+          "china",
+          "chinese",
+          "중국"
         ]
       },
       {
-        "label": "security · 안보",
+        "label": "nvidia · 엔비디아",
         "terms": [
-          "security",
-          "안보",
-          "보안"
+          "nvidia",
+          "엔비디아"
         ]
       },
       {
-        "label": "climate · 기후",
+        "label": "resigned · 사임",
         "terms": [
-          "climate",
-          "기후"
+          "resign",
+          "resigned",
+          "resignation",
+          "사임",
+          "사퇴"
+        ]
+      },
+      {
+        "label": "president · 대통령",
+        "terms": [
+          "president",
+          "대통령"
+        ]
+      },
+      {
+        "label": "company · 기업",
+        "terms": [
+          "company",
+          "companies",
+          "기업",
+          "회사"
         ]
       }
     ],
@@ -189,16 +204,88 @@
     {
       "kind": "keyword_rubric",
       "article": 1,
-      "start": 11.2,
-      "end": 109.98,
-      "transcript": "European Union negotiators are deeply disappointed with the collapse of climate talks in Turkey. Schultz reports the EU team said it could not accept the final draft that omitted the mention of fossil fuel, considered one of the main drivers of environmental damage. Despite record-long and extended negotiations to reach a compromise, Environment Minister Dara O'Brien, negotiating on behalf of the EU, said the absence of any mention of transitioning away from coal, oil and gas was a disgrace. We could not, with any good conscience, support a text that effectively denies what is happening in the world and was hijacked by fossil fuel producers. O'Brien's fellow negotiator, EU Climate Commissioner Wipke Hoekstra, echoed the disappointment. This is larger than just all of us. This is something that doesn't discriminate and that humanity urgently need to tackle. Hoekstra said the EU will continue working with like-minded countries and redouble its own efforts to combat climate change. For NPR News, I'm Teri Schultz in Brussels. A leaked intelligence memo says the Pentagon is putting new limits on military cooperation with Canada. The Canadian Defense Minister says the two militaries are still working closely together. Julian Abraham has details. The leaked Classified Department of Defense memo, first reported by the Washington Post, has dominated conversations at the Halifax International Security Forum. South Dakota Senator Mike Rounds confirmed its existence in a speech at the forum. While it was a classified discussion, was one that was put together several months ago, only recently signed, and then it was unfortunately then released publicly. Rounds says, according to the memo, U.S.",
+      "start": 11.42,
+      "end": 111.3,
+      "transcript": "Invidia shares are soaring up more than 30% this hour and leading a Wall Street rally hours after the company's board of directors did a U-turn and reinstated Jensen Wong as CEO. Wong had resigned November 12 following reports of his extramarital affairs, most notably one with a suspected Chinese spy, but President Trump tells CNBC he convinced the board to rehire Wang, rejecting the notion that the NVIDIA co-founder's reinstatement might pose a national security risk. I've been speaking to the board directly and indirectly and I felt very strongly about it and I felt more strongly as I saw what was happening with the with the company because that was to me a very important part of our country. This is you know represents something very special what he's done and what the company's done. Congressman Hakeem Jeffries, the Democrat likely to become the next House speaker in January, says Wong's reinstatement is quote, indefensible. Wong is scheduled to testify to House lawmakers behind closed doors next week. Starting January 1st, work requirements are being added to the public health insurance program for low-income people. And Pierre Salinas Simmons-Duffin reports, policy experts warn those new rules will increase the number of people who are uninsured. Right now, covers about 70 million low-income Americans. About 5 million of them are projected to become uninsured because of the new work requirements. Adriana McIntyre is a health policy professor at Harvard. She points out enrollment has to shrink in order to achieve savings in the Republican budget law. You only save money in Medicaid if you're covering fewer people. And if you're only covering fewer healthy people, you're not saving that much money.",
       "keywords": [
         {
-          "label": "support · 지지",
+          "label": "trump · 트럼프",
           "terms": [
-            "support",
-            "지지",
-            "지원"
+            "trump",
+            "트럼프"
+          ]
+        },
+        {
+          "label": "china · 중국",
+          "terms": [
+            "china",
+            "chinese",
+            "중국"
+          ]
+        },
+        {
+          "label": "nvidia · 엔비디아",
+          "terms": [
+            "nvidia",
+            "엔비디아"
+          ]
+        },
+        {
+          "label": "resigned · 사임",
+          "terms": [
+            "resign",
+            "resigned",
+            "resignation",
+            "사임",
+            "사퇴"
+          ]
+        },
+        {
+          "label": "president · 대통령",
+          "terms": [
+            "president",
+            "대통령"
+          ]
+        },
+        {
+          "label": "company · 기업",
+          "terms": [
+            "company",
+            "companies",
+            "기업",
+            "회사"
+          ]
+        }
+      ],
+      "boundary": "reporter_handoff_estimate"
+    },
+    {
+      "kind": "keyword_rubric",
+      "article": 2,
+      "start": 129.0,
+      "end": 185.12,
+      "transcript": "Ukrainian President Volodymyr Zelensky confirms his country's military was behind an attack that sank a Russian warship off the coast of Libya on Sunday. NPR's Mains reports the strike was one of several against Russian maritime targets. warship Mercury is one of Russia's newest naval vessels. It was also docked at a port in Benghazi, home to the de facto separatist government that enjoys close ties to Moscow when it was hit and sunk by unmanned Ukrainian sea drones. That strike followed a suspected Ukrainian drone attack Saturday that set fire and disabled a sanctioned Russian cargo vessel traveling in the Baltic Sea. Speaking to reporters, spokesman Dmitry Peskov called expansion of terrorist activity in the Baltic region a dangerous trend, but declined to comment on the Benghazi incident directly. Instead, Peskov referred questions to Russia's military, which ignored the attack in its daily press briefing. Charles Maines, NPR News, Moscow. From Washington, this is NPR News.",
+      "keywords": [
+        {
+          "label": "russia · 러시아",
+          "terms": [
+            "russia",
+            "russian",
+            "러시아"
+          ]
+        },
+        {
+          "label": "president · 대통령",
+          "terms": [
+            "president",
+            "대통령"
+          ]
+        },
+        {
+          "label": "government · 정부",
+          "terms": [
+            "government",
+            "정부"
           ]
         },
         {
@@ -212,37 +299,22 @@
           ]
         },
         {
-          "label": "security · 안보",
+          "label": "attack · 공격",
           "terms": [
-            "security",
-            "안보",
-            "보안"
-          ]
-        },
-        {
-          "label": "climate · 기후",
-          "terms": [
-            "climate",
-            "기후"
+            "attack",
+            "attacks",
+            "공격",
+            "공습"
           ]
         }
       ],
       "boundary": "reporter_handoff_estimate"
-    },
-    {
-      "kind": "keyword_rubric",
-      "article": 2,
-      "start": 269.7,
-      "end": 286.18,
-      "transcript": "Heavy rain that started in Florida is forecast to move north, saturating parts of New England through Monday. Early this week's snow is expected in parts of Michigan, Northern Rockies and the Sierras and heavy rain and flooding forecasts for Northern California. I'm Louise Kivone, NPR News.",
-      "keywords": [],
-      "boundary": "reporter_handoff_estimate"
     }
   ],
   "fullTranscript": {
-    "transcript": "This is NPR News Now. The latest headlines every hour. Live from NPR News in Washington, I'm Louise Kievone. European Union negotiators are deeply disappointed with the collapse of climate talks in Turkey. Schultz reports the EU team said it could not accept the final draft that omitted the mention of fossil fuel, considered one of the main drivers of environmental damage. Despite record-long and extended negotiations to reach a compromise, Environment Minister Dara O'Brien, negotiating on behalf of the EU, said the absence of any mention of transitioning away from coal, oil and gas was a disgrace. We could not, with any good conscience, support a text that effectively denies what is happening in the world and was hijacked by fossil fuel producers. O'Brien's fellow negotiator, EU Climate Commissioner Wipke Hoekstra, echoed the disappointment. This is larger than just all of us. This is something that doesn't discriminate and that humanity urgently need to tackle. Hoekstra said the EU will continue working with like-minded countries and redouble its own efforts to combat climate change. For NPR News, I'm Teri Schultz in Brussels. A leaked intelligence memo says the Pentagon is putting new limits on military cooperation with Canada. The Canadian Defense Minister says the two militaries are still working closely together. Julian Abraham has details. The leaked Classified Department of Defense memo, first reported by the Washington Post, has dominated conversations at the Halifax International Security Forum. South Dakota Senator Mike Rounds confirmed its existence in a speech at the forum. While it was a classified discussion, was one that was put together several months ago, only recently signed, and then it was unfortunately then released publicly. Rounds says, according to the memo, U.S. military officials will need permission to with 10 Canadian think tank events or social gatherings, the latest strain on an already fraught relationship between the two allies. But speaking at the forum, Canada's Defense Minister David McGinty insisted cooperation with the U.S. on defense, security, and intelligence continues. For NPR News, I'm Julian Abraham in Halifax. Washington Governor Bob Ferguson is condemning the arrest of two people as they boarded an Alaska Airlines flight at Seattle-Tacoma International Airport yesterday. He says he did speak to the airline. made my view very clear to Alaska Airlines. They need to call on ICE to get out of our airports. Reacting to the arrest video. The video is horrific and it is chilling. Masked who do not identify themselves during screaming individuals off a jetway as they're about to do something very ordinary in our country, board a flight. Homeland security says the operation targeted a man who overstayed his visa and alleges that a woman threw hot coffee at officers, Alaska Airlines says it has no advance notice and is reviewing whether proper procedures were followed, the Port of Seattle says it is in talks with Homeland Security. This is NPR News in Washington. The new Democratic-controlled Congress that convenes in January today hit a milestone of at least 258 seats, with confirmation that Democrat Chuck Hubbard defeated Republican Virginia Fox in North Carolina. Four other house races remain outstanding, two of which are in Louisiana, and are heading to a December run-off, a sweep like this for house seats has not been seen since 1992. Researchers are developing brain implants that can help restore people's speech and movement, and PR's Wong has more. A 58-year-old trained singer had lost much of her ability to speak and sing due to ALS, a disease that destroys nerve cells that control muscle movement. Maitreyi Wairkar is a neuroscientist at UC Davis. She and her colleagues designed an implant that connects to parts of the singer's brain related to speech, pitch and tone. We designed a task to enable her to sing a musical scale. We asked her to sing a typical major scale and we were able to decode all the notes that she sang with very high accuracy. The implant records her brain signals into a computer, which translates them into commands. The technology is still largely experimental and was presented at the Society for Neuroscience conference. Ping Huang, NPR News. Heavy rain that started in Florida is forecast to move north, saturating parts of New England through Monday. Early this week's snow is expected in parts of Michigan, Northern Rockies and the Sierras and heavy rain and flooding forecasts for Northern California. I'm Louise Kivone, NPR News.",
+    "transcript": "This is NPR News Now. The latest headlines every hour. Live from NPR News, I'm Lakshmi Singh. Invidia shares are soaring up more than 30% this hour and leading a Wall Street rally hours after the company's board of directors did a U-turn and reinstated Jensen Wong as CEO. Wong had resigned November 12 following reports of his extramarital affairs, most notably one with a suspected Chinese spy, but President Trump tells CNBC he convinced the board to rehire Wang, rejecting the notion that the NVIDIA co-founder's reinstatement might pose a national security risk. I've been speaking to the board directly and indirectly and I felt very strongly about it and I felt more strongly as I saw what was happening with the with the company because that was to me a very important part of our country. This is you know represents something very special what he's done and what the company's done. Congressman Hakeem Jeffries, the Democrat likely to become the next House speaker in January, says Wong's reinstatement is quote, indefensible. Wong is scheduled to testify to House lawmakers behind closed doors next week. Starting January 1st, work requirements are being added to the public health insurance program for low-income people. And Pierre Salinas Simmons-Duffin reports, policy experts warn those new rules will increase the number of people who are uninsured. Right now, covers about 70 million low-income Americans. About 5 million of them are projected to become uninsured because of the new work requirements. Adriana McIntyre is a health policy professor at Harvard. She points out enrollment has to shrink in order to achieve savings in the Republican budget law. You only save money in Medicaid if you're covering fewer people. And if you're only covering fewer healthy people, you're not saving that much money. It's covering fewer people who need health care. That's where you get, scare quotes, savings out of work requirements. say reversing this policy is a top priority when they take over the majority in Congress. Selena Simmons-Duffin, NPR News, Washington. Ukrainian President Volodymyr Zelensky confirms his country's military was behind an attack that sank a Russian warship off the coast of Libya on Sunday. NPR's Mains reports the strike was one of several against Russian maritime targets. warship Mercury is one of Russia's newest naval vessels. It was also docked at a port in Benghazi, home to the de facto separatist government that enjoys close ties to Moscow when it was hit and sunk by unmanned Ukrainian sea drones. That strike followed a suspected Ukrainian drone attack Saturday that set fire and disabled a sanctioned Russian cargo vessel traveling in the Baltic Sea. Speaking to reporters, spokesman Dmitry Peskov called expansion of terrorist activity in the Baltic region a dangerous trend, but declined to comment on the Benghazi incident directly. Instead, Peskov referred questions to Russia's military, which ignored the attack in its daily press briefing. Charles Maines, NPR News, Moscow. From Washington, this is NPR News. Nearly 200 countries are at an impasse after they were unable to agree on how to reduce planet-arming fossil fuels, and the parties walked away from the COP31 climate summit in Turkey over the weekend without an agreement on money. As Broadway moves into the lucrative holiday season, a local wardrobe workers union has voted to authorize a strike. Jeff Lennon reports this comes weeks after union stagehands did the same. locals, which are members of the International Alliance of Theatrical Stage Employees, or IOTC, have been working without contracts since July. The locals have been negotiating with the Broadway League, which represents theater owners and producers, but no agreements have been reached. A strike authorization is not the same as a strike, but with Broadway still in recovery mode, following an 18-month closure during the pandemic, a work stoppage around the period from Thanksgiving to New Year's could cause great economic damage and a disruption for audiences. For NPR News, I'm Jeff London in New York. The Cincinnati Zoo has reopened a more fortified hippo cove after losing a beloved hippo named Fiona to an ingested hat that was accidentally flung into a ceiling fan and ended up in her enclosure. The zoo says it relies on visitors to secure their belongings but in light of Fiona's death last week. The zoos removed all ceiling fans and added a layer of netting above viewing windows. Fiona captivated millions of fans which began with the survival of her premature birth. She would have been 10 years old in January. This is NPR.",
     "start": 0.0,
-    "end": 286.18,
+    "end": 285.48,
     "kind": "full_broadcast"
   }
 }
