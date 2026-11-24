@@ -1,5 +1,5 @@
 {
-  "title": "3pm ET, November 23 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "3pm ET, November 24 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
   "generator_version": 15,
   "verified": false,
@@ -10,175 +10,150 @@
     "human_verified": false
   },
   "sourceNote": "문제를 만들 때 사용한 고정 음원을 재생합니다. 빈칸 앞뒤 영어 지문과 2단어 정답을 두 음성인식 모델이 비교했습니다. 자동 전사이므로 오류가 있을 수 있습니다.",
-  "generated_at": "2026-11-23T20:59:30.440495+00:00",
+  "generated_at": "2026-11-24T21:02:03.414418+00:00",
   "episode": {
-    "id": "7a679136-eb34-4e4e-8a8c-a4aa4d4c6f10",
-    "title": "3pm ET, November 23 | The latest headlines from NPR",
-    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/7a3d79369e369936845be8b454c3f0c546930ac4f01aeb3954e55e2f668a9445.mp3",
-    "date": "2026-11-23T20:09:29+00:00",
+    "id": "b69abf72-c8ec-495a-9a02-faec0354d8bd",
+    "title": "3pm ET, November 24 | The latest headlines from NPR",
+    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/8b6098cafe6de1049a7f05e844683afcfe3fa604269ab9b0adb33f0832333689.mp3",
+    "date": "2026-11-24T20:09:30+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "문제 생성에 사용한 고정 음원",
-    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/e183b0e8-122e-4a17-a353-a5704995992f/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=e183b0e8-122e-4a17-a353-a5704995992f&feed=O9WlY7a5&t=podcast&e=nx-s1-20261123-1500-long&p=500005&d=280&size=4586728",
-    "audio_sha256": "7a3d79369e369936845be8b454c3f0c546930ac4f01aeb3954e55e2f668a9445"
+    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/397e4c35-0356-4d54-9539-e95c87c07a59/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=397e4c35-0356-4d54-9539-e95c87c07a59&feed=O9WlY7a5&t=podcast&e=nx-s1-20261124-1500-long&p=500005&d=280&size=4586728",
+    "audio_sha256": "8b6098cafe6de1049a7f05e844683afcfe3fa604269ab9b0adb33f0832333689"
   },
   "items": [
     {
-      "sentence": "had resigned November 12 following reports of ____ affairs, most notably",
+      "sentence": "pair of turkeys, sparing a pair of ____ is, from becoming Thanksgiving",
       "meaning_context": {
-        "start": 5.32,
-        "end": 46.52,
-        "text": "every hour. Live from NPR News, I'm Lakshmi Singh. Invidia shares are soaring up more than 30% this hour and leading a Wall Street rally hours after the company's board of directors did a U-turn and reinstated Jensen Wong as CEO. Wong had resigned November 12 following reports of his extramarital affairs, most notably one with a suspected Chinese spy, but President Trump tells CNBC he convinced the board to rehire Wang, rejecting the notion that the NVIDIA co-founder's reinstatement might pose a national security risk. I've been speaking to the board directly and indirectly and I felt very strongly about it and I felt more strongly as I saw",
+        "start": 9.12,
+        "end": 49.42,
+        "text": "News, I'm Lakshmi Singh. You can add freedom and feathers to the long list of President Trump's pardons since he returned to office last year. This afternoon, President Trump led the annual White House tradition of sparking a pair of turkeys, sparing a pair of turkeys, that is, from becoming Thanksgiving dinner. Trump got a picture with one turkey, apparently the other wandered off somewhere in the bushes. Before the photo op, Trump shifted the focus from freedom and feathers to an economy that he proclaims to be strong on his watch, his renovation projects, including the ballroom,",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 23.36,
-      "context_end": 27.48,
-      "answer": "his extramarital",
-      "hint": "해당 음성 구간의 표현 · H… E… (2단어)",
+      "context_start": 26.38,
+      "context_end": 31.58,
+      "answer": "turkeys that",
+      "hint": "해당 음성 구간의 표현 · T… T… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 25.66,
-      "end": 26.42
+      "start": 29.18,
+      "end": 29.72
     },
     {
-      "sentence": "company because that was to me a ____ part of our country.",
+      "sentence": "what he describes as the success of ____ policies, and the U",
       "meaning_context": {
-        "start": 30.8,
-        "end": 71.78,
-        "text": "but President Trump tells CNBC he convinced the board to rehire Wang, rejecting the notion that the NVIDIA co-founder's reinstatement might pose a national security risk. I've been speaking to the board directly and indirectly and I felt very strongly about it and I felt more strongly as I saw what was happening with the with the company because that was to me a very important part of our country. This is you know represents something very special what he's done and what the company's done. Congressman Hakeem Jeffries, the Democrat likely to become the next House speaker in January, says Wong's reinstatement is quote, indefensible. Wong is scheduled to testify to House lawmakers behind closed doors next week. Starting January 1st, work requirements",
+        "start": 33.6,
+        "end": 73.32,
+        "text": "Trump got a picture with one turkey, apparently the other wandered off somewhere in the bushes. Before the photo op, Trump shifted the focus from freedom and feathers to an economy that he proclaims to be strong on his watch, his renovation projects, including the ballroom, what he describes as the success of his immigration policies, and the U.S. war with Iran. Then, Trump turned back to expressing gratitude to security forces ahead of Thanksgiving. A top House Democrat is expanding his investigation into the venture capital fund 1789 Capital. NPR's Barbara Sprunt reports the president's eldest son, Donald Trump Jr.,",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 48.64,
-      "context_end": 52.36,
-      "answer": "very important",
-      "hint": "해당 음성 구간의 표현 · V… I… (2단어)",
+      "context_start": 49.9,
+      "context_end": 54.64,
+      "answer": "his immigration",
+      "hint": "해당 음성 구간의 표현 · H… I… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 50.86,
-      "end": 51.42
+      "start": 52.12,
+      "end": 52.8
     },
     {
-      "sentence": "low-income Americans. About 5 million of ____ projected to become uninsured",
+      "sentence": "called the allegations personal attacks untethered to ____ This is one part",
       "meaning_context": {
-        "start": 69.86,
-        "end": 110.46,
-        "text": "Starting January 1st, work requirements are being added to Medicaid, the public health insurance program for low-income people. And Pierre Salinas Simmons-Duffin reports, health policy experts warn those new rules will increase the number of people who are uninsured. Right now, Medicaid covers about 70 million low-income Americans. About 5 million of them are projected to become uninsured because of the new work requirements. Adriana McIntyre is a health policy professor at Harvard. She points out enrollment has to shrink in order to achieve savings in the Republican budget law. You only save money in Medicaid if you're covering fewer people. And if you're only covering fewer healthy people, you're not saving",
+        "start": 94.78,
+        "end": 135.64,
+        "text": "prediction market Polymarket, and the online firearms seller Grabagun. The Maryland Democrat requested two years' worth of documents. He's investigating whether the president's son used his political influence to boost the companies. An attorney representing 1789 Capitol called the allegations personal attacks untethered to actual evidence. This is one part of a broader oversight agenda for Democrats when they take control of Congress in January. Barbara Sprint, NPR News, Washington. The rate of newborns receiving vaccination against hepatitis B has fallen sharply from 80 percent in 2022 to just under 66 percent this year. According to new findings in the",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 86.84,
-      "context_end": 91.94,
-      "answer": "them are",
-      "hint": "해당 음성 구간의 표현 · T… A… (2단어)",
+      "context_start": 111.08,
+      "context_end": 116.88,
+      "answer": "actual evidence",
+      "hint": "해당 음성 구간의 표현 · A… E… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 89.98,
-      "end": 90.42
+      "start": 114.6,
+      "end": 115.52
     },
     {
-      "sentence": "not saving that much money. It's covering ____ who need health care.",
+      "sentence": "newborns get the hepatitis B vaccine. The ____ offers the first glimpse",
       "meaning_context": {
-        "start": 92.58,
-        "end": 133.54,
-        "text": "the new work requirements. Adriana McIntyre is a health policy professor at Harvard. She points out enrollment has to shrink in order to achieve savings in the Republican budget law. You only save money in Medicaid if you're covering fewer people. And if you're only covering fewer healthy people, you're not saving that much money. It's covering fewer people who need health care. That's where you get, scare quotes, savings out of work requirements. Democrats say reversing this policy is a top priority when they take over the majority in Congress. Selena Simmons-Duffin, NPR News, Washington. Ukrainian President Volodymyr Zelensky confirms his country's military was behind an",
+        "start": 127.06,
+        "end": 168.12,
+        "text": "against hepatitis B has fallen sharply from 80 percent in 2022 to just under 66 percent this year. According to new findings in the journal of medicine, here's NPR's Maria Godoy. Last winter, a federal advisory panel to the CDC voted to end a long-standing recommendation that all newborns get the hepatitis B vaccine. The new study offers the first glimpse of how vaccination rates have changed since then. Study co-author Nina Masters of health care data analytics firm Triveda says while vaccination rates had been sliding for several years before the panels vote, There's been a lot of national level miscommunication and confusing information, changing recommendations",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 109.92,
-      "context_end": 114.6,
-      "answer": "fewer people",
-      "hint": "해당 음성 구간의 표현 · F… P… (2단어)",
+      "context_start": 144.46,
+      "context_end": 148.86,
+      "answer": "new study",
+      "hint": "해당 음성 구간의 표현 · N… S… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 112.66,
-      "end": 113.42
+      "start": 147.4,
+      "end": 147.76
     },
     {
-      "sentence": "in Benghazi, Libya, home to the de ____ government",
+      "sentence": "helping parents to feel clear on what ____ do.",
       "meaning_context": {
-        "start": 129.0,
-        "end": 169.74,
-        "text": "Ukrainian President Volodymyr Zelensky confirms his country's military was behind an attack that sank a Russian warship off the coast of Libya on Sunday. NPR's Charles Mains reports the strike was one of several against Russian maritime targets. The warship Mercury is one of Russia's newest naval vessels. It was also docked at a port in Benghazi, Libya, home to the de facto separatist government that enjoys close ties to Moscow when it was hit and sunk by unmanned Ukrainian sea drones. That strike followed a suspected Ukrainian drone attack Saturday that set fire and disabled a sanctioned Russian cargo vessel traveling in the Baltic Sea. Speaking to reporters, Kremlin spokesman Dmitry Peskov called expansion of terrorist activity in the Baltic region a dangerous",
+        "start": 152.14,
+        "end": 192.54,
+        "text": "co-author Nina Masters of health care data analytics firm Triveda says while vaccination rates had been sliding for several years before the panels vote, There's been a lot of national level miscommunication and confusing information, changing recommendations and it's certainly not helping parents to feel clear on what they should do. Hepatitis B infections in infants are highly likely to lead to chronic infection and serious complications like liver cancer later in life. Maria Godoy, NPR News. This is NPR. The Prime Minister of Singapore says the country does not want to become a backdoor for advanced U.S.",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 146.88,
-      "context_end": 150.14,
-      "answer": "facto separatist",
-      "hint": "해당 음성 구간의 표현 · F… S… (2단어)",
+      "context_start": 169.62,
+      "context_end": 173.04,
+      "answer": "they should",
+      "hint": "해당 음성 구간의 표현 · T… S… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 148.82,
-      "end": 149.66
+      "start": 172.26,
+      "end": 172.66
     },
     {
-      "sentence": "directly. Instead, Peskov referred questions to Russia's ____ ignored the attack in",
+      "sentence": "a conduit by companies to circumvent America's ____",
       "meaning_context": {
-        "start": 155.86,
-        "end": 197.14,
-        "text": "strike followed a suspected Ukrainian drone attack Saturday that set fire and disabled a sanctioned Russian cargo vessel traveling in the Baltic Sea. Speaking to reporters, Kremlin spokesman Dmitry Peskov called expansion of terrorist activity in the Baltic region a dangerous trend, but declined to comment on the Benghazi incident directly. Instead, Peskov referred questions to Russia's military, which ignored the attack in its daily press briefing. Charles Maines, NPR News, Moscow. From Washington, this is NPR News. Nearly 200 countries are at an impasse after they were unable to agree on how to reduce planet-arming fossil fuels, and the parties walked away from",
+        "start": 205.82,
+        "end": 246.92,
+        "text": "with NVIDIA CEO Jensen Wong. Yan Kamens and Ruby reports. Singapore's Prime Minister Lawrence Wong says the country will work with American authorities to develop a mechanism that allows the U.S. to enforce its own export controls, adding that the island nation does not want to be, quote, used and abused as a conduit by companies to circumvent America's export controls. The statement comes as the U.S. placed Singapore-based Megaspeed on a trade blacklist. That's Yann Comminson-Broomby reporting. Thanksgiving travel is pricier this year, especially airfares. Here's NPR's Willa Rubin. The big reason prices are up? Jet fuel. It's up nearly 90 percent this year, according to",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 172.64,
-      "context_end": 177.98,
-      "answer": "military which",
-      "hint": "군의 관련 표현 · M… W… (2단어)",
+      "context_start": 223.12,
+      "context_end": 226.88,
+      "answer": "export controls",
+      "hint": "해당 음성 구간의 표현 · E… C… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 176.14,
-      "end": 177.06
+      "start": 226.02,
+      "end": 226.88
     },
     {
-      "sentence": "planet-arming fossil fuels, and the parties ____ from the COP31 climate",
+      "sentence": "to the war in Iran. It's meant ____ fuel to go around,",
       "meaning_context": {
-        "start": 175.72,
-        "end": 217.3,
-        "text": "Russia's military, which ignored the attack in its daily press briefing. Charles Maines, NPR News, Moscow. From Washington, this is NPR News. Nearly 200 countries are at an impasse after they were unable to agree on how to reduce planet-arming fossil fuels, and the parties walked away from the COP31 climate summit in Turkey over the weekend without an agreement on money. As Broadway moves into the lucrative holiday season, a local wardrobe workers union has voted to authorize a strike. Jeff Lennon reports this comes weeks after union stagehands did the same. Both locals, which are members of the International Alliance of Theatrical Stage",
+        "start": 235.94,
+        "end": 276.84,
+        "text": "Thanksgiving travel is pricier this year, especially airfares. Here's NPR's Willa Rubin. The big reason prices are up? Jet fuel. It's up nearly 90 percent this year, according to the travel tech company Hopper. Jet fuel comes from crude oil, and there's been less of that coming out of the Middle East this year due to the war in Iran. It's meant less jet fuel to go around, so even higher demand. The price for a barrel of crude has dropped in recent weeks, but for travelers, most people book their tickets a few months in advance. When it comes to the price of that jet fuel, air carriers are absorbing some of those costs, but they're also passing them on. Tickets for Thanksgiving are up about 30% compared to last year,",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 192.74,
-      "context_end": 198.18,
-      "answer": "walked away",
-      "hint": "해당 음성 구간의 표현 · W… A… (2단어)",
+      "context_start": 254.28,
+      "context_end": 257.6,
+      "answer": "less jet",
+      "hint": "해당 음성 구간의 표현 · L… J… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 196.14,
-      "end": 196.9
+      "start": 256.12,
+      "end": 256.7
     }
   ],
   "summaryReview": {
     "kind": "keyword_rubric",
     "article": 1,
-    "start": 11.42,
-    "end": 111.3,
-    "transcript": "Invidia shares are soaring up more than 30% this hour and leading a Wall Street rally hours after the company's board of directors did a U-turn and reinstated Jensen Wong as CEO. Wong had resigned November 12 following reports of his extramarital affairs, most notably one with a suspected Chinese spy, but President Trump tells CNBC he convinced the board to rehire Wang, rejecting the notion that the NVIDIA co-founder's reinstatement might pose a national security risk. I've been speaking to the board directly and indirectly and I felt very strongly about it and I felt more strongly as I saw what was happening with the with the company because that was to me a very important part of our country. This is you know represents something very special what he's done and what the company's done. Congressman Hakeem Jeffries, the Democrat likely to become the next House speaker in January, says Wong's reinstatement is quote, indefensible. Wong is scheduled to testify to House lawmakers behind closed doors next week. Starting January 1st, work requirements are being added to the public health insurance program for low-income people. And Pierre Salinas Simmons-Duffin reports, policy experts warn those new rules will increase the number of people who are uninsured. Right now, covers about 70 million low-income Americans. About 5 million of them are projected to become uninsured because of the new work requirements. Adriana McIntyre is a health policy professor at Harvard. She points out enrollment has to shrink in order to achieve savings in the Republican budget law. You only save money in Medicaid if you're covering fewer people. And if you're only covering fewer healthy people, you're not saving that much money.",
+    "start": 12.12,
+    "end": 61.66,
+    "transcript": "You can add freedom and feathers to the long list of President Trump's pardons since he returned to office last year. This afternoon, President Trump led the annual White House tradition of sparking a pair of turkeys, a pair of turkeys, that is, from becoming Thanksgiving dinner. Trump got a picture with one turkey, apparently the other wandered off somewhere in the bushes. Before the photo op, Trump shifted the focus from freedom and feathers to an economy that he proclaims to be strong on his watch, his renovation projects, including the ballroom, what he describes as the success of his immigration policies, and the U.S. war with Iran. Then, Trump turned back to expressing gratitude to security forces ahead of Thanksgiving.",
     "keywords": [
       {
         "label": "trump · 트럼프",
         "terms": [
           "trump",
           "트럼프"
-        ]
-      },
-      {
-        "label": "china · 중국",
-        "terms": [
-          "china",
-          "chinese",
-          "중국"
-        ]
-      },
-      {
-        "label": "nvidia · 엔비디아",
-        "terms": [
-          "nvidia",
-          "엔비디아"
-        ]
-      },
-      {
-        "label": "resigned · 사임",
-        "terms": [
-          "resign",
-          "resigned",
-          "resignation",
-          "사임",
-          "사퇴"
         ]
       },
       {
@@ -189,12 +164,11 @@
         ]
       },
       {
-        "label": "company · 기업",
+        "label": "security · 안보",
         "terms": [
-          "company",
-          "companies",
-          "기업",
-          "회사"
+          "security",
+          "안보",
+          "보안"
         ]
       }
     ],
@@ -204,9 +178,9 @@
     {
       "kind": "keyword_rubric",
       "article": 1,
-      "start": 11.42,
-      "end": 111.3,
-      "transcript": "Invidia shares are soaring up more than 30% this hour and leading a Wall Street rally hours after the company's board of directors did a U-turn and reinstated Jensen Wong as CEO. Wong had resigned November 12 following reports of his extramarital affairs, most notably one with a suspected Chinese spy, but President Trump tells CNBC he convinced the board to rehire Wang, rejecting the notion that the NVIDIA co-founder's reinstatement might pose a national security risk. I've been speaking to the board directly and indirectly and I felt very strongly about it and I felt more strongly as I saw what was happening with the with the company because that was to me a very important part of our country. This is you know represents something very special what he's done and what the company's done. Congressman Hakeem Jeffries, the Democrat likely to become the next House speaker in January, says Wong's reinstatement is quote, indefensible. Wong is scheduled to testify to House lawmakers behind closed doors next week. Starting January 1st, work requirements are being added to the public health insurance program for low-income people. And Pierre Salinas Simmons-Duffin reports, policy experts warn those new rules will increase the number of people who are uninsured. Right now, covers about 70 million low-income Americans. About 5 million of them are projected to become uninsured because of the new work requirements. Adriana McIntyre is a health policy professor at Harvard. She points out enrollment has to shrink in order to achieve savings in the Republican budget law. You only save money in Medicaid if you're covering fewer people. And if you're only covering fewer healthy people, you're not saving that much money.",
+      "start": 12.12,
+      "end": 61.66,
+      "transcript": "You can add freedom and feathers to the long list of President Trump's pardons since he returned to office last year. This afternoon, President Trump led the annual White House tradition of sparking a pair of turkeys, a pair of turkeys, that is, from becoming Thanksgiving dinner. Trump got a picture with one turkey, apparently the other wandered off somewhere in the bushes. Before the photo op, Trump shifted the focus from freedom and feathers to an economy that he proclaims to be strong on his watch, his renovation projects, including the ballroom, what he describes as the success of his immigration policies, and the U.S. war with Iran. Then, Trump turned back to expressing gratitude to security forces ahead of Thanksgiving.",
       "keywords": [
         {
           "label": "trump · 트럼프",
@@ -216,28 +190,35 @@
           ]
         },
         {
-          "label": "china · 중국",
+          "label": "president · 대통령",
           "terms": [
-            "china",
-            "chinese",
-            "중국"
+            "president",
+            "대통령"
           ]
         },
         {
-          "label": "nvidia · 엔비디아",
+          "label": "security · 안보",
           "terms": [
-            "nvidia",
-            "엔비디아"
+            "security",
+            "안보",
+            "보안"
           ]
-        },
+        }
+      ],
+      "boundary": "reporter_handoff_estimate"
+    },
+    {
+      "kind": "keyword_rubric",
+      "article": 2,
+      "start": 62.52,
+      "end": 151.26,
+      "transcript": "A top House Democrat is expanding his investigation into the venture capital fund 1789 Capital. NPR's Barbara Sprunt reports the president's eldest son, Donald Trump Jr., was brought in as a partner in the firm days after his father won reelection last year and returned to the White House to become the 47th president of the United States. Jamie Raskin, the likely incoming chair of the House Judiciary Committee, sent letters on Monday evening to four companies backed by 1789 Capital, defense contractor Hadrian, vape maker Jewel, prediction market Polymarket, and the online firearms seller Grabagun. The Maryland Democrat requested two years' worth of documents. He's investigating whether the president's son used his political influence to boost the companies. An attorney representing 1789 Capitol called the allegations personal attacks untethered to actual evidence. This is one part of a broader oversight agenda for Democrats when they take control of Congress in January. Barbara Sprint, NPR News, Washington. The rate of newborns receiving vaccination against hepatitis B has fallen sharply from 80 percent in 2022 to just under 66 percent this year. According to new findings in the journal of medicine, here's NPR's Maria Godoy. Last winter, federal advisory panel to the CDC voted to end a long-standing recommendation that all newborns get the hepatitis B vaccine. The new study offers the first glimpse of how vaccination rates have changed since then.",
+      "keywords": [
         {
-          "label": "resigned · 사임",
+          "label": "trump · 트럼프",
           "terms": [
-            "resign",
-            "resigned",
-            "resignation",
-            "사임",
-            "사퇴"
+            "trump",
+            "트럼프"
           ]
         },
         {
@@ -255,47 +236,14 @@
             "기업",
             "회사"
           ]
-        }
-      ],
-      "boundary": "reporter_handoff_estimate"
-    },
-    {
-      "kind": "keyword_rubric",
-      "article": 2,
-      "start": 129.0,
-      "end": 185.12,
-      "transcript": "Ukrainian President Volodymyr Zelensky confirms his country's military was behind an attack that sank a Russian warship off the coast of Libya on Sunday. NPR's Mains reports the strike was one of several against Russian maritime targets. warship Mercury is one of Russia's newest naval vessels. It was also docked at a port in Benghazi, home to the de facto separatist government that enjoys close ties to Moscow when it was hit and sunk by unmanned Ukrainian sea drones. That strike followed a suspected Ukrainian drone attack Saturday that set fire and disabled a sanctioned Russian cargo vessel traveling in the Baltic Sea. Speaking to reporters, spokesman Dmitry Peskov called expansion of terrorist activity in the Baltic region a dangerous trend, but declined to comment on the Benghazi incident directly. Instead, Peskov referred questions to Russia's military, which ignored the attack in its daily press briefing. Charles Maines, NPR News, Moscow. From Washington, this is NPR News.",
-      "keywords": [
-        {
-          "label": "russia · 러시아",
-          "terms": [
-            "russia",
-            "russian",
-            "러시아"
-          ]
         },
         {
-          "label": "president · 대통령",
+          "label": "investigation · 조사",
           "terms": [
-            "president",
-            "대통령"
-          ]
-        },
-        {
-          "label": "government · 정부",
-          "terms": [
-            "government",
-            "정부"
-          ]
-        },
-        {
-          "label": "military · 군사",
-          "terms": [
-            "military",
-            "troops",
-            "군사",
-            "군대",
-            "군인"
+            "investigation",
+            "investigating",
+            "조사",
+            "수사"
           ]
         },
         {
@@ -312,9 +260,9 @@
     }
   ],
   "fullTranscript": {
-    "transcript": "This is NPR News Now. The latest headlines every hour. Live from NPR News, I'm Lakshmi Singh. Invidia shares are soaring up more than 30% this hour and leading a Wall Street rally hours after the company's board of directors did a U-turn and reinstated Jensen Wong as CEO. Wong had resigned November 12 following reports of his extramarital affairs, most notably one with a suspected Chinese spy, but President Trump tells CNBC he convinced the board to rehire Wang, rejecting the notion that the NVIDIA co-founder's reinstatement might pose a national security risk. I've been speaking to the board directly and indirectly and I felt very strongly about it and I felt more strongly as I saw what was happening with the with the company because that was to me a very important part of our country. This is you know represents something very special what he's done and what the company's done. Congressman Hakeem Jeffries, the Democrat likely to become the next House speaker in January, says Wong's reinstatement is quote, indefensible. Wong is scheduled to testify to House lawmakers behind closed doors next week. Starting January 1st, work requirements are being added to the public health insurance program for low-income people. And Pierre Salinas Simmons-Duffin reports, policy experts warn those new rules will increase the number of people who are uninsured. Right now, covers about 70 million low-income Americans. About 5 million of them are projected to become uninsured because of the new work requirements. Adriana McIntyre is a health policy professor at Harvard. She points out enrollment has to shrink in order to achieve savings in the Republican budget law. You only save money in Medicaid if you're covering fewer people. And if you're only covering fewer healthy people, you're not saving that much money. It's covering fewer people who need health care. That's where you get, scare quotes, savings out of work requirements. say reversing this policy is a top priority when they take over the majority in Congress. Selena Simmons-Duffin, NPR News, Washington. Ukrainian President Volodymyr Zelensky confirms his country's military was behind an attack that sank a Russian warship off the coast of Libya on Sunday. NPR's Mains reports the strike was one of several against Russian maritime targets. warship Mercury is one of Russia's newest naval vessels. It was also docked at a port in Benghazi, home to the de facto separatist government that enjoys close ties to Moscow when it was hit and sunk by unmanned Ukrainian sea drones. That strike followed a suspected Ukrainian drone attack Saturday that set fire and disabled a sanctioned Russian cargo vessel traveling in the Baltic Sea. Speaking to reporters, spokesman Dmitry Peskov called expansion of terrorist activity in the Baltic region a dangerous trend, but declined to comment on the Benghazi incident directly. Instead, Peskov referred questions to Russia's military, which ignored the attack in its daily press briefing. Charles Maines, NPR News, Moscow. From Washington, this is NPR News. Nearly 200 countries are at an impasse after they were unable to agree on how to reduce planet-arming fossil fuels, and the parties walked away from the COP31 climate summit in Turkey over the weekend without an agreement on money. As Broadway moves into the lucrative holiday season, a local wardrobe workers union has voted to authorize a strike. Jeff Lennon reports this comes weeks after union stagehands did the same. locals, which are members of the International Alliance of Theatrical Stage Employees, or IOTC, have been working without contracts since July. The locals have been negotiating with the Broadway League, which represents theater owners and producers, but no agreements have been reached. A strike authorization is not the same as a strike, but with Broadway still in recovery mode, following an 18-month closure during the pandemic, a work stoppage around the period from Thanksgiving to New Year's could cause great economic damage and a disruption for audiences. For NPR News, I'm Jeff London in New York. The Cincinnati Zoo has reopened a more fortified hippo cove after losing a beloved hippo named Fiona to an ingested hat that was accidentally flung into a ceiling fan and ended up in her enclosure. The zoo says it relies on visitors to secure their belongings but in light of Fiona's death last week. The zoos removed all ceiling fans and added a layer of netting above viewing windows. Fiona captivated millions of fans which began with the survival of her premature birth. She would have been 10 years old in January. This is NPR.",
+    "transcript": "This is NPR News Now, the latest headlines every hour. Live from NPR News, I'm Lakshmi Singh. You can add freedom and feathers to the long list of President Trump's pardons since he returned to office last year. This afternoon, President Trump led the annual White House tradition of sparking a pair of turkeys, a pair of turkeys, that is, from becoming Thanksgiving dinner. Trump got a picture with one turkey, apparently the other wandered off somewhere in the bushes. Before the photo op, Trump shifted the focus from freedom and feathers to an economy that he proclaims to be strong on his watch, his renovation projects, including the ballroom, what he describes as the success of his immigration policies, and the U.S. war with Iran. Then, Trump turned back to expressing gratitude to security forces ahead of Thanksgiving. A top House Democrat is expanding his investigation into the venture capital fund 1789 Capital. NPR's Barbara Sprunt reports the president's eldest son, Donald Trump Jr., was brought in as a partner in the firm days after his father won reelection last year and returned to the White House to become the 47th president of the United States. Jamie Raskin, the likely incoming chair of the House Judiciary Committee, sent letters on Monday evening to four companies backed by 1789 Capital, defense contractor Hadrian, vape maker Jewel, prediction market Polymarket, and the online firearms seller Grabagun. The Maryland Democrat requested two years' worth of documents. He's investigating whether the president's son used his political influence to boost the companies. An attorney representing 1789 Capitol called the allegations personal attacks untethered to actual evidence. This is one part of a broader oversight agenda for Democrats when they take control of Congress in January. Barbara Sprint, NPR News, Washington. The rate of newborns receiving vaccination against hepatitis B has fallen sharply from 80 percent in 2022 to just under 66 percent this year. According to new findings in the journal of medicine, here's NPR's Maria Godoy. Last winter, federal advisory panel to the CDC voted to end a long-standing recommendation that all newborns get the hepatitis B vaccine. The new study offers the first glimpse of how vaccination rates have changed since then. co-author Nina Masters of health care data analytics firm Triveda says while vaccination rates had been sliding for several years before the panels vote, There's been a lot of national level miscommunication and confusing information, changing recommendations and it's certainly not helping parents to feel clear on what they should do. Hepatitis B infections in infants are highly likely to lead to chronic infection and serious complications like liver cancer later in life. Maria Godoy, NPR News. This is NPR. The Prime Minister of Singapore says the country does not want to become a backdoor for advanced U.S. semiconductor chips flowing to China. as the U.S. blacklist the Singapore-based cloud company Megaspeed. Former Megaspeed executive Alice Wong was suspected of being a Chinese spy. At the same time, she was having an affair with NVIDIA CEO Jensen Wong. Yan Kamens and Ruby reports. Singapore's Prime Minister Lawrence Wong says the country will work with American authorities to develop a mechanism that allows the U.S. to enforce its own export controls, adding that the island nation does not want to be, quote, used and abused as a conduit by companies to circumvent America's export controls. The statement comes as the U.S. placed Singapore-based Megaspeed on a trade blacklist. That's Yann Comminson-Broomby reporting. Thanksgiving travel is pricier this year, especially airfares. Here's NPR's Willa Rubin. The big reason prices are up? Jet fuel. It's up nearly 90 percent this year, according to the travel tech company Hopper. Jet fuel comes from crude oil, and there's been less of that coming out of the Middle East this year due to the war in Iran. It's meant less jet fuel to go around, so even higher demand. The price for a barrel of crude has dropped in recent weeks, but for travelers, most people book their tickets a few months in advance. When it comes to the price of that jet fuel, air carriers are absorbing some of those costs, but they're also passing them on. for Thanksgiving are up about 30% compared to last year, according to Hopper. AAA said in its Thanksgiving travel forecast, the average round-trip domestic ticket price cost $800. It's NPR.",
     "start": 0.0,
-    "end": 285.48,
+    "end": 286.38,
     "kind": "full_broadcast"
   }
 }
