@@ -1,5 +1,5 @@
 {
-  "title": "3pm ET, November 25 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "9pm ET, November 26 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
   "generator_version": 15,
   "verified": false,
@@ -10,195 +10,188 @@
     "human_verified": false
   },
   "sourceNote": "문제를 만들 때 사용한 고정 음원을 재생합니다. 빈칸 앞뒤 영어 지문과 2단어 정답을 두 음성인식 모델이 비교했습니다. 자동 전사이므로 오류가 있을 수 있습니다.",
-  "generated_at": "2026-11-25T21:03:53.486536+00:00",
+  "generated_at": "2026-11-27T02:51:38.429331+00:00",
   "episode": {
-    "id": "68b52c41-114d-46a9-b6f6-cf5fb7825764",
-    "title": "3pm ET, November 25 | The latest headlines from NPR",
-    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/dc2734856da24dd516215664a830434667803442185e124dd2f9ee2fa62f5cf0.mp3",
-    "date": "2026-11-25T20:09:38+00:00",
+    "id": "614e8cfb-82f9-4669-9d85-852c798d27be",
+    "title": "9pm ET, November 26 | The latest headlines from NPR",
+    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/3beb693f86cb7d52c5378548fe120dfd92d4223ead86e6d4d8ba1a51f1239e78.mp3",
+    "date": "2026-11-27T02:09:33+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "문제 생성에 사용한 고정 음원",
-    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/5af1e472-7508-4133-aeae-246d64cef771/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=5af1e472-7508-4133-aeae-246d64cef771&feed=O9WlY7a5&t=podcast&e=nx-s1-20261125-1500-long&p=500005&d=280&size=4586729",
-    "audio_sha256": "dc2734856da24dd516215664a830434667803442185e124dd2f9ee2fa62f5cf0"
+    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/15fe856a-61b0-4a58-aff1-6ca525e770c2/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=15fe856a-61b0-4a58-aff1-6ca525e770c2&feed=O9WlY7a5&t=podcast&e=nx-s1-20261126-2100-long&p=500005&d=280&size=4586729",
+    "audio_sha256": "3beb693f86cb7d52c5378548fe120dfd92d4223ead86e6d4d8ba1a51f1239e78"
   },
   "items": [
     {
-      "sentence": "car. Millions are also taking flights, though ____ will have to contend",
+      "sentence": "in parts of the mid-Atlantic, bringing ____ and knocking out power",
       "meaning_context": {
-        "start": 4.76,
-        "end": 46.06,
-        "text": "headlines every hour. Live from NPR News, I'm Lakshmi Singh. More than 81 million people are expected to be traveling at least 50 miles from home in the run-up to and after Thanksgiving. AAA estimates the vast majority are heading out by car. Millions are also taking flights, though many passengers will have to contend with storms and anxieties caused by the FAA's recent national ground stop. On this Thanksgiving Eve, NPR's Eva Berger is at one of the nation's busiest airports in Sisifar. Things are generally looking pretty good. I'm at Dallas-Fort Worth International Airport and it is packed. Little kids are holding stuffed animals and pushing",
+        "start": 22.04,
+        "end": 63.28,
+        "text": "and west coast. Flight aware shows more than 17,000 flights delayed so far, with about 2,300 of those flights coming into the U.S. are going out. And Pears-Windsor Johnson reports coastal flooding has already hit parts of the mid-Atlantic region. Forecasters say Wingus reached 60 miles an hour in parts of the mid-Atlantic, bringing down trees and knocking out power to hundreds of thousands of customers. Some communities along the coast saw major flooding at the morning high tide. Rich Otto, a meteorologist at NOAA's Weather Prediction Center, says strong winds off the ocean have been pushing water towards shore. There'll be another high tide cycle later on this evening along the",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 21.8,
-      "context_end": 26.6,
-      "answer": "many passengers",
-      "hint": "해당 음성 구간의 표현 · M… P… (2단어)",
+      "context_start": 40.3,
+      "context_end": 44.44,
+      "answer": "down trees",
+      "hint": "해당 음성 구간의 표현 · D… T… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 25.06,
-      "end": 25.8
+      "start": 42.28,
+      "end": 43.06
     },
     {
-      "sentence": "International Airport and it is packed. Little ____ holding stuffed animals and",
+      "sentence": "another wave of coastal flooding, however, I ____ next week this evening",
       "meaning_context": {
-        "start": 23.66,
-        "end": 64.5,
-        "text": "taking flights, though many passengers will have to contend with storms and anxieties caused by the FAA's recent national ground stop. On this Thanksgiving Eve, NPR's Eva Berger is at one of the nation's busiest airports in Sisifar. Things are generally looking pretty good. I'm at Dallas-Fort Worth International Airport and it is packed. Little kids are holding stuffed animals and pushing tiny pink and blue suitcases. People are running down the halls to catch their flights. Overall, it has been surprisingly smooth for a lot of travelers. I mean, I just got here. No traffic. the airport looks great so I'm excited to travel today going to Chicago to see my sister. Stephanie Balazs and her 15 year old service dog Dexter arrived",
+        "start": 47.22,
+        "end": 88.04,
+        "text": "communities along the coast saw major flooding at the morning high tide. Rich Otto, a meteorologist at NOAA's Weather Prediction Center, says strong winds off the ocean have been pushing water towards shore. There'll be another high tide cycle later on this evening along the east coast, which also bring another wave of coastal flooding, however, I think that next week this evening won't be quite as significant as what we were seeing this morning. Parts of southern New Jersey could end up with three to five inches of rain. In New York City, winds are expected to ease overnight. Windsor Johnston, NPR News. President Trump spent Thanksgiving Day calling deployed U.S. service members from his floor Florida estate today.",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 40.7,
-      "context_end": 45.8,
-      "answer": "kids are",
-      "hint": "해당 음성 구간의 표현 · K… A… (2단어)",
+      "context_start": 64.84,
+      "context_end": 69.28,
+      "answer": "think that",
+      "hint": "해당 음성 구간의 표현 · T… T… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 43.84,
-      "end": 44.42
+      "start": 67.62,
+      "end": 68.18
     },
     {
-      "sentence": "morning. That being said, Balazs is a ____ about traveling",
+      "sentence": "great thing that he's going back. Stocks ____ his return, then tumbled",
       "meaning_context": {
-        "start": 51.86,
-        "end": 92.4,
-        "text": "it has been surprisingly smooth for a lot of travelers. I mean, I just got here. No traffic. the airport looks great so I'm excited to travel today going to Chicago to see my sister. Stephanie Balazs and her 15 year old service dog Dexter arrived at the airport without a hitch. Security wait time has been as low as two minutes throughout the morning. That being said, Balazs is a bit nervous about traveling back after Thanksgiving. Storm systems are coming in on both the east and west coasts. They're expected to hit tonight into Thanksgiving Day. Ava Berger and PR News Dallas. New Jersey is getting ready for a Thanksgiving coastal storm. Governor Mikey Sherrill warns residents to expect wind gusts of up to 70 miles per hour along the coast and 60",
+        "start": 93.58,
+        "end": 135.0,
+        "text": "talked to reporters about the surprise reinstatement of Jensen Huang, NVIDIA's CEO. Without him, I just don't know, you know, everybody's replaceable, I guess, but I just thought I saw that what was happening with the company, what was happening with the stock. And I think it's a great thing that he's going back. Stocks soared upon his return, then tumbled by Wednesday. At least 31 people have been killed in a road accident in Cairo. Egypt's health ministry says a truck carrying gas cylinders flipped on a highway and exploded. In pairs, Ayah Bichari reports. Egypt's public prosecutor says an initial investigation shows 27 cars and",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 69.46,
-      "context_end": 72.72,
-      "answer": "bit nervous",
-      "hint": "해당 음성 구간의 표현 · B… N… (2단어)",
+      "context_start": 111.6,
+      "context_end": 116.24,
+      "answer": "soared upon",
+      "hint": "해당 음성 구간의 표현 · S… U… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 71.68,
-      "end": 72.1
+      "start": 113.78,
+      "end": 114.64
     },
     {
-      "sentence": "died of injuries sustained in a Ukrainian ____ on a",
+      "sentence": "large truck carrying gas cylinders turned on ____ and exploded into an",
       "meaning_context": {
-        "start": 90.56,
-        "end": 131.54,
-        "text": "per hour along the coast and 60 miles per hour inland. I'm announcing that I'll be declaring a statewide state of emergency effective at 6 p.m. this evening given the high winds and risk of outages across every single county. Two Libyan naval officers have died of injuries sustained in a Ukrainian drone attack on a NPR's Joanna Kekissis reports Ukraine's drone attack has opened a new front in a full-scale war that has lasted nearly five years. The self-styled Libyan National Army revealed the news of the deaths in a statement late Tuesday. The army's general vowed to take revenge at, quote,",
+        "start": 119.34,
+        "end": 159.84,
+        "text": "been killed in a road accident in Cairo. Egypt's health ministry says a truck carrying gas cylinders flipped on a highway and exploded. In pairs, Ayah Bichari reports. Egypt's public prosecutor says an initial investigation shows 27 cars and motorcycles caught fire when a large truck carrying gas cylinders turned on its side and exploded into an inferno. Prosecutors say they are now collecting DNA samples from the bodies to identify those killed. Videos online showed a huge fire-raging Wednesday evening on the main ring road that connects Cairo with the city of Giza. This is one of Egypt's deadliest road accidents in years. Earlier this month,",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 108.22,
-      "context_end": 115.06,
-      "answer": "drone attack",
-      "hint": "공격 관련 표현 · D… A… (2단어)",
+      "context_start": 137.0,
+      "context_end": 141.28,
+      "answer": "its side",
+      "hint": "해당 음성 구간의 표현 · I… S… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 110.76,
-      "end": 111.6
+      "start": 139.46,
+      "end": 139.94
     },
     {
-      "sentence": "appropriate time and place and by the ____",
+      "sentence": "law on a technicality. The court found ____ house lawmakers were present",
       "meaning_context": {
-        "start": 112.36,
-        "end": 155.78,
-        "text": "a NPR's Joanna Kekissis reports Ukraine's drone attack has opened a new front in a full-scale war that has lasted nearly five years. The self-styled Libyan National Army revealed the news of the deaths in a statement late Tuesday. The army's general vowed to take revenge at, quote, the appropriate time and place and by the appropriate means. The Libyan National Army has close ties to the Kremlin and is the most powerful group in a country divided by years of civil war. Russia strikes Ukraine every day. Ukrainian President Volodymyr Zelensky said this weekend that his country is striking back. We keep finding ways to get back",
+        "start": 187.24,
+        "end": 228.2,
+        "text": "of a federal law that requires employers to provide reasonable accommodations for pregnancy and pregnancy-related conditions is in question. As NPR's Andrea Shue reports, the Pregnant Workers Fairness Act faces multiple challenges. This month, the Fifth Circuit Court of Appeals struck down the law on a technicality. The court found not enough house lawmakers were present in the chamber when they passed the measure as part of a larger package in late 2022. Under COVID-era rules, many members voted from home. For now, the ruling only applies to the plaintiff in the case, the state of Texas. private employers must still comply with the law. Meanwhile, the Trump administration is seeking to",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 132.08,
-      "context_end": 135.52,
-      "answer": "appropriate means",
-      "hint": "해당 음성 구간의 표현 · A… M… (2단어)",
+      "context_start": 205.12,
+      "context_end": 209.52,
+      "answer": "not enough",
+      "hint": "해당 음성 구간의 표현 · N… E… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 134.48,
-      "end": 135.52
+      "start": 207.58,
+      "end": 208.14
     },
     {
-      "sentence": "Plant in southeast Iowa exceeded expectations. Shirley ____ the nearly five tons",
+      "sentence": "of conditions covered by the law. A ____ is expected soon.",
       "meaning_context": {
-        "start": 178.58,
-        "end": 219.22,
-        "text": "It granted authorization to Elon Musk's SpaceX. You're listening to NPR News. Army Major General Eric Shirley says today's controlled detonation of bomb-making material at the Army Ammunition Plant in southeast Iowa exceeded expectations. Shirley confirmed that the nearly five tons of degraded lead azide had been destroyed as residents raised concerns about contamination of the soil, air, and water. Iowa Public Radio's Tom Barton has more. The stockpile has been in storage for decades and the Army says that some of it had crystallized and become unstable. Officials concluded the drums were too dangerous to open for",
+        "start": 211.3,
+        "end": 252.3,
+        "text": "measure as part of a larger package in late 2022. Under COVID-era rules, many members voted from home. For now, the ruling only applies to the plaintiff in the case, the state of Texas. private employers must still comply with the law. Meanwhile, the Trump administration is seeking to narrow the types of conditions covered by the law. A proposed rule is expected soon. Under current rules, employers have to provide reasonable accommodations for not just pregnancy and childbirth, but also menopause and fertility-related conditions and others. Andrea Hsu, NPR News. The deadliest Ebola outbreak in eastern Congo, with more than 12,000 confirmed",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 193.96,
-      "context_end": 200.0,
-      "answer": "confirmed that",
-      "hint": "해당 음성 구간의 표현 · C… T… (2단어)",
+      "context_start": 228.88,
+      "context_end": 233.12,
+      "answer": "proposed rule",
+      "hint": "해당 음성 구간의 표현 · P… R… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 198.28,
-      "end": 198.98
+      "start": 231.32,
+      "end": 231.96
     },
     {
-      "sentence": "Sometimes airline ____ turn into a seven",
+      "sentence": "complicated by escalating fighting between army and ____",
       "meaning_context": {
-        "start": 210.96,
-        "end": 252.18,
-        "text": "decades and the Army says that some of it had crystallized and become unstable. Officials concluded the drums were too dangerous to open for chemical treatment or even to move and said that a controlled explosion gave them a chance to limit where the dust went. If the material went off on its own, they'd lose that opportunity. Sometimes airline food can turn into a seven-course meal. Oregon Public Broadcasting's Crystal LaGori reports it's what a group found out as they died in Seattle. The sold-out event at Seattle's Museum of Flight was called the Greatest Airline Meals of the 20th Century, and some, like Ben Morrow, came from as far away as New York to attend. I fed out about this from some online blogs,",
+        "start": 237.32,
+        "end": 278.86,
+        "text": "not just pregnancy and childbirth, but also menopause and fertility-related conditions and others. Andrea Hsu, NPR News. The deadliest Ebola outbreak in eastern Congo, with more than 12,000 confirmed cases, is made more complicated by escalating fighting between army and rebel groups. Congo's health ministry says nearly 6,000 people have died from Ebola, and the ongoing fighting prevents medical teams from reaching hard-hit communities. A World Health Organization Ebola manager said several WHO personnel and Congolese health officials had to be evacuated to",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 230.3,
-      "context_end": 232.78,
-      "answer": "food can",
-      "hint": "해당 음성 구간의 표현 · F… C… (2단어)",
+      "context_start": 254.06,
+      "context_end": 258.36,
+      "answer": "rebel groups",
+      "hint": "해당 음성 구간의 표현 · R… G… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 231.3,
-      "end": 231.8
+      "start": 257.44,
+      "end": 258.36
     }
   ],
   "summaryReview": {
     "kind": "keyword_rubric",
     "article": 1,
-    "start": 11.66,
-    "end": 105.2,
-    "transcript": "More than 81 million people are expected to be traveling at least 50 miles from home in the run-up to and after Thanksgiving. AAA estimates the vast majority are heading out by car. Millions are also taking flights, though many passengers will have to contend with storms and anxieties caused by the FAA's recent national ground stop. On this Thanksgiving Eve, NPR's Eva Berger is at one of the nation's busiest airports in Sisifar. Things are generally looking pretty good. I'm at Dallas-Fort Worth International Airport and it is packed. Little kids are holding stuffed animals and pushing tiny pink and blue suitcases. People are running down the halls to catch their flights. Overall, it has been surprisingly smooth for a lot of I mean, I just got here. No traffic. the airport looks great so I'm excited to travel today going to Chicago to see my sister. Balazs and her 15 year old service dog Dexter arrived at the airport without a hitch. Security wait time has been as low as two minutes throughout the morning. That being said, Balazs is a bit nervous about traveling back after Thanksgiving. Storm systems are coming in on both the east and west coasts. They're expected to hit tonight into Thanksgiving Day. Ava Berger and PR News Dallas. New Jersey is getting ready for a Thanksgiving coastal storm. Mikey Sherrill warns residents to expect wind gusts of up to 70 miles per hour along the coast and 60 miles per hour inland. I'm announcing that I'll be declaring a statewide state of emergency effective at 6 p.m. this evening given the high winds and risk of outages across every single county.",
-    "keywords": [
-      {
-        "label": "security · 안보",
-        "terms": [
-          "security",
-          "안보",
-          "보안"
-        ]
-      }
-    ],
+    "start": 14.06,
+    "end": 82.3,
+    "transcript": "Thanksgiving travelers have had to face all kinds of challenges today, from road closures to flight delays due to storms hitting both the east and west coast. Flight aware shows more than 17,000 flights delayed so far, with about 2,300 of those flights coming into the U.S. are going out. And Pears-Windsor Johnson reports coastal flooding has already hit parts of the mid-Atlantic region. Forecasters say Wingus reached 60 miles an hour in parts of the mid-Atlantic, bringing down trees and knocking out power to hundreds of thousands of customers. Some communities along the coast saw major flooding at the morning high tide. Rich Otto, a meteorologist at NOAA's Weather Prediction Center, says strong winds off the ocean have been pushing water towards shore. There'll be another high tide cycle later on this evening along the east coast, which also bring another wave of coastal flooding, however, I think that next week this evening won't be quite as significant as what we were seeing this morning. of southern New Jersey could end up with three to five inches of rain. In New York City, winds are expected to ease overnight. Windsor Johnston, NPR News.",
+    "keywords": [],
     "boundary": "reporter_handoff_estimate"
   },
   "summaryReviews": [
     {
       "kind": "keyword_rubric",
       "article": 1,
-      "start": 11.66,
-      "end": 105.2,
-      "transcript": "More than 81 million people are expected to be traveling at least 50 miles from home in the run-up to and after Thanksgiving. AAA estimates the vast majority are heading out by car. Millions are also taking flights, though many passengers will have to contend with storms and anxieties caused by the FAA's recent national ground stop. On this Thanksgiving Eve, NPR's Eva Berger is at one of the nation's busiest airports in Sisifar. Things are generally looking pretty good. I'm at Dallas-Fort Worth International Airport and it is packed. Little kids are holding stuffed animals and pushing tiny pink and blue suitcases. People are running down the halls to catch their flights. Overall, it has been surprisingly smooth for a lot of I mean, I just got here. No traffic. the airport looks great so I'm excited to travel today going to Chicago to see my sister. Balazs and her 15 year old service dog Dexter arrived at the airport without a hitch. Security wait time has been as low as two minutes throughout the morning. That being said, Balazs is a bit nervous about traveling back after Thanksgiving. Storm systems are coming in on both the east and west coasts. They're expected to hit tonight into Thanksgiving Day. Ava Berger and PR News Dallas. New Jersey is getting ready for a Thanksgiving coastal storm. Mikey Sherrill warns residents to expect wind gusts of up to 70 miles per hour along the coast and 60 miles per hour inland. I'm announcing that I'll be declaring a statewide state of emergency effective at 6 p.m. this evening given the high winds and risk of outages across every single county.",
-      "keywords": [
-        {
-          "label": "security · 안보",
-          "terms": [
-            "security",
-            "안보",
-            "보안"
-          ]
-        }
-      ],
+      "start": 14.06,
+      "end": 82.3,
+      "transcript": "Thanksgiving travelers have had to face all kinds of challenges today, from road closures to flight delays due to storms hitting both the east and west coast. Flight aware shows more than 17,000 flights delayed so far, with about 2,300 of those flights coming into the U.S. are going out. And Pears-Windsor Johnson reports coastal flooding has already hit parts of the mid-Atlantic region. Forecasters say Wingus reached 60 miles an hour in parts of the mid-Atlantic, bringing down trees and knocking out power to hundreds of thousands of customers. Some communities along the coast saw major flooding at the morning high tide. Rich Otto, a meteorologist at NOAA's Weather Prediction Center, says strong winds off the ocean have been pushing water towards shore. There'll be another high tide cycle later on this evening along the east coast, which also bring another wave of coastal flooding, however, I think that next week this evening won't be quite as significant as what we were seeing this morning. of southern New Jersey could end up with three to five inches of rain. In New York City, winds are expected to ease overnight. Windsor Johnston, NPR News.",
+      "keywords": [],
       "boundary": "reporter_handoff_estimate"
     },
     {
       "kind": "keyword_rubric",
       "article": 2,
-      "start": 106.2,
-      "end": 184.72,
-      "transcript": "Two Libyan naval officers have died of injuries sustained in a Ukrainian drone attack on a NPR's Joanna Kekissis reports Ukraine's drone attack has opened a new front in a full-scale war that has lasted nearly five years. The self-styled Libyan National Army revealed the news of the deaths in a statement late Tuesday. The army's general vowed to take revenge at, quote, the appropriate time and place and by the appropriate means. The Libyan National Army has close ties to the Kremlin and is the most powerful group in a country divided by years of civil war. Russia strikes Ukraine every day. President Volodymyr Zelensky said this weekend that his country is striking back. We keep finding ways to get back on our feet after every Russian attack. He said Ukraine's military deployed seven c-drones to hit the Russian warship. Joanna Kekisis, NPR News, For the first time, the Federal Communications Commission is clearing the deployment of a constellation of artificial intelligence data centers in space. It granted authorization to Elon Musk's SpaceX. You're listening to NPR News.",
+      "start": 82.62,
+      "end": 171.06,
+      "transcript": "President Trump spent Thanksgiving Day calling deployed U.S. service members from his floor Florida estate today. He thanked them for their service and offered encouraging words to troops far from home. Later, he talked to reporters about the surprise reinstatement of Jensen Huang, NVIDIA's CEO. Without him, I just don't know, you know, everybody's replaceable, I guess, but I just thought I saw that what was happening with the company, what was happening with the stock. And I think it's a great thing that he's going back. Stocks soared upon his return, then tumbled by Wednesday. At least 31 people have been killed in a road accident in Cairo. Egypt's health ministry says a truck carrying gas cylinders flipped on a highway and exploded. In pairs, Ayah Bichari reports. Egypt's public prosecutor says an initial investigation shows 27 cars and motorcycles caught fire when a large truck carrying gas cylinders turned on its side and exploded into an inferno. Prosecutors say they are now collecting DNA samples from the bodies to identify those killed. online showed a huge fire-raging Wednesday evening on the main ring road that connects Cairo with the city of Giza. This is one of Egypt's deadliest road accidents in years. Earlier this month, two trains collided just south of Cairo, killing at least seven people and wounding more than 100. There are growing calls for the transport minister's resignation. Aya Botrawi, NPR News.",
       "keywords": [
         {
-          "label": "russia · 러시아",
+          "label": "trump · 트럼프",
           "terms": [
-            "russia",
-            "russian",
-            "러시아"
+            "trump",
+            "트럼프"
           ]
         },
         {
-          "label": "ukraine · 우크라이나",
+          "label": "return · 복귀",
           "terms": [
-            "ukraine",
-            "우크라이나"
+            "return",
+            "returning",
+            "복귀",
+            "돌아"
+          ]
+        },
+        {
+          "label": "resigned · 사임",
+          "terms": [
+            "resign",
+            "resigned",
+            "resignation",
+            "사임",
+            "사퇴"
           ]
         },
         {
@@ -219,24 +212,12 @@
           ]
         },
         {
-          "label": "killed · 사망",
+          "label": "company · 기업",
           "terms": [
-            "killed",
-            "dead",
-            "death",
-            "deaths",
-            "사망",
-            "숨졌",
-            "사살"
-          ]
-        },
-        {
-          "label": "attack · 공격",
-          "terms": [
-            "attack",
-            "attacks",
-            "공격",
-            "공습"
+            "company",
+            "companies",
+            "기업",
+            "회사"
           ]
         }
       ],
@@ -244,9 +225,9 @@
     }
   ],
   "fullTranscript": {
-    "transcript": "This is NPR News Now, the latest headlines every hour. Live from NPR News, I'm Lakshmi Singh. More than 81 million people are expected to be traveling at least 50 miles from home in the run-up to and after Thanksgiving. AAA estimates the vast majority are heading out by car. Millions are also taking flights, though many passengers will have to contend with storms and anxieties caused by the FAA's recent national ground stop. On this Thanksgiving Eve, NPR's Eva Berger is at one of the nation's busiest airports in Sisifar. Things are generally looking pretty good. I'm at Dallas-Fort Worth International Airport and it is packed. Little kids are holding stuffed animals and pushing tiny pink and blue suitcases. People are running down the halls to catch their flights. Overall, it has been surprisingly smooth for a lot of I mean, I just got here. No traffic. the airport looks great so I'm excited to travel today going to Chicago to see my sister. Balazs and her 15 year old service dog Dexter arrived at the airport without a hitch. Security wait time has been as low as two minutes throughout the morning. That being said, Balazs is a bit nervous about traveling back after Thanksgiving. Storm systems are coming in on both the east and west coasts. They're expected to hit tonight into Thanksgiving Day. Ava Berger and PR News Dallas. New Jersey is getting ready for a Thanksgiving coastal storm. Mikey Sherrill warns residents to expect wind gusts of up to 70 miles per hour along the coast and 60 miles per hour inland. I'm announcing that I'll be declaring a statewide state of emergency effective at 6 p.m. this evening given the high winds and risk of outages across every single county. Two Libyan naval officers have died of injuries sustained in a Ukrainian drone attack on a NPR's Joanna Kekissis reports Ukraine's drone attack has opened a new front in a full-scale war that has lasted nearly five years. The self-styled Libyan National Army revealed the news of the deaths in a statement late Tuesday. The army's general vowed to take revenge at, quote, the appropriate time and place and by the appropriate means. The Libyan National Army has close ties to the Kremlin and is the most powerful group in a country divided by years of civil war. Russia strikes Ukraine every day. President Volodymyr Zelensky said this weekend that his country is striking back. We keep finding ways to get back on our feet after every Russian attack. He said Ukraine's military deployed seven c-drones to hit the Russian warship. Joanna Kekisis, NPR News, For the first time, the Federal Communications Commission is clearing the deployment of a constellation of artificial intelligence data centers in space. It granted authorization to Elon Musk's SpaceX. You're listening to NPR News. Army Major General Eric Shirley says today's controlled detonation of bomb-making material at the Army Ammunition Plant in southeast Iowa exceeded expectations. Shirley confirmed that the nearly five tons of degraded lead azide had been destroyed as residents raised concerns about contamination of the soil, air, and water. Public Radio's Barton has more. stockpile has been in storage for decades and the Army says that some of it had crystallized and become unstable. Officials concluded the drums were too dangerous to open for chemical treatment or even to move and said that a controlled explosion gave them a chance to limit where the dust went. If the material went off on its own, they'd lose that opportunity. Sometimes airline food can turn into a seven-course meal. Oregon Public Broadcasting's Crystal LaGori reports it's what a group found out as they died in Seattle. The sold-out event at Seattle's Museum of Flight was called the Greatest Airline Meals of the 20th Century, and some, like Ben Morrow, came from as far away as New York to attend. I fed out about this from some online blogs, and it felt weird to not fly in for an event about airline meals. was the brainchild of comedy writer and food personality Bill Oakley. The 150 attendees dined on everything from caviar to kangaroo. Of all the courses, was the best tasting one. thought it the most interesting one by far. The event was part of a series of culinary curiosity dinners where Oakley partners with chefs around the country to create multi-course meals of unusual cuisine. For NPR News, I'm Crystal LaVoure in Seattle. This is NPR News.",
+    "transcript": "This is NPR News Now. The latest headlines every hour. Live from NPR News in Culver City, California, I'm Dua-Halee Saikoutau. Thanksgiving travelers have had to face all kinds of challenges today, from road closures to flight delays due to storms hitting both the east and west coast. Flight aware shows more than 17,000 flights delayed so far, with about 2,300 of those flights coming into the U.S. are going out. And Pears-Windsor Johnson reports coastal flooding has already hit parts of the mid-Atlantic region. Forecasters say Wingus reached 60 miles an hour in parts of the mid-Atlantic, bringing down trees and knocking out power to hundreds of thousands of customers. Some communities along the coast saw major flooding at the morning high tide. Rich Otto, a meteorologist at NOAA's Weather Prediction Center, says strong winds off the ocean have been pushing water towards shore. There'll be another high tide cycle later on this evening along the east coast, which also bring another wave of coastal flooding, however, I think that next week this evening won't be quite as significant as what we were seeing this morning. of southern New Jersey could end up with three to five inches of rain. In New York City, winds are expected to ease overnight. Windsor Johnston, NPR News. President Trump spent Thanksgiving Day calling deployed U.S. service members from his floor Florida estate today. He thanked them for their service and offered encouraging words to troops far from home. Later, he talked to reporters about the surprise reinstatement of Jensen Huang, NVIDIA's CEO. Without him, I just don't know, you know, everybody's replaceable, I guess, but I just thought I saw that what was happening with the company, what was happening with the stock. And I think it's a great thing that he's going back. Stocks soared upon his return, then tumbled by Wednesday. At least 31 people have been killed in a road accident in Cairo. Egypt's health ministry says a truck carrying gas cylinders flipped on a highway and exploded. In pairs, Ayah Bichari reports. Egypt's public prosecutor says an initial investigation shows 27 cars and motorcycles caught fire when a large truck carrying gas cylinders turned on its side and exploded into an inferno. Prosecutors say they are now collecting DNA samples from the bodies to identify those killed. online showed a huge fire-raging Wednesday evening on the main ring road that connects Cairo with the city of Giza. This is one of Egypt's deadliest road accidents in years. Earlier this month, two trains collided just south of Cairo, killing at least seven people and wounding more than 100. There are growing calls for the transport minister's resignation. Aya Botrawi, NPR News. Elon Musk's rocket company SpaceX has been given the green light by the Trump administration to put about one million satellites, or data centers, in space. You're listening to NPR News. The future of a federal law that requires employers to provide reasonable accommodations for pregnancy and pregnancy-related conditions is in question. As NPR's Andrea Shue reports, the Pregnant Workers Fairness Act faces multiple challenges. This month, Fifth Circuit Court of Appeals struck down the law on a technicality. The court found not enough house lawmakers were present in the chamber when they passed the measure as part of a larger package in late 2022. Under COVID-era rules, many members voted from home. For now, the ruling only applies to the plaintiff in the case, the state of Texas. private employers must still comply with the law. Trump administration is seeking to narrow the types of conditions covered by the law. A proposed rule is expected soon. Under current rules, employers have to provide reasonable accommodations for not just pregnancy and childbirth, but also menopause and fertility-related conditions and others. Andrea Hsu, NPR News. The deadliest Ebola outbreak in eastern Congo, with more than 12,000 confirmed cases, is made more complicated by escalating fighting between army and rebel groups. Congo's health ministry says nearly 6,000 people have died from Ebola, and the ongoing fighting prevents medical teams from reaching hard-hit communities. A World Health Organization Ebola manager said several WHO personnel and Congolese health officials had to be evacuated to Boonia earlier this week after intense fighting. I'm Duwali Saikoutel, NPR News. This message comes from mattress firm. Sharing a bed should not mean losing sleep every night. Their sleep experts will match you with a bed designed for more uninterrupted sleep, like a Tempur-Pedic made with unique temper material that absorbs motion so you can rest undisturbed. Right now, you can save up to $1,000 on select Tempur-Pedic split-king sleep systems during the Black Friday sale. Visit Mattress Firm today to find your perfect sleep solution. They make sleep easy.",
     "start": 0.0,
-    "end": 285.44,
+    "end": 312.5,
     "kind": "full_broadcast"
   }
 }
