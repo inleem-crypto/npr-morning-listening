@@ -1,5 +1,5 @@
 {
-  "title": "9pm ET, November 26 | The latest headlines from NPR · 자동 딕테이션",
+  "title": "9pm ET, November 27 | The latest headlines from NPR · 자동 딕테이션",
   "kind": "auto_transcribed",
   "generator_version": 15,
   "verified": false,
@@ -10,163 +10,186 @@
     "human_verified": false
   },
   "sourceNote": "문제를 만들 때 사용한 고정 음원을 재생합니다. 빈칸 앞뒤 영어 지문과 2단어 정답을 두 음성인식 모델이 비교했습니다. 자동 전사이므로 오류가 있을 수 있습니다.",
-  "generated_at": "2026-11-27T02:51:38.429331+00:00",
+  "generated_at": "2026-11-28T02:41:55.266679+00:00",
   "episode": {
-    "id": "614e8cfb-82f9-4669-9d85-852c798d27be",
-    "title": "9pm ET, November 26 | The latest headlines from NPR",
-    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/3beb693f86cb7d52c5378548fe120dfd92d4223ead86e6d4d8ba1a51f1239e78.mp3",
-    "date": "2026-11-27T02:09:33+00:00",
+    "id": "01e54168-1c2f-4df6-b063-345bc713b340",
+    "title": "9pm ET, November 27 | The latest headlines from NPR",
+    "audioURL": "https://inleem-crypto.github.io/npr-morning-listening/media/e6290d7bf29207b717e5b1b5e75c06bc2e049596ec29e466013b50bacd35848e.mp3",
+    "date": "2026-11-28T02:09:34+00:00",
     "link": "https://www.npr.org/podcasts/500005/npr-news-now",
     "via": "문제 생성에 사용한 고정 음원",
-    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/15fe856a-61b0-4a58-aff1-6ca525e770c2/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=15fe856a-61b0-4a58-aff1-6ca525e770c2&feed=O9WlY7a5&t=podcast&e=nx-s1-20261126-2100-long&p=500005&d=280&size=4586729",
-    "audio_sha256": "3beb693f86cb7d52c5378548fe120dfd92d4223ead86e6d4d8ba1a51f1239e78"
+    "sourceAudioURL": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/74f3ded7-2f39-4e9f-8f2d-c6e877ba904e/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=74f3ded7-2f39-4e9f-8f2d-c6e877ba904e&feed=O9WlY7a5&t=podcast&e=nx-s1-20261127-2100-long&p=500005&d=280&size=4586728",
+    "audio_sha256": "e6290d7bf29207b717e5b1b5e75c06bc2e049596ec29e466013b50bacd35848e"
   },
   "items": [
     {
-      "sentence": "in parts of the mid-Atlantic, bringing ____ and knocking out power",
+      "sentence": "aircraft fired, quote, precision munitions at a ____ attempting to leave an",
       "meaning_context": {
-        "start": 22.04,
-        "end": 63.28,
-        "text": "and west coast. Flight aware shows more than 17,000 flights delayed so far, with about 2,300 of those flights coming into the U.S. are going out. And Pears-Windsor Johnson reports coastal flooding has already hit parts of the mid-Atlantic region. Forecasters say Wingus reached 60 miles an hour in parts of the mid-Atlantic, bringing down trees and knocking out power to hundreds of thousands of customers. Some communities along the coast saw major flooding at the morning high tide. Rich Otto, a meteorologist at NOAA's Weather Prediction Center, says strong winds off the ocean have been pushing water towards shore. There'll be another high tide cycle later on this evening along the",
+        "start": 14.12,
+        "end": 54.94,
+        "text": "ship in the Gulf of Oman as it attempted to break the U.S. blockade of Iranian ports. The strike comes as the Trump administration has been non-committal on its next move, nine months into the U.S. war in Iran, NPR's Kat Lonsdorf has more. U.S. Central Command says a military aircraft fired, quote, precision munitions at a merchant vessel attempting to leave an Iranian port. CENTCOM said in a statement that the civilian crew of the ship was unharmed. The U.S. military has been blocking Iranian ports since April. It temporarily lifted the blockade over the summer during talks with Tehran, but resumed it in July. This strike was the 15th ship the U.S. has disclosed disabling during its blockade, including at least",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 40.3,
-      "context_end": 44.44,
-      "answer": "down trees",
-      "hint": "해당 음성 구간의 표현 · D… T… (2단어)",
+      "context_start": 31.36,
+      "context_end": 35.7,
+      "answer": "merchant vessel",
+      "hint": "해당 음성 구간의 표현 · M… V… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 42.28,
-      "end": 43.06
+      "start": 34.2,
+      "end": 34.78
     },
     {
-      "sentence": "another wave of coastal flooding, however, I ____ next week this evening",
+      "sentence": "that have resulted in the killing of ____ members.",
       "meaning_context": {
-        "start": 47.22,
-        "end": 88.04,
-        "text": "communities along the coast saw major flooding at the morning high tide. Rich Otto, a meteorologist at NOAA's Weather Prediction Center, says strong winds off the ocean have been pushing water towards shore. There'll be another high tide cycle later on this evening along the east coast, which also bring another wave of coastal flooding, however, I think that next week this evening won't be quite as significant as what we were seeing this morning. Parts of southern New Jersey could end up with three to five inches of rain. In New York City, winds are expected to ease overnight. Windsor Johnston, NPR News. President Trump spent Thanksgiving Day calling deployed U.S. service members from his floor Florida estate today.",
+        "start": 37.1,
+        "end": 77.62,
+        "text": "CENTCOM said in a statement that the civilian crew of the ship was unharmed. The U.S. military has been blocking Iranian ports since April. It temporarily lifted the blockade over the summer during talks with Tehran, but resumed it in July. This strike was the 15th ship the U.S. has disclosed disabling during its blockade, including at least two strikes that have resulted in the killing of multiple crew members. President Trump has wavered on what to do next in Iran, suggesting on Thanksgiving Day that the end of the war will be, quote, whenever he decides. Kat Lonsdorf, NPR News, Washington. In Israel, political opposition leaders are making progress toward forming a new government that would unseat Prime Minister Benjamin Netanyahu. NPR's Daniel",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 64.84,
-      "context_end": 69.28,
-      "answer": "think that",
-      "hint": "해당 음성 구간의 표현 · T… T… (2단어)",
+      "context_start": 55.54,
+      "context_end": 57.76,
+      "answer": "multiple crew",
+      "hint": "해당 음성 구간의 표현 · M… C… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 67.62,
-      "end": 68.18
+      "start": 56.76,
+      "end": 57.4
     },
     {
-      "sentence": "great thing that he's going back. Stocks ____ his return, then tumbled",
+      "sentence": "of a moderate Arab Islamist party. Opposition ____ rushing to announce a",
       "meaning_context": {
-        "start": 93.58,
-        "end": 135.0,
-        "text": "talked to reporters about the surprise reinstatement of Jensen Huang, NVIDIA's CEO. Without him, I just don't know, you know, everybody's replaceable, I guess, but I just thought I saw that what was happening with the company, what was happening with the stock. And I think it's a great thing that he's going back. Stocks soared upon his return, then tumbled by Wednesday. At least 31 people have been killed in a road accident in Cairo. Egypt's health ministry says a truck carrying gas cylinders flipped on a highway and exploded. In pairs, Ayah Bichari reports. Egypt's public prosecutor says an initial investigation shows 27 cars and",
+        "start": 95.6,
+        "end": 136.74,
+        "text": "professor at Hebrew University. They're all over the map politically. The only thing that keeps them together is that they are opposed to Netanyahu and they want to remove him from office. A new government could include one of Netanyahu's traditional allies, an ultra-Orthodox Jewish party. And it could rely on the support of a moderate Arab Islamist party. Opposition leaders are rushing to announce a government soon. They're worried Netanyahu could spark a new war with Iran, which could complicate efforts to remove him from power. Daniel Estrin, NPR News, Tel Aviv. The powerful coastal storm that ran up the East Coast yesterday is winding down, and power is slowly being restored to the hundreds of thousands",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 111.6,
-      "context_end": 116.24,
-      "answer": "soared upon",
-      "hint": "해당 음성 구간의 표현 · S… U… (2단어)",
+      "context_start": 112.28,
+      "context_end": 117.56,
+      "answer": "leaders are",
+      "hint": "지도자들 관련 표현 · L… A… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 113.78,
-      "end": 114.64
+      "start": 115.8,
+      "end": 116.5
     },
     {
-      "sentence": "large truck carrying gas cylinders turned on ____ and exploded into an",
+      "sentence": "holiday. We did Thanksgiving at candlelight. We ____ over. We kept",
       "meaning_context": {
-        "start": 119.34,
-        "end": 159.84,
-        "text": "been killed in a road accident in Cairo. Egypt's health ministry says a truck carrying gas cylinders flipped on a highway and exploded. In pairs, Ayah Bichari reports. Egypt's public prosecutor says an initial investigation shows 27 cars and motorcycles caught fire when a large truck carrying gas cylinders turned on its side and exploded into an inferno. Prosecutors say they are now collecting DNA samples from the bodies to identify those killed. Videos online showed a huge fire-raging Wednesday evening on the main ring road that connects Cairo with the city of Giza. This is one of Egypt's deadliest road accidents in years. Earlier this month,",
+        "start": 133.9,
+        "end": 174.88,
+        "text": "is slowly being restored to the hundreds of thousands of customers who lost it during those storms. In Baltimore, Magdalena Stellalesco says it was a different kind of a holiday, a day that was also her 11-year-old son's birthday as they lost power yesterday on the holiday. We did Thanksgiving at candlelight. We had guests over. We kept on going. Celebrated his birthday as well at candlelight. So it was, yeah, something different. The weather also led travel disruptions down trees and water rescues from Virginia to New York City where the annual Macy's Thanksgiving Day Parade was postponed because of high winds",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 137.0,
-      "context_end": 141.28,
-      "answer": "its side",
-      "hint": "해당 음성 구간의 표현 · I… S… (2단어)",
+      "context_start": 150.0,
+      "context_end": 155.96,
+      "answer": "had guests",
+      "hint": "해당 음성 구간의 표현 · H… G… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 139.46,
-      "end": 139.94
+      "start": 154.22,
+      "end": 154.74
     },
     {
-      "sentence": "law on a technicality. The court found ____ house lawmakers were present",
+      "sentence": "where the annual Macy's Thanksgiving Day Parade ____ because of high winds",
       "meaning_context": {
-        "start": 187.24,
-        "end": 228.2,
-        "text": "of a federal law that requires employers to provide reasonable accommodations for pregnancy and pregnancy-related conditions is in question. As NPR's Andrea Shue reports, the Pregnant Workers Fairness Act faces multiple challenges. This month, the Fifth Circuit Court of Appeals struck down the law on a technicality. The court found not enough house lawmakers were present in the chamber when they passed the measure as part of a larger package in late 2022. Under COVID-era rules, many members voted from home. For now, the ruling only applies to the plaintiff in the case, the state of Texas. private employers must still comply with the law. Meanwhile, the Trump administration is seeking to",
+        "start": 152.32,
+        "end": 193.9,
+        "text": "Thanksgiving at candlelight. We had guests over. We kept on going. Celebrated his birthday as well at candlelight. So it was, yeah, something different. The weather also led travel disruptions down trees and water rescues from Virginia to New York City where the annual Macy's Thanksgiving Day Parade was postponed because of high winds for the first time and will be held tomorrow. But the delay left performers and marching bands scrambling to find ways to stay in New York to perform on the new parade date. You're listening to NPR News. The United Nations Food Agency's Say Hunger is expected to get worse in 16 countries over the next six months",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 205.12,
-      "context_end": 209.52,
-      "answer": "not enough",
-      "hint": "해당 음성 구간의 표현 · N… E… (2단어)",
+      "context_start": 169.96,
+      "context_end": 174.88,
+      "answer": "was postponed",
+      "hint": "해당 음성 구간의 표현 · W… P… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 207.58,
-      "end": 208.14
+      "start": 172.84,
+      "end": 173.6
     },
     {
-      "sentence": "of conditions covered by the law. A ____ is expected soon.",
+      "sentence": "Sudan, Yemen, Somalia, and northern Nigeria. All ____ on the list for",
       "meaning_context": {
-        "start": 211.3,
-        "end": 252.3,
-        "text": "measure as part of a larger package in late 2022. Under COVID-era rules, many members voted from home. For now, the ruling only applies to the plaintiff in the case, the state of Texas. private employers must still comply with the law. Meanwhile, the Trump administration is seeking to narrow the types of conditions covered by the law. A proposed rule is expected soon. Under current rules, employers have to provide reasonable accommodations for not just pregnancy and childbirth, but also menopause and fertility-related conditions and others. Andrea Hsu, NPR News. The deadliest Ebola outbreak in eastern Congo, with more than 12,000 confirmed",
+        "start": 182.56,
+        "end": 223.32,
+        "text": "perform on the new parade date. You're listening to NPR News. The United Nations Food Agency's Say Hunger is expected to get worse in 16 countries over the next six months with five countries at the greatest risk, war-torn Sudan and South Sudan, Yemen, Somalia, and northern Nigeria. All five appeared on the list for the past four years. The Palestinian territory was moved down a level following the October 2025 ceasefire in Gaza, but 67 percent of Gaza's population still faces crisis-level hunger. The blue wave of this year's midterms has implications for the 2028 presidential election as",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 228.88,
-      "context_end": 233.12,
-      "answer": "proposed rule",
-      "hint": "해당 음성 구간의 표현 · P… R… (2단어)",
+      "context_start": 198.72,
+      "context_end": 203.84,
+      "answer": "five appeared",
+      "hint": "해당 음성 구간의 표현 · F… A… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 231.32,
-      "end": 231.96
+      "start": 202.68,
+      "end": 203.2
     },
     {
-      "sentence": "complicated by escalating fighting between army and ____",
+      "sentence": "year's midterms has implications for the 2028 ____ as well.",
       "meaning_context": {
-        "start": 237.32,
-        "end": 278.86,
-        "text": "not just pregnancy and childbirth, but also menopause and fertility-related conditions and others. Andrea Hsu, NPR News. The deadliest Ebola outbreak in eastern Congo, with more than 12,000 confirmed cases, is made more complicated by escalating fighting between army and rebel groups. Congo's health ministry says nearly 6,000 people have died from Ebola, and the ongoing fighting prevents medical teams from reaching hard-hit communities. A World Health Organization Ebola manager said several WHO personnel and Congolese health officials had to be evacuated to",
+        "start": 201.32,
+        "end": 243.42,
+        "text": "Nigeria. All five appeared on the list for the past four years. The Palestinian territory was moved down a level following the October 2025 ceasefire in Gaza, but 67 percent of Gaza's population still faces crisis-level hunger. The blue wave of this year's midterms has implications for the 2028 presidential election as well. Having swept competitive Secretary of State races this year, Democrats will oversee the voting process in virtually every swing state. NPR's Miles Parks has more. If President Trump is hoping to change how people vote in the 2028 election, he will have few allies at the state level. Democrats will oversee the voting process for every presidential battleground",
         "requested_padding_seconds": 20,
         "source": "automatic_transcription"
       },
-      "context_start": 254.06,
-      "context_end": 258.36,
-      "answer": "rebel groups",
-      "hint": "해당 음성 구간의 표현 · R… G… (2단어)",
+      "context_start": 219.02,
+      "context_end": 223.62,
+      "answer": "presidential election",
+      "hint": "선거 관련 표현 · P… E… (2단어)",
       "explanation": "두 음성인식 모델이 해당 짧은 표현에 일치한 자동 전사 결과입니다. 원음을 다시 들어 확인하세요.",
-      "start": 257.44,
-      "end": 258.36
+      "start": 221.98,
+      "end": 223.14
     }
   ],
   "summaryReview": {
     "kind": "keyword_rubric",
     "article": 1,
-    "start": 14.06,
-    "end": 82.3,
-    "transcript": "Thanksgiving travelers have had to face all kinds of challenges today, from road closures to flight delays due to storms hitting both the east and west coast. Flight aware shows more than 17,000 flights delayed so far, with about 2,300 of those flights coming into the U.S. are going out. And Pears-Windsor Johnson reports coastal flooding has already hit parts of the mid-Atlantic region. Forecasters say Wingus reached 60 miles an hour in parts of the mid-Atlantic, bringing down trees and knocking out power to hundreds of thousands of customers. Some communities along the coast saw major flooding at the morning high tide. Rich Otto, a meteorologist at NOAA's Weather Prediction Center, says strong winds off the ocean have been pushing water towards shore. There'll be another high tide cycle later on this evening along the east coast, which also bring another wave of coastal flooding, however, I think that next week this evening won't be quite as significant as what we were seeing this morning. of southern New Jersey could end up with three to five inches of rain. In New York City, winds are expected to ease overnight. Windsor Johnston, NPR News.",
-    "keywords": [],
+    "start": 11.84,
+    "end": 110.24,
+    "transcript": "The U.S. says it's disabled a commercial ship in the Gulf of Oman as it attempted to break the U.S. blockade of Iranian ports. The strike comes as the Trump administration has been non-committal on its next move, nine months into the U.S. war in Iran, NPR's Kat Lonsdorf has more. U.S. Command says a military aircraft fired, quote, precision munitions at a merchant vessel attempting to leave an Iranian port. CENTCOM said in a statement that the civilian crew of the ship was unharmed. The U.S. has been blocking Iranian ports since April. It temporarily lifted the blockade over the summer during talks with Tehran, but resumed it in July. This strike was the 15th ship the U.S. has disclosed disabling during its blockade, including at least two strikes that have resulted in the killing of multiple crew members. President Trump has wavered on what to do next in Iran, suggesting on Thanksgiving Day that the end of the war will be, quote, whenever he decides. Kat Lonsdorf, NPR News, Washington. In Israel, political opposition leaders are making progress toward forming a new government that would unseat Prime Minister Benjamin Netanyahu. NPR's Daniel Estrin has more from Tel Aviv. One Israeli opposition leader says a new government could be formed next week, with centrist Gadi Eisenkot as prime minister. Eisenhower is expected to form a diverse coalition, from left-wing to center-right to hard-right parties. Reuven Khazan, politics professor at Hebrew University. They're all over the map politically. The only thing that keeps them together is that they are opposed to Netanyahu and they want to remove him from office. A new government could include one of Netanyahu's traditional allies, an ultra-Orthodox Jewish party.",
+    "keywords": [
+      {
+        "label": "trump · 트럼프",
+        "terms": [
+          "trump",
+          "트럼프"
+        ]
+      },
+      {
+        "label": "president · 대통령",
+        "terms": [
+          "president",
+          "대통령"
+        ]
+      },
+      {
+        "label": "government · 정부",
+        "terms": [
+          "government",
+          "정부"
+        ]
+      },
+      {
+        "label": "military · 군사",
+        "terms": [
+          "military",
+          "troops",
+          "군사",
+          "군대",
+          "군인"
+        ]
+      }
+    ],
     "boundary": "reporter_handoff_estimate"
   },
   "summaryReviews": [
     {
       "kind": "keyword_rubric",
       "article": 1,
-      "start": 14.06,
-      "end": 82.3,
-      "transcript": "Thanksgiving travelers have had to face all kinds of challenges today, from road closures to flight delays due to storms hitting both the east and west coast. Flight aware shows more than 17,000 flights delayed so far, with about 2,300 of those flights coming into the U.S. are going out. And Pears-Windsor Johnson reports coastal flooding has already hit parts of the mid-Atlantic region. Forecasters say Wingus reached 60 miles an hour in parts of the mid-Atlantic, bringing down trees and knocking out power to hundreds of thousands of customers. Some communities along the coast saw major flooding at the morning high tide. Rich Otto, a meteorologist at NOAA's Weather Prediction Center, says strong winds off the ocean have been pushing water towards shore. There'll be another high tide cycle later on this evening along the east coast, which also bring another wave of coastal flooding, however, I think that next week this evening won't be quite as significant as what we were seeing this morning. of southern New Jersey could end up with three to five inches of rain. In New York City, winds are expected to ease overnight. Windsor Johnston, NPR News.",
-      "keywords": [],
-      "boundary": "reporter_handoff_estimate"
-    },
-    {
-      "kind": "keyword_rubric",
-      "article": 2,
-      "start": 82.62,
-      "end": 171.06,
-      "transcript": "President Trump spent Thanksgiving Day calling deployed U.S. service members from his floor Florida estate today. He thanked them for their service and offered encouraging words to troops far from home. Later, he talked to reporters about the surprise reinstatement of Jensen Huang, NVIDIA's CEO. Without him, I just don't know, you know, everybody's replaceable, I guess, but I just thought I saw that what was happening with the company, what was happening with the stock. And I think it's a great thing that he's going back. Stocks soared upon his return, then tumbled by Wednesday. At least 31 people have been killed in a road accident in Cairo. Egypt's health ministry says a truck carrying gas cylinders flipped on a highway and exploded. In pairs, Ayah Bichari reports. Egypt's public prosecutor says an initial investigation shows 27 cars and motorcycles caught fire when a large truck carrying gas cylinders turned on its side and exploded into an inferno. Prosecutors say they are now collecting DNA samples from the bodies to identify those killed. online showed a huge fire-raging Wednesday evening on the main ring road that connects Cairo with the city of Giza. This is one of Egypt's deadliest road accidents in years. Earlier this month, two trains collided just south of Cairo, killing at least seven people and wounding more than 100. There are growing calls for the transport minister's resignation. Aya Botrawi, NPR News.",
+      "start": 11.84,
+      "end": 110.24,
+      "transcript": "The U.S. says it's disabled a commercial ship in the Gulf of Oman as it attempted to break the U.S. blockade of Iranian ports. The strike comes as the Trump administration has been non-committal on its next move, nine months into the U.S. war in Iran, NPR's Kat Lonsdorf has more. U.S. Command says a military aircraft fired, quote, precision munitions at a merchant vessel attempting to leave an Iranian port. CENTCOM said in a statement that the civilian crew of the ship was unharmed. The U.S. has been blocking Iranian ports since April. It temporarily lifted the blockade over the summer during talks with Tehran, but resumed it in July. This strike was the 15th ship the U.S. has disclosed disabling during its blockade, including at least two strikes that have resulted in the killing of multiple crew members. President Trump has wavered on what to do next in Iran, suggesting on Thanksgiving Day that the end of the war will be, quote, whenever he decides. Kat Lonsdorf, NPR News, Washington. In Israel, political opposition leaders are making progress toward forming a new government that would unseat Prime Minister Benjamin Netanyahu. NPR's Daniel Estrin has more from Tel Aviv. One Israeli opposition leader says a new government could be formed next week, with centrist Gadi Eisenkot as prime minister. Eisenhower is expected to form a diverse coalition, from left-wing to center-right to hard-right parties. Reuven Khazan, politics professor at Hebrew University. They're all over the map politically. The only thing that keeps them together is that they are opposed to Netanyahu and they want to remove him from office. A new government could include one of Netanyahu's traditional allies, an ultra-Orthodox Jewish party.",
       "keywords": [
         {
           "label": "trump · 트럼프",
@@ -176,29 +199,17 @@
           ]
         },
         {
-          "label": "return · 복귀",
-          "terms": [
-            "return",
-            "returning",
-            "복귀",
-            "돌아"
-          ]
-        },
-        {
-          "label": "resigned · 사임",
-          "terms": [
-            "resign",
-            "resigned",
-            "resignation",
-            "사임",
-            "사퇴"
-          ]
-        },
-        {
           "label": "president · 대통령",
           "terms": [
             "president",
             "대통령"
+          ]
+        },
+        {
+          "label": "government · 정부",
+          "terms": [
+            "government",
+            "정부"
           ]
         },
         {
@@ -210,14 +221,44 @@
             "군대",
             "군인"
           ]
+        }
+      ],
+      "boundary": "reporter_handoff_estimate"
+    },
+    {
+      "kind": "keyword_rubric",
+      "article": 2,
+      "start": 186.9,
+      "end": 284.74,
+      "transcript": "The United Nations Food Agency's Say Hunger is expected to get worse in 16 countries over the next six months with five countries at the greatest risk, war-torn Sudan and South Sudan, Yemen, Somalia, and northern Nigeria. All five appeared on the list for the past four years. The Palestinian territory was moved down a level following the October 2025 ceasefire in Gaza, but 67 percent of Gaza's population still faces crisis-level hunger. The blue wave of this year's midterms has implications for the 2028 presidential election as well. Having swept competitive Secretary of State races this year, will oversee the voting process in virtually every swing state. NPR's Miles Parks has more. If President Trump is hoping to change how people vote in the 2028 election, he will have few allies at the state level. will oversee the voting process for every presidential battleground state except for North Carolina, after Democrats flipped the office of Secretary of State in Georgia and Ohio and took the governor's mansion in Texas. Incumbent Democrats in Arizona and Nevada fended off challenges from Republicans who falsely claimed that the 2020 election was stolen from Trump. That was another trend in this year's midterms. According to national tracking by the advocacy group States United Action, will be fewer election-denying politicians in office next year. Miles Parks, NPR News, Washington. Budget Airlines' North Atlantic Airways has filed for bankruptcy protection a day after stopping flights and ticket sales. The Norwegian airline was founded in 2021 and offered cheap flights from Europe to Asia, South Africa, and the US. You're listening to NPR News.",
+      "keywords": [
+        {
+          "label": "trump · 트럼프",
+          "terms": [
+            "trump",
+            "트럼프"
+          ]
         },
         {
-          "label": "company · 기업",
+          "label": "asia · 아시아",
           "terms": [
-            "company",
-            "companies",
-            "기업",
-            "회사"
+            "asia",
+            "asian",
+            "아시아"
+          ]
+        },
+        {
+          "label": "president · 대통령",
+          "terms": [
+            "president",
+            "대통령"
+          ]
+        },
+        {
+          "label": "election · 선거",
+          "terms": [
+            "election",
+            "선거"
           ]
         }
       ],
@@ -225,9 +266,9 @@
     }
   ],
   "fullTranscript": {
-    "transcript": "This is NPR News Now. The latest headlines every hour. Live from NPR News in Culver City, California, I'm Dua-Halee Saikoutau. Thanksgiving travelers have had to face all kinds of challenges today, from road closures to flight delays due to storms hitting both the east and west coast. Flight aware shows more than 17,000 flights delayed so far, with about 2,300 of those flights coming into the U.S. are going out. And Pears-Windsor Johnson reports coastal flooding has already hit parts of the mid-Atlantic region. Forecasters say Wingus reached 60 miles an hour in parts of the mid-Atlantic, bringing down trees and knocking out power to hundreds of thousands of customers. Some communities along the coast saw major flooding at the morning high tide. Rich Otto, a meteorologist at NOAA's Weather Prediction Center, says strong winds off the ocean have been pushing water towards shore. There'll be another high tide cycle later on this evening along the east coast, which also bring another wave of coastal flooding, however, I think that next week this evening won't be quite as significant as what we were seeing this morning. of southern New Jersey could end up with three to five inches of rain. In New York City, winds are expected to ease overnight. Windsor Johnston, NPR News. President Trump spent Thanksgiving Day calling deployed U.S. service members from his floor Florida estate today. He thanked them for their service and offered encouraging words to troops far from home. Later, he talked to reporters about the surprise reinstatement of Jensen Huang, NVIDIA's CEO. Without him, I just don't know, you know, everybody's replaceable, I guess, but I just thought I saw that what was happening with the company, what was happening with the stock. And I think it's a great thing that he's going back. Stocks soared upon his return, then tumbled by Wednesday. At least 31 people have been killed in a road accident in Cairo. Egypt's health ministry says a truck carrying gas cylinders flipped on a highway and exploded. In pairs, Ayah Bichari reports. Egypt's public prosecutor says an initial investigation shows 27 cars and motorcycles caught fire when a large truck carrying gas cylinders turned on its side and exploded into an inferno. Prosecutors say they are now collecting DNA samples from the bodies to identify those killed. online showed a huge fire-raging Wednesday evening on the main ring road that connects Cairo with the city of Giza. This is one of Egypt's deadliest road accidents in years. Earlier this month, two trains collided just south of Cairo, killing at least seven people and wounding more than 100. There are growing calls for the transport minister's resignation. Aya Botrawi, NPR News. Elon Musk's rocket company SpaceX has been given the green light by the Trump administration to put about one million satellites, or data centers, in space. You're listening to NPR News. The future of a federal law that requires employers to provide reasonable accommodations for pregnancy and pregnancy-related conditions is in question. As NPR's Andrea Shue reports, the Pregnant Workers Fairness Act faces multiple challenges. This month, Fifth Circuit Court of Appeals struck down the law on a technicality. The court found not enough house lawmakers were present in the chamber when they passed the measure as part of a larger package in late 2022. Under COVID-era rules, many members voted from home. For now, the ruling only applies to the plaintiff in the case, the state of Texas. private employers must still comply with the law. Trump administration is seeking to narrow the types of conditions covered by the law. A proposed rule is expected soon. Under current rules, employers have to provide reasonable accommodations for not just pregnancy and childbirth, but also menopause and fertility-related conditions and others. Andrea Hsu, NPR News. The deadliest Ebola outbreak in eastern Congo, with more than 12,000 confirmed cases, is made more complicated by escalating fighting between army and rebel groups. Congo's health ministry says nearly 6,000 people have died from Ebola, and the ongoing fighting prevents medical teams from reaching hard-hit communities. A World Health Organization Ebola manager said several WHO personnel and Congolese health officials had to be evacuated to Boonia earlier this week after intense fighting. I'm Duwali Saikoutel, NPR News. This message comes from mattress firm. Sharing a bed should not mean losing sleep every night. Their sleep experts will match you with a bed designed for more uninterrupted sleep, like a Tempur-Pedic made with unique temper material that absorbs motion so you can rest undisturbed. Right now, you can save up to $1,000 on select Tempur-Pedic split-king sleep systems during the Black Friday sale. Visit Mattress Firm today to find your perfect sleep solution. They make sleep easy.",
+    "transcript": "This is NPR News Now. The latest headlines every hour. Live from NPR News in I'm Janine Herbst. The U.S. says it's disabled a commercial ship in the Gulf of Oman as it attempted to break the U.S. blockade of Iranian ports. The strike comes as the Trump administration has been non-committal on its next move, nine months into the U.S. war in Iran, NPR's Kat Lonsdorf has more. U.S. Command says a military aircraft fired, quote, precision munitions at a merchant vessel attempting to leave an Iranian port. CENTCOM said in a statement that the civilian crew of the ship was unharmed. The U.S. has been blocking Iranian ports since April. It temporarily lifted the blockade over the summer during talks with Tehran, but resumed it in July. This strike was the 15th ship the U.S. has disclosed disabling during its blockade, including at least two strikes that have resulted in the killing of multiple crew members. President Trump has wavered on what to do next in Iran, suggesting on Thanksgiving Day that the end of the war will be, quote, whenever he decides. Kat Lonsdorf, NPR News, Washington. In Israel, political opposition leaders are making progress toward forming a new government that would unseat Prime Minister Benjamin Netanyahu. NPR's Daniel Estrin has more from Tel Aviv. One Israeli opposition leader says a new government could be formed next week, with centrist Gadi Eisenkot as prime minister. Eisenhower is expected to form a diverse coalition, from left-wing to center-right to hard-right parties. Reuven Khazan, politics professor at Hebrew University. They're all over the map politically. The only thing that keeps them together is that they are opposed to Netanyahu and they want to remove him from office. A new government could include one of Netanyahu's traditional allies, an ultra-Orthodox Jewish party. And it could rely on the support of a moderate Arab Islamist party. Opposition leaders are rushing to announce a government soon. They're worried Netanyahu could spark a new war with Iran, which could complicate efforts to remove him from power. Daniel Estrin, NPR News, Tel Aviv. The powerful coastal storm that ran up the East Coast yesterday is winding down, and power is slowly being restored to the hundreds of thousands of customers who lost it during those storms. In Baltimore, Magdalena Stellalesco says it was a different kind of a holiday, a day that was also her 11-year-old son's birthday as they lost power yesterday on the holiday. did Thanksgiving at candlelight. We had guests over. We kept on going. Celebrated his birthday as well at candlelight. So it was, yeah, something different. The weather also led travel disruptions down trees and water rescues from Virginia to New York City where the annual Macy's Thanksgiving Day Parade was postponed because of high winds for the first time and will be held tomorrow. But the delay left performers and marching bands scrambling to find ways to stay in New York to perform on the new parade date. You're listening to NPR News. The United Nations Food Agency's Say Hunger is expected to get worse in 16 countries over the next six months with five countries at the greatest risk, war-torn Sudan and South Sudan, Yemen, Somalia, and northern Nigeria. All five appeared on the list for the past four years. The Palestinian territory was moved down a level following the October 2025 ceasefire in Gaza, but 67 percent of Gaza's population still faces crisis-level hunger. The blue wave of this year's midterms has implications for the 2028 presidential election as well. Having swept competitive Secretary of State races this year, will oversee the voting process in virtually every swing state. NPR's Miles Parks has more. If President Trump is hoping to change how people vote in the 2028 election, he will have few allies at the state level. will oversee the voting process for every presidential battleground state except for North Carolina, after Democrats flipped the office of Secretary of State in Georgia and Ohio and took the governor's mansion in Texas. Incumbent Democrats in Arizona and Nevada fended off challenges from Republicans who falsely claimed that the 2020 election was stolen from Trump. That was another trend in this year's midterms. According to national tracking by the advocacy group States United Action, will be fewer election-denying politicians in office next year. Miles Parks, NPR News, Washington. Budget Airlines' North Atlantic Airways has filed for bankruptcy protection a day after stopping flights and ticket sales. The Norwegian airline was founded in 2021 and offered cheap flights from Europe to Asia, South Africa, and the US. You're listening to NPR News. This message comes from Squarespace. A beautifully designed Squarespace website is the difference between thinking about photography school and selling your portraits online. It's the difference between giving away cookies for free and running your cookie empire. A beautifully designed Squarespace website is the difference between having a movie reviewing hobby and a movie reviewing career. Squarespace, because no matter what you're into, a website makes it real. Use offer code DIFFERENCE for 50% off select plans, terms and conditions apply.",
     "start": 0.0,
-    "end": 312.5,
+    "end": 315.2,
     "kind": "full_broadcast"
   }
 }
